@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Customized your node
 
-From the Quick Start guide, we learned how to run a GaiaNet node and get the reward. This article will show you how to run a customized node based on your needs. 
+We learned how to run a GaiaNet node and get the reward from the Quick Start guide. This article will show you how to run a customized node based on your needs. 
 
 ### Customized your node from the Gaianet Node Generator tool
 
@@ -58,11 +58,13 @@ If you just want to adjust some settings, you can use `gaianet config`  command 
 
 `./gaianet config chat_ctx_size 4096` is to adjust the context length of the chat model.
 
+`gaianet config chat <url-to-chat-gguf-file>` is to adjust the chat model.
+
+`gaianet config embedding_ctx_size <size>` is to adjust the context length of the embedding model.
+
 `./gaianet config embedding url-to-embedding-gguf-file` is to adjust the embedding model
 
-`./gaianet config system_prompt “you are a helpful assistant"` is to adjust the system prompt.
 
-`./gaianet config rag_prompt “you are a helpful assistant"` is to adjust the rag prompt.
 
 
 
