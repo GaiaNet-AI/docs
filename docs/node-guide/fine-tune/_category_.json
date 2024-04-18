@@ -1,5 +1,5 @@
 {
-  "label": "Run a GaiaNet node based on your model",
+  "label": "Fine tune a model",
   "position": 9,
   "link": {
     "type": "generated-index",
