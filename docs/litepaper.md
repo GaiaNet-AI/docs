@@ -23,8 +23,7 @@ Agents are software applications that can complete tasks on its own autonomously
 * to answer “politically incorrect” questions (eg to analyze CVE exploits for an agent in the security domain), 
 * and to answer requests in a specific style (eg to mimic a person). 
 
-
-FIG: What is an agent
+![What is a GaiaNet agent](gaianet_agent.png)
 
 Agents are complex software that require significant amount of engineering and resources. Today, most agents are close-source and hosted on SaaS-based LLMs. Popular examples include GPTs and Microsoft/GitHub copilots on OpenAI LLMs, and Duet on Google’s Gemini LLMs. 
 
@@ -55,6 +54,8 @@ The GaiaNet project provides a cross-platform and highly efficient SDK and runti
 ## GaiaNet node
 
 The basic operational unit in the GaiaNet network is a node. A GaiaNet node is a streamlined software stack that allows any technically competent person to run an AI agent of his own. The software stack on the GaiaNet node consists of the following 7 key components.
+
+![GaiaNet node architecture](gaianet_node.png)
 
 **1 Application runtime.** GaiaNet applications run in a lightweight, secure and high-performance sandbox called WasmEdge. As an open-source project managed by the Linux Foundation and CNCF, WasmEdge runtime works seamlessly with leading cloud native tools such as Docker, containerd, CRI-O, Podman and Kubernetes. It is also the virtual machine of choice by leading public blockchains to securely and efficiently execute on-chain and off-chain smart contracts. 
 
@@ -137,9 +138,11 @@ Those challenges have given rise to the GaiaNet domain, which forms the basis of
 * Getting paid by users. 
 * Pay nodes for their services.
 
+![GaiaNet network architecture](gaianet_eco.png)
+
 Each GaiaNet node has an unique node ID in the form of an ETH address. The private key associated with the ETH address is stored on the node. Once a node is successfully registered with a domain, it is entitled to receive payments from both service revenue and network awards from the domain. The domain could send payments directly to the node's ETH address. Or, the domain could provide a mechanism for a node operator to register multiple nodes under a single Metamask address, such as signing a challenge phrase using the node private keys. In that case, the node operator will receive aggregated payments in his Metamask account for all associated nodes.
 
-Each GaiaNet domain has a smart contract that is used for escrow payments. It is similar to OpenAI’s credit payment model, where users purchase credits first, and then consume them over time. When the user pays into the smart contract, an access token will be automatically issued to him. He uses this token to make API calls to the domain, which is then load-balanced to random nodes in the domain. As the user consumes those services, his fund in the contract depletes and the access token stops working if he no longer has any balance. 
+Each GaiaNet domain has an associated smart contract that is used for escrow payments. It is similar to OpenAI’s credit payment model, where users purchase credits first, and then consume them over time. When the user pays into the smart contract, an access token will be automatically issued to him. He uses this token to make API calls to the domain, which is then load-balanced to random nodes in the domain. As the user consumes those services, his fund in the contract depletes and the access token stops working if he no longer has any balance. 
 
 The pricing and payment of the API service are determined by the domain operator. It is typically denominated in USD stable coins. The domain operator pays a share of the revenue to node operators who provided the services. The GaiaNet network is a decentralized marketplace of agent services.
 
