@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Customzied your node
+# Customized your node
 
 From the Quick Start guide, we learned how to run a GaiaNet node and get the reward. This article will show you how to run a customzied node based on your needs. 
 
