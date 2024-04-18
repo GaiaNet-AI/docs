@@ -1,6 +1,6 @@
 {
   "label": "Resources and API reference",
-  "position": 10,
+  "position": 12,
   "link": {
     "type": "generated-index",
     "description": "Learn more about GaiaNet node"
