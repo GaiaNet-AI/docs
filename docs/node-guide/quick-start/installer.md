@@ -24,7 +24,7 @@ cd ~/gaianet
 Then, use `gaianet run` to start your node.
 
 ```
-,/gaianet run
+./gaianet run
 ```
 
 After it runs successfully, you can click on the link printed on your screen to chat with your node. The link should be look like the following.
@@ -37,7 +37,7 @@ If you want to stop running your node, use `gaianet stop`.
 ./gaianet stop
 ```
 
-### Spuervise
+### Supervise
 
 If you're a frequent Gaianet node runner, we recommend you run the GaiaNet node with the supervise tool.
 
