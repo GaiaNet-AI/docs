@@ -31,9 +31,9 @@ However, as we discussed, a key requirement for agents is to customize and adapt
 
 In this paper, we propose a decentralized software platform and protocol network for AI agents for everyone. Specifically, our goals are two-folds. 
 
-Goal #1: Empower individuals to incorporate his/her private knowledge and expertise into personal LLM agent apps. Those apps aim to perform knowledge tasks and use tools just as the individual would, but also reflect the individual’s style and values.
+**Goal #1:** Empower individuals to incorporate his/her private knowledge and expertise into personal LLM agent apps. Those apps aim to perform knowledge tasks and use tools just as the individual would, but also reflect the individual’s style and values.
 
-Goal #2: Enable individuals to provide and scale their LLM agents as services, and get compensated for their expertise and work.
+**Goal #2:** Enable individuals to provide and scale their LLM agents as services, and get compensated for their expertise and work.
 
 > GaiaNet is “YouTube for knowledge and skills.”
 
@@ -41,7 +41,7 @@ Goal #2: Enable individuals to provide and scale their LLM agents as services, a
 
 As of April 2024, there are over 6000 open-source LLMs published on Hugging face. Compared with close-source LLMs, such as GPT4, open-source LLMs offer advantages in privacy, cost, and systematic bias. Even with general QA performance, open-source LLMs are closing the gap with close-source counterparties quickly. 
 
-FIG: Open vs close source LLMs
+![Open vs close source LLMs](closed_vs_open.jpg)
 
 For AI agent use cases, it has been demonstrated that smaller but task-specific LLMs often outperform larger general models. 
 
