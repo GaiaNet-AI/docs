@@ -21,7 +21,7 @@ Then, you will choose whether you want to build a RAG agent or not. If you choos
 
 > If you don’t want to create RAG agents, click Skip to skip this step.
 
-Then, choose a domain to join. The default domain is gaianet.xyz. Learn more about domain and subdomain.
+Then, choose a domain to join. The default domain is gaianet.xyz. Learn more about domain and subdomain here.
 
 Finally, click on confirm, the GaiaNet installer will generate all the steps to run a customized node.
 
@@ -35,11 +35,11 @@ bash <(curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/mai
 Then, run the following command line to init your customized node.
 
 ```
-cd gaianet
+cd $HOME/gaianet
 ./gaianet init https://huhiohuhi-config.json
 ```
 
-After the installation is successful, run the following command line to init your node.
+After the installation is successful, run the following command line to run your node.
 
 ```
 ./gaianet run 
