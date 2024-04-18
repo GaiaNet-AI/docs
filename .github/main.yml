@@ -1,4 +1,4 @@
-name: github pages
+name: GaiaNet-AI docs
 
 on:
   push:
