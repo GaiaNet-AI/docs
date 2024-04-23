@@ -11,7 +11,7 @@ First, let's install the required GaiaNet software with the GaiaNet installer on
 
 
 ```
-bash <(curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/main/install.sh')
+bash <(curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/main/v2/install.sh')
 ```
 
 After being installed successfully, you can use `gaianet init` to init the required models and knowledge along with your node. The default Gaianet node is a Paris guide. For more preset settings, please check out The Preset Config article. You can also use `gaianet list` to check out more configs.
@@ -29,7 +29,8 @@ Then, use `gaianet run` to start your node.
 
 After it runs successfully, you can click on the link printed on your screen to chat with your node. The link should look like the following.
 
-> Add a screenshot here
+<img width="1423" alt="image" src="https://github.com/GaiaNet-AI/docs/assets/45785633/f25cdfa7-5c95-46f9-b1de-a5d7145ae848">
+
 
 If you want to stop running your node, use `gaianet stop`.
 
