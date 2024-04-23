@@ -52,18 +52,6 @@ If you want to stop the node, simply use `gaianet stop`.
 ```
 
 
-### Customized some settings
-
-If you just want to adjust some settings, you can use `gaianet config`  command line to update the local `config.json` to new settings.
-
-`./gaianet config chat_ctx_size 4096` is to adjust the context length of the chat model.
-
-`gaianet config chat <url-to-chat-gguf-file>` is to adjust the chat model.
-
-`gaianet config embedding_ctx_size <size>` is to adjust the context length of the embedding model.
-
-`./gaianet config embedding url-to-embedding-gguf-file` is to adjust the embedding model
-
 
 
 
