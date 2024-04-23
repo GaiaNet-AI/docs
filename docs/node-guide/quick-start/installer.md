@@ -29,8 +29,8 @@ Then, use `gaianet run` to start your node.
 
 After it runs successfully, you can click on the link printed on your screen to chat with your node. The link should look like the following.
 
-<img width="1423" alt="image" src="https://github.com/GaiaNet-AI/docs/assets/45785633/f25cdfa7-5c95-46f9-b1de-a5d7145ae848">
 
+![](https://github.com/GaiaNet-AI/docs/assets/45785633/f25cdfa7-5c95-46f9-b1de-a5d7145ae848)
 
 If you want to stop running your node, use `gaianet stop`.
 
