@@ -6,6 +6,30 @@ sidebar_position: 8
 
 After installing the Gaianet installer, you can use the `./gaianet` CLI to execute the GaiaNet node. Make sure you're in the `gaianet` folder. The following are the CLI options.
 
+## `gaianet --help`
+
+You can use `./gaianet --help` to check all the available CLI options.
+
+```
+./gaianet --help
+
+## Output
+Usage: ./gaianet {config|init|run|stop} [arg]
+
+Subcommands:
+  config <arg>  Update the configuration.
+                Available args: list, chat_url, chat_ctx_size, embedding_url, embedding_ctx_size, prompt_template, port
+  init [arg]    Initialize with optional argument.
+                Available args: list, paris_guide, mua, gaia, <url-to-config.json>
+  run           Run the program.
+  start         Run the program.
+  stop [arg]    Stop the program.
+                Available args: --force
+
+Options:
+  --help        Show this help message
+```
+
 ## `gaianet init`
 
 You can use `gaianet init` to download the model files including the chat model like Llama-2-7b and the embedding model like all-MiniLM-L6-v2, the dataset for the RAG application, and init the model.
