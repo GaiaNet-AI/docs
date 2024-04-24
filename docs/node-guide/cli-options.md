@@ -14,7 +14,7 @@ You can use `gaianet --help` to check all the available CLI options.
 gaianet --help
 
 ## Output
-Usage: ./gaianet {config|init|run|stop} [arg]
+Usage: gaianet {config|init|run|stop} [arg]
 
 Subcommands:
   config <arg>  Update the configuration.
