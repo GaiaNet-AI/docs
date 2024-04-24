@@ -32,9 +32,7 @@ Options:
 
 ## `gaianet init`
 
-You can use `gaianet init` to download the model files including the chat model like Llama-2-7b and the embedding model like all-MiniLM-L6-v2, the dataset for the RAG application, and init the model.
-
-
+You can use `gaianet init` to download the model files including the chat model like Llama-2-7b and the embedding model like all-MiniLM-L6-v2, the dataset for the RAG application, and init the node.
 
 * `./gaianet init` will init the default node. It's an RAG application with Gaianet knowledge.
 * `./gaianet init mua` will init a node with the MUA project knowledge.
@@ -61,7 +59,7 @@ The `gaianet config` allows node runner to adjust some parameters in the `config
 * `./gaianet config chat_ctx_size <size>` will change the context size of the chat model. The default value is 4096.
 * `./gaianet config embedding <url>` will change the download link of the embedding model.
 * `./gaianet config embedding_ctx_size <size>` will change the context size of the embedding model. The value here is associated with the embedding model you choose.
-* `./gaianet config port <port>` will change the port the Gaianet node API server.
+* `./gaianet config port <port>` will change the port of the Gaianet node API server.
 * `./gaianet config system_prompt "<prompt>"` will change the system prompt.
 * `./gaianet config rag_prompt "<prompt>"` will change the rag prompt.
 * `./gaianet config reverse_prompt "<prompt>"` will change the reverse prompt.
