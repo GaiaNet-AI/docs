@@ -39,7 +39,11 @@ You can use `gaianet init` to download the model files including the chat model 
 * `gaianet init paris` will init a node with the Paris guide knowledge.
 * `gaianet init list` to check out all the pre-fixed node settings
 
-You can also use `./gaianet init url_your_config_json` to init your customized settings for the node. You can customize your node using the Gaianet node link. If you're familiar with the Gaianet config.json, you can create your own manually. See an example [here](https://github.com/GaiaNet-AI/gaianet-node/blob/main/config.json).
+You can also use `gaianet init url_your_config_json` to init your customized settings for the node. You can customize your node using the Gaianet node link. If you're familiar with the Gaianet config.json, you can create your own manually. See an example [here](https://github.com/GaiaNet-AI/gaianet-node/blob/main/config.json).
+
+```
+gaianet init https://raw.githubusercontent.com/alabulei1/test-ports/main/config.json
+```
 
 ## `gaianet run`
 
