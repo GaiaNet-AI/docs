@@ -4,16 +4,20 @@ sidebar_position: 1
 
 # What is a RAG-based LLM application
 
-Retrieval-augmented generation (RAG) is a way to solve the hallucinations of the Large Language Model (LLM) by attaching external data sources to the model. The RAG way will enhance the accuracy and reliability of LLMs with facts retrieved from external knowledge. That's why a GaiaNet node is RAG based LLM application.
+Retrieval-augmented generation (RAG) is a way to solve the hallucinations of the Large Language Model (LLM) by attaching external data sources to the model. The RAG way will enhance the accuracy and reliability of LLMs with facts retrieved from external knowledge. That's why a GaiaNet node is RAG RAG-based LLM application.
 
 For example, if you ask ChatGPT the question What is Layer 2, the answer is that Layer 2 is a concept from the computer network. However, if you ask a blockchain person, he answers that Layer 2 is a way to scale the original Ethereum network. That's the difference between the original model and the model with RAG.
 
-We will cover the external knowledge preparation and how a RAG-based application completes a conversation.
+We will cover the external knowledge preparation and how a RAG-based application completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with GaiaNet](build-with-gaianet.md) to start building one.
 
 1. Create embeddings for your own knowledge
 2. Lifecycle of a user query on a RAG-based LLM application
 
-To build a RAG-based LLM application, we will use a chat model like Llama-3-8B for generating response to the user, a text embedding model like all-miniLM-V2 for creating and retrieving embeddings, and a Vector DB like Qdrant for storing embeddings. 
+For a RAG-based LLM application, besides the application itself, we will use
+* a chat model like Llama-3-8B for generating responses to the user
+* a text embedding model like all-miniLM-V2 for creating and retrieving embeddings
+* a Vector DB like Qdrant for storing embeddings. 
+
 
 ## Workflow for creating embeddings 
 
@@ -31,7 +35,7 @@ After chunking the document, we can convert these chunks to embeddings leveragin
 
 Additionally, we will also need a vector DB to store the embeddings so that we can retrieve these embeddings quickly at any time. 
 
-In Gaianet, we will get a database snapshot with the embeddings to use at last. Check out this article (coming soon) to see how to create your embeddings using the tool provided by Gaianet. I will also explain what kind of roles the three elements play next.
+In Gaianet, we will get a database snapshot with the embeddings to use at last. Check out this article (coming soon) to see how to create your embeddings. 
 
 ##  Lifecycle of a user query on a RAG-based LLM application
 
