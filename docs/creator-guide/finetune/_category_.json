@@ -1,0 +1,8 @@
+{
+  "label": "GaiaNet Node with finetuned LLMs",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "How to finetune LLMs to speak the way you like."
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "label": "Build a RAG based node",
-  "position": 10,
-  "link": {
-    "type": "generated-index",
-    "description": "Learn more about RAG LLM applications"
-  }
-}
