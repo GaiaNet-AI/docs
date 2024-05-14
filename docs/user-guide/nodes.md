@@ -24,7 +24,7 @@ This node runs a plain Llama 3 8b model without any additional knowledge.
 ## Llama 3 70b
 
 This node runs a plain Llama 3 70b model without any additional knowledge. 
-[Chat with it](https://0xf8bf989ce672acd284309bbbbf4debe95975ea77.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps) with the following.
+[Chat with it](https://0xf8bf989ce672acd284309bbbbf4debe95975ea77.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|

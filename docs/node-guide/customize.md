@@ -80,7 +80,7 @@ gaianet config \
 
 A key feature of GaiaNet is that users can create and deploy proprietary knowledge base on the node to supplement
 the LLM. Each knowledge base is a snapshot file for a vector collection. 
-We encourage you to [create your own knowledge base](../creator-guide/knowledge). But you can also use 
+We encourage you to [create your own knowledge base](../creator-guide/knowledge/concepts). But you can also use 
 ready-made knowledge bases.
 You will specify the URL to the vector collection's `snapshot` or 'snapshot.tar.gz` file.
 Then, you will also need to use the same embedding model that generated this vector collection.
