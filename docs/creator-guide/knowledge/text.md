@@ -65,19 +65,21 @@ curl -X PUT 'http://localhost:6333/collections/default' \
 Download a program to chunk a document and create embeddings.
 
 ```
-curl -LO https://github.com/YuanTony/chemistry-assistant/raw/main/rag-embeddings/create_embeddings.wasm
+curl -LO https://github.com/GaiaNet-AI/embedding-tools/raw/main/paragraph_embed/paragraph_embed.wasm
 ```
 
-It chunks the document based on empty lines. So, you MUST prepare your source document this way -- segment the document into sections of around 200 words with empty lines. See the example document here. You can check out the Rust source code here and modify it if you need to use a different chunking strategy.
+It chunks the document based on empty lines. So, you MUST prepare your source document this way -- segment the document into sections of around 200 words with empty lines. You can check out the [Rust source code here](https://github.com/GaiaNet-AI/embedding-tools/tree/main/paragraph_embed) and modify it if you need to use a different chunking strategy.
 
-Next, you can run the program by passing a collection name, vector dimension, and the source document. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 384-dimension vectors from `paris.txt` and saves them into the default collection.
+> The `paragraph_embed.wasm` program would NOT break up code listings even if there are empty lines with in the listing.
+
+Next, you can run the program by passing a collection name, vector dimension, and the source document. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 384-dimension vectors from `paris_chunks.txt` and saves them into the default collection.
 
 ```
 curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris_chunks.txt
 
 wasmedge --dir .:. \
   --nn-preload embedding:GGML:AUTO:all-MiniLM-L6-v2-ggml-model-f16.gguf \
-  create_embeddings.wasm embedding default 384 paris_chunks.txt
+  paragraph_embed.wasm embedding default 384 paris_chunks.txt
 ```
 
 You can create a snapshot of the collection, which can be shared and loaded into a different Qdrant database. You can find the snapshot file in the `qdrant_snapshots` directory.

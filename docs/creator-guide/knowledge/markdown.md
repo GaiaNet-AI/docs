@@ -46,7 +46,7 @@ Delete the default collection if it exists.
 curl -X DELETE 'http://localhost:6333/collections/default'
 ```
 
-Create a new collection called default. Notice that it is 384 dimensions. That is the output vector size of the embedding model `nomic-embed-text-v1.5`. If you are using a different embedding model, you should use a dimension that fits the model.
+Create a new collection called default. Notice that it is 768 dimensions. That is the output vector size of the embedding model `nomic-embed-text-v1.5`. If you are using a different embedding model, you should use a dimension that fits the model.
 
 ```
 curl -X PUT 'http://localhost:6333/collections/default' \
@@ -63,19 +63,19 @@ curl -X PUT 'http://localhost:6333/collections/default' \
 Download a program to chunk a document and create embeddings.
 
 ```
-curl -LO https://github.com/YuanTony/chemistry-assistant/raw/main/rag-embeddings/create_embeddings.wasm
+curl -LO https://github.com/GaiaNet-AI/embedding-tools/raw/main/markdown_embed/markdown_embed.wasm
 ```
 
-It chunks the document based on empty lines. So, you MUST prepare your source document this way -- segment the document into sections of around 200 words with empty lines. See the example document here. You can check out the Rust source code here and modify it if you need to use a different chunking strategy.
+It chunks the document based on markdown sections. You can check out the [Rust source code](https://github.com/GaiaNet-AI/embedding-tools/tree/main/markdown_embed) here and modify it if you need to use a different chunking strategy.
 
-Next, you can run the program by passing a collection name, vector dimension, and the source document. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 768-dimension vectors from `paris.txt` and saves them into the default collection.
+Next, you can run the program by passing a collection name, vector dimension, and the source document. You can pass in the desired markdown heading level for chunking using the `--heading_level` option. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 768-dimension vectors from `paris.md` and saves them into the default collection.
 
 ```
-curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris.txt
+curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris.md
 
 wasmedge --dir .:. \
   --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5-f16.gguf \
-  create_embeddings.wasm embedding default 768 paris.txt
+  markdown_embed.wasm embedding default 768 paris.md --heading_level 1
 ```
 
 You can create a snapshot of the collection, which can be shared and loaded into a different Qdrant database. You can find the snapshot file in the `qdrant_snapshots` directory.
