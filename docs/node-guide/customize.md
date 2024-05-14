@@ -42,11 +42,11 @@ Now, let's look at some examples.
 
 ### Select an LLM
 
-There are over 10,000 finetuned open-source LLMs you can choose from on Huggingface. GaiaNet also encourages you to 
-finetune your own LLMs based on open-source models. To replace GaiaNet node's default LLM with an alternative
+There are over 10,000 finetuned open-source LLMs you can choose from on Huggingface. They each have different sizes (larger models are more capable but more expensive to run), unique capabilities (eg uncensored, to excel in math or reasoning, to support large context length etc), domain expertise (eg medicine, coding), and / or styles (eg to speak like a teacher or a pirate, to respond in code, to follow conversations).
+
+To replace GaiaNet node's default LLM with an alternative
 finetuned model, you will need to make changes to the model file, prompt template, and model context length parameters.
-Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model
-cards. For example, the following command changes the LLM to a Llama 3 8B model finetuned with the Chinese language. The
+Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model cards. For example, the following command changes the LLM to a Llama 3 8B model finetuned with the Chinese language. The
 new model's context length is 8k (8192 bytes) and the prompt template is the same as the original Llama 3 Instruct models.
 
 ```
@@ -56,6 +56,8 @@ gaianet config \
   --prompt-template llama-3-chat 
 ```
 
+But, if none of the published finetuned models are perfect for your use case, you can also finetune your own LLM by following [these guides](../creator-guide/finetune/intro). Your GaiaNet node can run your own finetuned models. 
+
 > The `--chat-url` could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a private model file.
 
 ### Select an embedding model
@@ -63,9 +65,9 @@ gaianet config \
 The embedding model encodes and transforms text into vectors so that the can be stored, searched and retrieved. For different
 context material, you might need a different embedding model to achieve the optimal performance. 
 The [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard) is a good place to see the performance
-benchmarks of embedding models. You can find many of them in the [gaianet organization on Huggingface](https://huggingface.co/gaianet).
-To replace GaiaNet node's default embedding model with an alternative, you will need to make changes to the model file, and model context length parameters.
-For example, the following command changes the embedding model to `nomic-embed-text`. The
+benchmarks of embedding models. You can find many of them in the [gaianet organization on Huggingface](https://huggingface.co/gaianet). We recommend [all-MiniLM](https://huggingface.co/gaianet/all-MiniLM-L6-v2-ggml-model-GGUF) if your knowledge base primarily consists of short text (ie short QAs) and [nomic-embed-text](https://huggingface.co/gaianet/nomic-embed-text-gguf) if your knowledge base consists of chapter length text or articles. 
+
+To replace GaiaNet node's default embedding model with an alternative, you will need to make changes to the model file, and model context length parameters. For example, the following command changes the embedding model to `nomic-embed-text`. The
 new model's context length is 8k (8192 bytes) as opposed to 256 bytes for the default embedding model.
 
 ```
@@ -115,7 +117,7 @@ be the "default" system prompt. It is only useful in the node's built-in chatbot
 its own system prompt.
 
 The `--rag-prompt` is the system prompt to be prefixed in front of the context from the vector search result. The combined
-`rag-prompt` and context replaces any system prompt the user might set.
+`rag-prompt` and context replaces any system prompt the user might set. When the user makes a request to the GaiaNet node, the node first searches the knowledge base for relevant text. It then puts the search result text into the LLM query as context. The `rag-prompt` is to introduce the context to the LLM. It is written in natural language. You can in fact put a lot of complex instructions into the prompt, such as how and when to answer questions, speaking styles, and overall background information about the task. 
 
 The `--rag-policy` option specifies where the `rag-prompt` and context should go. By default, its value is `system-message`
 and it puts the context in the system prompt as we discussed. But you could also set it to `last-user-message`, which
