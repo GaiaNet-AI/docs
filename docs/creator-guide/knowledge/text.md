@@ -96,7 +96,7 @@ Finally, upload the `my.snapshot.tar.gz` file to Huggingface so that the GaiaNet
 
 ## Next steps
 
-* [Start](../node-guide/quick-start) a new GaiaNet node
-* [Customize](../node-guide/customize) the GaiaNet node
+* [Start](../../node-guide/quick-start) a new GaiaNet node
+* [Customize](../../node-guide/customize) the GaiaNet node
 
 Have fun!

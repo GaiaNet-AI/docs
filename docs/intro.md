@@ -8,7 +8,7 @@ GaiaNet is a decentralized computing infrastructure that enables everyone to cre
 It allows individuals and businesses to create AI agents. Each GaiaNet node provides 
 
 * a web-based chatbot UI. [Chat with a GaiaNet node](https://vitalik.gaianet.network/chatbot-ui/index.html) that is an expert on Ethereum.
-* an OpenAI compatible API. [See how](user-guide/apps) to use a GaiaNet node as a drop-in OpenAI replacement in your favorite AI agent app. 
+* an OpenAI compatible API. [See how](user-guide/apps/dify) to use a GaiaNet node as a drop-in OpenAI replacement in your favorite AI agent app. 
 
 The API approach allows any agent application in the OpenAI ecosystem, which is 100% of AI agents today, to use GaiaNet as an alternative to OpenAI. Furthermore, while the OpenAI API is backed by a handful of models to give generic responses, each GaiaNet node can be heavily customized with a finetuned model supplemented by domain knowledge. For example, a GaiaNet node for a financial analyst agent can write SQL code to query SEC 10K filings to respond to user questions. 
 

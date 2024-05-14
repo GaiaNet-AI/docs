@@ -135,8 +135,8 @@ gaianet start
 
 Next, you can
 
-* [Create a knowledge base](../creator-guide/knowledge) from your proprietary knowledge or skills.
-* [Finetune](../creator-guide/finetune) your own LLM.
+* [Create a knowledge base](../creator-guide/knowledge/web-tool) from your proprietary knowledge or skills.
+* [Finetune](../creator-guide/finetune/intro) your own LLM.
 
 Have fun!
 

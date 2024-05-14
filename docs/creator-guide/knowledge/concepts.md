@@ -8,7 +8,7 @@ Retrieval-augmented generation (RAG) is a way to solve the hallucinations of the
 
 For example, if you ask ChatGPT the question What is Layer 2, the answer is that Layer 2 is a concept from the computer network. However, if you ask a blockchain person, he answers that Layer 2 is a way to scale the original Ethereum network. That's the difference between the original model and the model with RAG.
 
-We will cover the external knowledge preparation and how a RAG-based application completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with GaiaNet](build-with-gaianet.md) to start building one.
+We will cover the external knowledge preparation and how a RAG-based application completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with GaiaNet](web-tool) to start building one.
 
 1. Create embeddings for your own knowledge
 2. Lifecycle of a user query on a RAG-based LLM application
