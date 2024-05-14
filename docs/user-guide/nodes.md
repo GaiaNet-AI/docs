@@ -11,7 +11,7 @@ to use the GaiaNet API in your favorite agent frameworks or apps.
 ## Llama 3 8b
 
 This node runs a plain Llama 3 8b model without any additional knowledge. 
-[Chat with it](https://llama3.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps) with the following.
+[Chat with it](https://llama3.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
@@ -36,7 +36,7 @@ This node runs a plain Llama 3 70b model without any additional knowledge.
 ## Chemistry teacher
 
 This node runs a finetuned Llama 3 8b model with a knowledge base of chemical elements and high school chemistry.
-[Chat with it](https://0xc5f90fa1812dd7e27a26f1699954fe2d72e72299.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps) with the following.
+[Chat with it](https://0xc5f90fa1812dd7e27a26f1699954fe2d72e72299.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
@@ -49,7 +49,7 @@ This node runs a finetuned Llama 3 8b model with a knowledge base of chemical el
 ## Ethereum founder
 
 This node runs a Llama 2 13b model finetuned with Ethereum founder Vitalik Buterin's blog posts. The finetuned model is supplemented by blockchain and crypto knowledge base.
-[Chat with it](https://vitalik.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps) with the following.
+[Chat with it](https://vitalik.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
