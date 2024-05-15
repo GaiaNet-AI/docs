@@ -1,0 +1,8 @@
+{
+  "label": "GaiaNet User Guide",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "How to use GaiaNet services in your own applications"
+  }
+}
