@@ -43,4 +43,4 @@ jobs:
           destination-repository-name: 'gaianet-dapp'
           target-directory: 'public/docs'
           user-email: juyichen0413@foxmail.com
-          target-branch: test
+          target-branch: main
