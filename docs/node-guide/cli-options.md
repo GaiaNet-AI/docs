@@ -2,11 +2,11 @@
 sidebar_position: 8
 ---
 
-# Gaianet CLI options
+# GaiaNet CLI options
 
-After installing the Gaianet installer, you can use the `gaianet` CLI to execute the GaiaNet node. The following are the CLI options.
+After installing the GaiaNet software, you can use the `gaianet` CLI to manage the node. The following are the CLI options.
 
-## `gaianet --help`
+## help
 
 You can use `gaianet --help` to check all the available CLI options.
 
@@ -26,7 +26,7 @@ Options:
   --help             Show this help message
 ```
 
-## `gaianet init`
+## init
 
 The `gaianet init` command initializes the node according to the `$HOME/gaianet/config.json` file. You can use some of our [pre-set configurations](https://github.com/GaiaNet-AI/node-configs).
 
@@ -41,7 +41,7 @@ You can also use `gaianet init url_your_config_json` to init your customized set
 gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/pure-llama-3-8b/config.json
 ```
 
-## `gaianet start`
+## start
 
 The `gaianet start` is to start running the node.
 
@@ -50,7 +50,7 @@ The `gaianet start` is to start running the node.
 * Use `gaianet start --local-only` to start the node for local use according to the `$HOME/gaianet/config.json` file. 
  
 
-## `gaianet stop`
+## stop
 
 The `gaianet stop` is to stop the running node.
 
@@ -58,7 +58,7 @@ The `gaianet stop` is to stop the running node.
 * Use `gaianet stop --force` to force stop the GaiaNet node.
 * Use `gaianet stop --base $HOME/gaianet-2.alt` to stop the node according to the `$HOME/gaianet-2/config.json` file.
 
-## `gaianet config`
+## config
 
 The `gaianet config` can update the key fields defined in the `config.json` file.
 
@@ -90,7 +90,7 @@ The `gaianet config` supports multiple parameters in one command. The example be
 gaianet config --chat-url https://huggingface.co/second-state/gemma-1.1-2b-it-GGUF/resolve/main/gemma-1.1-2b-it-Q5_K_M.gguf --prompt-template gemma-chat
 ```
 
-The output is the following content
+The output is the following.
 
 ```
 [+] Updating the url of chat model ...
@@ -104,6 +104,7 @@ The output is the following content
 [+] COMPLETED! The config.json is updated successfully.
 ```
 
-## `--base`
+## base
 
-The `--base` is a global subcommand, allowing you to combine it with other commands.
+The `--base` option is global. You can combine it with other subcommands to specify a base directory for the GaiaNet node other than the `$HOME/gaianet`.
+

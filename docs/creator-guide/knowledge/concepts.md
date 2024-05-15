@@ -8,23 +8,22 @@ Retrieval-augmented generation (RAG) is a way to solve the hallucinations of the
 
 For example, if you ask ChatGPT the question What is Layer 2, the answer is that Layer 2 is a concept from the computer network. However, if you ask a blockchain person, he answers that Layer 2 is a way to scale the original Ethereum network. That's the difference between the original model and the model with RAG.
 
-We will cover the external knowledge preparation and how a RAG-based application completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with GaiaNet](build-with-gaianet.md) to start building one.
+We will cover the external knowledge preparation and how a RAG-based application completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with GaiaNet](web-tool) to start building one.
 
 1. Create embeddings for your own knowledge
 2. Lifecycle of a user query on a RAG-based LLM application
 
 For a RAG-based LLM application, besides the application itself, we will use
+
 * a chat model like Llama-3-8B for generating responses to the user
 * a text embedding model like all-miniLM-V2 for creating and retrieving embeddings
 * a Vector DB like Qdrant for storing embeddings. 
-
 
 ## Workflow for creating embeddings 
 
 The first step is to create embeddings for our knowledge base and store the embeddings in a vector DB. 
 
 ![create-embedding](https://github.com/GaiaNet-AI/docs/assets/45785633/2ff40178-64f4-4e2e-bbd9-f12ce35186b7)
-
 
 First of all, we split the long text into small paragraphs (ie, chunks). All LLMs have a maximum context length. The model can't read the context if the text is too long.
 
@@ -56,13 +55,4 @@ Then, the embedding model will search all the embeddings stored in the Qdrant ve
 The embedding node will return the retrieved embeddings to the chat model. The chat model will use the retrieved embeddings plus your input questions as context to answer your queries finally.
 
 That's how a RAG-based application works.
-
-
-
-
-
-
-
-
-
 
