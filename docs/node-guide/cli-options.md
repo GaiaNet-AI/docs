@@ -31,7 +31,6 @@ Options:
 The `gaianet init` command initializes the node according to the `$HOME/gaianet/config.json` file. You can use some of our [pre-set configurations](https://github.com/GaiaNet-AI/node-configs).
 
 * `gaianet init` will init the default node. It's an RAG application with Gaianet knowledge.
-* `gainet init --base `
 * `gaianet init --config mua` will init a node with the MUA project knowledge.
 * `gaianet init --base <path>` will init a node in an alternative directory.
 
@@ -87,15 +86,15 @@ If you use `gaianet config --base $HOME/gaianet-2.alt` to update some settings, 
 The `gaianet config` supports multiple parameters in one command. The example below will change the download link and prompt template of the chat model at the same time.
 
 ```
-gaianet config --chat-url https://huggingface.co/second-state/gemma-1.1-2b-it-GGUF/resolve/main/gemma-1.1-2b-it-Q5_K_M.gguf --prompt-template gemma-chat
+gaianet config --chat-url https://huggingface.co/gaianet/gemma-1.1-2b-it-GGUF/resolve/main/gemma-1.1-2b-it-Q5_K_M.gguf --prompt-template gemma-chat
 ```
 
 The output is the following.
 
 ```
 [+] Updating the url of chat model ...
-    * Old url: https://huggingface.co/second-state/Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct-Q5_K_M.gguf
-    * New url: https://huggingface.co/second-state/gemma-1.1-2b-it-GGUF/resolve/main/gemma-1.1-2b-it-Q5_K_M.gguf
+    * Old url: https://huggingface.co/gaianet/Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct-Q5_K_M.gguf
+    * New url: https://huggingface.co/gaianet/gemma-1.1-2b-it-GGUF/resolve/main/gemma-1.1-2b-it-Q5_K_M.gguf
 
 [+] Updating the prompt template of chat model ...
     * Old template: llama-3-chat

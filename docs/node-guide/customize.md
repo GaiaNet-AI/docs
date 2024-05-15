@@ -46,8 +46,7 @@ There are over 10,000 finetuned open-source LLMs you can choose from on Huggingf
 
 To replace GaiaNet node's default LLM with an alternative
 finetuned model, you will need to make changes to the model file, prompt template, and model context length parameters.
-Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model cards. For example, the following command changes the LLM to a Llama 3 8B model finetuned with the Chinese language. The
-new model's context length is 8k (8192 bytes) and the prompt template is the same as the original Llama 3 Instruct models.
+Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model cards. For example, the following command changes the LLM to a Llama 3 8B model finetuned with the Chinese language. The new model's context length is 8k (8192 bytes) and the prompt template is the same as the original Llama 3 Instruct models.
 
 ```
 gaianet config \
@@ -65,14 +64,14 @@ But, if none of the published finetuned models are perfect for your use case, yo
 The embedding model encodes and transforms text into vectors so that the can be stored, searched and retrieved. For different
 context material, you might need a different embedding model to achieve the optimal performance. 
 The [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard) is a good place to see the performance
-benchmarks of embedding models. You can find many of them in the [gaianet organization on Huggingface](https://huggingface.co/gaianet). We recommend [all-MiniLM](https://huggingface.co/gaianet/all-MiniLM-L6-v2-ggml-model-GGUF) if your knowledge base primarily consists of short text (ie short QAs) and [nomic-embed-text](https://huggingface.co/gaianet/nomic-embed-text-gguf) if your knowledge base consists of chapter length text or articles. 
+benchmarks of embedding models. You can find many of them in the [gaianet organization on Huggingface](https://huggingface.co/gaianet). We recommend [all-MiniLM](https://huggingface.co/gaianet/All-MiniLM-L6-v2-Embedding-GGUF) if your knowledge base primarily consists of short text (ie short QAs) and [nomic-embed-text](https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF) if your knowledge base consists of chapter length text or articles. 
 
 To replace GaiaNet node's default embedding model with an alternative, you will need to make changes to the model file, and model context length parameters. For example, the following command changes the embedding model to `nomic-embed-text`. The
 new model's context length is 8k (8192 bytes) as opposed to 256 bytes for the default embedding model.
 
 ```
 gaianet config \
-  --embedding-url https://huggingface.co/gaianet/nomic-embed-text-gguf/resolve/main/nomic-embed-text-v1.5.f16.gguf \
+  --embedding-url https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf \
   --embedding-ctx-size 8192
 ```
 
@@ -93,7 +92,7 @@ Since the London guidebook is vectorized by the `nomic-embed-text` embedding mod
 ```
 gaianet config \
   --snapshot https://huggingface.co/datasets/gaianet/london/resolve/main/london_768_nomic-embed-text-v1.5-f16.snapshot.tar.gz \
-  --embedding-url https://huggingface.co/gaianet/nomic-embed-text-gguf/resolve/main/nomic-embed-text-v1.5.f16.gguf \
+  --embedding-url https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf \
   --embedding-ctx-size 8192
 ```
 
@@ -105,7 +104,7 @@ customize the retrievial behavior.
 * `qdrant-limit` sets the max number of relevant context to add to the prompt. If your knowledge base consists of large sections of text (i.e., each book chapter is a vector), you should probably make this 1 or 2 to limit the prompt length to a reasonable size.
 * `qdrant-score-threshold` is the min match "score" the knowledge content must meet in order to be considerred "relevant". This depends on the quality of the knowledge text and the embedding model. In general, this score should be over 0.5 to reduce irrelevant context in the prompt.
 
-> The [none](https://huggingface.co/datasets/gaianet/none/resolve/main/none.snapshot.tar.gz) snapshot is created with the [all-minilm](https://huggingface.co/second-state/All-MiniLM-L6-v2-Embedding-GGUF/resolve/main/all-MiniLM-L6-v2-ggml-model-f16.gguf) embedding model. It contains no data and allows us to create a node with just the LLM.
+> The [none](https://huggingface.co/datasets/gaianet/none/resolve/main/none.snapshot.tar.gz) snapshot is created with the [all-minilm](https://huggingface.co/gaianet/All-MiniLM-L6-v2-Embedding-GGUF/resolve/main/all-MiniLM-L6-v2-ggml-model-f16.gguf) embedding model. It contains no data and allows us to create a node with just the LLM.
  
 ### Customize prompts
 

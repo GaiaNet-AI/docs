@@ -4,13 +4,12 @@ sidebar_position: 1
 
 # Install CUDA on Linux
 
-If you are using an Nvidia-enabled VM instance from a public cloud, you should probably use the VM image 
-provided by the cloud. It typically has the correct versions of Nvidia driver and CUDA toolkit already installed.
+If you are using an Nvidia-enabled VM instance from a public cloud, you should probably use the VM image provided by the cloud. It typically has the correct versions of Nvidia driver and CUDA toolkit already installed.
 Read on if you need to install Nvidia driver and CUDA toolkit on your own machine.
 
 ## Ubuntu 22.04
 
-1 Install the Nvidia driver.
+### 1 Install the Nvidia driver.
 
 Rebuild the grub configuration:
 
@@ -58,7 +57,7 @@ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprob
 sudo reboot
 ```
 
-2 Install the CUDA toolkit.
+### 2 Install the CUDA toolkit.
 
 ```
 wget https://developer.download.nvidia.com/compute/cuda/12.2.2/local_installers/cuda_12.2.2_535.104.05_linux.run
