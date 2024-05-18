@@ -13,10 +13,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://www.gaianet.ai/',
+  url: 'https://docs.gaianet.ai/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
 
   // If you aren't using GitHub pages, you don't need these.
@@ -54,11 +54,31 @@ const config = {
     ],
   ],
 
+  themes : [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      // @ts-ignore
+      {
+        docsRouteBasePath: '/',
+        hashed: true,
+        indexBlog: false,
+        indexPages: true,
+        language: ["en", "zh"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchBarShortcut: true,
+        searchBarShortcutHint: true,
+        searchBarPosition: "right",
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/share.png',
       navbar: {
         title: 'GaiaNet',
         logo: {

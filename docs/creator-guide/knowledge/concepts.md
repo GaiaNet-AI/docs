@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # What is a RAG-based LLM application
 
-Retrieval-augmented generation (RAG) is a way to solve the hallucinations of the Large Language Model (LLM) by attaching external data sources to the model. The RAG way will enhance the accuracy and reliability of LLMs with facts retrieved from external knowledge. That's why a GaiaNet node is RAG RAG-based LLM application.
+Retrieval-augmented generation (RAG) is a way to solve the hallucinations of the Large Language Model (LLM) by attaching external data sources to the model. The RAG way will enhance the accuracy and reliability of LLMs with facts retrieved from external knowledge. That's why a GaiaNet node is RAG-based LLM application.
 
 For example, if you ask ChatGPT the question What is Layer 2, the answer is that Layer 2 is a concept from the computer network. However, if you ask a blockchain person, he answers that Layer 2 is a way to scale the original Ethereum network. That's the difference between the original model and the model with RAG.
 
@@ -34,11 +34,11 @@ After chunking the document, we can convert these chunks to embeddings leveragin
 
 Additionally, we will also need a vector DB to store the embeddings so that we can retrieve these embeddings quickly at any time. 
 
-In Gaianet, we will get a database snapshot with the embeddings to use at last. Check out this article (coming soon) to see how to create your embeddings. 
+In Gaianet, we will get a database snapshot with the embeddings to use at last. Check out how to create your embeddings using [GaiaNet web tool](web-tool.md), [from a plain text file](text.md), and [from a markdown file](markdown.md).
 
 ##  Lifecycle of a user query on a RAG-based LLM application
 
-Next, let's learn the lifecycle of a user query on a RAG-based LLM application. We will take the [a Gaianet Node with Gaianet knowledge](https://knowledge.gaianet.network/chatbot-ui/index.html) as an example. If you want to build your own RAG node, follow this article (coming soon).
+Next, let's learn the lifecycle of a user query on a RAG-based LLM application. We will take the [a Gaianet Node with Gaianet knowledge](https://knowledge.gaianet.network/chatbot-ui/index.html) as an example.
 
 ![user-query-rag](https://github.com/GaiaNet-AI/docs/assets/45785633/c64b85ea-65f0-43d2-8ab3-78889d21c248)
 
@@ -48,7 +48,7 @@ when you send a question in human language to the node, the embedding model will
 
 ### Retrieve similar embeddings
 
-Then, the embedding model will search all the embeddings stored in the Qdrant vector DB and retrieve the embeddings similar to the question embeddings.
+Then, the embedding model will search all the embeddings stored in the Qdrant vector DB and retrieve the embeddings that are similar to the question embeddings.
 
 ### Response to the user query
 
