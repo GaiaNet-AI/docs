@@ -82,6 +82,35 @@ wasmedge --dir .:. \
   paragraph_embed.wasm embedding default 384 paris_chunks.txt
 ```
 
+## More options
+
+You can also pass the following options to the program.
+
+* Using `-m` or `--maximum_context_length` to specify a context length in the CLI argument. That is to truncate and warn for each text segment that goes above the context length.
+* Using `-s` or `--start_vector_id` to specify the start vector ID in the CLI argument. This will allow us to run this app multiple times on multiple documents on the same vector collection.
+* Using `-c` or `--ctx_size` to specify the context size of the input. This defaults to 512.
+
+Example: use the `nomic-embed-text-v1.5.f16` model, which has a context length of 8192 and vector size of 768, to create embeddings for long paragraphs of text. Note that your `default` vector collection must be set up to be 768 dimensions.
+
+```
+curl -LO https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf
+
+wasmedge --dir .:. \
+  --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5.f16.gguf \
+   paragraph_embed.wasm embedding default 768 paris.txt -c 8192
+```
+
+Example: the above example but to append the London guide to the end of an existing collection starting from index 42.
+
+```
+wasmedge --dir .:. \
+  --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5.f16.gguf \
+   paragraph_embed.wasm embedding default 768 london.txt -c 8192 -s 42
+```
+
+
+## Create a vector snapshot
+
 You can create a snapshot of the collection, which can be shared and loaded into a different Qdrant database. You can find the snapshot file in the `qdrant_snapshots` directory.
 
 ```
