@@ -74,7 +74,7 @@ Next, you can run the program by passing a collection name, vector dimension, an
 curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris.md
 
 wasmedge --dir .:. \
-  --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5-f16.gguf \
+  --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5.f16.gguf \
   markdown_embed.wasm embedding default 768 paris.md --heading_level 1 --ctx_size 8192
 ```
 
