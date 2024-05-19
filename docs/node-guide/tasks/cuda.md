@@ -76,12 +76,11 @@ Cuda compilation tools, release 12.2, V12.2.140
 Build cuda_12.2.r12.2/compiler.33191640_0
 ```
 
-After that, use the following command line to set up the environment path.
+After that, use the following command line to set up the environment path. You should probably add this line to your `~/.bashrc` or `~/.zshrc` files so that new terminals and future logins will still be able to find these CUDA library files.
 
 ```
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
-
 
 ## More resources
 
