@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Available GaiaNet nodes
+# Public GaiaNet nodes
 
 Each GaiaNet node provides a web-based chatbot UI and an OpenAI compatible web service.
 Here are some popular nodes. Please refer to the [agent apps](apps/intro) section to see how
