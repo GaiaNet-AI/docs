@@ -42,7 +42,7 @@ The solution is to disable the `autoMemoryReclaim` feature in WSL. Step to turn 
 1. Edit `C:\Users<Your user name>.wslconfig`
 2. Remove or comment out `autoMemoryReclaim` in `[experimental]` section.
 
-![]()
+![](disable_autoMemoryReclaim_wsl.png)
 
 Thanks to [RoggeOhta](https://github.com/RoggeOhta) for discovering this. You can learn more about it [here](https://github.com/GaiaNet-AI/gaianet-node/issues/46).
 
