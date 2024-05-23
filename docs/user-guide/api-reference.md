@@ -69,19 +69,19 @@ data: [DONE]
 
 | Field     | Type    | Required | Description      | Default | Example        |
 | ----------------- | ------- | -------- | ------------------ | ------- | ----- |
-| messages          | List    | Required | A list of messages for the conversation.<br>1\. System message (depends on the large language mode you use)<br>\* \`content\` of the system messages is required<br>\* "role":"system" is required<br><br>2\. User message (required)<br>\* \`content\` is required.<br>\* "role":"user" is required | N/A     | "messages": [<br>{<br>"role": "system",<br>"content": "You are a helpful assistant."<br>},<br>{<br>"role": "user",<br>"content": "Hello!"<br>}<br>] |
+| messages          | List    | Required | A list of messages for the conversation.<br>1 . System message (depends on the large language mode you use) <br>* `content` of the system messages is required <br> * `"role":"system"` is required<br> 2. User message (required) <br> * `content` is required. <br> * `"role":"user"` is required | N/A     | "messages": ["role": "system","content": "You are a helpful assistant."},{"role": "user",<br>"content": "Hello!"}] |
 | model    | String  | Required | The chat model you used     | N/A     |Llama-3-8B-262k-Q5_K_M           |
 | top_p     | Number  | Optional | An alternative to sampling with temperature. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.   | 1       | Number between 0 and 1.          |
 | Temperature        | Number  | Optional | Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.             | 1       | Number between 0 and 2.                    |
 | presence_penalty  | Number  | Optional | Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.                  | 0       | Number between -2.0 and 2.0.       |
-| stream            | boolean | Optional | Make the answer streaming output              | FALSE   | TRUE            |
+| stream            | boolean | Optional | Make the answer streaming output              | FALSE   | "stream":true            |
 | frequency_penalty | Number  | Optional | Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood of repeating the same line verbatim. | 0    | Number between -2.0 and 2.0.                  |
 
 ### Response body
 | Field   | Type    | Streaming or non-streaming | Description   | Default   | Example  |
 | ------- | ------- | -------------------------- | ----- | ------ | -- |
 | id      | string  | Both     | A unique identifier for the chat completion.    | Generated randomly    | chatcmpl-73a1f57d-185e-42c2-b8a6-ba0bae58f3b4 |
-| object  | string  | Both                       | The object type  | \`chat.completion.chunk\` in the streaming mode.<br>\`chat.completion\` in the non-streaming mode. | \`chat.completion.chunk\` in the streaming mode.<br>\`chat.completion\` in the non-streaming mode. |
+| object  | string  | Both                       | The object type  | `chat.completion.chunk` in the streaming mode.<br> `chat.completion` in the non-streaming mode. | `chat.completion.chunk` in the streaming mode.<br> `chat.completion` in the non-streaming mode. |
 | choices | array   | Both         | A list of chat completion choices.            |            | "choices":[{"index":0,"message":{"role":"assistant","content":"Paris."},"finish_reason":"stop"}]   |
 | created | integer | Both           | The Unix timestamp (in seconds) of when the chat completion was created.        | N/A    | 1716380086       |
 | model   | string  | Both                       | The model used for the chat completion.              | Depends on the model you use.   | Llama-3-8B-Instruct-Q5_K_M   |
