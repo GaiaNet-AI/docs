@@ -46,6 +46,28 @@ The solution is to disable the `autoMemoryReclaim` feature in WSL. Step to turn 
 
 Thanks to [RoggeOhta](https://github.com/RoggeOhta) for discovering this. You can learn more about it [here](https://github.com/GaiaNet-AI/gaianet-node/issues/46).
 
+## Failed to remove the default collection
+
+```
+Failed to remove the default collection. {"status":{"error":"Service internal error: No such file or directory (os error 2)"},"time":0.050924542}
+```
+
+It typically indicates that the Qdrant instance was not shut down properly before you try to init it again with a new snapshot. The solution is to stop the GaiaNet node first.
+
+```
+gaianet stop
+```
+
+Alternatively, you could mannually kill the processes from the terminal or in the OS's Actvity Monitor.
+
+```
+sudo pkill -9 qdrant
+sudo pkill -9 wasmedge
+sudo pkill -9 frpc
+```
+
+Then you can run `gaianet init` and then `gaianet start` again.
+
 ## File I/O error
 
 ```
