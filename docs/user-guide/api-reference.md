@@ -15,11 +15,11 @@ The base URL to send all API requests is`https://node_id.gaianet.network/v1`.
 
 ### Chat
 
-The `chat/completions` endpoint can generate response based on the system prompt and user query.
+The `chat/completions` endpoint returns an LLM response based on the system prompt and user query.
 
 #### Non-streaming
 
-The model will respond the full answer at one time
+By default, the API responds with a full answer in the HTTP response. 
 
 **Request**
 
@@ -36,9 +36,9 @@ curl -X POST https://node_id.gaianet.network/v1/chat/completions \
 {"id":"chatcmpl-bcfeebe0-5372-42c0-ac92-0615213e1c97","object":"chat.completion","created":1716380086,"model":"Llama-3-8B-Instruct-262k-Q5_K_M","choices":[{"index":0,"message":{"role":"assistant","content":"Paris."},"finish_reason":"stop"}],"usage":{"prompt_tokens":61,"completion_tokens":4,"total_tokens":65}}%  
 ```
 
-### streaming
+#### streaming
 
-The model output is streaming. You will need to add `"stream":true` in your request.
+Add `"stream":true` in your request to make the API send back partial responses as the LLM generates its answer. 
 
 **Request:**
 
@@ -69,7 +69,7 @@ data: {"id":"chatcmpl-73a1f57d-185e-42c2-b8a6-ba0bae58f3b4","choices":[{"index":
 data: [DONE]
 ```
 
-### Request body
+#### Request body
 
 | Field             | Type    | Required | Description                                                                                                                                                                                                                                                                                               | Default | Example                                                                                                                                                                                                                                                |
 |-------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ data: [DONE]
 | stream            | boolean | Optional | Make the answer streaming output                                                                                                                                                                                                                                                                          | FALSE   | "stream":true                                                                                                                                                                                                                                          |
 | frequency_penalty | Number  | Optional | Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood of repeating the same line verbatim.                                                                                                                                          | 0       | Number between -2.0 and 2.0.                                                                                                                                                                                                                           |
 
-### Response body
+#### Response body
 
 | Field   | Type    | Streaming or non-streaming | Description                                                                                                | Default                                                                                          | Example                                                                                                                                                                                                                                      |
 |---------|---------|----------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -94,7 +94,7 @@ data: [DONE]
 
 ### Embedding
 
-The `embedding` endpoint can compute embeddings for user queries or file chunks.
+The `embeddings` endpoint computes embeddings for user queries or file chunks.
 
 **Request**
 
@@ -153,7 +153,7 @@ curl -X POST https://node_id.gaianet.network/v1/embeddings \
 
 ### Retrieve
 
-The `retrieve` endpoint can get the retrieved text based on the user's query.
+The `retrieve` endpoint can retrieve text from the node's vector collection based on the user's query.
 
 **Request:**
 
@@ -197,7 +197,7 @@ curl -X POST https://node_id.gaianet.network/v1/retrieve \
 
 ### Get the model
 
-The `models` endpoint will provide the running chat model with the node.
+The `models` endpoint provides the chat and embedding models available on the node.
 
 **Request:**
 
@@ -213,7 +213,7 @@ curl -X POST https://node_id.gaianet.network/v1/models
 
 ### Get the node info
 
-The `info` endpoint will provide detailed information about the node.
+The `info` endpoint provides detailed information about the node.
 
 **Request:**
 
