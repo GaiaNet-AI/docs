@@ -6,9 +6,10 @@ sidebar_position: 4
 
 ## Introduction
 
-Each GaiaNet node is an OpenAI compatibale API server. You can build your application based on the GaiaNet node API. You can also replace OpenAI API configuration with the GaiaNet node API in other AI agent frameworks.
+Each GaiaNet node is an OpenAI compatibale API server. You can build your application based on the GaiaNet node API. You
+can also replace OpenAI API configuration with the GaiaNet node API in other AI agent frameworks.
 
-The base URL to send all API requests is `https://node_id.gaianet.network/v1`. 
+The base URL to send all API requests is`https://node_id.gaianet.network/v1`.
 
 ## Endpoints
 
@@ -20,7 +21,7 @@ The `chat/completions` endpoint can generate response based on the system prompt
 
 The model will respond the full answer at one time
 
-**Request** 
+**Request**
 
 ```
 curl -X POST https://node_id.gaianet.network/v1/chat/completions \
@@ -34,6 +35,7 @@ curl -X POST https://node_id.gaianet.network/v1/chat/completions \
 ```
 {"id":"chatcmpl-bcfeebe0-5372-42c0-ac92-0615213e1c97","object":"chat.completion","created":1716380086,"model":"Llama-3-8B-Instruct-262k-Q5_K_M","choices":[{"index":0,"message":{"role":"assistant","content":"Paris."},"finish_reason":"stop"}],"usage":{"prompt_tokens":61,"completion_tokens":4,"total_tokens":65}}%  
 ```
+
 ### streaming
 
 The model output is streaming. You will need to add `"stream":true` in your request.
@@ -46,6 +48,7 @@ curl -X POST https://node_id.gaianet.network/v1/chat/completions \
   -H 'Content-Type: application/json' \
   -d '{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "What is the capital of France?"}], "model": "model_name", "stream":true}'
 ```
+
 **Response:**
 
 ```
@@ -65,27 +68,29 @@ data: {"id":"chatcmpl-73a1f57d-185e-42c2-b8a6-ba0bae58f3b4","choices":[{"index":
 
 data: [DONE]
 ```
+
 ### Request body
 
-| Field     | Type    | Required | Description      | Default | Example        |
-| ----------------- | ------- | -------- | ------------------ | ------- | ----- |
-| messages          | List    | Required | A list of messages for the conversation.<br>1 . System message (depends on the large language mode you use) <br>* `content` of the system messages is required <br> * `"role":"system"` is required<br> 2. User message (required) <br> * `content` is required. <br> * `"role":"user"` is required | N/A     | "messages": ["role": "system","content": "You are a helpful assistant."},{"role": "user",<br>"content": "Hello!"}] |
-| model    | String  | Required | The chat model you used     | N/A     |Llama-3-8B-262k-Q5_K_M           |
-| top_p     | Number  | Optional | An alternative to sampling with temperature. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.   | 1       | Number between 0 and 1.          |
-| Temperature        | Number  | Optional | Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.             | 1       | Number between 0 and 2.                    |
-| presence_penalty  | Number  | Optional | Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.                  | 0       | Number between -2.0 and 2.0.       |
-| stream            | boolean | Optional | Make the answer streaming output              | FALSE   | "stream":true            |
-| frequency_penalty | Number  | Optional | Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood of repeating the same line verbatim. | 0    | Number between -2.0 and 2.0.                  |
+| Field             | Type    | Required | Description                                                                                                                                                                                                                                                                                               | Default | Example                                                                                                                                                                                                                                                |
+|-------------------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| messages          | List    | Required | A list of messages for the conversation.<br/>1 . System message (depends on the large language mode you use) <br/>* `content` of the system messages is required <br/> * `"role":"system"` is required<br/> 2. User message (required) <br/> * `content` is required. <br/> * `"role":"user"` is required | N/A     | "messages": &#91;&quot;role&quot;&#58; &quot;system&quot;&#44;&quot;content&quot;&#58; &quot;You are a helpful assistant.&quot;&#125;&#44;&#123;&quot;role&quot;&#58; &quot;user&quot;&#44;<br/>&quot;content&quot;&#58; &quot;Hello!&quot;&#125;&#93; |
+| model             | String  | Required | The chat model you used                                                                                                                                                                                                                                                                                   | N/A     | Llama-3-8B-262k-Q5_K_M                                                                                                                                                                                                                                 |
+| top_p             | Number  | Optional | An alternative to sampling with temperature. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.                                                                                                                            | 1       | Number between 0 and 1.                                                                                                                                                                                                                                |
+| Temperature       | Number  | Optional | Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.                                                                                                                                                                         | 1       | Number between 0 and 2.                                                                                                                                                                                                                                |
+| presence_penalty  | Number  | Optional | Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.                                                                                                                                                          | 0       | Number between -2.0 and 2.0.                                                                                                                                                                                                                           |
+| stream            | boolean | Optional | Make the answer streaming output                                                                                                                                                                                                                                                                          | FALSE   | "stream":true                                                                                                                                                                                                                                          |
+| frequency_penalty | Number  | Optional | Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood of repeating the same line verbatim.                                                                                                                                          | 0       | Number between -2.0 and 2.0.                                                                                                                                                                                                                           |
 
 ### Response body
-| Field   | Type    | Streaming or non-streaming | Description   | Default   | Example  |
-| ------- | ------- | -------------------------- | ----- | ------ | -- |
-| id      | string  | Both     | A unique identifier for the chat completion.    | Generated randomly    | chatcmpl-73a1f57d-185e-42c2-b8a6-ba0bae58f3b4 |
-| object  | string  | Both                       | The object type  | `chat.completion.chunk` in the streaming mode.<br> `chat.completion` in the non-streaming mode. | `chat.completion.chunk` in the streaming mode.<br> `chat.completion` in the non-streaming mode. |
-| choices | array   | Both         | A list of chat completion choices.            |            | "choices":[{"index":0,"message":{"role":"assistant","content":"Paris."},"finish_reason":"stop"}]   |
-| created | integer | Both           | The Unix timestamp (in seconds) of when the chat completion was created.        | N/A    | 1716380086       |
-| model   | string  | Both                       | The model used for the chat completion.              | Depends on the model you use.   | Llama-3-8B-Instruct-Q5_K_M   |
-| usage   | object  | Both                       | Usage statistics for the completion request, including completion_tokens, prompt_tokens, and total_tokens. | N/A     | "usage":{"prompt_tokens":61,"completion_tokens":4,"total_tokens":65}    |
+
+| Field   | Type    | Streaming or non-streaming | Description                                                                                                | Default                                                                                          | Example                                                                                                                                                                                                                                      |
+|---------|---------|----------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id      | string  | Both                       | A unique identifier for the chat completion.                                                               | Generated randomly                                                                               | chatcmpl-73a1f57d-185e-42c2-b8a6-ba0bae58f3b4                                                                                                                                                                                                |
+| object  | string  | Both                       | The object type                                                                                            | `chat.completion.chunk` in the streaming mode.<br/> `chat.completion` in the non-streaming mode. | `chat.completion.chunk` in the streaming mode.<br/> `chat.completion` in the non-streaming mode.                                                                                                                                             |
+| choices | array   | Both                       | A list of chat completion choices.                                                                         |                                                                                                  | "choices":&#91;&#123;&quot;index&quot;&#58;0&#44;&quot;message&quot;&#58;&#123;&quot;role&quot;&#58;&quot;assistant&quot;&#44;&quot;content&quot;&#58;&quot;Paris.&quot;&#125;&#44;&quot;finish_reason&quot;&#58;&quot;stop&quot;&#125;&#93; |
+| created | integer | Both                       | The Unix timestamp (in seconds) of when the chat completion was created.                                   | N/A                                                                                              | 1716380086                                                                                                                                                                                                                                   |
+| model   | string  | Both                       | The model used for the chat completion.                                                                    | Depends on the model you use.                                                                    | Llama-3-8B-Instruct-Q5_K_M                                                                                                                                                                                                                   |
+| usage   | object  | Both                       | Usage statistics for the completion request, including completion_tokens, prompt_tokens, and total_tokens. | N/A                                                                                              | "usage":&#123;&quot;prompt_tokens&quot;&#58;61&#44;&quot;completion_tokens&quot;&#58;4&#44;&quot;total_tokens&quot;&#58;65&#125;                                                                                                             |
 
 ### Embedding
 
@@ -151,6 +156,7 @@ curl -X POST https://node_id.gaianet.network/v1/embeddings \
 The `retrieve` endpoint can get the retrieved text based on the user's query.
 
 **Request:**
+
 ```
 curl -X POST https://node_id.gaianet.network/v1/retrieve \
     -H 'accept:application/json' \
@@ -263,8 +269,8 @@ curl -X POST https://node_id.gaianet.network/v1/info
 
 ## Status Codes
 
-| HTTP response code | Description |Reason| Solutions |
-| --- | --- | -- |---|
-| 404 | Not found | The endpoint URL is invalid | Please check the endpoint URL|
-| 500| Internal Server Error |Model is not found.| Please check out the model name.|
-| 400| Bad request | | |
+| HTTP response code | Description           | Reason                      | Solutions                        |
+|--------------------|-----------------------|-----------------------------|----------------------------------|
+| 404                | Not found             | The endpoint URL is invalid | Please check the endpoint URL    |
+| 500                | Internal Server Error | Model is not found.         | Please check out the model name. |
+| 400                | Bad request           |                             |                                  |
