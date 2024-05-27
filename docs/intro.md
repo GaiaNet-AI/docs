@@ -25,7 +25,7 @@ If you are an end user of AI agent applications, you can
 
 ### Node operators
 
-If you are interested in running GaiaNet nodes and make money, you can
+If you are interested in running GaiaNet nodes, you can
 
 * [Get started with a GaiaNet node](./node-guide/quick-start.md).
 * [Customize the GaiaNet node with a finetuned model and custom knowledge base](./node-guide/customize.md).
