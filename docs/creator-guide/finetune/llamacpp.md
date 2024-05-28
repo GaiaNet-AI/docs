@@ -43,7 +43,7 @@ We are going to use Meta's Llama2 chat 13B model as the base model. Note that we
 ```
 cd .. # change to the llama.cpp directory
 cd models/
-curl -LO https://huggingface.co/second-state/Llama-2-13B-Chat-GGUF/resolve/main/llama-2-13b-chat.Q5_K_M.gguf
+curl -LO https://huggingface.co/gaianet/Llama-2-13B-Chat-GGUF/resolve/main/llama-2-13b-chat.Q5_K_M.gguf
 ```
 
 ## Create a question and answer set for fine-tuning
