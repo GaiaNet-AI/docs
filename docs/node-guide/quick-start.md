@@ -6,11 +6,16 @@ sidebar_position: 1
 
 First, let's install GaiaNet an one-line installer on Mac, Linux, or Windows WSL. Learn more about [system requirements](system-requirements).
 
-> You will be asked your password to install the `gaianet` program into a system directory. If you are not an admin user ("sudoer"), you should refer to the [unprivileged install](tasks/unprivileged) section.
 
 ```
 curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/main/install.sh' | bash
 ```
+
+Next, run the command printed on the terminal to set up the environment path. The command is started with `source`.
+
+
+![](quick-start.png)
+
 
 Next, use the following command to initialize the GaiaNet node according to the configuration options 
 in `$HOME/gaianet/config.json`.
