@@ -4,27 +4,40 @@ sidebar_position: 4
 
 # Join the GaiaNet Protocol
 
-After successfully running a GaiaNet node on your machine, it's time to join the GaiaNet protocol network and get rewards for sharing the computing power with the world.
+After successfully running a GaiaNet node on your machine, it's time to join the GaiaNet protocol network and get rewards for sharing computing power with the world by binding your node ID and device ID to a Metamask account.
 
-When you run a node with the Getting Started guide, you may notice that the GaiaNet software has generated a node id for you. The node id is an ETH address. The easiest way to find the node ID is from your node's public URL.
+When you run a node with the Getting Started guide, you may notice that the GaiaNet software has generated a node ID for you. The node ID is an ETH address. The easiest way to find the node ID is to use `gaianet info` to print the node ID and device ID on the terminal.
 
 ```
-https://0xf63939431ee11267f55a166e11cc44d24960c0.gaianet.network
-
-https://nodeid.gaianet.network
+gaianet info
 ```
+The output will be the following:
 
-To receive your rewards, all you need to do is to bind your node ID and metamask via the GaiaNet web portal.
+```
+Node ID: 0x80642b1----9a76a284efeb2bb6d142e
+
+Device ID: device-e77---1446f1b51
+```
+![](register-01.png)
+
+To receive your rewards, all you need to do is bind your node ID and device id with a Metamask account via the GaiaNet web portal.
 
 * Open https://www.gaianet.ai/ on your browser and log in to the website with your Metamask account
-* Go to the Node Management section, copy and paste your node ID in the reward part. Then, click on Confirm button.
-* After your node is verified successfully, you will receive the reward from that moment.
-* You can bind multiple node IDs to your MetaMask wallet address if you are running multiple nodes.
+* Select the **Node** section by clicking on your account, then click on the +Add Node button. Next,
+* Copy and paste your node ID into the relevant field and do the same for the device ID in the second box. Then, click on the Join button.
+  
+![](register-02.png)
 
-You will then be able to use your MetaMask Wallet address to claim your rewards or earnings from running
-the GaiaNet node.
+* After your node is joined successfully, it will be displayed in the list of nodes on the Node Page.
 
-### Protect your node id
+![](register-03.png)
+
+* You can bind multiple node ID and its corresponding device ids to your MetaMask wallet address if you are running multiple nodes.
+
+
+> Please noted, don't share the device id with others.
+
+### Protect your node ID and device ID
 
 The GaiaNet installer generates a pair of ETH address and keystore and password for your node automatically. This information is stored in the `gaianet/nodeid.json` file. Please keep the JSON file carefully.
 
@@ -32,7 +45,9 @@ The GaiaNet installer generates a pair of ETH address and keystore and password 
 * The keystore stores the private key associated with the ETH address encrypted by the password.
 
 The `nodeid.json` is the only proof that your node belongs to you. 
-IN many protocol operations, you will need this private key to sign request messages to send to the protocol smart contracts.
+In many protocol operations, you will need this private key to sign request messages to send to the protocol smart contracts.
+
+The device id is only visible to yourself.
 
 ### Select a different domain
 
