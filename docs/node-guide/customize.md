@@ -16,8 +16,7 @@ are all in the `gaianet/config.json` file. You can edit this file directly to us
 Or, you can select a different `config.json` when you initialize the node. Just pass in a URL to the `config.json` file 
 in your `gaianet init` command.
 We have several pre-set `config.json` files to choose from [in this repo](https://github.com/GaiaNet-AI/node-configs).
-For example, the following command initialize a GaiaNet node with a Llama 3 8B model finetuned to have a very long context
-window size.
+For example, the following command initialize a GaiaNet node with a Llama 3 8B model.
 
 ```
 gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/llama-3-8b-instruct/config.json
