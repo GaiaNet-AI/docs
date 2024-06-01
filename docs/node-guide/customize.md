@@ -45,12 +45,12 @@ There are over 10,000 finetuned open-source LLMs you can choose from on Huggingf
 
 To replace GaiaNet node's default LLM with an alternative
 finetuned model, you will need to make changes to the model file, prompt template, and model context length parameters.
-Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model cards. For example, the following command changes the LLM to a Llama 3 8B model with an 8k (8192 tokens) context length.
+Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model cards. For example, the following command changes the LLM to a Llama 3 8B model.
 
 ```
 gaianet config \
   --chat-url https://huggingface.co/gaianet/Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct-Q5_K_M.gguf \
-  --chat-ctx-size 8192 \
+  --chat-ctx-size 4096 \
   --prompt-template llama-3-chat 
 ```
 
@@ -79,8 +79,8 @@ gaianet config \
   --snapshot https://huggingface.co/datasets/gaianet/london/resolve/main/london_768_nomic-embed-text-v1.5-f16.snapshot.tar.gz \
   --embedding-url https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf \
   --embedding-ctx-size 512 \
-  --system-prompt "You are a tour guide in London, UK. Please answer questions from London visitors and tourists accurately and help them enjoy their stay in London." \
-  --rag-prompt "You are a tour guide in London, UK. Use information in the following context to answer questions from a London visitor.\n----------------\n"
+  --system-prompt "You are a tour guide in London, UK. Please answer the question from a London visitor accurately." \
+  --rag-prompt "You are a tour guide in London, UK. Use information in the following context to directly answer the question from a London visitor.\n----------------\n"
 ```
 
 > The `--snapshot` could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a private vector collection snapshot.
