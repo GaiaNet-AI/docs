@@ -20,7 +20,7 @@ For example, the following command initialize a GaiaNet node with a Llama 3 8B m
 window size.
 
 ```
-gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/pure-llama-3-8b-262k/config.json
+gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/llama-3-8b-instruct/config.json
 ```
 
 > The URL to the `config.json` must point to the actual text file. (i.e., the `raw.githubusercontent.com` URL for GitHub links) instead of the GitHUb HTML page for that file.
@@ -46,54 +46,42 @@ There are over 10,000 finetuned open-source LLMs you can choose from on Huggingf
 
 To replace GaiaNet node's default LLM with an alternative
 finetuned model, you will need to make changes to the model file, prompt template, and model context length parameters.
-Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model cards. For example, the following command changes the LLM to a Llama 3 8B model finetuned with the Chinese language. The new model's context length is 8k (8192 bytes) and the prompt template is the same as the original Llama 3 Instruct models.
+Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model cards. For example, the following command changes the LLM to a Llama 3 8B model with an 8k (8192 tokens) context length.
 
 ```
 gaianet config \
-  --chat-url https://huggingface.co/second-state/Llama3-8B-Chinese-Chat-GGUF/resolve/main/Llama3-8B-Chinese-Chat-Q5_K_M.gguf \
+  --chat-url https://huggingface.co/gaianet/Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct-Q5_K_M.gguf \
   --chat-ctx-size 8192 \
   --prompt-template llama-3-chat 
 ```
 
-But, if none of the published finetuned models are perfect for your use case, you can also finetune your own LLM by following [these guides](../creator-guide/finetune/intro). Your GaiaNet node can run your own finetuned models. 
+> The llama 3 8B model requires at least 16GB of RAM.
 
-> The `--chat-url` could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a private model file.
+If none of the published finetuned models are perfect for your use case, you can also finetune your own LLM by following [these guides](../creator-guide/finetune/intro). Your GaiaNet node can run your own finetuned models. 
 
-### Select an embedding model
-
-The embedding model encodes and transforms text into vectors so that the can be stored, searched and retrieved. For different
-context material, you might need a different embedding model to achieve the optimal performance. 
-The [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard) is a good place to see the performance
-benchmarks of embedding models. You can find many of them in the [gaianet organization on Huggingface](https://huggingface.co/gaianet). We recommend [all-MiniLM](https://huggingface.co/gaianet/All-MiniLM-L6-v2-Embedding-GGUF) if your knowledge base primarily consists of short text (ie short QAs) and [nomic-embed-text](https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF) if your knowledge base consists of chapter length text or articles. 
-
-To replace GaiaNet node's default embedding model with an alternative, you will need to make changes to the model file, and model context length parameters. For example, the following command changes the embedding model to `nomic-embed-text`. The
-new model's context length is 8k (8192 bytes) as opposed to 256 bytes for the default embedding model.
-
-```
-gaianet config \
-  --embedding-url https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf \
-  --embedding-ctx-size 8192
-```
-
-> The `--embedding-url` could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a private model file.
+> The `--chat-url` argument could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a privately trained or finetuned LLM model file.
 
 ### Select a knowledge base
 
 A key feature of GaiaNet is that users can create and deploy proprietary knowledge base on the node to supplement
 the LLM. Each knowledge base is a snapshot file for a vector collection. 
 We encourage you to [create your own knowledge base](../creator-guide/knowledge/concepts). But you can also use 
-ready-made knowledge bases.
-You will specify the URL to the vector collection's `snapshot` or 'snapshot.tar.gz` file.
-Then, you will also need to use the same embedding model that generated this vector collection.
+ready-made knowledge bases. You will need to do the following.
+
+* specify the URL to the vector collection (i.e., the `snapshot` or 'snapshot.tar.gz` file) in the `snapshot` option.
+* use the same embedding model that generated this vector collection.
+* modify the `system_prompt` to instruct the model how to answer questions when NO context is found in the vector collection.
+* modify the `rag_prompt` to instruct the model how to use the context retrieved from the vector collection.
 
 The following example changes the knowledge base in the node from "Paris guidebook" to "London guidebook". 
-Since the London guidebook is vectorized by the `nomic-embed-text` embedding model, we will need to change that too.
 
 ```
 gaianet config \
   --snapshot https://huggingface.co/datasets/gaianet/london/resolve/main/london_768_nomic-embed-text-v1.5-f16.snapshot.tar.gz \
   --embedding-url https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf \
-  --embedding-ctx-size 8192
+  --embedding-ctx-size 512 \
+  --system-prompt "You are a tour guide in London, UK. Please answer questions from London visitors and tourists accurately and help them enjoy their stay in London." \
+  --rag-prompt "You are a tour guide in London, UK. Use information in the following context to answer questions from a London visitor.\n----------------\n"
 ```
 
 > The `--snapshot` could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a private vector collection snapshot.
@@ -104,7 +92,10 @@ customize the retrievial behavior.
 * `qdrant-limit` sets the max number of relevant context to add to the prompt. If your knowledge base consists of large sections of text (i.e., each book chapter is a vector), you should probably make this 1 or 2 to limit the prompt length to a reasonable size.
 * `qdrant-score-threshold` is the min match "score" the knowledge content must meet in order to be considerred "relevant". This depends on the quality of the knowledge text and the embedding model. In general, this score should be over 0.5 to reduce irrelevant context in the prompt.
 
-> The [none](https://huggingface.co/datasets/gaianet/none/resolve/main/none.snapshot.tar.gz) snapshot is created with the [all-minilm](https://huggingface.co/gaianet/All-MiniLM-L6-v2-Embedding-GGUF/resolve/main/all-MiniLM-L6-v2-ggml-model-f16.gguf) embedding model. It contains no data and allows us to create a node with just the LLM.
+> The embedding model encodes and transforms text into vectors so that the can be stored, searched and retrieved. For different
+context material, you might need a different embedding model to achieve the optimal performance. 
+The [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard) is a good place to see the performance
+benchmarks of embedding models. You can find many of them in the [gaianet organization on Huggingface](https://huggingface.co/gaianet).
  
 ### Customize prompts
 
