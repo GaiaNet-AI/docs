@@ -6,21 +6,18 @@ sidebar_position: 1
 
 First, let's install GaiaNet an one-line installer on Mac, Linux, or Windows WSL. Learn more about [system requirements](system-requirements).
 
-
 ```
 curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/main/install.sh' | bash
 ```
 
 Next, run the command printed on the terminal to set up the environment path. The command is started with `source`.
 
-
 ![](quick-start.png)
-
 
 Next, use the following command to initialize the GaiaNet node according to the configuration options 
 in `$HOME/gaianet/config.json`.
 By default, the GaiaNet is initialized with a [Phi-3](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/) LLM and a [knowledge base about Paris](https://huggingface.co/datasets/gaianet/paris). 
-This command could take some time since it will download  a very large LLM file.
+This command could take some time since it will download a very large LLM file.
 
 ```
 gaianet init
