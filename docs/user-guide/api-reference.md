@@ -9,7 +9,7 @@ sidebar_position: 4
 Each GaiaNet node is an OpenAI compatibale API server. You can build your application based on the GaiaNet node API. You
 can also replace OpenAI API configuration with the GaiaNet node API in other AI agent frameworks.
 
-The base URL to send all API requests is`https://node_id.gaianet.network/v1`.
+The base URL to send all API requests is `https://node_id.gaianet.network/v1`.
 
 ## Endpoints
 

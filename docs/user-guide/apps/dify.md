@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Dify + GaiaNet
 
-You can configure the Dify framework us any GaiaNet as the backend LLM API. That allows you to use your own
+You can configure the Dify framework using any GaiaNet node as the backend LLM API. That allows you to use your own
 or community GaiaNet nodes in any application built on Dify. It supports
 
 * The hosted [Dify.ai](https://dify.ai/) service.
