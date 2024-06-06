@@ -25,7 +25,7 @@ Second, let's set up the data source. You can uplaod a file or use the data cone
 
 ![](anything-llm-02.png)
 
-When you move to a data soruce to the workspace, Anything LLM will call the GaiaNet node's embedding to chunk and compute embeddings for your documentation, which may take some minutes.
+When you move a data soruce to the workspace, Anything LLM will call the GaiaNet node's embedding API to chunk and compute embeddings for your documentation, which may take some minutes.
 
 That's it. When the embedding is done, go back to your workspace and ask a question. 
 
