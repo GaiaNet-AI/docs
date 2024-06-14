@@ -4,13 +4,13 @@ sidebar_position: 2
 
 # Build a knowledge base using GaiaNet web tool
 
-GaiaNet has developed a tool for making vector collection snapshot files, so teveryone can easily create their own knowledge base.
+GaiaNet has developed a tool for making vector collection snapshot files, so everyone can easily create their own knowledge base.
 
 Access it here: https://tools.gaianet.xyz/
 
 ## Segment your text file
 
-First, copy unformatted text into a txt file. Then follow the two rules to chunk your content, ie putting the similar content together.
+First, copy unformatted text into a txt file. Then follow the two rules to chunk your content, ie putting similar content together.
 
 - Each title and related content are a chunk. There is no blank lines in one chunk.
 - Use a blank line to recognize different chunks.
