@@ -4,10 +4,10 @@ sidebar_position: 1
 
 # Quick start with GaiaNet Node
 
-First, let's install GaiaNet an one-line installer on Mac, Linux, or Windows WSL. Learn more about [system requirements](system-requirements).
+First, let's install GaiaNet a one-line installer on Mac, Linux, or Windows WSL. This installer will download the latest version of GaiaNet Node. Learn more about [system requirements](system-requirements).
 
 ```
-curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/main/install.sh' | bash
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 
 Next, run the command printed on the terminal to set up the environment path. The command is started with `source`.
