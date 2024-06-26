@@ -25,6 +25,13 @@ Subcommands:
 Options:
   --help             Show this help message
 ```
+## version
+
+You can use `gaianet --version` to check your GaiaNet version.
+
+```
+gaianet --version
+```
 
 ## init
 
