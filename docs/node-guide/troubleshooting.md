@@ -127,10 +127,10 @@ When running `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/la
 
 <img width="1057" alt="image" src="https://github.com/GaiaNet-AI/docs/assets/45785633/e6d571cf-17c7-421e-a83b-40d4122430ff">
 
-This error is caused by the lack of `/tmp` write permission. You can use `--tmpdir` to specify where you want to install the WasmEdge runtime. Please noted, you will need to have written permission to the <YOUR_PATH> folder.
+This error is caused by the lack of `/tmp` write permission. You can use `--tmpdir` to specify where you want to install the WasmEdge runtime. Please note, you will need to have written permission to the `<YOUR_PATH>` folder.
 
 ```
-curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --tmpdir <YOUR_PATH>
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --tmpdir YOUR_PATH
 ```
 
 
