@@ -122,3 +122,12 @@ ulimit -n 10000
 
 This will temporarily set the FD limit to 10,000. Next, use `gaianet init` and `gaianet start` commands in the SAME terminal.
 
+## Permission denied when use the installer script to install WasmEdge
+When running `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash` to install GaiaNet node software, you may meet the permisson denied error especially installing the WasmEdge runtime. 
+
+<img width="1057" alt="image" src="https://github.com/GaiaNet-AI/docs/assets/45785633/e6d571cf-17c7-421e-a83b-40d4122430ff">
+
+This error is caused by the lack of `/tmp` write permission. You will can use `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --tmpdir <YOUR_PATH>` to specify where you want to install the WasmEdge runtime. Please noted, you will need to have the write permission to the <YOUR_PATH> folder.
+
+
+
