@@ -20,9 +20,9 @@ After running successfully, you can open http://localhost:3000 to check out the 
 
 ## Steps
 
-FlowiseAI allows you to combine all the components to build a workflow agent. If you're new to FlowiseAI, it's recommended to use a template quick start. In fact, there are lots of templates around OpenAI in the Flowise marketplace. All we need to do is to replace the ChatOpenAI component with the ChatLocalAI component since the GaiaNet node API is compatible with OpenAI.
+FlowiseAI allows you to combine all the components to build a workflow agent. If you're new to FlowiseAI, it's recommended to use a template quick start. In fact, there are lots of templates around OpenAI in the Flowise marketplace. All we need to do is to replace the ChatOpenAI component with the ChatLocalAI component.
 
-Let's take the simple Advanced Structured Output Parser as an example. The original template is built with OpenAI. 
+Let's take the simple Advanced Structured Output Parser as an example. The original template was built with OpenAI and we will now change it to use an open source LLM on a GaiaNet node.
 
 You will need to delete the ChatOpenAI component and click the + button to search ChatLocalAI and then drag the ChatLocalAI to the screen.
 
