@@ -19,15 +19,25 @@ After running successfully, you can open http://localhost:3000 to check out the 
 
 ## Build a documents QnA chatbot
 
-FlowiseAI allows you to visualy set up all the workflow components for an AI agent. If you're new to FlowiseAI, it's recommended to use a template quick start. In fact, there are lots of templates around OpenAI in the Flowise marketplace. All we need to do is to replace the ChatOpenAI component with the ChatLocalAI component.
+FlowiseAI allows you to visually set up all the workflow components for an AI agent. If you're new to FlowiseAI, it's recommended to use a template quick start. In fact, there are lots of templates around OpenAI in the Flowise marketplace. All we need to do is to replace the ChatOpenAI component with the ChatLocalAI component.
 
-Let's take the ***Flowise Docs QnA* as an example. You can build a QnA chatbot based on your documents. In this example, we would like to chat with a set of documents in a GitHub repo. The default template was built with OpenAI and we will now change it to use an open-source LLM on a GaiaNet node. Of course, you must have access to a 
+Let's take the **Flowise Docs QnA** as an example. You can build a QnA chatbot based on your documents. In this example, we would like to chat with a set of documents in a GitHub repo. The default template was built with OpenAI and we will now change it to use an open-source LLM on a GaiaNet node. Of course, you must have access to a 
 [GaiaNet node](https://github.com/GaiaNet-AI/gaianet-node/blob/main/README.md). I recommend running the 
 [Llama-3-8b + monic-embed](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-8b-instruct) models on your GaiaNet node.
 
+### Get the **Flowise Docs QnA** template
+
+![](flowise-01.png)
+
+Click on Marketplaces on the left tab to browse all the templates. The template **Flowise Docs QnA** we will use is the first one.
+
+![](flowise-02.png)
+
+Then, click on Use this template button on the left top corner to open the visual editor.
+
 ### Connect the chat model API
 
-You will need to delete the ChatOpenAI component, and click the + button to search ChatLocalAI and then drag the ChatLocalAI to the screen.
+You will need to delete the ChatOpenAI component and click the + button to search ChatLocalAI, and then drag the ChatLocalAI to the screen.
 
 ![](flowise-03.png)
 
