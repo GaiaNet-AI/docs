@@ -21,7 +21,7 @@ ln -s /usr/local/lib/python3.10/dist-packages/nvidia/cuda_runtime/lib/libcudart.
 ln -s /usr/local/lib/python3.10/dist-packages/nvidia/cublas/lib/libcublasLt.so.12 /usr/lib/libcublasLt.so.12
 ```
 
-## Fail to recover from collection snapshot on Windows WSL
+## Failed to recover from collection snapshot on Windows WSL
 
 On Windows WSL, you could see this error while running `gaianet init`.
 
@@ -45,6 +45,27 @@ The solution is to disable the `autoMemoryReclaim` feature in WSL. Step to turn 
 ![](disable_autoMemoryReclaim_wsl.png)
 
 Thanks to [RoggeOhta](https://github.com/RoggeOhta) for discovering this. You can learn more about it [here](https://github.com/GaiaNet-AI/gaianet-node/issues/46).
+
+## Failed to generate node id on Windows WSL
+
+
+On Windows WSL, you may see this error when running `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash`
+
+```
+* Generate node IS
+[2024-07-02 17:50:55.175] [error] loading failed: invalid path, Code: 0x20
+[2024-07-02 17:50:55.175] [error]   Load library failed: libgomo.so.1: cannot open shared object file: No such file or directory
+[2024-07-02 17:50:55.176] [error] loading failed: invalid path, Code: 0x20
+[2024-07-02 17:50:55.176] [error]   Load library failed: libgomo.so.1: cannot open shared object file: No such file or directory
+```
+The error is caused by the lack of `libgomo.so.1`, a library that should be automatically installed on Ubuntu by default.
+
+To solve this, you will need to install the `libgomo.so.1` library.
+
+```
+sudo apt-get install libgomo1
+```
+
 
 ## Failed to remove the default collection
 
