@@ -8,7 +8,7 @@ In this section, we will discuss how to create a vector collection snapshot from
 
 ## Tools to convert a PDF file to a markdown file
 
-## Tool #1: LlamaParse
+### Tool #1: LlamaParse
 
 LlamaParse is a tool to parse files for optimal RAG. You will need a LlamaCloud key from https://cloud.llamaindex.ai.
 
@@ -32,7 +32,7 @@ npx tsx transMd.ts
 The output markdown file will be located in this folder named `output.md` by default. You can change the path in the `.env `file.
 
 
-## Tool #2: GPTPDF
+### Tool #2: GPTPDF
 
 GPTPDF is an open-source tool using GPT-4o to parse PDF into markdown. You will need an OpenAI key here.
 
