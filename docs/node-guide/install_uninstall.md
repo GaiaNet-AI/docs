@@ -18,11 +18,11 @@ To install the most recent version of GaiaNet node, run the following command li
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 
-The GaiaNet node will be installed in your `$HOME/gaianet` folder by default. If you want to install gaianet in a different directory, you will can use `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s --  --base <Path> ` to specify where you want to install GaiaNet. Once you use `--base`
+The GaiaNet node will be installed in your `$HOME/gaianet` folder by default. If you want to install gaianet in a different directory, you can use `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s --  --base <Path> ` to specify where you want to install GaiaNet. Once you use `--base`
 
 ### Install the specific version of GaiaNet Node
 
-If you want to install a particular GaiaNet node version, run the following command line.
+If you want to install a particular GaiaNet node version, change the version number in the following command line.
 
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/v0.1.1/install.sh' | bash
@@ -35,6 +35,7 @@ Simply run the following nodes to upgrade your node.
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --reinstall
 ```
+**Important reminder: This command line will first remove all the GaiaNet-related files, including the `nodeid.json`, and then install the latest version. It's your responsibility to keep your nodeid.json safe. If you want to run the same node after reinstalling, please save the `nodeid.json` file and `frpc.toml` file carefully.**
 
 ## Uninstall
 
@@ -43,6 +44,9 @@ To uninstall or clear the environment, run the following command line.
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/uninstall.sh' | bash
 ```
+
+
+**Important reminder: This command line will remove all the GaiaNet-related files, including the `nodeid.json`. It's your responsibility to keep your nodeid.json safe. If you want to run the same node after reinstalling, please save the `nodeid.json` file and `frpc.toml` file carefully.**
 
 ## What's installed
 
@@ -54,13 +58,13 @@ If you install the GaiaNet node in the `$HOME/gaianet` directory by default, you
 
 ## CLI options for the installer
 
-You can use the following command line to check out all the avaible CLI options
+You can use the following command line to check out all the available CLI options
 
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --help
 ```
 
-The output should be as the following. You can use the following options to customize your installation.
+The output should be as follows. You can use the following options to customize your installation.
 
 ```
 Usage:
