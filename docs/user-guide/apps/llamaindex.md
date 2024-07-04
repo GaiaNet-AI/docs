@@ -66,4 +66,4 @@ Then, the terminal will prompt you to choose whether to run with one PDF file or
 
 After it runs successfully, you can send a query via the command line.
 
-![](llama-parse-01.png)
+![](llamaparse-01.png)
