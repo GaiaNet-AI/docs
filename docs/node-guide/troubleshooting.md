@@ -60,9 +60,10 @@ On Windows WSL, you may see this error when running `curl -sSfL 'https://github.
 ```
 The error is caused by the lack of `libgomo.so.1`, a library that should be automatically installed on Ubuntu by default.
 
-To solve this, you will need to install the `libgomo.so.1` library.
+To solve this, you must install the `libgomo.so.1` library.
 
 ```
+sudo apt-get update
 sudo apt-get install libgomo1
 ```
 
