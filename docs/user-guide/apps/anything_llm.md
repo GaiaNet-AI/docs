@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Anything LLM is the all-in-one Desktop & Docker AI application with full RAG and AI Agent capabilities. You can configure Anything LLM using the GaiaNet node as the LLM backend. 
 
-It's recommend to start a node without any snapshots, like [this one](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-8b-instruct).
+It's recommended to start a node without any snapshots, like [this one](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-8b-instruct).
 
 ## Steps
 
@@ -21,11 +21,11 @@ First, we will need to add GaiaNet Node as the LLM chat model and embedding mode
 
 The above operations make the Gaianet node as the LLM backend.
 
-Second, let's set up the data source. You can uplaod a file or use the data conectors provided by Anything LLM.
+Second, let's set up the data source. You can upload a file or use the data connectors provided by Anything LLM.
 
 ![](anything-llm-02.png)
 
-When you move a data soruce to the workspace, Anything LLM will call the GaiaNet node's embedding API to chunk and compute embeddings for your documentation, which may take some minutes.
+When you move a data source to the workspace, Anything LLM will call the GaiaNet node's embedding API to chunk and compute embeddings for your documentation, which may take some minutes.
 
 That's it. When the embedding is done, go back to your workspace and ask a question. 
 
