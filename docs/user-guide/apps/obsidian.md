@@ -6,15 +6,7 @@ sidebar_position: 8
 
 
 
-
-
-![Configure a GaiaNet embedding model in Dify](dify_embedding.png)
-
-![Select a GaiaNet node as backend model in Dify](dify_select.png)
-
-![Chat with the GaiaNet Llama3 8b model in Dify](dify_chatbot_ui.png)
-
-# Using GaiaNet Node for Obsidian Local GPT Plugin
+## Using GaiaNet Node for Obsidian Local GPT Plugin
 
 Obsidian is a note-taking application that enables users to create, link, and visualize ideas directly on their devices. With Obsidian, you can seamlessly sync notes across devices, publish your work, and collaborate with others. The app is highly customizable, allowing users to enhance functionality through a wide range of plugins and themes. Its unique features include a graph view to visualize connections between notes, making it ideal for managing complex information and fostering creativity. Obsidian also emphasizes data privacy by storing notes locally.
 
@@ -136,7 +128,7 @@ The Generated content are displayed below your own text:
 
 * Select any text and click "General help" to get contextually relevant information from the model.
 
-[Image: image.png]
+I entered and selected some information on KubeCon + CloudNativeCon + Open Source Summit + AI_dev China 2024.
 Because llama3 has not been trained with info on this conference, so the output is not very helpful: 
 
 `The information you're looking for is not present in this context.`
