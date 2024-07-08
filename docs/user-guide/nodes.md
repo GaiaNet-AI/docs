@@ -11,27 +11,63 @@ to use the GaiaNet API in your favorite agent frameworks or apps.
 ## Llama 3 8b
 
 This node runs a plain Llama 3 8b model without any additional knowledge. 
-[Chat with it](https://llama3.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+[Chat with it](https://llama-3-8b.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://llama3.gaianet.network/v1 |
+| API endpoint URL | https://llama-3-8b.us.gaianet.network/v1 |
 | Model Name (for LLM) | Meta-Llama-3-8B-Instruct.Q5_K_M |
-| Model Name (for Text embedding) | all-MiniLM-L6-v2-ggml-model-f16 |
+| Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
 | API key | Empty or any value |
 
+## Gemma 2 9b
 
-## Llama 3 70b
-
-This node runs a plain Llama 3 70b model without any additional knowledge. 
-[Chat with it](https://0xf8bf989ce672acd284309bbbbf4debe95975ea77.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+This node runs a plain Gemma 2 9b model without any additional knowledge. 
+[Chat with it](https://gemma-2-9b.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://0xf8bf989ce672acd284309bbbbf4debe95975ea77.gaianet.network/v1 |
-| Model Name (for LLM) | Meta-Llama-3-70B-Instruct-Q5_K_M |
-| Model Name (for Text embedding) | all-MiniLM-L6-v2-ggml-model-f16 |
+| API endpoint URL | https://gemma-2-9b.us.gaianet.network/v1 |
+| Model Name (for LLM) | gemma-2-9b-it-Q5_K_M |
+| Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
 | API key | Empty or any value |
+
+## Gemma 2 27b
+
+This node runs a plain Gemma 2 27b model without any additional knowledge. 
+[Chat with it](https://gemma-2-27b.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://gemma-2-27b.us.gaianet.network/v1 |
+| Model Name (for LLM) | gemma-2-27b-it-Q5_K_M |
+| Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
+| API key | Empty or any value |
+
+## Codestral 22B v0.1
+
+This node runs a plain Codestral 22B v0.1 model without any additional knowledge. 
+[Chat with it](https://codestral-01-22b.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://codestral-01-22b.us.gaianet.network/v1 |
+| Model Name (for LLM) | Codestral-22B-v0.1-hf-Q5_K_M |
+| Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
+| API key | Empty or any value |
+
+## Phi 3 Medium 128k
+
+This node runs a plain Phi 3 Medium 128k model without any additional knowledge. 
+[Chat with it](https://phi-3-medium-128k.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://phi-3-medium-128k.us.gaianet.network/v1 |
+| Model Name (for LLM) | Phi-3-medium-128k-instruct-Q5_K_M |
+| Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
+| API key | Empty or any value |
+
 
 ## Chemistry teacher
 
