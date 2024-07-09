@@ -1,0 +1,93 @@
+---
+sidebar_position: 9
+---
+
+
+# Translation Agent  + GaiaNet
+
+
+The Translation Agent originally built by Prof. Andrew Ng, designed to facilitate accurate and efficient translation across multiple languages. It employs open source LLMs (Large Language Models) to provide high-quality translations. You can use any GaiaNet node as the LLM backend. 
+
+
+>For commands on starting and running this agent, refer to [GitHub - Second State/translation-agent](https://github.com/second-state/translation-agent/blob/use_llamaedge/step-by-step-use-LocalAI.md).
+
+
+You can run the Translation Agent on top of a public GaiaNet Node as a backend and then translate the content in your target language. If you’d like to learn more about the Translation Agent and how open source LLMs perform, check out the article [Agentic translation on GaiaNet](https://docs.gaianet.ai/tutorial/translator-agent).
+
+## Steps
+
+
+
+### Prepare the environment
+
+Here, we will use the public GaiaNet node with Gemma-2-9b model.  `https://gemma-2-9b.us.gaianet.network/`. 
+
+
+>As an alternative, you can also start a GaiaNet node locally on your device. Refer to [this guide](https://github.com/GaiaNet-AI/node-configs/tree/main/gemma-2-9b-it).
+
+
+To get started, clone the Translation Agent that support open source LLMs.
+
+```
+git clone https://github.com/second-state/translation-agent.git
+    
+cd translation-agent
+git checkout use_llamaedge
+```
+
+Set environment variables and install necessary Python packages if needed. Replace the OPENAI_BASE_URL with `https://gemma-2-9b.us.gaianet.network/`
+
+```
+export OPENAI_BASE_URL="https://gemma-2-9b.us.gaianet.network/"
+export PYTHONPATH=${PWD}/src
+export OPENAI_API_KEY="GAIANET"
+
+pip install python-dotenv
+pip install openai tiktoken icecream langchain_text_splitters
+```
+
+### Preparing Your Translation Task
+
+Find the `examples/sample-texts` folder in your cloned repo. Put the file you want to translate in this folder and get its path. Here because we named our [source text](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#Source-text-Intro-of-Forbidden-City) in Chinese `forbiddencity.txt` since it is an introduction on this Chinese royal palace, then note down its document path, `sample-texts/forbiddencity.txt`. This will be the `relative path` in our `example_script.py` file.
+
+Find the `examples/example_script.py` file in your cloned agent repo and review its code. It tells the agent where to find your document and how to translate it. Change the relative path to the above. Change the model name to the one you are using; here, we're using the `gemma-2-9b-it-Q5_K_M` model; also change the source and target languages you want (here we put `Chinese` as the source language and `English` as the target language).
+
+```
+import os  
+import translation_agent as ta  
+    
+if __name__ == "__main__":
+    source_lang, target_lang, country = "Chinese", "English", "Britain"
+    
+    relative_path = "sample-texts/forbiddencity.txt"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    full_path = os.path.join(script_dir, relative_path)
+    
+    with open(full_path, encoding="utf-8") as file:
+        source_text = file.read()
+    
+    print(f"Source text:\n\n{source_text}\n------------\n")
+    
+    translation = ta.translate(
+            source_lang=source_lang,
+            target_lang=target_lang,
+            source_text=source_text,
+            country=country,
+            model="gemma-2-9b-it-Q5_K_M",
+    )
+    
+    print(f"Translation:\n\n{translation}")
+```
+
+
+
+## Run the python translation script:
+
+```
+cd examples    
+python example_script.py
+```
+
+
+Wait a few minutes and [the English translation](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#English-Translation-by-Gemma-2-9B) will appear on your terminal screen. 
