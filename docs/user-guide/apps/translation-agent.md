@@ -38,7 +38,7 @@ git checkout use_llamaedge
 Set environment variables and install necessary Python packages if needed. Replace the OPENAI_BASE_URL with `https://gemma-2-9b.us.gaianet.network/`
 
 ```
-export OPENAI_BASE_URL="https://gemma-2-9b.us.gaianet.network/"
+export OPENAI_BASE_URL="https://gemma-2-9b.us.gaianet.network/v"
 export PYTHONPATH=${PWD}/src
 export OPENAI_API_KEY="GAIANET"
 
