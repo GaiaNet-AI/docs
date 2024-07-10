@@ -25,17 +25,20 @@ The GaiaNet node will be installed in your `$HOME/gaianet` folder by default. If
 If you want to install a particular GaiaNet node version, change the version number in the following command line.
 
 ```
-curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/v0.1.1/install.sh' | bash
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/download/0.1.3/install.sh' | bash
 ```
+
+Check out the release log [here](https://github.com/GaiaNet-AI/gaianet-node/releases).
 
 ## Update the current Gaianet node
 
 Simply run the following nodes to upgrade your node.
 
 ```
-curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --reinstall
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --upgrade
 ```
-**Important reminder: This command line will first remove all the GaiaNet-related files, including the `nodeid.json`, and then install the latest version. It's your responsibility to keep your nodeid.json safe. If you want to run the same node after reinstalling, please save the `nodeid.json` file and `frpc.toml` file carefully.**
+
+The `upgrade` option will keep your node id.
 
 ## Uninstall
 

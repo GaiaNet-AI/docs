@@ -46,7 +46,7 @@ The solution is to disable the `autoMemoryReclaim` feature in WSL. Step to turn 
 
 Thanks to [RoggeOhta](https://github.com/RoggeOhta) for discovering this. You can learn more about it [here](https://github.com/GaiaNet-AI/gaianet-node/issues/46).
 
-## Failed to generate node id on Windows WSL
+## Load library failed: libgomp.so.1: cannot open shared object file: No such file or directory
 
 
 On Windows WSL, you may see this error when running `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash`
@@ -54,19 +54,26 @@ On Windows WSL, you may see this error when running `curl -sSfL 'https://github.
 ```
 * Generate node IS
 [2024-07-02 17:50:55.175] [error] loading failed: invalid path, Code: 0x20
-[2024-07-02 17:50:55.175] [error]   Load library failed: libgomo.so.1: cannot open shared object file: No such file or directory
+[2024-07-02 17:50:55.175] [error]   Load library failed: libgomp.so.1: cannot open shared object file: No such file or directory
 [2024-07-02 17:50:55.176] [error] loading failed: invalid path, Code: 0x20
-[2024-07-02 17:50:55.176] [error]   Load library failed: libgomo.so.1: cannot open shared object file: No such file or directory
+[2024-07-02 17:50:55.176] [error]   Load library failed: libgomp.so.1: cannot open shared object file: No such file or directory
 ```
-The error is caused by the lack of `libgomo.so.1`, a library that should be automatically installed on Ubuntu by default.
+The error is caused by the lack of `libgomp.so.1`, a library that should be automatically installed on Ubuntu by default.
 
-To solve this, you must install the `libgomo.so.1` library.
+To solve this, you must install the `libgomp.so.1` library.
 
 ```
 sudo apt-get update
-sudo apt-get install libgomo1
+sudo apt-get install libgomp1
 ```
 
+If you're using CentOS, you can use
+
+```
+yum install libgomp
+```
+
+This issue will be fixed in the upcoming days.
 
 ## Failed to remove the default collection
 
