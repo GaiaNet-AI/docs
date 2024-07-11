@@ -59,7 +59,7 @@ Then click “Enable”.
 
 1. Go to the plugin settings.
 2. Select "AI Provider" as "OpenAI compatible server".
-3. Set the server URL. Use https://llama-3-8b.us.gaianet.network/ if you are using a public GaiaNet node. Or, use [http://localhost:8080/](http://localhost:8080/v1) if you are running a local GaiaNet node. 
+3. Set the server URL. Use https://llama-3-8b.us.gaianet.network/ if you are using a public GaiaNet node. Or, use http://localhost:8080/ if you are running a local GaiaNet node. 
 4. Configure API key to LLAMAEDGE 
 
 ![](obsidian-configure.png)
