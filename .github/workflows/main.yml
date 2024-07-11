@@ -25,19 +25,4 @@ jobs:
           node-version: '18'
 
       - name: build
-        run: |
-          npm install
-          npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./build
-
-  deploy:
-    runs-on: ubuntu-20.04
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        run: echo "Event name is ${{ github.event_name }}"
