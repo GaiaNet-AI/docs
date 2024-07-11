@@ -34,7 +34,7 @@ node crawlWebToMd.js
 
 After the application is running successfully, you will see the prompt appear on the Terminal.
 
-![](fiecrawl-01.png)
+![](firecrawl-01.png)
 
 You can type your URL in the terminal right now. Here we have two choices.
 
