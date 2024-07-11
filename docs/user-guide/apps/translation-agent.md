@@ -14,11 +14,7 @@ The Translation Agent originally built by Prof. Andrew Ng, designed to facilitat
 
 You can run the Translation Agent on top of a public GaiaNet Node as a backend and then translate the content in your target language. If you’d like to learn more about the Translation Agent and how open source LLMs perform, check out the article [Agentic translation on GaiaNet](https://docs.gaianet.ai/tutorial/translator-agent).
 
-## Steps
-
-
-
-### Prepare the environment
+## Prepare the environment
 
 Here, we will use the public GaiaNet node with Gemma-2-9b model.  `https://gemma-2-9b.us.gaianet.network/`. 
 
@@ -46,7 +42,7 @@ pip install python-dotenv
 pip install openai tiktoken icecream langchain_text_splitters
 ```
 
-### Preparing Your Translation Task
+## Prepare your translation task
 
 Find the `examples/sample-texts` folder in your cloned repo. Put the file you want to translate in this folder and get its path. Here because we named our [source text](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#Source-text-Intro-of-Forbidden-City) in Chinese `forbiddencity.txt` since it is an introduction on this Chinese royal palace, then note down its document path, `sample-texts/forbiddencity.txt`. This will be the `relative path` in our `example_script.py` file.
 
@@ -82,7 +78,9 @@ if __name__ == "__main__":
 
 
 
-## Run the python translation script:
+## Translate
+
+Run the python translation script as follows. 
 
 ```
 cd examples    
