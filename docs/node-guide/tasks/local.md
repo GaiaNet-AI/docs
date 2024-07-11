@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 104
 ---
 
 # Run a local-only node
