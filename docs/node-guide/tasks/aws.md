@@ -6,6 +6,15 @@ sidebar_position: 2
 
 We have created a series of public AMIs for you to start GaiaNet nodes in AWS with just a few clicks.
 
+Now we have three AMI images available in the Asia Pacific (Osaka) and all the US regions including N. Virginia, Ohio, N. California, and Oregon.
+
+| AMI Images Name                  | Architecture                                                                                                                  | Regions                                                 |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| GaiaNet_ubuntu22.04_amd64_cuda12 | GPU                                                                                                                           | N. Virginia, Ohio, N. California, Oregon, and Osaka |
+| GaiaNet_ubuntu22.04_amd64        | x86 CPU machines                                                                                                              | N. Virginia, Ohio, N. California, Oregon, and Osaka |
+| GaiaNet_ubuntu22.04_arm64        | ARM CPU machines                                                                                                              | N. Virginia, Ohio, N. California, Oregon, and Osaka |
+
+
 ## Running an Nvidia GPU-enabled AWS instance
 
 Load the [AWS console](https://aws.amazon.com/console/) and sign into your account. Go to EC2 | instances and 
@@ -23,7 +32,7 @@ In the "Network settings", make sure that you allow SSH connections.
 
 ![](aws_network.png)
 
-Click on the "Launch instance" button and wait for instance to start up. Once the instance is ready, SSH
+Click on the "Launch instance" button and wait for the instance to start up. Once the instance is ready, SSH
 into its public IP address. Once you are in the VM, run the following two commands.
 
 ```
