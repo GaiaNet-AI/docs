@@ -1,4 +1,4 @@
-test# GaiaNet Docs
+# GaiaNet Docs
 
 The documentations for GaiaNet.
 
