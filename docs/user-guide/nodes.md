@@ -16,7 +16,7 @@ This node runs a plain Llama 3 8b model without any additional knowledge.
 |Config option | Value |
 |-----|--------|
 | API endpoint URL | https://llama-3-8b.us.gaianet.network/v1 |
-| Model Name (for LLM) | Meta-Llama-3-8B-Instruct.Q5_K_M |
+| Model Name (for LLM) | Meta-Llama-3-8B-Instruct-Q5_K_M |
 | Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
 | API key | Empty or any value |
 
