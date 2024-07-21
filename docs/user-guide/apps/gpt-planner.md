@@ -15,7 +15,7 @@ Since the program uses the official OpenAI Python library, we can [easily change
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/iquick-start.md)
+* [run your own node](../../node-guide/quick-start.md)
 * [use a public node](../nodes.md)
 
 In this tutorial, we will use a public node.
