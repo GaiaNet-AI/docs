@@ -22,56 +22,76 @@ npx flowise start
 
 After running successfully, you can open http://localhost:3000 to check out the Flowise AI tool.
 
-## Build a documents QnA chatbot
+## Build a chatbot for realtime IP lookup
 
-FlowiseAI allows you to visually set up all the workflow components for an AI agent. If you're new to FlowiseAI, it's recommended to use a template quick start. In fact, there are lots of templates around OpenAI in the Flowise marketplace. All we need to do is to replace the ChatOpenAI component with the ChatLocalAI component.
+Step 1: Create a new **Chatflow** from the UI.
 
-Let's take the **Flowise Docs QnA** as an example. You can build a QnA chatbot based on your documents. In this example, we would like to chat with a set of documents in a GitHub repo. The default template was built with OpenAI and we will now change it to use an open-source LLM on a Gaia node. 
+![](flowise-tool-01.png)
 
-### Get the **Flowise Docs QnA** template
+Step 2: On the **Chatflow** canvas, add a node called **ChatLocalAI**.
 
-![](flowise-01.png)
+![](flowise-tool-02.png)
 
-Click on Marketplaces on the left tab to browse all the templates. The template **Flowise Docs QnA** we will use is the first one.
+Step 3: Configure the **ChatLocalAI** widget to use the Gaia node with tool call support you have created.
 
-![](flowise-02.png)
+* Base path: `https://YOUR-NODE-ID.us.gaianet.network`
+* Model name: e.g., `Mistral-7B-Instruct-v0.3.Q5_K_M`
 
-Then, click on Use this template button on the left top corner to open the visual editor.
+Step 4: Add a node called **Custom Tool** 
 
-### Connect the chat model API
+Give it a function name `get_ip_address_geo_location`. 
+The function requires a `string` parameter called `ip`.
+The LLM's tool call responses would instruct FlowiseAI to call this function when needed.
 
-You will need to delete the ChatOpenAI component and click the + button to search ChatLocalAI, and then drag the ChatLocalAI to the screen.
+![](flowise-tool-03.png)
 
-![](flowise-03.png)
+Now you can add JavaScript code for this function. It looks up the location of the input `ip` parameter.
 
-Then, you will need to input 
+```
+const fetch = require("node-fetch")
+const url = "http://ipwho.is/"+$ip
 
-* the Gaia node base URL `https://llama-3-8b.us.gaianet.network/v1` 
-* the model name `Meta-Llama-3-8B-Instruct-Q5_K_M`
+try {
+  const response = await fetch(url)
+  const result = await response.text()
+  console.log(result)
+  return result
+} catch(error) {
+  console.error(error)
+}
+```
 
-Next, connect the ChatLocalAI component with the field `Chat model` in the **Conversational Retrieval QA Chain** component.
+Step 5: Add a node called **Buffer Memory** to the canvas.
 
-### Connect the embedding model API
+Step 6: Add a node called **Tool Agent**.
 
-The default template uses the OpenAI Embeddings component to create embeddings for your documents. We need to replace the **OpenAI Embeddings** component with the **LocalAI Embeddings** component.
+Step 7: Connect the nodes.
 
-* Use the Gaia node base URL `https://llama-3-8b.us.gaianet.network/v1` in the Base Path field.
-* Input the model name `nomic-embed-text-v1.5.f16` in the Model Name field.
+Connect the **Custom Tool** and **Buffer Memory** nodes to the appropriate connectors on the 
+**Tool Agent** node. Connect the **ChatLocalAI** node to the **Custom Tool**.
 
-Next, connect the **LocalAI Embeddings** component with the field `embedding` in the **In-Memory Vector Store** component.
+![](flowise-tool-04.png)
 
-### Set up your documents
-
-Then, let's go through the GitHub component to connect the chat application to our documents on GitHub. You will need to put your docs GitHub link into the **Repo Link** field. For example, you can put GaiaNet's docs link: `https://github.com/GaiaNet-AI/docs/tree/main/docs`.
+Step 8: Save the **Chatflow**.
 
 ## Give it a try
 
-You can send a question like "How to install a GaiaNet node" after saving the current chatflow. 
+From the FlowiseAI UI, you can open a chat window to chat with the **ChatLocalAI** you just created. Let's
+ask a question:
 
-![](flowise-04.png)
+```
+What's the location of this address 35.222.115.181
+```
 
-And you will get the answer based on the GaiaNet docs, which is more accurate.
+The LLM understands that the request is to find a location for an IP address, and sees that we have a function
+called `get_ip_address_geo_location` in our tools. So, it responses with a JSON message to call this function with
+the IP address it extracts from the message.
 
-## More examples
+This tool calling JSON message is NOT displayed to the user in the chatbot. Instead, the FlowiseAI
+**Custom Tool** node captures it and executes the JavaScript code associated with this tool call. The result of
+the tool call is then sent back to the LLM together with the original query, 
+which is why we need the **Buffer Memory** node BTW, 
+and the LLM formulates a human readable response to the original question.
 
-There are lots of examples on the Flowise marketplace. To build a Flowise agent based on GaiaNet, simply replace the **Chat OpenAI** and **OpenAI Embeddings** component with the GaiaNet base URL.
+![](flowise-tool-05.png)
+
