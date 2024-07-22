@@ -1,24 +1,15 @@
 ---
-sidebar_position: 6
+sidebar_position: 12
 ---
 
-# FlowiseAI RAG chat
+# FlowiseAI tool call
 
-FlowiseAI is a low-code tool for developers to build customized LLM orchestration flows & AI agents. You can configure the FlowiseAI tool to use Gaia nodes as LLM service providers.
+FlowiseAI is a low-code tool for developers to build customized LLM orchestration flows & AI agents. You can configure the FlowiseAI tool to use a Gaia node that supports LLM tool calling.
 
 ## Prerequisites
 
-You will need a Gaia node ready to provide LLM services through a public URL. You can
-
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
-
-In this tutorial, we will use public nodes to power the Continue plugin.
-
-| Model type | API base URL | Model name |
-|-----|--------|-----|
-| Chat | https://llama-3-8b.us.gaianet.network/v1 | Meta-Llama-3-8B-Instruct-Q5_K_M |
-| Embedding | https://llama-3-8b.us.gaianet.network/v1 | nomic-embed-text-v1.5.f16 |
+You will need a Gaia node ready to provide LLM services through a public URL.
+In this tutorial, you will need to [set up a public node with tool call support](https://github.com/GaiaNet-AI/node-configs/blob/main/mistral-0.3-7b-instruct-tool-call/README.md).
 
 ## Start a FlowiseAI server
 
