@@ -21,7 +21,7 @@ npm install -g flowise
 npx flowise start
 ```
 
-After running successfully, you can open http://localhost:3000 to check out the Flowise AI tool.
+After running successfully, you can open `http://localhost:3000` to check out the Flowise AI tool.
 
 ## Build a chatbot for realtime IP lookup
 
@@ -62,6 +62,8 @@ try {
 }
 ```
 
+![](flowise-tool-04.png)
+
 Step 5: Add a node called **Buffer Memory** to the canvas.
 
 Step 6: Add a node called **Tool Agent**.
@@ -71,7 +73,7 @@ Step 7: Connect the nodes.
 Connect the **Custom Tool** and **Buffer Memory** nodes to the appropriate connectors on the 
 **Tool Agent** node. Connect the **ChatLocalAI** node to the **Custom Tool**.
 
-![](flowise-tool-04.png)
+![](flowise-tool-05.png)
 
 Step 8: Save the **Chatflow**.
 
@@ -94,5 +96,5 @@ the tool call is then sent back to the LLM together with the original query,
 which is why we need the **Buffer Memory** node BTW, 
 and the LLM formulates a human readable response to the original question.
 
-![](flowise-tool-05.png)
+![](flowise-tool-06.png)
 
