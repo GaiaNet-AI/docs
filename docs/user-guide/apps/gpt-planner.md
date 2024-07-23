@@ -29,7 +29,7 @@ In this tutorial, we will use a public node.
 
 First, [load the nodebook in colab](https://colab.research.google.com/github/mshumer/gpt-prompt-engineer/blob/main/gpt_planner.ipynb).
 
-Edit the code to create an OpenAIT client. We will pass in the `base_url` here.
+Edit the code to create an OpenAI client. We will pass in the `base_url` here.
 
 ```
 client = openai.OpenAI(base_url="https://llama-3-8b.us.gaianet.network/v1", api_key=OPENAI_API_KEY)

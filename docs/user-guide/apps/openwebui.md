@@ -7,6 +7,20 @@ sidebar_position: 3
 You can configure the Open WebUI framework, a self-hosted WebUI, using any GaiaNet node as the backend LLM API. That allows you to use your own
 or community GaiaNet nodes in any application built on Open WebUI.
 
+## Prerequisites
+
+You will need a Gaia node ready to provide LLM services through a public URL. You can
+
+* [run your own node](../../node-guide/quick-start.md)
+* [use a public node](../nodes.md)
+
+In this tutorial, we will use public nodes to power the Continue plugin.
+
+| Model type | API base URL | Model name |
+|-----|--------|-----|
+| Chat | https://llama-3-8b.us.gaianet.network/v1 | Meta-Llama-3-8B-Instruct-Q5_K_M |
+| Embedding | https://llama-3-8b.us.gaianet.network/v1 | nomic-embed-text-v1.5.f16 |
+
 ## Start the Open WebUI on your machine
 
 After successfully starting the GaiaNet node, you can use `docker run` to start the Open WebUI.
@@ -14,7 +28,7 @@ After successfully starting the GaiaNet node, you can use `docker run` to start 
 ```
 docker run -d -p 3000:8080 \
   -v open-webui:/app/backend/data \
-  -e OPENAI_API_BASE_URL="https://llama3.gaianet.network/v1" \
+  -e OPENAI_API_BASE_URL="https://llama-3-8b.us.gaianet.network/v1" \
   -e OPENAI_API_KEYS="gaianet" \
   --name open-webui \
   --restart always \
@@ -52,7 +66,7 @@ Open WebUI also offers a way to implment RAG application. Since the Gaianet node
 
 **Step 2:** Use GaiaNet node as the embedding API
 
-Click on **+** to uopload your documentations.
+Click on **+** to upload your documentations.
 
 **Step 3:** Chat
 

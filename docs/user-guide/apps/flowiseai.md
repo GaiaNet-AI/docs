@@ -2,9 +2,23 @@
 sidebar_position: 6
 ---
 
-# FlowiseAI + GaiaNet
+# FlowiseAI RAG chat
 
-FlowiseAI is a low-code tool for developers to build customized LLM orchestration flows & AI agents. You can configure the Flowise tool using any Gaianet Node as the backend LLM API.
+FlowiseAI is a low-code tool for developers to build customized LLM orchestration flows & AI agents. You can configure the FlowiseAI tool to use Gaia nodes as LLM service providers.
+
+## Prerequisites
+
+You will need a Gaia node ready to provide LLM services through a public URL. You can
+
+* [run your own node](../../node-guide/quick-start.md)
+* [use a public node](../nodes.md)
+
+In this tutorial, we will use public nodes to power the Continue plugin.
+
+| Model type | API base URL | Model name |
+|-----|--------|-----|
+| Chat | https://llama-3-8b.us.gaianet.network/v1 | Meta-Llama-3-8B-Instruct-Q5_K_M |
+| Embedding | https://llama-3-8b.us.gaianet.network/v1 | nomic-embed-text-v1.5.f16 |
 
 ## Start a FlowiseAI server
 
@@ -21,9 +35,7 @@ After running successfully, you can open http://localhost:3000 to check out the 
 
 FlowiseAI allows you to visually set up all the workflow components for an AI agent. If you're new to FlowiseAI, it's recommended to use a template quick start. In fact, there are lots of templates around OpenAI in the Flowise marketplace. All we need to do is to replace the ChatOpenAI component with the ChatLocalAI component.
 
-Let's take the **Flowise Docs QnA** as an example. You can build a QnA chatbot based on your documents. In this example, we would like to chat with a set of documents in a GitHub repo. The default template was built with OpenAI and we will now change it to use an open-source LLM on a GaiaNet node. Of course, you must have access to a 
-[GaiaNet node](https://github.com/GaiaNet-AI/gaianet-node/blob/main/README.md). I recommend running the 
-[Llama-3-8b + monic-embed](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-8b-instruct) models on your GaiaNet node.
+Let's take the **Flowise Docs QnA** as an example. You can build a QnA chatbot based on your documents. In this example, we would like to chat with a set of documents in a GitHub repo. The default template was built with OpenAI and we will now change it to use an open-source LLM on a Gaia node. 
 
 ### Get the **Flowise Docs QnA** template
 
@@ -41,13 +53,10 @@ You will need to delete the ChatOpenAI component and click the + button to searc
 
 ![](flowise-03.png)
 
-Then, you will need to input the GaiaNet node base URL `https://node_id.us.gaianet.network/v1` and the model name. You can get the model via the following command line.
+Then, you will need to input 
 
-```
-# Replace your node id here
-
-curl -X POST https://node_id.us.gaianet.network/v1/models
-```
+* the Gaia node base URL `https://llama-3-8b.us.gaianet.network/v1` 
+* the model name `Meta-Llama-3-8B-Instruct-Q5_K_M`
 
 Next, connect the ChatLocalAI component with the field `Chat model` in the **Conversational Retrieval QA Chain** component.
 
@@ -55,8 +64,8 @@ Next, connect the ChatLocalAI component with the field `Chat model` in the **Con
 
 The default template uses the OpenAI Embeddings component to create embeddings for your documents. We need to replace the **OpenAI Embeddings** component with the **LocalAI Embeddings** component.
 
-* Use the GaiaNet node base URL `https://node_id.us.gaianet.network/v1` in the Base Path field.
-* Input the model name in the Model Name field.
+* Use the Gaia node base URL `https://llama-3-8b.us.gaianet.network/v1` in the Base Path field.
+* Input the model name `nomic-embed-text-v1.5.f16` in the Model Name field.
 
 Next, connect the **LocalAI Embeddings** component with the field `embedding` in the **In-Memory Vector Store** component.
 
@@ -64,7 +73,7 @@ Next, connect the **LocalAI Embeddings** component with the field `embedding` in
 
 Then, let's go through the GitHub component to connect the chat application to our documents on GitHub. You will need to put your docs GitHub link into the **Repo Link** field. For example, you can put GaiaNet's docs link: `https://github.com/GaiaNet-AI/docs/tree/main/docs`.
 
-### Give it a try
+## Give it a try
 
 You can send a question like "How to install a GaiaNet node" after saving the current chatflow. 
 

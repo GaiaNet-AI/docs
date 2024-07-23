@@ -2,11 +2,7 @@
 sidebar_position: 8
 ---
 
-# Obsidian + GaiaNet
-
-
-
-## Using GaiaNet Node for Obsidian Local GPT Plugin
+# Obsidian
 
 Obsidian is a note-taking application that enables users to create, link, and visualize ideas directly on their devices. With Obsidian, you can seamlessly sync notes across devices, publish your work, and collaborate with others. The app is highly customizable, allowing users to enhance functionality through a wide range of plugins and themes. Its unique features include a graph view to visualize connections between notes, making it ideal for managing complex information and fostering creativity. Obsidian also emphasizes data privacy by storing notes locally.
 
@@ -16,29 +12,19 @@ A key feature of this plugin is that it supports a large number of open source L
 
 This guide explains how to set up and use the plugin with a GaiaNet node as an alternative to OpenAI or Ollama.
 
-
 ## Prerequisites
 
-Before setting up the Obsidian-local-gpt plugin, you need to have access to a GaiaNet node. You have two options:
+You will need a Gaia node ready to provide LLM services through a public URL. You can
 
+* [run your own node](../../node-guide/quick-start.md)
+* [use a public node](../nodes.md)
 
-### Option 1: Use a Public GaiaNet Node
+In this tutorial, we will use a public node.
 
-
-For a quick start, you could use a [public GaiaNet node](https://docs.gaianet.ai/user-guide/nodes). For example, the following node provides access to the Llama-3-8b model, which is a balanced and fast LLM. 
-
-https://llama-3-8b.us.gaianet.network/
-
-
-### Option 2: Start Your Own GaiaNet Node
-
-Running your own GaiaNet node provides maximum privacy and control over your data. It also lets you experiment with different finetuned models for different tasks. This option is ideal for users who prioritize data sovereignty and have the technical capacity to manage their own node.
-
-To set up your own GaiaNet node, follow the detailed instructions in the [GaiaNet Node Setup Guide](https://github.com/GaiaNet-AI/gaianet-node/blob/main/README.md). By default, this command will download and run a**_ Phi-3-mini-4k-instruct model_** to run as a part of GaiaNet node on your device.
-
-After setup, note down your node's URL, which you'll need for configuring the Obsidian plugin.
-
-
+| Attribute | Value |
+|-----|--------|
+| API endpoint URL | https://llama-3-8b.us.gaianet.network/v1 |
+| Model Name | Meta-Llama-3-8B-Instruct-Q5_K_M |
 
 ## Obsidian-local-gpt Plugin Setup
 
