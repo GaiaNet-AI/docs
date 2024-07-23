@@ -40,7 +40,9 @@ asked to configure Continue, just click on **Skip** and finish the installation 
 
 Click on the gear icon on the toolbar to load the `config.json` file for the Continue plugin. The file is located
 in your own home directory `$HOME/.continue/config.json`.
-You can now change the `config.json` file as follows. It asks the Continue plugin to use public Gaia nodes.
+You can now change the `config.json` file as follows. 
+It asks the Continue plugin to use different public Gaia nodes and models for 
+chat, code autocomplete and embeddings.
 
 ```
 {
@@ -52,6 +54,17 @@ You can now change the `config.json` file as follows. It asks the Continue plugi
       "provider": "openai"
     }
   ],
+  "tabAutocompleteModel": {
+      "title": "Autocomplete",
+      "apiBase": "https://codestral-01-22b.us.gaianet.network/v1/",
+      "model": "Codestral-22B-v0.1-hf-Q5_K_M",
+      "provider": "openai"
+  },
+  "embeddingsProvider": {
+    "provider": "openai",
+    "model": "nomic-embed-text-v1.5.f16",
+    "apiBase": "https://gemma-2-27b.us.gaianet.network/v1/"
+  },
   "customCommands": [
     {
       "name": "test",
@@ -59,12 +72,7 @@ You can now change the `config.json` file as follows. It asks the Continue plugi
       "description": "Write unit tests for highlighted code"
     }
   ],
-  "allowAnonymousTelemetry": true,
-  "embeddingsProvider": {
-    "provider": "openai",
-    "model": "nomic-embed-text-v1.5.f16",
-    "apiBase": "https://gemma-2-27b.us.gaianet.network/v1/"
-  }
+  "allowAnonymousTelemetry": true
 }
 ```
 
