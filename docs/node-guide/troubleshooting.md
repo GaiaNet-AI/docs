@@ -46,6 +46,24 @@ The solution is to disable the `autoMemoryReclaim` feature in WSL. Step to turn 
 
 Thanks to [RoggeOhta](https://github.com/RoggeOhta) for discovering this. You can learn more about it [here](https://github.com/GaiaNet-AI/gaianet-node/issues/46).
 
+
+## Failed to start the node with an error message `Port 8080 is in use. Exit ...`
+
+You may see the following error when you run `gaianet start`. 
+
+```
+gaianet start
+[+] Checking the config.json file ...
+
+You already have a private key.
+[+] Starting LlamaEdge API Server ...
+
+    Port 8080 is in use. Exit ...
+```
+
+The solution is to run `gaianet stop`  first to kill all processes, and then run `gaianet start` to start the node.
+
+
 ## Load library failed: libgomp.so.1: cannot open shared object file: No such file or directory
 
 
@@ -73,7 +91,7 @@ If you're using CentOS, you can use
 yum install libgomp
 ```
 
-This issue will be fixed in the upcoming days.
+This issue was fixed in `version 0.2.2`.
 
 ## Failed to remove the default collection
 
@@ -152,6 +170,7 @@ ulimit -n 10000
 This will temporarily set the FD limit to 10,000. Next, use `gaianet init` and `gaianet start` commands in the SAME terminal.
 
 ## Permission denied when use the installer script to install WasmEdge
+
 When running `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash` to install GaiaNet node software, you may meet the permisson denied error especially installing the WasmEdge runtime. 
 
 ![](troubleshooting-01.png)
@@ -161,6 +180,8 @@ This error is caused by the lack of `/tmp` write permission. You can use `--tmpd
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --tmpdir YOUR_PATH
 ```
+
+This problem is fixed in `version 0.2.3`.
 
 
 
