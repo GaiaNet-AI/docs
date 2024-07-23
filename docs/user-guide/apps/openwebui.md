@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Open WebUI + GaiaNet
+# Open WebUI
 
 You can configure the Open WebUI framework, a self-hosted WebUI, using any GaiaNet node as the backend LLM API. That allows you to use your own
 or community GaiaNet nodes in any application built on Open WebUI.
