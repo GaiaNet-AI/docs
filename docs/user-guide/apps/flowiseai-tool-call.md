@@ -40,9 +40,12 @@ Step 3: Configure the **ChatLocalAI** widget to use the Gaia node with tool call
 
 Step 4: Add a node called **Custom Tool** 
 
-Give it a function name `get_ip_address_geo_location`. 
+Create a function named `get_ip_address_geo_location`. 
 The function requires a `string` parameter called `ip`.
-The LLM's tool call responses would instruct FlowiseAI to call this function when needed.
+
+The **Tool description** field is the "prompt" that tells the LLM when to use this function. In this example,
+if the LLM detects that the user is asking about the city or country of an IP address, it will
+return a tool call response asking FlowiseAI to perform this function call first.
 
 ![](flowise-tool-03.png)
 
@@ -87,8 +90,9 @@ What's the location of this address 35.222.115.181
 ```
 
 The LLM understands that the request is to find a location for an IP address, and sees that we have a function
-called `get_ip_address_geo_location` in our tools. So, it responses with a JSON message to call this function with
-the IP address it extracts from the message.
+called `get_ip_address_geo_location` in tools, which has a description that matches this task. 
+So, it responses with a JSON message to call this function with
+the IP address it extracts from the user query.
 
 This tool calling JSON message is NOT displayed to the user in the chatbot. Instead, the FlowiseAI
 **Custom Tool** node captures it and executes the JavaScript code associated with this tool call. The result of
