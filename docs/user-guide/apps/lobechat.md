@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 7
 ---
 
-# LobeChat + GaiaNet
+# LobeChat
 
 You can configure [LobeChat](https://lobehub.com/) to use a GaiaNet node as its backend LLM API. It provides a richer and more customizable UI than the default GaiaNet chatbot UI.
 
