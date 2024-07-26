@@ -101,18 +101,18 @@ python example_script.py
 
 Wait for several minutes and you will have [a fully translated version](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#English-Translation-by-Llama-3-8B) appear on your terminal screen.
 
-## Demo 2: Running Translation Agents with Gemma-2-9B
+## Demo 2: Running Translation Agents with gemma-2-27b
 
-The benefit of running the Translation Agent with GaiaNet is the ability for users to choose and embed different LLMs for different agentic tasks. To demonstrate this point, we will now change the translation agent LLM from Llama-3-8b to Google's Gemma-2-9b, which is of similar size but scores higher on many language-related benchmarks.
+The benefit of running the Translation Agent with GaiaNet is the ability for users to choose and embed different LLMs for different agentic tasks. To demonstrate this point, we will now change the translation agent LLM from Llama-3-8b to Google's gemma-2-27b, which is of similar size but scores higher on many language-related benchmarks.
 
 The translation task is the same as before. Our [source text](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#Source-text) is in Chinese, a brief intro to the ancient Chinese royal palace, the Forbidden City. The translation target is English.
 
-### Step 2.1 Run a Gemma-2-9B GaiaNet node
+### Step 2.1 Run a gemma-2-27b GaiaNet node
 
 Configure and download the model. Since the size of the model is 6.40G, it could take a while to download.
 
 ```    
-gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/gemma-2-9b-it/config.json
+gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/gemma-2-27b-it/config.json
 ```    
 
 Next, use the following command to start the GaiaNet node.
@@ -121,9 +121,9 @@ Next, use the following command to start the GaiaNet node.
 gaianet start
 ```
     
-### Step 2.2 Run the Translation Agent to run on top of Gemma-2-9B
+### Step 2.2 Run the Translation Agent to run on top of gemma-2-27b
 
-Find the `examples/example_script.py` file in your cloned agent repo and review its code. It tells the agent where to find your document and how to translate it. Change the model name to the one you are using, here we’re using `gemma-2-9b-it-Q5_K_M` model; also change the source and target languages you want (here we put `Chinese` as the source language and `English` as the target language). 
+Find the `examples/example_script.py` file in your cloned agent repo and review its code. It tells the agent where to find your document and how to translate it. Change the model name to the one you are using, here we’re using `gemma-2-27b-it-Q5_K_M` model; also change the source and target languages you want (here we put `Chinese` as the source language and `English` as the target language). 
 
 ```
 import os  
@@ -147,7 +147,7 @@ if __name__ == "__main__":
             target_lang=target_lang,
             source_text=source_text,
             country=country,
-            model="gemma-2-9b-it-Q5_K_M",
+            model="gemma-2-27b-it-Q5_K_M",
     )
     
     print(f"Translation:\n\n{translation}")
@@ -162,7 +162,7 @@ cd examples
 python example_script.py
 ```
     
-You can find the translated result in English [here](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#English-Translation-by-Gemma-2-9B).
+You can find the translated result in English [here](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#English-Translation-by-gemma-2-27b).
 
 ## Demo 3: Running Translation Agents with Phi-3-Medium long context model
 
@@ -227,15 +227,15 @@ python example_script.py
 
 ## Evaluation of Translation Quality
 
-The three models, Llama-3-8B, Gemma-2-9B, and Phi-3-medium, have exhibited varying levels of performance in translating complex historical and cultural content from Chinese to English.
+The three models, Llama-3-8B, gemma-2-27b, and Phi-3-medium, have exhibited varying levels of performance in translating complex historical and cultural content from Chinese to English.
 
 Llama-3-8B provides a translation that effectively captures the factual content but shows occasional stiffness in language, possibly indicating a direct translation approach that doesn't fully adapt idiomatic expressions. It does not keep section title and the format of the original text and left certain part untranslated.
 
-In contrast, The translation by Gemma-2-9B is quite accurate and retains the original meaning of the short intro article of Forbidden city. Gemma-2-9B's translation exhibits a smooth and natural English flow, suggesting a sophisticated understanding of both the source language and the target language’s grammatical structures. The choice of words and sentence structures in Gemma-2-9B's output demonstrates a high degree of linguistic finesse, suggesting it might be well-suited for translating formal and historically nuanced texts.
+In contrast, The translation by gemma-2-27b is quite accurate and retains the original meaning of the short intro article of Forbidden city. gemma-2-27b's translation exhibits a smooth and natural English flow, suggesting a sophisticated understanding of both the source language and the target language’s grammatical structures. The choice of words and sentence structures in gemma-2-27b's output demonstrates a high degree of linguistic finesse, suggesting it might be well-suited for translating formal and historically nuanced texts.
 
 The Phi-3-medium-128k model can translate book-length text from Chinese to English. It demonstrates robust capabilities in handling large volumes of complex content, suggesting advanced memory handling and contextual awareness. The quality of translation remains consistent even with increased text length, indicating Phi's utility in projects requiring extensive, detailed translations. But you can see it makes certain mistakes like mistaken "Wenhua Hall" as "also known as Forbidden City" in the first paragraph.
 
-Overall, each model has its strengths, with Gemma-2-9B standing out for linguistic finesse and Phi-3-medium-128k for handling lengthy texts. 
+Overall, each model has its strengths, with gemma-2-27b standing out for linguistic finesse and Phi-3-medium-128k for handling lengthy texts. 
 
 ## Conclusion
 

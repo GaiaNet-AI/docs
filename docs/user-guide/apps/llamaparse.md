@@ -19,8 +19,8 @@ In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://gemma-2-9b.us.gaianet.network/v1 | gemma-2-9b-it-Q5_K_M |
-| Embedding | https://gemma-2-9b.us.gaianet.network/v1 | nomic-embed-text-v1.5.f16 |
+| Chat | https://gemma-2-27b.us.gaianet.network/v1 | gemma-2-27b-it-Q5_K_M |
+| Embedding | https://gemma-2-27b.us.gaianet.network/v1 | nomic-embed-text-v1.5.f16 |
 
 ## Steps
 
@@ -58,9 +58,9 @@ nohup docker run -d -p 6333:6333 -p 6334:6334 \
 Then, we will need to set up the LLM  model settings. We can configure the model setting in the `.env` file. 
 
 ```
-OPENAI_BASE_URL=https://gemma-2-9b.us.gaianet.network/v1/
+OPENAI_BASE_URL=https://gemma-2-27b.us.gaianet.network/v1/
 OPENAI_API_KEY=gaianet
-LLAMAEDGE_CHAT_MODEL=gemma-2-9b-it-Q5_K_M
+LLAMAEDGE_CHAT_MODEL=gemma-2-27b-it-Q5_K_M
 LLAMAEDGE_EMBEDDING_MODEL=Nomic-embed-text-v1.5
 LLAMA_CLOUD_API_KEY=Your_Own_KEY
 FILE_PATH=
