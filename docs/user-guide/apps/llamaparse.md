@@ -60,8 +60,8 @@ Then, we will need to set up the LLM  model settings. We can configure the model
 ```
 OPENAI_BASE_URL=https://gemma.us.gaianet.network/v1/
 OPENAI_API_KEY=gaianet
-LLAMAEDGE_CHAT_MODEL=gemma-2-27b-it-Q5_K_M
-LLAMAEDGE_EMBEDDING_MODEL=Nomic-embed-text-v1.5
+LLAMAEDGE_CHAT_MODEL=gemma
+LLAMAEDGE_EMBEDDING_MODEL=nomic
 LLAMA_CLOUD_API_KEY=Your_Own_KEY
 FILE_PATH=
 FILE_DIR=./pdf_dir
