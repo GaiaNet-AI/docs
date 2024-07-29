@@ -35,12 +35,12 @@ Edit the code to create an OpenAI client. We will pass in the `base_url` here.
 client = openai.OpenAI(base_url="https://llama.us.gaianet.network/v1", api_key=OPENAI_API_KEY)
 ```
 
-Next, replace all the `gpt-4o-mini` model name with the `Meta-Llama-3-8B-Instruct-Q5_K_M` model name in the code. 
+Next, replace all the `gpt-4o-mini` model name with the `llama` model name in the code. 
 Here is an example.
 
 ```
 response = client.chat.completions.create(
-    model="Meta-Llama-3-8B-Instruct-Q5_K_M",
+    model="llama",
     messages=[
         {"role": "system", "content": "You are a helpful assistant. Use the given plan to create a detailed and high-quality response to the user's query."},
         {"role": "user", "content": f"User Query: {user_query}\n\nPlan: {best_plan}\n\nGenerate a detailed response based on this plan."}
