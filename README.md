@@ -1,6 +1,8 @@
 # GaiaNet Docs
 
-The documentations for GaiaNet.
+The documentation is for GaiaNet node operators, users, and creators.
 
-These documentations are in very early satge. Changes will be made everyday.
+Feel free to create a PR if there is anything that needs to be improved.
+
+
 
