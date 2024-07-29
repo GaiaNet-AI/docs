@@ -20,7 +20,7 @@ In this tutorial, we will use public nodes to power the Continue plugin.
 | Model type | API base URL | Model name |
 |-----|--------|-----|
 | Chat | https://gemma.us.gaianet.network/v1 | gemma |
-| Embedding | https://gemma.us.gaianet.network/v1 | nomic |
+| Embedding | https://gemma.us.gaianet.network/v1 | nomic-embed |
 
 ## Steps
 
