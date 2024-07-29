@@ -56,7 +56,7 @@ You will need to delete the ChatOpenAI component and click the + button to searc
 Then, you will need to input 
 
 * the Gaia node base URL `https://llama.us.gaianet.network/v1` 
-* the model name `Meta-Llama-3-8B-Instruct-Q5_K_M`
+* the model name `llama`
 
 Next, connect the ChatLocalAI component with the field `Chat model` in the **Conversational Retrieval QA Chain** component.
 
@@ -79,7 +79,7 @@ You can send a question like "How to install a GaiaNet node" after saving the cu
 
 ![](flowise-04.png)
 
-And you will get the answer based on the GaiaNet docs, which is more accurate.
+You will get the answer based on the GaiaNet docs, which are more accurate.
 
 ## More examples
 
