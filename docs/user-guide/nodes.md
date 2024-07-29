@@ -8,40 +8,40 @@ Each GaiaNet node provides a web-based chatbot UI and an OpenAI compatible web s
 Here are some popular nodes. Please refer to the [agent apps](apps/intro) section to see how
 to use the GaiaNet API in your favorite agent frameworks or apps.
 
-## Llama 3 8b
+## Llama
 
 This node runs a plain Llama 3 8b model without any additional knowledge. 
-[Chat with it](https://llama-3-8b.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+[Chat with it](https://llama.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://llama-3-8b.us.gaianet.network/v1 |
-| Model Name (for LLM) | Meta-Llama-3-8B-Instruct-Q5_K_M |
-| Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
+| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| Model Name (for LLM) | llama |
+| Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
-## Gemma 2 27b
+## Gemma
 
 This node runs a plain Gemma 2 27b model without any additional knowledge. 
-[Chat with it](https://gemma-2-27b.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+[Chat with it](https://gemma.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://gemma-2-27b.us.gaianet.network/v1 |
-| Model Name (for LLM) | gemma-2-27b-it-Q5_K_M |
-| Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
+| API endpoint URL | https://gemma.us.gaianet.network/v1 |
+| Model Name (for LLM) | gemma |
+| Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
-## Codestral 22B v0.1
+## Codestral
 
-This node runs a plain Codestral 22B v0.1 model without any additional knowledge. 
-[Chat with it](https://codestral-01-22b.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+This node runs a plain Codestral model without any additional knowledge. 
+[Chat with it](https://codestral.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://codestral-01-22b.us.gaianet.network/v1 |
-| Model Name (for LLM) | Codestral-22B-v0.1-hf-Q5_K_M |
-| Model Name (for Text embedding) | nomic-embed-text-v1.5.f16 |
+| API endpoint URL | https://codestral.us.gaianet.network/v1 |
+| Model Name (for LLM) | codestral |
+| Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
 
