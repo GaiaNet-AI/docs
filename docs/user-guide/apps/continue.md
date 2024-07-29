@@ -48,7 +48,7 @@ chat, code autocomplete and embeddings.
 {
   "models": [
     {
-      "model": "gemma-2-27b-it-Q5_K_M",
+      "model": "gemma",
       "title": "LlamaEdge",
       "apiBase": "https://gemma.us.gaianet.network/v1/",
       "provider": "openai"
@@ -57,12 +57,12 @@ chat, code autocomplete and embeddings.
   "tabAutocompleteModel": {
       "title": "Autocomplete",
       "apiBase": "https://codestral.us.gaianet.network/v1/",
-      "model": "Codestral-22B-v0.1-hf-Q5_K_M",
+      "model": "codestral",
       "provider": "openai"
   },
   "embeddingsProvider": {
     "provider": "openai",
-    "model": "nomic-embed-text-v1.5.f16",
+    "model": "nomic-embed",
     "apiBase": "https://gemma.us.gaianet.network/v1/"
   },
   "customCommands": [
