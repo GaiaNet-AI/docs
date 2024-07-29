@@ -22,7 +22,7 @@ Here, we will use the public GaiaNet node with gemma-2-27b model.  `https://gemm
 >As an alternative, you can also start a GaiaNet node locally on your device. Refer to [this guide](https://github.com/GaiaNet-AI/node-configs/tree/main/gemma-2-27b-it).
 
 
-To get started, clone the Translation Agent that support open source LLMs.
+To get started, clone the Translation Agent that supports open source LLMs.
 
 ```
 git clone https://github.com/second-state/translation-agent.git
@@ -46,7 +46,7 @@ pip install openai tiktoken icecream langchain_text_splitters
 
 Find the `examples/sample-texts` folder in your cloned repo. Put the file you want to translate in this folder and get its path. Here because we named our [source text](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#Source-text-Intro-of-Forbidden-City) in Chinese `forbiddencity.txt` since it is an introduction on this Chinese royal palace, then note down its document path, `sample-texts/forbiddencity.txt`. This will be the `relative path` in our `example_script.py` file.
 
-Find the `examples/example_script.py` file in your cloned agent repo and review its code. It tells the agent where to find your document and how to translate it. Change the relative path to the above. Change the model name to the one you are using; here, we're using the `gemma-2-27b-it-Q5_K_M` model; also change the source and target languages you want (here we put `Chinese` as the source language and `English` as the target language).
+Find the `examples/example_script.py` file in your cloned agent repo and review its code. It tells the agent where to find your document and how to translate it. Change the relative path to the above. Change the model name to the one you are using; here, we're using the `gemma` model; also change the source and target languages you want (here we put `Chinese` as the source language and `English` as the target language).
 
 ```
 import os  
@@ -70,7 +70,7 @@ if __name__ == "__main__":
             target_lang=target_lang,
             source_text=source_text,
             country=country,
-            model="gemma-2-27b-it-Q5_K_M",
+            model="gemma",
     )
     
     print(f"Translation:\n\n{translation}")
