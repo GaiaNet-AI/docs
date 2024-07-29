@@ -24,7 +24,7 @@ pip install -r requirements.txt
 Next, let's configure the GaiaNet node as the LLM backend.
 
 ```
-export OPENAI_BASE_URL="https://gemma-2-27b.us.gaianet.network/v1"
+export OPENAI_BASE_URL="https://gemma.us.gaianet.network/v1"
 export OPENAI_MODEL_NAME="gemma-2-27b-it-Q5_K_M" 
 export OPENAI_API_KEY="GAIANET" 
 ```

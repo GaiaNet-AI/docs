@@ -22,8 +22,8 @@ In this tutorial, we will use a public node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llama-3-8b.us.gaianet.network/v1 |
-| Model Name | Meta-Llama-3-8B-Instruct-Q5_K_M |
+| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| Model Name | llama |
 
 ## Run the agent
 
@@ -32,7 +32,7 @@ First, [load the nodebook in colab](https://colab.research.google.com/github/msh
 Edit the code to create an OpenAI client. We will pass in the `base_url` here.
 
 ```
-client = openai.OpenAI(base_url="https://llama-3-8b.us.gaianet.network/v1", api_key=OPENAI_API_KEY)
+client = openai.OpenAI(base_url="https://llama.us.gaianet.network/v1", api_key=OPENAI_API_KEY)
 ```
 
 Next, replace all the `gpt-4o-mini` model name with the `Meta-Llama-3-8B-Instruct-Q5_K_M` model name in the code. 
