@@ -50,7 +50,7 @@ Then click “Enable”.
 
 ![](obsidian-configure.png)
 
-Make sure to click the refresh button and choose the **Meta-Llama-3-8B-Instruct.Q5_K_M **model if you’re using the public GaiaNet node url and **Phi-3-mini-4k-instruct** if you’re using the local GaiaNet node.
+Make sure to click the refresh button and choose the **llama** model if you’re using the public GaiaNet node url and **Phi-3-mini-4k-instruct** if you’re using the local GaiaNet node.
 
 ![](obsidian-model.png)
 
