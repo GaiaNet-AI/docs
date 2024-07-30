@@ -42,7 +42,7 @@ cp .example.env .env
 
 You will need to configure four parameters here.
 
-* SERPER_API_KEY: The [serach API key](https://serper.dev/) for searching content online. You can also use BING_API_KEY here.
+* SERPER_API_KEY: The [serper API key](https://serper.dev/) for searching content online. You can also use BING_API_KEY here.
 * LLAMAEDGE_BASE_URL: URL for the LLM API base URL.
 * LLAMAEDGE_MODEL_NAME: Name of the model to be used.
 * LLAMAEDGE_API_KEY: API key for accessing the LLM services.
