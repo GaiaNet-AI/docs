@@ -18,7 +18,18 @@ To install the most recent version of GaiaNet node, run the following command li
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 
-The GaiaNet node will be installed in your `$HOME/gaianet` folder by default. If you want to install gaianet in a different directory, you can use `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s --  --base <Path> ` to specify where you want to install GaiaNet. Once you use `--base`
+The GaiaNet node will be installed in your `$HOME/gaianet` folder by default. 
+
+> If you want to install gaianet in a different directory, you can use `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s --  --base <Full_Path> ` to specify where you want to install GaiaNet. Once you use `--base` to define a different directory, you should always add `--base <Full_Path>` to init and start your node.
+> Here is an example:
+> ```
+> # Assume that you're in the root directory
+> mkdir test
+> curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s --  --base $HOME/test
+> gaianet init --base $HOME/testtest
+> gaianet start --base $HOME/test
+> gaianet stop --base $HOME/test
+> ```
 
 ### Install the specific version of GaiaNet Node
 
