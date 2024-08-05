@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 13
 ---
 
-# Build a knowledge base using GaiaNet web tool
+# Build a knowledge base using Gaia web tool
 
 GaiaNet has developed a tool for making vector collection snapshot files, so everyone can easily create their own knowledge base.
 

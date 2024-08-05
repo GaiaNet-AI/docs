@@ -4,16 +4,18 @@ sidebar_position: 4
 
 # Knowledge base from a markdown file
 
-In this section, we will discuss how to create a vector collection snapshot from a markdown file. The 
-snapshot file can then be loaded by a GaiaNet node as its knowledge base. 
-You will have the option to create a vector for each markdown section.
+In this section, we will discuss how to create a vector collection snapshot from a markdown file. The
+snapshot file can then be [loaded by a Gaia node as its knowledge base](../../node-guide/customize#select-a-knowledge-base).
+
+The markdown file is segmented into multiple sections by headings. [See an example](https://huggingface.co/datasets/gaianet/paris/raw/main/paris.md). Each section is turned into a vector, and when
+retrieved, added to the prompt context for the LLM.
 
 ## Prerequisites
 
 Install the WasmEdge Runtime, the cross-platform LLM runtime.
 
 ```
-curl -sSf https://raw.githubusercontent.com/WasmEdge/WasmEdge/master/utils/install.sh | bash -s -- --plugins wasi_nn-ggml
+curl -sSf https://raw.githubusercontent.com/WasmEdge/WasmEdge/master/utils/install_v2.sh | bash -s
 ```
 
 Download an embedding model.
@@ -22,11 +24,15 @@ Download an embedding model.
 curl -LO https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf
 ```
 
-The embedding model is a special kind of LLM that turns sentences into vectors. The vectors can then be stored in a vector database and searched later. When the sentences are from a body of text that represents a knowledge domain, that vector database becomes our RAG knowledge base. 
+The embedding model is a special kind of LLM that turns sentences into vectors. The vectors can then be stored in a vector database and searched later. When the sentences are from a body of text that represents a knowledge domain, that vector database becomes our RAG knowledge base.
 
 ## Start a vector database
 
-By default, we use Qdrant as the vector database. You can start a Qdrant instance on your server using Docker. The following command starts it in the background.
+By default, we use Qdrant as the vector database. You can start a Qdrant instance
+by [starting a Gaia node with a knowledge snapshot](../../node-guide/quick-start.md).
+
+:::note
+Or, you can start a Qdrant server using Docker. The following command starts it in the background.
 
 ```
 mkdir qdrant_storage
@@ -37,6 +43,7 @@ nohup docker run -d -p 6333:6333 -p 6334:6334 \
     -v $(pwd)/qdrant_snapshots:/qdrant/snapshots:z \
     qdrant/qdrant
 ```
+:::
 
 ## Create the vector collection snapshot
 
@@ -60,7 +67,7 @@ curl -X PUT 'http://localhost:6333/collections/default' \
   }'
 ```
 
-Download a program to chunk a document and create embeddings.
+Download a program to segment the markdown document and create embeddings.
 
 ```
 curl -LO https://github.com/GaiaNet-AI/embedding-tools/raw/main/markdown_embed/markdown_embed.wasm
@@ -78,7 +85,7 @@ wasmedge --dir .:. \
   markdown_embed.wasm embedding default 768 paris.md --heading_level 1 --ctx_size 8192
 ```
 
-## More options
+### Options
 
 You can pass the following options to the program.
 
@@ -97,23 +104,23 @@ wasmedge --dir .:. \
 
 ## Create a vector snapshot
 
-You can create a snapshot of the collection, which can be shared and loaded into a different Qdrant database. You can find the snapshot file in the `qdrant_snapshots` directory.
+You can create a snapshot of the collection, which can be shared and loaded into a different Qdrant database. You can find the snapshot file in the `qdrant_snapshots` directory, or the `~/gaianet/qdrant/snapshots` directory in the Gaia node.
 
 ```
 curl -X POST 'http://localhost:6333/collections/default/snapshots'
 ```
 
-We also recommend you to compress the snapshot file for GaiaNet node use.
+We also recommend you to compress the snapshot file.
 
 ```
 tar czvf my.snapshot.tar.gz my.snapshot
 ```
 
-Finally, upload the `my.snapshot.tar.gz` file to Huggingface so that the GaiaNet node can download and use it.
+Finally, upload the `my.snapshot.tar.gz` file to Huggingface so that the [Gaia node can download and use it](../../node-guide/customize#select-a-knowledge-base).
 
 ## Next steps
 
-* [Start](../../node-guide/quick-start) a new GaiaNet node
-* [Customize](../../node-guide/customize) the GaiaNet node
+* [Start](../../node-guide/quick-start.md) a new Gaia node
+* [Customize](../../node-guide/customize.md) the Gaia node
 
 Have fun!
