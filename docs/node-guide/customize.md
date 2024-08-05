@@ -6,7 +6,7 @@ sidebar_position: 3
 
 A key goal of the GaiaNet project is to enable each individual to create and run his or her own
 agent service node using finetuned LLMs and proprietary knowledge. In all likelihood, 
-you are not going to run a node with the [default](quick-start) Phi-3 LLM and Paris guidebook knowledge base.
+you are not going to run a node with the [default](quick-start.md) Phi-3 LLM and Paris guidebook knowledge base.
 In this chapter, we will discuss ways to customize your node.
 
 ## Pre-set configurations
@@ -56,7 +56,7 @@ gaianet config \
 
 > The llama 3 8B model requires at least 16GB of RAM.
 
-If none of the published finetuned models are perfect for your use case, you can also finetune your own LLM by following [these guides](../creator-guide/finetune/intro). Your GaiaNet node can run your own finetuned models. 
+If none of the published finetuned models are perfect for your use case, you can also finetune your own LLM by following [these guides](../creator-guide/finetune/intro.md). Your GaiaNet node can run your own finetuned models. 
 
 > The `--chat-url` argument could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a privately trained or finetuned LLM model file.
 
@@ -64,13 +64,13 @@ If none of the published finetuned models are perfect for your use case, you can
 
 A key feature of GaiaNet is that users can create and deploy proprietary knowledge base on the node to supplement
 the LLM. Each knowledge base is a snapshot file for a vector collection. 
-We encourage you to [create your own knowledge base](../creator-guide/knowledge/concepts). But you can also use 
+We encourage you to [create your own knowledge base](../creator-guide/knowledge/concepts.md). But you can also use 
 ready-made knowledge bases. You will need to do the following.
 
-* specify the URL to the vector collection (i.e., the `snapshot` or 'snapshot.tar.gz` file) in the `snapshot` option.
+* specify the URL to the vector collection (i.e., the `snapshot` or `snapshot.tar.gz` file) in the `snapshot` option.
 * use the same embedding model that generated this vector collection.
-* modify the `system_prompt` to instruct the model how to answer questions when NO context is found in the vector collection.
-* modify the `rag_prompt` to instruct the model how to use the context retrieved from the vector collection.
+* modify the `system_prompt` to give the model background knowledge.
+* modify the `rag_prompt` to instruct the model to answer the question when context is retrieved from the vector collection.
 
 The following example changes the knowledge base in the node from "Paris guidebook" to "London guidebook". 
 
@@ -78,9 +78,10 @@ The following example changes the knowledge base in the node from "Paris guidebo
 gaianet config \
   --snapshot https://huggingface.co/datasets/gaianet/london/resolve/main/london_768_nomic-embed-text-v1.5-f16.snapshot.tar.gz \
   --embedding-url https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf \
-  --embedding-ctx-size 512 \
+  --embedding-ctx-size 8192 \
+  --embedding-batch-size 8192 \
   --system-prompt "You are a tour guide in London, UK. Please answer the question from a London visitor accurately." \
-  --rag-prompt "You are a tour guide in London, UK. Use information in the following context to directly answer the question from a London visitor.\n----------------\n"
+  --rag-prompt "The following text is the context for the user question.\n----------------\n"
 ```
 
 > The `--snapshot` could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a private vector collection snapshot.
@@ -98,18 +99,19 @@ benchmarks of embedding models. You can find many of them in the [gaianet organi
  
 ### Customize prompts
 
-In `config.json`, you can also customize the prompts. Prompts are often tailored for the finetuned LLM or the knowledge
+In `config.json`, you can also customize the prompts. 
+Prompts are often tailored for the finetuned LLM or the knowledge
 base to generate optimal responses from the node.
 
-The `--system-prompt` option sets a system prompt when the knowledge base search returns NO context. You can consider it to 
-be the "default" system prompt. It is only useful in the node's built-in chatbot UI since an API request can set 
-its own system prompt.
+The `--system-prompt` option sets a system prompt. It provides the background and "personality" of the node.
+Each API request can set its own system prompt.
 
-The `--rag-prompt` is the system prompt to be prefixed in front of the context from the vector search result. The combined
-`rag-prompt` and context replaces any system prompt the user might set. When the user makes a request to the GaiaNet node, the node first searches the knowledge base for relevant text. It then puts the search result text into the LLM query as context. The `rag-prompt` is to introduce the context to the LLM. It is written in natural language. You can in fact put a lot of complex instructions into the prompt, such as how and when to answer questions, speaking styles, and overall background information about the task. 
+The `--rag-prompt` is the prompt to be appended after the system prompt (or user query). 
+It introduces the RAG context retrieved from the vector database, which follows it.
 
-The `--rag-policy` option specifies where the `rag-prompt` and context should go. By default, its value is `system-message`
-and it puts the context in the system prompt as we discussed. But you could also set it to `last-user-message`, which
+The `--rag-policy` option specifies where the `rag-prompt` and context should go. 
+By default, its value is `system-message` and it puts the context in the system prompt. 
+But you could also set it to `last-user-message`, which
 puts the `rag-prompt` and context in front of the latest message from the user.
 
 ## Next steps
@@ -126,8 +128,8 @@ gaianet start
 
 Next, you can
 
-* [Create a knowledge base](../creator-guide/knowledge/web-tool) from your proprietary knowledge or skills.
-* [Finetune](../creator-guide/finetune/intro) your own LLM.
+* [Create a knowledge base](../creator-guide/knowledge/concepts.md) from your proprietary knowledge or skills.
+* [Finetune](../creator-guide/finetune/intro.md) your own LLM.
 
 Have fun!
 
