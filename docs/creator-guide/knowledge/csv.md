@@ -14,6 +14,8 @@ We will create a vector snapshot where each vector is computed from the summary 
 retrieved source text for that vector is from the first column.
 The snapshot file can then be [loaded by a Gaia node as its knowledge base](../../node-guide/customize#select-a-knowledge-base).
 
+> We have a simple Python script to build properly formatted CSV files from a set of articles or chapters. [See how it works](https://github.com/GaiaNet-AI/embedding-tools/tree/main/csv_embed#create-a-csv-file).
+
 ## Prerequisites
 
 Install the WasmEdge Runtime, the cross-platform LLM runtime.
