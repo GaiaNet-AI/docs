@@ -6,8 +6,6 @@ sidebar_position: 102
 
 LlamaCoder is an open-source tool designed to generate small apps with a single prompt. It leverages LLM to help you quickly create and enhance React applications.
 
-
-
 ## Prerequisites
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
@@ -28,7 +26,7 @@ In this tutorial, we will use a public Llama3 node.
 First, we will need to get the source code of the forked LlamaTutor
 
 ```
-[git clone https://github.com/JYC0413/llamatutor.git](https://github.com/second-state/llamacoder.git)
+git clone https://github.com/second-state/llamacoder.git
 cd llamacoder
 ```
 
@@ -44,7 +42,7 @@ You will need to configure four parameters here.
 * LLAMAEDGE_MODEL_NAME: Name of the model to be used.
 * LLAMAEDGE_API_KEY: API key for accessing the LLM services.
 
-Then, we will need to install the required depencies.
+Then, we will need to install the required dependencies.
 
 ```
 npm install
@@ -58,4 +56,4 @@ npm run dev
 
 Finally, open http://localhost:3000 in your browser and start to build your React app.
 
-![](llamatutor.png)
+![](llamacoder.png)
