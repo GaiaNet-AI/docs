@@ -5,10 +5,10 @@ sidebar_position: 105
 # LlamaTutor
 
 The [LlamaTutor](https://github.com/Nutlope/llamatutor) is a TypeScript
-application that using Llama 3.1 to act as an open source AI personal tutor. When you run it, it will ask the LLM
-to search on the web based on your inquery topic and then generate content for you to learn.
+application using Llama 3.1 to act as an open-source AI personal tutor. When you run it, it will ask the LLM
+to search on the web based on your inquiry topic and then generate content for you to learn.
 
-The program didn't use the official OpenAI library, we can use the forked on that support [using a Gaia node](intro.md) as the LLM backend.
+The program didn't use the official OpenAI library, we can use the forked one that supports [using a Gaia node](intro.md) as the LLM backend.
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ You will need to configure four parameters here.
 * LLAMAEDGE_MODEL_NAME: Name of the model to be used.
 * LLAMAEDGE_API_KEY: API key for accessing the LLM services.
 
-Then, we will need to install the required depencies.
+Then, we will need to install the required dependencies.
 
 ```
 npm install
