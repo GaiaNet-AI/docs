@@ -36,11 +36,19 @@ Next, configure the `.env` file.
 cp .example.env .env
 ```
 
-You will need to configure four parameters here.
+You will need to configure three parameters here.
 
 * LLAMAEDGE_BASE_URL: URL for the LLM API base URL.
 * LLAMAEDGE_MODEL_NAME: Name of the model to be used.
 * LLAMAEDGE_API_KEY: API key for accessing the LLM services.
+
+For example, you can use the following `.env` setting.
+
+```
+LLAMAEDGE_BASE_URL=https://llama.us.gaianet.network/v1
+LLAMAEDGE_MODEL_NAME=llama
+LLAMAEDGE_API_KEY=GaiaNet
+```
 
 Then, we will need to install the required dependencies.
 
