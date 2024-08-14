@@ -20,7 +20,7 @@ In this tutorial, we will use the public CodeStral nodes to power the CodeGPT pl
 | Chat | https://codestral.us.gaianet.network/v1/v1/ | codestral |
 
 
-> It is important to note that CodeGPT requires the API endpoint to include a `v1/` at the end.
+> For some reason, CodeGPT requires the API endpoint to include an extra `v1/` at the end.
 
 ## Install CodeGPT
 
@@ -34,11 +34,11 @@ Once you install it successfully, you can find the plugin on the right sidebar. 
 
 Click the CODEGPT on the right sidebar and enter the settings page for CodeGPT. 
 
-1. Go through the **Select Your AI** and choose **Custom** for the PROVIDER part. Copy and paste `c` in the **MODEL** filed
+1. Go through the **Select Your AI** and choose the **Custom** PROVIDER. Copy and paste `codestral` into the MODEL field.
 
 ![](codegpt-02.png)
 
-3. Click the Connect button to configure the model base url and API key.
+3. Click the Connect button to configure the model base url and API key. Again, note the extra `v1\` at the end of the URL. 
 
 | Attribute | Value | 
 |-----|--------|
@@ -47,11 +47,11 @@ Click the CODEGPT on the right sidebar and enter the settings page for CodeGPT.
 
 ![](codegpt-03.png)
 
-Save the above settings to make it take effect.
+Save the above settings.
 
 ## Use the plugin
 
-According to the instructions, you can use the slash commands to ask the coding assistant to fix bugs, explain codes, write documentation, refactor the docs, and create unit test cases for the specific code.
+You can summon the coding assistant using slash commands defined in the plugin. You can ask the coding assistant to fix bugs, explain codes, write documentation, refactor the docs, and create unit test cases for the specific code.
 
 ![](codegpt-04.png)
 
