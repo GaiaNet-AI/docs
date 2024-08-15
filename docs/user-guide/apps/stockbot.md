@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Stockbot is a lightning fast AI Chatbot that responds with live interactive stock charts, financials, news, screeners, and more. You can configure a Gaia node as the LLM backend.
 
-> Please note, the Stockbot leverages function call to call the external API. You will need to use the model which supports function call, like [llama-3.1-8b]().
+> Please note, the Stockbot leverages function call to call the external API. You will need to use the model which supports function call, like [llama-3.1-8b](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-groq-8b-tool).
 
 
 ## Prerequisites
