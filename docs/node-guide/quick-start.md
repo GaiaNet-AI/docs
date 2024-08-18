@@ -43,8 +43,8 @@ gaianet stop
 
 ## Next steps
 
-* [Customize](customize) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
-* [Register](register) and join the GaiaNet protocol network to receive payments.
-* [Protect](tasks/protect) the node server to ensure stable service.
-* Install and manage [multiple nodes](tasks/multiple) on a single machine.
+* [Customize](customize.md) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
+* [Register](register.md) and join the GaiaNet protocol network to receive payments.
+* [Protect](tasks/protect.md) the node server to ensure stable service.
+* Install and manage [multiple nodes](tasks/multiple.md) on a single machine.
 
