@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'GaiaNet',
   tagline: 'Decentralizing Generative AI Chatbot and Agent',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon.png',
 
   // Set the production url of your site here
   url: 'https://docs.gaianet.ai/',
@@ -83,7 +83,7 @@ const config = {
         title: 'GaiaNet',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           // {
