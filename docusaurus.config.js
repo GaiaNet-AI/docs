@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'GaiaNet',
+  title: 'Gaia',
   tagline: 'Decentralizing Generative AI Chatbot and Agent',
   favicon: 'img/icon.png',
 
@@ -80,10 +80,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/share.png',
       navbar: {
-        title: 'GaiaNet',
+        title: 'Gaia',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.png',
+          src: 'img/icon-white.png',
         },
         items: [
           // {
