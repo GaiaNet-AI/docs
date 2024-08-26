@@ -26,7 +26,7 @@ The GaiaNet node will be installed in your `$HOME/gaianet` folder by default.
 > # Assume that you're in the root directory
 > mkdir test
 > curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s --  --base $HOME/test
-> gaianet init --base $HOME/testtest
+> gaianet init --base $HOME/test
 > gaianet start --base $HOME/test
 > gaianet stop --base $HOME/test
 > ```
