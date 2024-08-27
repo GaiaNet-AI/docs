@@ -42,17 +42,15 @@ gaianet init
 gaianet start
 ```
 
-5. A successful start prints a public URL for the node. Opening a browser to that URL will display the node information and allow you to chat with the AI agent on the node. 
+#### After starting your node
+
+- A successful start prints a public URL for the node. Opening a browser to that URL will display the node information and allow you to chat with the AI agent on the node. 
 
 ```
 ... ... https://0xf63939431ee11267f4855a166e11cc44d24960c0.gaianet.xyz
 ```
 
-6. To stop the node:
-
-```
-gaianet stop
-```
+- To stop the node: `gaianet stop`
 
 ## Next steps
 
