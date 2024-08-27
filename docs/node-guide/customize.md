@@ -79,7 +79,6 @@ gaianet config \
   --snapshot https://huggingface.co/datasets/gaianet/london/resolve/main/london_768_nomic-embed-text-v1.5-f16.snapshot.tar.gz \
   --embedding-url https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf \
   --embedding-ctx-size 8192 \
-  --embedding-batch-size 8192 \
   --system-prompt "You are a tour guide in London, UK. Please answer the question from a London visitor accurately." \
   --rag-prompt "The following text is the context for the user question.\n----------------\n"
 ```
