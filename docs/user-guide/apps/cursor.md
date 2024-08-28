@@ -2,23 +2,22 @@
 sidebar_position: 4
 ---
 
-
-# Cursor
+# Cursor AI IDE
 
 [Cursor](https://www.cursor.com/) is an AI-powered code editor / IDE. Using LLMs to generate and review code, Cursor is an alternative to the very popular GitHub Copilot. 
 You can use Cursor with your own Gaia node as the LLM backend. There are two big reasons for that
 
-* Your Gaia node could be supplemented by a knowledge base that is specific to your proprietary code repository, porgramming language, and programming styles.
+* Your Gaia node could be supplemented by a knowledge base that is specific to your proprietary code repository, porgramming language choices, and coding guidelines / styles.
 * Your Gaia node could ensure that your code stays private within your organization.
 
 ## Prerequisites
 
-You will need a Gaia node ready to provide LLM services through a public URL. You can
+You will need a Gaia node to provide LLM API services. You can
 
 * [run your own node](../../node-guide/quick-start.md)
 * [use a public node](../nodes.md)
 
-In this tutorial, we will use a public Llama 3.1 8b node to power Cursor.
+In this tutorial, we will use a public [Llama 3.1 8b](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) node to power Cursor.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
@@ -28,9 +27,9 @@ In this tutorial, we will use a public Llama 3.1 8b node to power Cursor.
 
 ## Configure Cursor
 
-First, you will need to download [Cursor](https://www.cursor.com/). After the installation, click the **Settings** button on the top right button. Then, click on **Models** to configure the backend LLM service.
+First, download and install [Cursor](https://www.cursor.com/). Click on the **Settings** button on the top right. Then, click on **Models** to configure the backend LLM service.
 
-Second, we will need to add a model named `llama` and turn off all the other models like `gpt4o`.
+Second, add a model named `llama` and turn off all the other models like `gpt-4o`.
 
 Third, go to the OpenAI API Key section,
 
