@@ -18,7 +18,7 @@ In this tutorial, we will use a public codestral node to power the Cursor.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://codestral.us.gaianet.network/v1/ | codestral |
+| Chat | https://llama.us.gaianet.network/v1/ | llama |
 
 ## Configure Cursor
 
@@ -26,9 +26,9 @@ Firstly, you will need to download [Cursor](https://www.cursor.com/).
 
 After the installation, click the settings button on the top right button. Then, click on Models to configure the model.
 
-Firstly, we will need to add a model named `codestral` and turn off all the other models like gpt4O.
+Firstly, we will need to add a model named `llama` and turn off all the other models like gpt4O.
 
-Secondly, go to the OpenAI API Key section and click on Override OpenAI Base URL. Type `https://codestral.us.gaianet.network/v1` here.
+Secondly, go to the OpenAI API Key section and click on Override OpenAI Base URL. Type `https://llama.us.gaianet.network/v1` here.
 
 As for the OpenAI key part, write several characters here. Click on Verfiy to test if the connection is correct.
 
