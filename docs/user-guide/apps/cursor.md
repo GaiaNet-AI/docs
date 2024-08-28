@@ -5,7 +5,11 @@ sidebar_position: 4
 
 # Cursor
 
-Cursor is a programming pair assistant, powered by LLMs, for developers. It's an alternative to GitHub copilot. You can configure a Gaia node as the LLM backend to generate code for you.
+[Cursor](https://www.cursor.com/) is an AI-powered code editor / IDE. Using LLMs to generate and review code, Cursor is an alternative to the very popular GitHub Copilot. 
+You can use Cursor with your own Gaia node as the LLM backend. There are two big reasons for that
+
+* Your Gaia node could be supplemented by a knowledge base that is specific to your proprietary code repository, porgramming language, and programming styles.
+* Your Gaia node could ensure that your code stays private within your organization.
 
 ## Prerequisites
 
@@ -14,32 +18,32 @@ You will need a Gaia node ready to provide LLM services through a public URL. Yo
 * [run your own node](../../node-guide/quick-start.md)
 * [use a public node](../nodes.md)
 
-In this tutorial, we will use a public codestral node to power the Cursor.
+In this tutorial, we will use a public Llama 3.1 8b node to power Cursor.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
 | Chat | https://llama.us.gaianet.network/v1/ | llama |
 
+> A limitation of Cursor is that it does not support local LLM services. A Gaia node comes with a default networking tunnel that turns your local LLM service into a HTTPS service accessible from the Internet. That allows Cursor to use your own private LLM for coding. Start your own [Llama 3.1](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) or [Phi 3.5](https://github.com/GaiaNet-AI/node-configs/tree/main/phi-3.5-mini-instruct) models today! Both are quite good at coding tasks.
+
 ## Configure Cursor
 
-Firstly, you will need to download [Cursor](https://www.cursor.com/).
+First, you will need to download [Cursor](https://www.cursor.com/). After the installation, click the **Settings** button on the top right button. Then, click on **Models** to configure the backend LLM service.
 
-After the installation, click the settings button on the top right button. Then, click on Models to configure the model.
+Second, we will need to add a model named `llama` and turn off all the other models like `gpt4o`.
 
-Firstly, we will need to add a model named `llama` and turn off all the other models like gpt4O.
+Third, go to the OpenAI API Key section,
 
-Secondly, go to the OpenAI API Key section and click on Override OpenAI Base URL. Type `https://llama.us.gaianet.network/v1` here.
-
-As for the OpenAI key part, write several characters here. Click on Verfiy to test if the connection is correct.
+* Click on **Override OpenAI Base URL**. Type `https://llama.us.gaianet.network/v1` here.
+* For the OpenAI API key, you can use any random chars such as `GAIA`. Click on **Verfiy** to test if the connection is correct.
 
 ![](cursor-01.png)
-
 
 ## Use Cursor
 
 You can use 
 
-* command + K to edit the specified code
-* command + L to open the chat room and ask questions about the code.
+* **command + K** to edit the highlighted code
+* **command + L** to open the chat room and ask questions about the code.
   
 ![](cursor-02.png)
