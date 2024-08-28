@@ -49,3 +49,57 @@ response = client.chat.completions.create(
 
 That's it! You can now take any application built with the official OpenAI Python library and use a Gaia node
 as its backend!
+
+## The OpenAI Node API library
+
+You can install the OpenAI Node library which provides convenient access to the OpenAI REST API from TypeScript or JavaScript as follows:
+
+```
+npm install openai
+```
+
+Import it into your project as:
+```
+// Example usage in Node.js
+const OpenAI = require('openai');
+```
+
+Create an OpenAI client with a custom base URL. Remember to append the `/v1` after the host name.
+
+```
+const client = new OpenAI({
+  baseURL: 'https://YOUR-NODE-ID.us.gaianet.network/v1',
+  apiKey: '' // Leave this empty when using Gaia
+});
+```
+
+Alternatively, you can set an environment variable using `dotenv` in Node.
+```
+process.env.OPENAI_API_BASE = 'https://YOUR-NODE-ID.us.gaianet.network/v1';
+```
+
+Then, when you make API calls from the `client`, make sure that the `model` is set to the model name
+available on your node.
+
+```
+async function callOpenAI() {
+  try {
+    const response = await client.chat.completions.create({
+      model: "Meta-Llama-3-8B-Instruct-Q5_K_M",
+      messages: [
+        { role: "system", content: "You are a strategic reasoner." },
+        { role: "user", content: "What is the purpose of life?" }
+      ],
+      temperature: 0.7,
+      max_tokens: 500
+    });
+
+    console.log(response.choices[0].message.content);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+//Usage
+callOpenAI();
+```
