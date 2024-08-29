@@ -19,27 +19,45 @@ In this tutorial, we will use the public [Llama-3.1-8B node](https://github.com/
 | Model type | API base URL | Model name |
 |-----|--------|-----|
 | Chat | https://llama.us.gaianet.network/v1/ | llama |
+| Embedding | https://llama.us.gaianet.network/v1/ | nomic-embed |
 
 **You will also need to make sure your Docker engine is running.** Because the Agent Zero framework will leverage Docker to execute the generated code.
 
 > You can start a local LLM service using [Gaia](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) or [LlamaEdge](https://llamaedge.com/docs/user-guide/quick-start-command) or [Moxin](https://github.com/moxin-org/moxin), and then use `http://localhost:8080/v1` as the LLM API service endpoint URL.
 
-## Run the agent
+## Configure the agent
 
-First, we will need to get the source code of a Gaia compatible version of Agent Zero.
+First, we will need to get the source code of a Gaia-compatible version of Agent Zero.
 
 ```
 git clone https://github.com/JYC0413/agent-zero-gaia.git
 cd agent-zero-gaia
 ```
 
-Then, we will need to install the required dependencies.
+Then, let's install the required dependencies.
 
 ```
 pip install -r requirements.txt
 ```
 
-Next, let's run the application locally.
+Next, let's configure the gaia node and other parameters.
+
+```
+cp example.env .env
+```
+
+You will need to configure the following items:
+
+* `CHAT_MODEL_BASE_URL`: URL for the LLM API base URL.
+* `CHAT_MODEL_NAME`: Name of the chat model to be used.
+* `CHAT_API_KEY`: An API key to access the LLM services. You can enter several random characters here.
+* `EMBEDDING_MODEL_BASE_URL`: URL for the embedding model API base URL.
+* `EMBEDDING_MODEL_NAME`: Name of the embedding model name
+* `EMBEDDING_API_KEY`: An API key to access the embedding services. You can enter several random characters here.
+
+## Run the agnet
+
+Finally, let's run the application locally.
 
 ```
 python main.py
