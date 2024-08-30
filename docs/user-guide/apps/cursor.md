@@ -10,6 +10,8 @@ You can use Cursor with your own Gaia node as the LLM backend. There are two big
 * Your Gaia node could be supplemented by a knowledge base that is specific to your proprietary code repository, porgramming language choices, and coding guidelines / styles.
 * Your Gaia node could ensure that your code stays private within your organization.
 
+<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://www.youtube.com/embed/Hf9zfjflP_0" title="Build a Rust app from scratch using local AI and Cursor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Prerequisites
 
 You will need a Gaia node to provide LLM API services. You can
