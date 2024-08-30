@@ -74,6 +74,42 @@ const config = {
     ],
   ],
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        hreflang: 'en',
+        href: 'https://docs.gaianet.ai'
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        hreflang: 'ko',
+        href: 'https://ko.docs.gaianet.ai'
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'text/javascript',
+        src: 'https://cdn.weglot.com/weglot.min.js',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: `
+          Weglot.initialize({
+            api_key: 'wg_8d3dd85f0e6d941759812a29e1d2e0d95'
+          });
+        `,
+    },
+  ],
+
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
