@@ -19,7 +19,7 @@ First, we will need to add GaiaNet Node as the LLM chat model and embedding mode
 
 * Then go to the Embedding Preference section and choose LocalAI as the embedding provider. Then copy and paste the GaiaNet node API base URL in the LocalAI Base URL. The chat model and embedding model along with your node will be loaded automatically. Choose the embedding model here and input the max embedding chunk length. Don't forget to click on Save Changes to make the changes take effect.
 
-The above operations make the Gaianet node as the LLM backend.
+The above operations make the GaiaNet node as the LLM backend.
 
 Second, let's set up the data source. You can upload a file or use the data connectors provided by Anything LLM.
 

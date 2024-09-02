@@ -18,16 +18,16 @@ The emergence of ChatGPT and Large Language Model (LLM) has revolutionized how h
 
 Agents are software applications that can complete tasks on its own autonomously like a human. The agent can understand the task, plan the steps to complete the task, execute all the steps, handle errors and exceptions, and deliver the results. While a powerful LLM could act as the “brain” for the agent, we need to connect to external data sources (eyes and ears), domain-specific knowledge base and prompts (skills), context stores (memory), and external tools (hands). For agent tasks, we often need to customize the LLM itself 
 
-* to reduce hallucinations in a specific domain, 
-* to generate responses in a specific format (eg a JSON schema), 
-* to answer “politically incorrect” questions (eg to analyze CVE exploits for an agent in the security domain), 
-* and to answer requests in a specific style (eg to mimic a person). 
+* to reduce hallucinations in a specific domain. 
+* to generate responses in a specific format (e.g., a JSON schema). 
+* to answer “politically incorrect” questions (e.g., to analyze CVE exploits for an agent in the security domain). 
+* and to answer requests in a specific style (e.g., to mimic a person). 
 
 ![What is a GaiaNet agent](gaianet_agent.png)
 
 Agents are complex software that require significant amount of engineering and resources. Today, most agents are close-source and hosted on SaaS-based LLMs. Popular examples include GPTs and Microsoft/GitHub copilots on OpenAI LLMs, and Duet on Google’s Gemini LLMs. 
 
-However, as we discussed, a key requirement for agents is to customize and adapt its underlying LLM and software stack for domain-specific tasks — an area where centralized SaaS perform very poorly. For example, with ChatGPT, every small task must be handled by a very large model. It is also enormously expensive to finetune or modify any ChatGPT models. The one-size-fits-all LLMs are detrimental to the agent use case in capabilities, alignment, and cost structure. Furthermore, the SaaS hosted LLMs lack privacy controls on how the agent’s private knowledge might be used and shared. Because of these shortcomings, it is difficult for individual knowledge workers to create and monetize agents for his or her own domain and tasks on SaaS platforms like OpenAI, Google, Anthropic, Microsoft and AWS. 
+However, as we discussed, a key requirement for agents is to customize and adapt its underlying LLM and software stack for domain-specific tasks — an area where centralized SaaS perform very poorly. For example, with ChatGPT, every small task must be handled by a very large model. It is also enormously expensive to fine-tune or modify any ChatGPT models. The one-size-fits-all LLMs are detrimental to the agent use case in capabilities, alignment, and cost structure. Furthermore, the SaaS hosted LLMs lack privacy controls on how the agent’s private knowledge might be used and shared. Because of these shortcomings, it is difficult for individual knowledge workers to create and monetize agents for his or her own domain and tasks on SaaS platforms like OpenAI, Google, Anthropic, Microsoft and AWS. 
 
 In this paper, we propose a decentralized software platform and protocol network for AI agents for everyone. Specifically, our goals are two-folds. 
 
@@ -39,7 +39,7 @@ In this paper, we propose a decentralized software platform and protocol network
 
 ## Open-source and decentralization
 
-As of April 2024, there are over 6000 open-source LLMs published on Hugging face. Compared with close-source LLMs, such as GPT4, open-source LLMs offer advantages in privacy, cost, and systematic bias. Even with general QA performance, open-source LLMs are closing the gap with close-source counterparties quickly. 
+As of April 2024, there are over 6000 open-source LLMs published on Hugging face. Compared with close-source LLMs, such as GPT-4, open-source LLMs offer advantages in privacy, cost, and systematic bias. Even with general QA performance, open-source LLMs are closing the gap with close-source counterparties quickly. 
 
 ![Open vs close source LLMs](closed_vs_open.jpg)
 
@@ -47,7 +47,7 @@ For AI agent use cases, it has been demonstrated that smaller but task-specific 
 
 However, it is difficult for individuals and businesses to deploy and orchestrate multiple finetuned LLMs on their own heterogeneous GPU infrastructure. The complex software stack for agents, as well as the complex interaction with external tools, are fragile and error-prone. 
 
-Furthermore, LLM agents have entirely different scaling characteristics than past application servers. LLM is extremely computationally intensive. A LLM agent server can typically only serve one user at a time, and it often blocks for seconds at a time. The scaling need is no longer to handle many async requests on a single server, but to load balance among many discreet servers on the internet scale.
+Furthermore, LLM agents have entirely different scaling characteristics than past application servers. LLM is extremely computationally intensive. A LLM agent server can typically only serve one user at a time, and it often blocks for seconds at a time. The scaling need is no longer to handle many async requests on a single server, but to load balance among many discrete servers on the internet scale.
 
 The GaiaNet project provides a cross-platform and highly efficient SDK and runtime for finetuned open-source LLMs with proprietary knowledge bases, customized prompts, structured responses, and external tools for function calling. A GaiaNet node can be started in minutes on any personal, cloud, or edge device. It can then offer services through an incentivized web3 network. 
 

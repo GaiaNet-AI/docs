@@ -4,14 +4,14 @@ sidebar_position: 2
 
 # llama.cpp
 
-The popular llama.cpp tool comes with a `finetune` utility. It works well on CPUs! This finetune guide is reproduced with 
+The popular llama.cpp tool comes with a `finetune` utility. It works well on CPUs! This fine-tune guide is reproduced with 
 permission from Tony Yuan's [Finetune an open-source LLM for the chemistry subject](https://github.com/YuanTony/chemistry-assistant/tree/main/fine-tune-model) project.
 
-## Build the finetune utility from llama.cpp
+## Build the fine-tune utility from llama.cpp
 
-The `finetune` utility in llama.cpp can work with quantitized GGUF files on CPUs, and hence dramatically reducing the hardware requirements and expenses for finetuning LLMs.
+The `finetune` utility in llama.cpp can work with quantized GGUF files on CPUs, and hence dramatically reducing the hardware requirements and expenses for fine-tuning LLMs.
 
-Checkout and download the llama.cpp source code.
+Check out and download the llama.cpp source code.
 
 ```
 git clone https://github.com/ggerganov/llama.cpp
@@ -27,7 +27,7 @@ cmake ..
 cmake --build . --config Release
 ```
 
-If you have Nvidia GPU and CUDA toolkit installed, you should build llama.cpp with CUDA support.
+If you have NVIDIA GPU and CUDA toolkit installed, you should build llama.cpp with CUDA support.
 
 ```
 mkdir build
@@ -38,7 +38,7 @@ cmake --build . --config Release
 
 ## Get the base model
 
-We are going to use Meta's Llama2 chat 13B model as the base model. Note that we are using a Q5 quantitized GGUF model file directly to save computing resources. You can use any of the Llama2 compatible GGUF models on Hugging Face.
+We are going to use Meta's Llama2 chat 13B model as the base model. Note that we are using a Q5 quantized GGUF model file directly to save computing resources. You can use any of the Llama2 compatible GGUF models on Hugging Face.
 
 ```
 cd .. # change to the llama.cpp directory
@@ -60,24 +60,24 @@ What is Mercury? | Mercury is a silver colored metal that is liquid at room temp
 
 > We used GPT-4 to help me come up many of these QAs.
 
-Then, we wrote a [Python script](https://raw.githubusercontent.com/YuanTony/chemistry-assistant/main/fine-tune-model/convert.py) to convert each row in the CSV file into a sample QA in the Llama2 chat template format. Notice that each QA pair starts with `<SFT>` as an indicator for the finetune program to start a sample. The result [train.txt](https://raw.githubusercontent.com/YuanTony/chemistry-assistant/main/fine-tune-model/train.txt) file can now be used in fine-tuning.
+Then, we wrote a [Python script](https://raw.githubusercontent.com/YuanTony/chemistry-assistant/main/fine-tune-model/convert.py) to convert each row in the CSV file into a sample QA in the Llama2 chat template format. Notice that each QA pair starts with `<SFT>` as an indicator for the fine-tune program to start a sample. The result [train.txt](https://raw.githubusercontent.com/YuanTony/chemistry-assistant/main/fine-tune-model/train.txt) file can now be used in fine-tuning.
 
 Put the [train.txt](https://raw.githubusercontent.com/YuanTony/chemistry-assistant/main/fine-tune-model/train.txt) file in the `llama.cpp/models` directory with the GGUF base model.
 
 ## Finetune!
 
-Use the following command to start the fine-tuning process on your CPUs. I am putting it in the background so that it can run continuous now.
-It could several days or even a couple of weeks depending on how many CPUs you have.
+Use the following command to start the fine-tuning process on your CPUs. I am putting it in the background so that it can run continuously now.
+It could take several days or even a couple of weeks depending on how many CPUs you have.
 
 ```
 nohup ../build/bin/finetune --model-base llama-2-13b-chat.Q5_K_M.gguf --lora-out lora.bin --train-data train.txt --sample-start '<SFT>' --adam-iter 1024 &
 ```
 
-You can check the process every a few hours in the `nohup.out` file. It will report `loss` for each iteration. You can stop the process when the `loss` goes consistently under `0.1`.
+You can check the process every few hours in the `nohup.out` file. It will report the `loss` for each iteration. You can stop the process when the `loss` goes consistently under `0.1`.
 
-**Note 1** If you have multiple CPUs (or CPU cores), you can speed up the finetuning process by adding a `-t` parameter to the above command to use more threads. For example, if you have 60 CPU cores, you could do `-t 60` to use all of them.
+**Note 1** If you have multiple CPUs (or CPU cores), you can speed up the fine-tuning process by adding a `-t` parameter to the above command to use more threads. For example, if you have 60 CPU cores, you could do `-t 60` to use all of them.
 
-**Note 2** If your finetuning process is interrupted, you can restart it from `checkpoint-250.gguf`. The next file it outputs is `checkpoint-260.gguf`.
+**Note 2** If your fine-tuning process is interrupted, you can restart it from `checkpoint-250.gguf`. The next file it outputs is `checkpoint-260.gguf`.
 
 ```
 nohup ../build/bin/finetune --model-base llama-2-13b-chat.Q5_K_M.gguf --checkpoint-in checkpoint-250.gguf --lora-out lora.bin --train-data train.txt --sample-start '<SFT>' --adam-iter 1024 &
