@@ -20,6 +20,18 @@ This node runs a plain Llama 3 8b model without any additional knowledge.
 | Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
+## Phi
+
+This node runs a plain Phi 3 mini model without any additional knowledge. 
+[Chat with it](https://phi.us.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://phi.us.gaianet.network/v1 |
+| Model Name (for LLM) | phi |
+| Model Name (for Text embedding) | nomic-embed |
+| API key | Empty or any value |
+
 ## Gemma
 
 This node runs a plain Gemma 2 27b model without any additional knowledge. 
