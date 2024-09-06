@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Install and uninstall
 
-The GaiaNet node utilizes version control from [its source GitHub repo](https://github.com/GaiaNet-AI/gaianet-node). You check out the GaiaNet node versions from [the release page](https://github.com/GaiaNet-AI/gaianet-node/releases).
+The GaiaNet node utilizes version control from [its source GitHub repo](https://github.com/GaiaNet-AI/gaianet-node). You can check out the GaiaNet node versions from [the release page](https://github.com/GaiaNet-AI/gaianet-node/releases).
 
 ## Install
 
@@ -43,7 +43,7 @@ Check out the release log [here](https://github.com/GaiaNet-AI/gaianet-node/rele
 
 ## Update the current Gaianet node
 
-Simply run the following nodes to upgrade your node.
+Simply run the following command to upgrade your node.
 
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --upgrade
@@ -53,14 +53,14 @@ The `upgrade` option will keep your node id.
 
 ## Uninstall
 
-To uninstall or clear the environment, run the following command line.
+To uninstall or clear the environment, run the following command.
 
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/uninstall.sh' | bash
 ```
 
 
-**Important reminder: This command line will remove all the GaiaNet-related files, including the `nodeid.json`. It's your responsibility to keep your nodeid.json safe. If you want to run the same node after reinstalling, please save the `nodeid.json` file and `frpc.toml` file carefully.**
+**Important reminder: This command will remove all the GaiaNet-related files, including the `nodeid.json`. It's your responsibility to keep your nodeid.json safe. If you want to run the same node after reinstalling, please save the `nodeid.json` file and `frpc.toml` file carefully.**
 
 ## What's installed
 

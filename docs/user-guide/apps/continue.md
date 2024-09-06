@@ -9,16 +9,16 @@ It is a copilot-like plugin for VSCode and JetBrains to provide custom autocompl
 those IDEs. You can easily configure it to use Gaia nodes as LLM backends. In fact, you can choose different Gaia 
 nodes for
 
-* the autocomplete model for coding tasks
-* the chat model for understanding and discussing code
-* the embedding model to provide chat context based on local files
+* The autocomplete model for coding tasks.
+* The chat model for understanding and discussing code.
+* The embedding model to provide chat context based on local files.
 
 ## Prerequisites
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [Run your own node](../../node-guide/quick-start.md)
+* [Use a public node](../nodes.md)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 

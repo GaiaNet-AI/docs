@@ -22,7 +22,7 @@ For example, the following command initialize a GaiaNet node with a Llama 3 8B m
 gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/llama-3-8b-instruct/config.json
 ```
 
-> The URL to the `config.json` must point to the actual text file. (i.e., the `raw.githubusercontent.com` URL for GitHub links) instead of the GitHUb HTML page for that file.
+> The URL to the `config.json` must point to the actual text file. (i.e., the `raw.githubusercontent.com` URL for GitHub links) instead of the GitHub HTML page for that file.
 
 ## The config subcommand
 
@@ -41,11 +41,11 @@ Now, let's look at some examples.
 
 ### Select an LLM
 
-There are over 10,000 finetuned open-source LLMs you can choose from on Huggingface. They each have different sizes (larger models are more capable but more expensive to run), unique capabilities (eg uncensored, to excel in math or reasoning, to support large context length etc), domain expertise (eg medicine, coding), and / or styles (eg to speak like a teacher or a pirate, to respond in code, to follow conversations).
+There are over 10,000 finetuned open-source LLMs you can choose from on Huggingface. They each have different sizes (larger models are more capable but more expensive to run), unique capabilities (e.g., uncensored, to excel in math or reasoning, to support large context length etc), domain expertise (e.g., medicine, coding), and / or styles (e.g., to speak like a teacher or a pirate, to respond in code, to follow conversations).
 
 To replace GaiaNet node's default LLM with an alternative
 finetuned model, you will need to make changes to the model file, prompt template, and model context length parameters.
-Those parameters vary depending on the model, but they can be found on the [gaianet Huggingface organization](https://huggingface.co/gaianet)'s model cards. For example, the following command changes the LLM to a Llama 3 8B model.
+Those parameters vary depending on the model, but they can be found on the [GaiaNet Huggingface organization's](https://huggingface.co/gaianet) model cards. For example, the following command changes the LLM to a Llama 3 8B model.
 
 ```
 gaianet config \
@@ -86,10 +86,10 @@ gaianet config \
 > The `--snapshot` could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a private vector collection snapshot.
 
 Depending on the quality and size of the vectors, you might also need to change the `qdrant-` options to 
-customize the retrievial behavior.
+customize the retrieval behavior.
 
 * `qdrant-limit` sets the max number of relevant context to add to the prompt. If your knowledge base consists of large sections of text (i.e., each book chapter is a vector), you should probably make this 1 or 2 to limit the prompt length to a reasonable size.
-* `qdrant-score-threshold` is the min match "score" the knowledge content must meet in order to be considerred "relevant". This depends on the quality of the knowledge text and the embedding model. In general, this score should be over 0.5 to reduce irrelevant context in the prompt.
+* `qdrant-score-threshold` is the min match "score" the knowledge content must meet in order to be considered "relevant". This depends on the quality of the knowledge text and the embedding model. In general, this score should be over 0.5 to reduce irrelevant context in the prompt.
 
 > The embedding model encodes and transforms text into vectors so that the can be stored, searched and retrieved. For different
 context material, you might need a different embedding model to achieve the optimal performance. 

@@ -4,7 +4,7 @@ sidebar_position: 12
 
 # Knowledge base from a URL
 
-In this section, we will discuss how to create a vector collection snapshot from a Web URL. First, we will parse url to a structured markdown file. Then, we will follow the steps from [Knowledge base from a markdown file](markdown.md) to create embedding for your URL.
+In this section, we will discuss how to create a vector collection snapshot from a Web URL. First, we will parse the URL to a structured markdown file. Then, we will follow the steps from [Knowledge base from a markdown file](markdown.md) to create embedding for your URL.
 
 ## Parse the URL content to a markdown file
 
