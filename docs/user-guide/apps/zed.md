@@ -5,7 +5,7 @@ sidebar_position: 10
 # Zed
 
 
-Zed is a next-generation code editor designed for high-performance collaboration with humans and AI, and it is written in Rust.  You can use Zed with your own Gaia node as the LLM backend. There are two big reasons for that
+[Zed](https://zed.dev/) is a next-generation code editor designed for high-performance collaboration with humans and AI, and it is written in Rust.  You can use Zed with your own Gaia node as the LLM backend. There are two big reasons for that
 
 * Your Gaia node could be supplemented by a knowledge base that is specific to your proprietary code repository, programming language choices, and coding guidelines/styles.
 * Your Gaia node could ensure that your code stays private within your organization.
@@ -31,7 +31,7 @@ First, download and install [Zed](https://zed.dev/). Click on your profile on th
 
 ![](zed-01.png)
 
-Clear the existing content, and copy and paste the following JSON file. Please don't forget to save the file.
+Below is the `settings.json` we used. You can copy and paste sections `language_models` and `assistant` to your own. They configure Zed to use an OpenAI-compatible API provider and then specify the API endpoint URL and model name for that provider.
 
 ```
 {
@@ -69,19 +69,17 @@ Clear the existing content, and copy and paste the following JSON file. Please d
 }
 ```
 
+Next we will configure the API key to access this Gaia node.
 
-
-We have already added the model and base URL in the above step, next we will configure the API key part.
-
-* Go back to the folder you opened. Click on the Star icon at the bottom to turn on the Assistant panel.
+Go back to the folder you opened. Click on the Star icon at the bottom to turn on the Assistant panel.
   
 ![](zed-02.png)
 
-* Click on **Open configuration** to set up the API Key.
+Click on **Open configuration** to set up the API Key.
   
 ![](zed-03.png)
 
-* Enter several random characters in the OpenAI section, which is the last one on the screen.
+Since we are using a free public Gaia node, you can use any API key in the OpenAI section at the bottom of the screen. For example, you can enter `GAIA`.
 
 Now, we have everything ready.
 
