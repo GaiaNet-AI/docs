@@ -70,19 +70,6 @@ This node runs a Gemma 2 9b model without additional knowledge base.
 | Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
-## Codestral
-
-This node runs a Codestral 22b model without additional knowledge base. 
-[Chat with it](https://codestral.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
-
-|Config option | Value |
-|-----|--------|
-| API endpoint URL | https://codestral.us.gaianet.network/v1 |
-| Model Name (for LLM) | codestral |
-| Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
-
-
 ## Chemistry teacher
 
 This node runs a finetuned Llama 3.1 8b model with a knowledge base of chemical elements and high school chemistry.
@@ -107,16 +94,4 @@ This node runs a finetuned Llama 3,1 8b model with a knowledge base of Bible tea
 | Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
-
-## Ethereum founder
-
-This node runs a Llama 2 13b model finetuned with Ethereum founder Vitalik Buterin's blog posts. The finetuned model is supplemented by blockchain and crypto knowledge base.
-[Chat with it](https://vitalik.gaianet.network/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
-
-|Config option | Value |
-|-----|--------|
-| API endpoint URL | https://vitalik.gaianet.network/v1 |
-| Model Name (for LLM) | vitalik.eth-7b-q5_k_m |
-| Model Name (for Text embedding) | all-MiniLM-L6-v2-ggml-model-f16 |
-| API key | Empty or any value |
 
