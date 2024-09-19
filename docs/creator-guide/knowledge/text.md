@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_class_name: hidden
 ---
 
 # Knowledge base from a plain text file
