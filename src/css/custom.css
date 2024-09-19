@@ -32,3 +32,7 @@
 article {
   --ifm-link-decoration:underline;
 }
+
+.hidden {
+display: none !important;
+}
