@@ -55,7 +55,7 @@ You will need to configure the following items:
 * `EMBEDDING_MODEL_NAME`: Name of the embedding model name. E.g., `nomic-embed`
 * `EMBEDDING_API_KEY`: An API key to access the embedding services. You can enter several random characters here. E.g., `GAIA`
 
-## Run the agnet
+## Run the agent
 
 Finally, let's run the Agent Zero application backed by the [Llama 3.1 8b](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) Gaia node.
 
@@ -67,7 +67,7 @@ You can interact with Agent Zero via the command line. You will see the Agent Ze
 
 ### Example 1
 
-Get time in berlin and seattle
+Get the time in berlin and seattle
 
 ![](agent-zero-01.png)
 
