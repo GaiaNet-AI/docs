@@ -8,19 +8,77 @@ Each GaiaNet node provides a web-based chatbot UI and an OpenAI compatible web s
 Here are some popular nodes. Please refer to the [agent apps](apps/intro) section to see how
 to use the GaiaNet API in your favorite agent frameworks or apps.
 
-## Llama
+Gaia nodes are organized into Gaia domains to provide public services. Each domain has a single
+API endpoint that load-balances across multiple nodes to ensure service availability. Below are some
+Gaia domains we provider for free to the public.
 
-This node runs an Llama 3.1 8b model without additional knowledge base. 
-[Chat with it](https://llama.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+## Public Gaia domains
+
+### Llama 8b
+
+This node runs a plain Llama 3.1 8b model without any additional knowledge. 
+[Chat with it](https://llama8b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name (for LLM) | llama |
 | Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
-## Tool use Llama
+### Llama 3b
+
+This node runs a plain Llama 3.2 3b model without any additional knowledge.
+[Chat with it](https://llama3b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://llama3b.gaia.domains/v1 |
+| Model Name (for LLM) | llama3b |
+| Model Name (for Text embedding) | nomic-embed |
+| API key | Empty or any value |
+
+### Coder
+
+This node runs a Qwen 2.5 Coder model.
+[Chat with it](https://coder.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://coder.gaia.domains/v1 |
+| Model Name (for LLM) | coder |
+| Model Name (for Text embedding) | nomic-embed |
+| API key | Empty or any value |
+
+### Rust Coder
+
+This node runs a Qwen 2.5 Coder model with open-source Rust content from the Rust Foundation.
+[Chat with it](https://rustcoder.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://rustcoder.gaia.domains/v1 |
+| Model Name (for LLM) | rustcoder |
+| Model Name (for Text embedding) | nomic-embed |
+| API key | Empty or any value |
+
+### Bible pastor
+
+This node runs a finetuned Llama LLM with a knowledge base of Bible teachings of everyday events and emotions.
+[Chat with it](https://pastor.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://pastor.gaia.domains/v1 |
+| Model Name (for LLM) | pastor |
+| Model Name (for Text embedding) | nomic-embed |
+| API key | Empty or any value |
+
+## Public Gaia nodes
+
+The standalone Gaia nodes are maintained by individuals and hence are less stable. Use them at your own risk!
+
+### Tool use Llama
 
 This node runs an Llama 3 Groq 8b model finetuned for tool use. 
 You can send it a list of tools and a request. It will respond with a tool call to answer that request.
@@ -34,19 +92,7 @@ Replace OpenAI configuration in [your app](apps/intro) with the following.
 | Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
-## Yi Coder
-
-This node runs a Yi Coder 9b model without additional knowledge base. 
-[Chat with it](https://yicoder.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
-
-|Config option | Value |
-|-----|--------|
-| API endpoint URL | https://yicoder.us.gaianet.network/v1 |
-| Model Name (for LLM) | yicoder |
-| Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
-
-## Phi
+### Phi
 
 This node runs a Phi 3 mini model without additional knowledge base. 
 [Chat with it](https://phi.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
@@ -58,7 +104,7 @@ This node runs a Phi 3 mini model without additional knowledge base.
 | Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
-## Gemma
+### Gemma
 
 This node runs a Gemma 2 9b model without additional knowledge base. 
 [Chat with it](https://gemma.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
@@ -70,28 +116,15 @@ This node runs a Gemma 2 9b model without additional knowledge base.
 | Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
 
-## Chemistry teacher
+### Codestral
 
-This node runs a finetuned Llama 3.1 8b model with a knowledge base of chemical elements and high school chemistry.
-[Chat with it](https://chemistry.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
-
-|Config option | Value |
-|-----|--------|
-| API endpoint URL | https://chemistry.us.gaianet.network/v1 |
-| Model Name (for LLM) | chemistry |
-| Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
-
-## Bible pastor
-
-This node runs a finetuned Llama 3,1 8b model with a knowledge base of Bible teachings of everyday events and emotions.
-[Chat with it](https://bible.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
+This node runs a plain Codestral model without any additional knowledge. 
+[Chat with it](https://codestral.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://bible.us.gaianet.network/v1 |
-| Model Name (for LLM) | pastor |
+| API endpoint URL | https://codestral.us.gaianet.network/v1 |
+| Model Name (for LLM) | codestral |
 | Model Name (for Text embedding) | nomic-embed |
 | API key | Empty or any value |
-
 

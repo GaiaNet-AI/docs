@@ -19,24 +19,25 @@ You will need a Gaia node to provide LLM API services. You can
 * [Run your own node](../../node-guide/quick-start.md)
 * [Use a public node](../nodes.md)
 
-In this tutorial, we will use a public [Llama 3.1 8b](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) node to power Cursor.
+In this tutorial, we will use public [Qwen 2.5 Coder](https://github.com/QwenLM/Qwen2.5-Coder) nodes to power Cursor.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://llama.us.gaianet.network/v1/ | llama |
+| Coder | `https://coder.gaia.domains/v1` | coder |
+| Rust expert | `https://rustcoder.gaia.domains/v1` | rustcoder |
 
-> A limitation of Cursor is that it does not support local LLM services. A Gaia node comes with a default networking tunnel that turns your local LLM service into a HTTPS service accessible from the Internet. That allows Cursor to use your own private LLM for coding. Start your own [Llama 3.1](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) or [Phi 3.5](https://github.com/GaiaNet-AI/node-configs/tree/main/phi-3.5-mini-instruct) models today! Both are quite good at coding tasks.
+> A limitation of Cursor is that it does not support local LLM services. A Gaia node comes with a default networking tunnel that turns your local LLM service into a HTTPS service accessible from the Internet. That allows Cursor to use your own private LLM for coding. Start your own [Qwen Coder](https://github.com/GaiaNet-AI/node-configs/tree/main/qwen-2.5-coder-7b-instruct) or [Qwen Coder with Rust](https://github.com/GaiaNet-AI/node-configs/tree/main/qwen-2.5-coder-7b-instruct_rustlang) nodes today!
 
 ## Configure Cursor
 
 First, download and install [Cursor](https://www.cursor.com/). Click on the **Settings** button on the top right. Then, click on **Models** to configure the backend LLM service.
 
-Second, add a model named `llama` and turn off all the other models like `gpt-4o`.
+Second, add a model named `coder` and turn off all the other models like `gpt-4o`.
 
 Third, go to the OpenAI API Key section,
 
-* Click on **Override OpenAI Base URL**. Type `https://llama.us.gaianet.network/v1` here.
-* For the OpenAI API key, you can use any random chars such as `GAIA`. Click on **Verify** to test if the connection is correct.
+* Click on **Override OpenAI Base URL**. Type `https://coder.gaia.domains/v1` here.
+* For the OpenAI API key, you can use any random chars such as `GAIA`. Click on **Verfiy** to test if the connection is correct.
 
 ![](cursor-01.png)
 
