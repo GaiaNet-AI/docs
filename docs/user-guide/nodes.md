@@ -80,7 +80,7 @@ The standalone Gaia nodes are maintained by individuals and hence are less stabl
 
 ### Tool use Llama
 
-This node runs a Llama 3 Groq 8b model finetuned for tool use. 
+This node runs an Llama 3 Groq 8b model finetuned for tool use. 
 You can send it a list of tools and a request. It will respond with a tool call to answer that request.
 [Learn more](../tutorial/tool-call.md) how to use tool call models in your agent app.
 Replace OpenAI configuration in [your app](apps/intro) with the following.
@@ -94,7 +94,7 @@ Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 ### Phi
 
-This node runs a plain Phi 3 mini model without any additional knowledge. 
+This node runs a Phi 3 mini model without additional knowledge base. 
 [Chat with it](https://phi.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |
@@ -106,7 +106,7 @@ This node runs a plain Phi 3 mini model without any additional knowledge.
 
 ### Gemma
 
-This node runs a plain Gemma 2 27b model without any additional knowledge. 
+This node runs a Gemma 2 9b model without additional knowledge base. 
 [Chat with it](https://gemma.us.gaianet.network/) or use it from another app. Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 |Config option | Value |

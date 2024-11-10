@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/GaiaNet-AI/docs/edit/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -92,6 +92,38 @@ const config = {
       },
     },
     {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        hreflang: 'tr',
+        href: 'https://tr.docs.gaianet.ai'
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        hreflang: 'es',
+        href: 'https://es.docs.gaianet.ai'
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        hreflang: 'pt',
+        href: 'https://pt.docs.gaianet.ai'
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        hreflang: 'vi',
+        href: 'https://vi.docs.gaianet.ai'
+      },
+    },
+    {
       tagName: 'script',
       attributes: {
         type: 'text/javascript',
@@ -101,11 +133,7 @@ const config = {
     {
       tagName: 'script',
       attributes: {},
-      innerHTML: `
-          Weglot.initialize({
-            api_key: 'wg_8d3dd85f0e6d941759812a29e1d2e0d95'
-          });
-        `,
+      innerHTML: `Weglot.initialize({api_key: 'wg_4b743a7811929fdbb89fb41039c91e231'});`,
     },
   ],
 

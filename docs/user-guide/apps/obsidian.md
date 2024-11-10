@@ -16,8 +16,8 @@ This guide explains how to set up and use the plugin with a GaiaNet node as an a
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [Run your own node](../../node-guide/quick-start.md)
+* [Use a public node](../nodes.md)
 
 In this tutorial, we will use a public node.
 
@@ -46,7 +46,7 @@ Then click “Enable”.
 1. Go to the plugin settings.
 2. Select "AI Provider" as "OpenAI compatible server".
 3. Set the server URL. Use https://llama.us.gaianet.network/ if you are using a public GaiaNet node. Or, use http://localhost:8080/ if you are running a local GaiaNet node. 
-4. Configure API key to GaiaNet
+4. Configure API key to GaiaNet.
 
 ![](obsidian-configure.png)
 
@@ -56,10 +56,10 @@ Make sure to click the refresh button and choose the **llama** model if you’re
 
 ### Configure Obsidian Hotkey 
 
-1. Open Obsidian Settings
-2. Go to Hotkeys
-3. Filter "Local" and you should see "Local GPT: Show context menu"
-4. Click on `+` icon and press hotkey (e.g. `⌘ + M`)
+1. Open Obsidian Settings.
+2. Go to Hotkeys.
+3. Filter "Local" and you should see "Local GPT: Show context menu".
+4. Click on `+` icon and press hotkey (e.g. `⌘ + M`).
 
 ![](obsidian-hotkey.png)
 

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Prof. Andrew Ng's [agentic translation](https://www.linkedin.com/posts/andrewyng_github-andrewyngtranslation-agent-activity-7206347897938866176-5tDJ/) is a great demonstration on how to cooridnate multiple LLM "agents" to work on a single task. It allows multiple smaller LLMs (like Llama-3 or Gemma-2) to work gether and produce better results than a single large LLM (like ChatGPT).
 
-[GaiaNet](https://www.gaianet.ai/), with 2000+ nodes running all kind of finetuned LLms and knowledge bases, provides a huge opportunity for agentic apps to choose and use their own LLM backends.
+[GaiaNet](https://www.gaianet.ai/), with 2000+ nodes running all kinds of finetuned LLms and knowledge bases, provides a huge opportunity for agentic apps to choose and use their own LLM backends.
 
 ## Introduction to the LLM Translation Agent
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     print(f"Translation:\n\n{translation}")
 ```
 
-Then, you can find a `examples/sample-texts` folder in your cloned repo. Put your file you want to translate in this folder and get its path. Here because we named our source text `forbiddencity.txt`, the relative path to the document would be `sample-texts/forbiddencity.txt`. 
+Then, you can find an `examples/sample-texts` folder in your cloned repo. Put the file you want to translate in this folder and get its path. Here, because we named our source text `forbiddencity.txt`, the relative path to the document would be `sample-texts/forbiddencity.txt`. 
 
 Run the below commands to have your text file translated into English.
    
@@ -153,7 +153,7 @@ if __name__ == "__main__":
     print(f"Translation:\n\n{translation}")
 ```
 
-Then, you can find a `examples/sample-texts` folder in your cloned repo. Put your file you want to translate in this folder and get its path. Here because we named our source text `forbiddencity.txt`, the relative path to the document would be `sample-texts/forbiddencity.txt`. 
+Then, you can find an `examples/sample-texts` folder in your cloned repo. Put the file you want to translate in this folder and get its path. Here,because we named our source text `forbiddencity.txt`, the relative path to the document would be `sample-texts/forbiddencity.txt`. 
 
 Run the below commands to have your text file translated into English.
 
@@ -216,7 +216,7 @@ if __name__ == "__main__":
     print(f"Translation:\n\n{translation}")
 ```
 
-Then, you can find a `examples/sample-texts` folder in your cloned repo. Put your file you want to translate in this folder and get its path. Here because we named our source text `long_article.txt`, the relative path to the document would be `sample-texts/long_article.txt`.
+Then, you can find an `examples/sample-texts` folder in your cloned repo. Put the file you want to translate in this folder and get its path. Here, because we named our source text `long_article.txt`, the relative path to the document would be `sample-texts/long_article.txt`.
 
 ```
 cd examples
