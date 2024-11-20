@@ -34,6 +34,21 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        trackingID: 'G-V3W2HJ72V0'
+      },
+    ],
+    [
+      '@docusaurus/plugin-google-tag-manager',
+      {
+        containerId: 'GTM-PCJ5QG6R'
+      },
+    ]
+  ],
+
   presets: [
     [
       'classic',
