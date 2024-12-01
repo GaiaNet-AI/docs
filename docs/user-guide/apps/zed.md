@@ -10,6 +10,8 @@ sidebar_position: 10
 * Your Gaia node could be supplemented by a knowledge base that is specific to your proprietary code repository, programming language choices, and coding guidelines/styles.
 * Your Gaia node could ensure that your code stays private within your organization.
 
+<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://www.youtube.com/embed/icbFAAOZYcE" title="A Rust coding assistant on Zed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Prerequisites
 
 You will need a Gaia node to provide LLM services to Zed. You can
@@ -17,13 +19,15 @@ You will need a Gaia node to provide LLM services to Zed. You can
 * [run your own node](../../node-guide/quick-start.md)
 * [use a public node](../nodes.md)
 
-In this tutorial, we will use the public [Yi-coder-9B node](https://github.com/GaiaNet-AI/node-configs/tree/main/yi-coder-9b-chat) to power Zed.
+In this tutorial, we will use public [Qwen 2.5 Coder](https://github.com/QwenLM/Qwen2.5-Coder) nodes to power Cursor.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://yicoder9b.us.gaianet.network/v1 | yicoder9b |
+| General coding assistant | `https://coder.gaia.domains/v1` | coder |
+| Coding assistant with Rust knowledge | `https://rustcoder.gaia.domains/v1` | rustcoder |
+| Rust expert (slower but more accurate) | `https://rustexpert.gaia.domains/v1` | rustexpert |
 
-> You can start a local LLM service using [Gaia](https://github.com/GaiaNet-AI/node-configs/tree/main/yi-coder-9b-chat) or [LlamaEdge](https://llamaedge.com/docs/user-guide/quick-start-command) or [Moxin](https://github.com/moxin-org/moxin), and then use `http://localhost:8080/v1/` as the LLM API service endpoint URL.
+> A limitation of Cursor is that it does not support local LLM services. A Gaia node comes with a default networking tunnel that turns your local LLM service into a HTTPS service accessible from the Internet. That allows Cursor to use your own private LLM for coding. Start your own [Qwen Coder](https://github.com/GaiaNet-AI/node-configs/tree/main/qwen-2.5-coder-7b-instruct) or [Qwen Coder with Rust](https://github.com/GaiaNet-AI/node-configs/tree/main/qwen-2.5-coder-7b-instruct_rustlang) nodes today!
 
 ## Configure Zed
 
@@ -41,7 +45,7 @@ Below is the `settings.json` we used. You can copy and paste sections `language_
   "language_models": {
     "openai": {
       "version": "1",
-      "api_url": "https://yicoder9b.us.gaianet.network/v1",
+      "api_url": "https://rustcoder.gaia.domains/v1",
       "low_speed_timeout_in_seconds": 60,
       "available_models": [
         {
@@ -94,8 +98,5 @@ You can
 * Open the Assistant panel by clicking on the **Assistant** icon at the bottom to turn on the Assistant panel.
 
 ![](zed-05.png)
-
-
-
 
 
