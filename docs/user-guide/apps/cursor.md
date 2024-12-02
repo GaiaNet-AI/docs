@@ -10,7 +10,7 @@ You can use Cursor with your own Gaia node as the LLM backend. There are two big
 * Your Gaia node could be supplemented by a knowledge base that is specific to your proprietary code repository, programming language choices, and coding guidelines / styles.
 * Your Gaia node could ensure that your code stays private within your organization.
 
-<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://www.youtube.com/embed/Hf9zfjflP_0" title="Build a Rust app from scratch using local AI and Cursor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://www.youtube.com/embed/RwS6DZQBJ7A" title="A Rust coding assistant on Cursor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prerequisites
 
@@ -23,8 +23,9 @@ In this tutorial, we will use public [Qwen 2.5 Coder](https://github.com/QwenLM/
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Coder | `https://coder.gaia.domains/v1` | coder |
-| Rust expert | `https://rustcoder.gaia.domains/v1` | rustcoder |
+| General coding assistant | `https://coder.gaia.domains/v1` | coder |
+| Coding assistant with Rust knowledge | `https://rustcoder.gaia.domains/v1` | rustcoder |
+| Rust expert (slower but more accurate) | `https://rustexpert.gaia.domains/v1` | rustexpert |
 
 > A limitation of Cursor is that it does not support local LLM services. A Gaia node comes with a default networking tunnel that turns your local LLM service into a HTTPS service accessible from the Internet. That allows Cursor to use your own private LLM for coding. Start your own [Qwen Coder](https://github.com/GaiaNet-AI/node-configs/tree/main/qwen-2.5-coder-7b-instruct) or [Qwen Coder with Rust](https://github.com/GaiaNet-AI/node-configs/tree/main/qwen-2.5-coder-7b-instruct_rustlang) nodes today!
 
