@@ -91,7 +91,7 @@ customize the retrieval behavior.
 * `qdrant-limit` sets the max number of relevant context to add to the prompt. If your knowledge base consists of large sections of text (i.e., each book chapter is a vector), you should probably make this 1 or 2 to limit the prompt length to a reasonable size.
 * `qdrant-score-threshold` is the min match "score" the knowledge content must meet in order to be considered "relevant". This depends on the quality of the knowledge text and the embedding model. In general, this score should be over 0.5 to reduce irrelevant context in the prompt.
 
-> The embedding model encodes and transforms text into vectors so that the can be stored, searched and retrieved. For different
+> The embedding model encodes and transforms text into vectors so that they can be stored, searched and retrieved. For different
 context material, you might need a different embedding model to achieve the optimal performance. 
 The [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard) is a good place to see the performance
 benchmarks of embedding models. You can find many of them in the [gaianet organization on Huggingface](https://huggingface.co/gaianet).
