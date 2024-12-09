@@ -1,0 +1,8 @@
+{
+  "label": "Domain Operator Guide",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "How to run a GaiaNet Domain service"
+  }
+}
