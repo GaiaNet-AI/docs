@@ -4,6 +4,13 @@ sidebar_position: 4
 
 # Joining the Gaia Protocol
 
+To join the Gaia protocol, you will need to complete the following two tasks.
+
+* Bind your node by connecting your node ID and device ID.
+* Join a Gaia domain
+
+## Bind your node
+
 After successfully running a Gaia node on your machine, it's time to join the Gaia protocol network and get rewards for sharing computing power with the world by binding your node ID and device ID to a Metamask account.
 
 When you run a node with the Getting Started guide, you may notice that the Gaia software has generated a node ID for you. The node ID is an ETH address. The easiest way to find the node ID is to use `gaianet info` to print the node ID and device ID on the terminal.
@@ -43,12 +50,37 @@ The Gaia installer generates a pair of ETH address and keystore and password for
 The `nodeid.json` file is the only proof that your node belongs to you. 
 In many protocol operations, you will need this private key to sign request messages to send to the protocol smart contracts.
 
-The device ID is only visible to yourself.
+The device ID is only visible to you.
 
-### Select a different domain
 
-By default, a new Gaia node joins the `gaianet.network` domain. You can select a different domain to join by putting
-the Gaia domain's public DNS name in the `domain` field in the `config.json`. Please note that most Gaia domains
-require approval for nodes to join. You have to abide by the domain's rules before your node can become publicly accessible
-on the domain URL.
+## Join a Domain
+
+Once your node is successfully bound, you can proceed to join a Gaia Domain.
+
+### Steps to Join a Domain
+
+1. **Locate Your Nodes**  
+   Navigate to **Profile → Nodes** to view the list of nodes you already registered.
+
+2. **Initiate the Join Process**  
+   Click the `...` button next to your node and select **Join Domain**. This will guide you through the steps to join a Gaia Domain.
+
+3. **Follow the Join Steps**  
+   - **Update Node Domain**  
+     Change your node's domain to `gaia.domains`, which is necessary.  
+   - **Select a Domain**  
+     Choose a domain from the available online domain list. You can review essential details for each domain, such as:  
+       - Required LLM  
+       - Join policy  
+       - Number of joined nodes  
+   - **Verify Node Status**  
+     Ensure your node meets the domain's requirements. If everything checks out, you can submit a join request to the domain.
+
+
+### Important Notes
+
+- Most Gaia Domains require approval for new nodes to join.  
+- Ensure you comply with the domain's rules before your node becomes publicly accessible under the domain's URL. 
+
+Following these steps will seamlessly integrate your node into a Gaia Domain.
 

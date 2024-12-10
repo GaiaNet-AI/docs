@@ -29,6 +29,14 @@ If you are interested in running GaiaNet nodes, you can
 
 * [Get started with a GaiaNet node](./node-guide/quick-start.md).
 * [Customize the GaiaNet node with a finetuned model and custom knowledge base](./node-guide/customize.md).
+* [Join the Gaia Protocol](./node-guide/register.md)
+
+### Domain operators
+
+If you are a Gaia Domain Name owner, you can
+
+* [Launch your domain](./domain-guide/quick-start.md).
+
 
 ### Creators
 
