@@ -65,21 +65,39 @@ Once your node is successfully bound, you can proceed to join a Gaia Domain.
 2. **Initiate the Join Process**  
    Click the `...` button next to your node and select **Join Domain**. This will guide you through the steps to join a Gaia Domain.
 
+<img width="1058" alt="image" src="https://github.com/user-attachments/assets/e7b0613b-332f-46bd-ae35-88ab5e0e8280" />
+
+
 3. **Follow the Join Steps**  
    - **Update Node Domain**  
-     Change your node's domain to `gaia.domains`, which is necessary.  
+     Change your node's domain to `gaia.domains`, which is necessary. The following command line will change your node's domain to `gaia.domains`. If your node has already used `gaia.domains`, then you can skip this step.
+   
+     ``` 
+     gaianet stop
+     gaianet config --domain gaia.domains
+     gaianet init
+     gaianet start
+     ```
+     
    - **Select a Domain**  
      Choose a domain from the available online domain list. You can review essential details for each domain, such as:  
        - Required LLM  
        - Join policy  
-       - Number of joined nodes  
+       - Number of joined nodes
+   
+   <img width="1336" alt="image" src="https://github.com/user-attachments/assets/fa99b0ef-e25d-4e51-933a-30062cb480d5" />
+
    - **Verify Node Status**  
      Ensure your node meets the domain's requirements. If everything checks out, you can submit a join request to the domain.
+
+   <img width="933" alt="image" src="https://github.com/user-attachments/assets/caafe74c-9393-43a2-a428-1b008b7ce717" />
+
+    > Normally, your node needs to be online and meet the specific LLM requirement.
 
 
 ### Important Notes
 
-- Most Gaia Domains require approval for new nodes to join.  
+- Some Gaia Domains require approval for new nodes to join.  
 - Ensure you comply with the domain's rules before your node becomes publicly accessible under the domain's URL. 
 
 Following these steps will seamlessly integrate your node into a Gaia Domain.
