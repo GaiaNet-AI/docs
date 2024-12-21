@@ -55,9 +55,11 @@ The device ID is only visible to you.
 
 ## Join a Domain
 
-Once your node is successfully bound, you can proceed to join a Gaia Domain.
+Once your node is successfully bound, you can proceed to join a Gaia Domain. There are two ways to join a domain:
+* Join a domain from your nodes management page
+* Join a domain from the [AI Agent Domains page](https://www.gaianet.ai/agents)
 
-### Steps to Join a Domain
+### Steps to Join a Domain from Your Node Management Page
 
 1. **Locate Your Nodes**  
    Navigate to **Profile → Nodes** to view the list of nodes you already registered.
@@ -93,6 +95,13 @@ Once your node is successfully bound, you can proceed to join a Gaia Domain.
    <img width="933" alt="image" src="https://github.com/user-attachments/assets/caafe74c-9393-43a2-a428-1b008b7ce717" />
 
     > Normally, your node needs to be online and meet the specific LLM requirement.
+
+### Steps to Join a Domain from the AI Agent Domains page
+
+The AI agent Domains page featured lots of domains various from crypto knowledge to useful tools. Each has options for "Chat Now" or "Join Now". You can click on "Join Now" to join that domain.
+
+<img width="1406" alt="image" src="https://github.com/user-attachments/assets/6dbcc6fd-f6d8-452a-8e1c-2581bd637c9f" />
+
 
 
 ### Important Notes
