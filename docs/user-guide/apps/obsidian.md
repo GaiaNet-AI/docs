@@ -70,13 +70,13 @@ As long as you have set the hotkey, while writing or editing a note, select the 
 
 ### **Text Continuation**
 
-* Select a text segment, right-click, and choose "Continue writing". The model will generate the continuation (dislayed in the screenshot in grey).
+* Select a text segment, right-click, and choose "Continue writing". The model will generate the continuation (displayed in the screenshot in grey).
 
 ![](obsidian-text-continuation.png)
 
 ### **Summarization**
 
-* Select a longer text segment, right-click, and choose "Summarize text". The model provides a summary as below of the CNAI report content I seleted.
+* Select a longer text segment, right-click, and choose "Summarize text". The model provides a summary as below of the CNAI report content I selected.
 
 ![](obsidian-summarization.png)
 
