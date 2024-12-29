@@ -6,7 +6,7 @@ sidebar_position: 8
 
 ## The system cannot find CUDA libraries
 
-Sometimes, the CUDA toolkit is installed in a non-standard location. The error message here is often not able to find `libcu*12`. For example, you might have CUDA installed with your Python setup. The following command would install CUDA into Python's enviornment.
+Sometimes, the CUDA toolkit is installed in a non-standard location. The error message here is often not able to find `libcu*12`. For example, you might have CUDA installed with your Python setup. The following command would install CUDA into Python's environment.
 
 ```
 sudo apt install python3-pip -y
@@ -105,7 +105,7 @@ It typically indicates that the Qdrant instance was not shut down properly befor
 gaianet stop
 ```
 
-Alternatively, you could mannually kill the processes from the terminal or in the OS's Actvity Monitor.
+Alternatively, you could manually kill the processes from the terminal or in the OS's Activity Monitor.
 
 ```
 sudo pkill -9 qdrant
@@ -129,7 +129,7 @@ It typically indicates that the Qdrant instance was not shut down properly befor
 gaianet stop
 ```
 
-Alternatively, you could mannually kill the processes from the terminal or in the OS's Actvity Monitor.
+Alternatively, you could manually kill the processes from the terminal or in the OS's Activity Monitor.
 
 ```
 sudo pkill -9 qdrant
@@ -171,7 +171,7 @@ This will temporarily set the FD limit to 10,000. Next, use `gaianet init` and `
 
 ## Permission denied when use the installer script to install WasmEdge
 
-When running `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash` to install GaiaNet node software, you may meet the permisson denied error especially installing the WasmEdge runtime. 
+When running `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash` to install GaiaNet node software, you may meet the permission denied error especially installing the WasmEdge runtime. 
 
 ![](troubleshooting-01.png)
 

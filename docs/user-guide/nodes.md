@@ -55,7 +55,7 @@ Replace OpenAI configuration in [your app](apps/intro) with the following.
 
 Coming soon!
 
-## Coding assistant agnets
+## Coding assistant agents
 
 ### Coder
 

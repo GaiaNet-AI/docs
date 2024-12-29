@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Agentic translation on GaiaNet
 
-Prof. Andrew Ng's [agentic translation](https://www.linkedin.com/posts/andrewyng_github-andrewyngtranslation-agent-activity-7206347897938866176-5tDJ/) is a great demonstration on how to cooridnate multiple LLM "agents" to work on a single task. It allows multiple smaller LLMs (like Llama-3 or Gemma-2) to work gether and produce better results than a single large LLM (like ChatGPT).
+Prof. Andrew Ng's [agentic translation](https://www.linkedin.com/posts/andrewyng_github-andrewyngtranslation-agent-activity-7206347897938866176-5tDJ/) is a great demonstration on how to coordinate multiple LLM "agents" to work on a single task. It allows multiple smaller LLMs (like Llama-3 or Gemma-2) to work gether and produce better results than a single large LLM (like ChatGPT).
 
 [GaiaNet](https://www.gaianet.ai/), with 2000+ nodes running all kinds of finetuned LLms and knowledge bases, provides a huge opportunity for agentic apps to choose and use their own LLM backends.
 

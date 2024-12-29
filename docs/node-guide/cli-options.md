@@ -78,7 +78,7 @@ The `gaianet config` can update the key fields defined in the `config.json` file
 * `gaianet config --system-prompt "<prompt>"` will change the system prompt.
 * `gaianet config --rag-prompt "<prompt>"` will change the rag prompt.
 * `gaianet config --reverse-prompt "<prompt>"` will change the reverse prompt.
-* `gainet config --base <path> ` will modify the `<path>/config.json` parameters.
+* `gaianet config --base <path> ` will modify the `<path>/config.json` parameters.
 
 After you use `gaianet conifg` to change some parameters, please
 
