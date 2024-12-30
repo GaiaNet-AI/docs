@@ -54,11 +54,11 @@ Simply choose the chat model under **Select a model** and then you can send mess
 
 ## Use Open WebUI as a client-side RAG tool
 
-Open WebUI also offers a way to implment RAG application. Since the Gaianet nodes have OpenAI-compatible embedding APIs, you can also use this feature. However, to use this feature, it's recommend to start a node without any snapshots, like [this one](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-8b-instruct).
+Open WebUI also offers a way to implement RAG application. Since the Gaianet nodes have OpenAI-compatible embedding APIs, you can also use this feature. However, to use this feature, it's recommend to start a node without any snapshots, like [this one](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-8b-instruct).
 
 **Step 1:** Use GaiaNet node as the embedding API
 
-* Click on **Workspace** on left top and choose **Documents** tab. This is where you mange the uploaded documents.
+* Click on **Workspace** on left top and choose **Documents** tab. This is where you manage the uploaded documents.
 * Click on **Document Settings** to configure the embedding setting.
 * In the **General Settings**, choose OpenAI as the Embedding Model Engine. Enter the node API base URL and several random characters. Then, enter the embedding model name in the Embedding Model field. Click Save to apply the changes.
 
