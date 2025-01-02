@@ -57,7 +57,7 @@ The basic operational unit in the GaiaNet network is a node. A GaiaNet node is a
 
 ![GaiaNet node architecture](gaianet_node.png)
 
-**1 Application runtime.** GaiaNet applications run in a lightweight, secure and high-performance sandbox called WasmEdge. As an open-source project managed by the Linux Foundation and CNCF, WasmEdge runtime works seamlessly with leading cloud native tools such as Docker, containerd, CRI-O, Podman and Kubernetes. It is also the virtual machine of choice by leading public blockchains to securely and efficiently execute on-chain and off-chain smart contracts. 
+**1 Application runtime.** GaiaNet applications run in a lightweight, secure and high-performance sandbox called WasmEdge. As an open-source project managed by the Linux Foundation and CNCF, WasmEdge runtime works seamlessly with leading cloud native tools such as Docker, container, CRI-O, Podman and Kubernetes. It is also the virtual machine of choice by leading public blockchains to securely and efficiently execute on-chain and off-chain smart contracts. 
 
 WasmEdge is a high-performance and cross-platform runtime. It can run AI models on almost all CPUs, GPUs, and AI accelerators at native speed, making it an ideal runtime for decentralized AI agents.
 
