@@ -10,7 +10,7 @@ Before you get started, ensure that you have the following on your system:
 
 | System | Minimum Requirements |
 |---|---|
-| OSX with Apple Silicon (M1-M4 chip) | 16GB RAM (32GB recommended) |
+| OSX with Apple Silicon (M1-M4 chip) | 8GB RAM (16GB recommended) |
 | Ubuntu Linux 20.04 with Nvidia CUDA 12 SDK | 8GB VRAM on GPU |
 | Azure/AWS | Nvidia T4 GPU Instance |
 
@@ -29,7 +29,7 @@ curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/
 
 3. Use the following command to initialize the GaiaNet node according to the configuration options 
 in `$HOME/gaianet/config.json`.
-By default, the GaiaNet is initialized with a [Phi-3](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/) LLM and a [knowledge base about Paris](https://huggingface.co/datasets/gaianet/paris). 
+By default, the GaiaNet is initialized with a [Llama 3.2 3B](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/) LLM and a [knowledge base about Paris](https://huggingface.co/datasets/gaianet/paris). 
 This command could take some time since it will download a very large LLM file.
 
 ```
@@ -47,7 +47,7 @@ gaianet start
 - A successful start prints a public URL for the node. Opening a browser to that URL will display the node information and allow you to chat with the AI agent on the node. 
 
 ```
-... ... https://0xf63939431ee11267f4855a166e11cc44d24960c0.gaianet.xyz
+... ... https://0xf63939431ee11267f4855a166e11cc44d24960c0.gaia.domains
 ```
 
 - To stop the node: `gaianet stop`
