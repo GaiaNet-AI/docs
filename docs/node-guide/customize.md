@@ -6,7 +6,7 @@ sidebar_position: 3
 
 A key goal of the GaiaNet project is to enable each individual to create and run his or her own
 agent service node using finetuned LLMs and proprietary knowledge. In all likelihood, 
-you are not going to run a node with the [default](quick-start.md) Phi-3 LLM and Paris guidebook knowledge base.
+you are not going to run a node with the [default](quick-start.md) Llama 3.2 3B LLM and Paris guidebook knowledge base.
 In this chapter, we will discuss ways to customize your node.
 
 ## Pre-set configurations
@@ -16,7 +16,7 @@ are all in the `gaianet/config.json` file. You can edit this file directly to us
 Or, you can select a different `config.json` when you initialize the node. Just pass in a URL to the `config.json` file 
 in your `gaianet init` command.
 We have several pre-set `config.json` files to choose from [in this repo](https://github.com/GaiaNet-AI/node-configs).
-For example, the following command initialize a GaiaNet node with a Llama 3 8B model.
+For example, the following command initializes a GaiaNet node with a Llama 3 8B model.
 
 ```
 gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/llama-3-8b-instruct/config.json
