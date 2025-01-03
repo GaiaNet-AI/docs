@@ -91,7 +91,7 @@ After the service runs successfully, we can launch the client UI to interact wit
 pnpm start:client
 ```
 
-Finally, open `http://localhost:5174/` on your browser to start chatting with the agent.
+Finally, open `http://localhost:5173/` on your browser to start chatting with the agent.
 <img width="1274" alt="image" src="https://github.com/user-attachments/assets/48474b35-1d40-4334-8ed0-c97f373c2b0b" />
 
 
