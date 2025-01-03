@@ -19,6 +19,7 @@ Firstly, clone the Eliza repository:
 ```
 git clone https://github.com/elizaos/eliza.git
 cd eliza
+git checkout v0.1.7-alpha.1
 ```
 
 Next, install the required dependencies.
