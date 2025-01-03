@@ -12,7 +12,7 @@ This guide demonstrates how to create an agent with Trump-like characteristics u
 
 #### Set up the environment
 
-> Note: Ensure your Node.js version is above 0.23.0 before proceeding.
+> Note: Ensure your Node.js version is above 23.3.0 before proceeding.
 
 Firstly, clone the Eliza repository:
 
@@ -97,7 +97,7 @@ Finally, open `http://localhost:5174/` on your browser to start chatting with th
 
 ### Advanced use case
 
-For more inspiration, refer to[Nader Fabit's example on building a Twitter AI bot](https://x.com/dabit3/status/1863772029565981144).
+For more inspiration, refer to [Nader Dabit's example on building a Twitter AI bot](https://x.com/dabit3/status/1863772029565981144).
 
 
 
