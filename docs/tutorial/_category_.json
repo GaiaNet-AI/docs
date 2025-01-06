@@ -1,8 +1,8 @@
 {
-  "label": "Tutorial",
+  "label": "📚 Guides & Tutorials",
   "position": 6,
   "link": {
     "type": "generated-index",
-    "description": "Examples building with GaiaNet services"
+    "description": "Examples building with Gaia services"
   }
 }

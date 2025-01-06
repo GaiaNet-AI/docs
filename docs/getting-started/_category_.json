@@ -1,0 +1,10 @@
+{
+    "label": "💻 Getting Started as a Developer",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Learn how to install and run a Gaia node for AI agent services",
+      "slug": "/getting-started"
+    }
+  }
+  

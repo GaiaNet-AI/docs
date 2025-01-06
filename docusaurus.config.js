@@ -61,6 +61,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/GaiaNet-AI/docs/edit/main',
+          includeCurrentVersion: true,
+          lastVersion: 'current',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -161,7 +163,7 @@ const config = {
       navbar: {
         title: 'Gaia',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Decentralizing Generative AI Chatbots and Agents',
           src: 'img/icon-white.png',
         },
         items: [
@@ -171,6 +173,10 @@ const config = {
           //   position: 'left',
           //   label: 'Tutorial',
           // },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/GaiaNet-AI',
             label: 'GitHub',
