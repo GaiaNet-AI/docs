@@ -10,13 +10,13 @@ Gaia is a platform for creating and deploying AI agents. It provides tools and i
 
 :::tip[How do I create a knowledge base in Gaia?]
 You can create a knowledge base in Gaia through several methods:
-1. [From a plain text file](./category/how-to-create-a-knowledge-base/knowledge-bases/how-to/text)
-2. [From a markdown file](./category/how-to-create-a-knowledge-base/knowledge-bases/how-to/markdown)
-3. [From Source/Summary Pairs (or a CSV)](./category/how-to-create-a-knowledge-base/knowledge-bases/how-to/csv)
-4. [From a PDF file](./category/how-to-create-a-knowledge-base/knowledge-bases/how-to/pdf)
-5. [From a URL](./category/how-to-create-a-knowledge-base/knowledge-bases/how-to/firecrawl)
+1. [From a plain text file](./knowledge-bases/how-to/text)
+2. [From a markdown file](./knowledge-bases/how-to/markdown)
+3. [From Source/Summary Pairs (or a CSV)](./knowledge-bases/how-to/csv)
+4. [From a PDF file](./knowledge-bases/how-to/pdf)
+5. [From a URL](./knowledge-bases/how-to/firecrawl)
 
-Each method is detailed in our ["How to create a knowledge base"](./category/how-to-create-a-knowledge-base) guide.
+Each method is detailed in our ["How to create a knowledge base"](./knowledge-bases) guide.
 :::
 
 :::tip[Is Gaia suitable for enterprise use?]
