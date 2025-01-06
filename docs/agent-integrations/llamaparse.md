@@ -6,21 +6,21 @@ sidebar_position: 8
 
 LlamaParse is an API created by LlamaIndex to efficiently parse and represent files for efficient retrieval and context augmentation using LlamaIndex frameworks. LlamaParse can support different kinds of files, like pdf, doc, .ppt, and other formats.
 
-You can configure LlamaParse to use the GaiaNet node as the LLM backend, hence you can create a RAG application based on your PDF files locally.
+You can configure LlamaParse to use the Gaia node as the LLM backend, hence you can create a RAG application based on your PDF files locally.
 
 ## Prerequisites
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [run your own node](../../getting-started/quick-start)
+* [use a public node](../nodes)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://gemma.us.gaianet.network/v1 | gemma |
-| Embedding | https://gemma.us.gaianet.network/v1 | nomic-embed |
+| Chat | https://llama8b.gaia.domains/v1 | llama |
+| Embedding | https://llama8b.gaia.domains/v1 | nomic-embed |
 
 ## Steps
 
@@ -58,9 +58,9 @@ nohup docker run -d -p 6333:6333 -p 6334:6334 \
 Then, we will need to set up the LLM  model settings. We can configure the model setting in the `.env` file. 
 
 ```
-OPENAI_BASE_URL=https://gemma.us.gaianet.network/v1/
+OPENAI_BASE_URL=https://llama8b.gaia.domains/v1/
 OPENAI_API_KEY=gaianet
-LLAMAEDGE_CHAT_MODEL=gemma
+LLAMAEDGE_CHAT_MODEL=llama
 LLAMAEDGE_EMBEDDING_MODEL=nomic
 LLAMA_CLOUD_API_KEY=Your_Own_KEY
 FILE_PATH=

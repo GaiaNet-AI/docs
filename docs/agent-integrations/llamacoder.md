@@ -10,14 +10,14 @@ LlamaCoder is an open-source tool designed to generate small apps with a single 
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [run your own node](../../getting-started/quick-start)
+* [use a public node](../nodes)
 
 In this tutorial, we will use a public Llama3 node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 | API KEY | gaia |
 
@@ -45,7 +45,7 @@ You will need to configure three parameters here.
 For example, you can use the following `.env` setting.
 
 ```
-LLAMAEDGE_BASE_URL=https://llama.us.gaianet.network/v1
+LLAMAEDGE_BASE_URL=https://llama8b.gaia.domains/v1
 LLAMAEDGE_MODEL_NAME=llama
 LLAMAEDGE_API_KEY=GaiaNet
 ```

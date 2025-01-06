@@ -4,31 +4,30 @@ sidebar_position: 3
 
 # Open WebUI
 
-You can configure the Open WebUI framework, a self-hosted WebUI, using any GaiaNet node as the backend LLM API. That allows you to use your own
-or community GaiaNet nodes in any application built on Open WebUI.
+You can configure the Open WebUI framework, a self-hosted WebUI, using any Gaia node as the backend LLM API. That allows you to use your own or community Gaia nodes in any application built on Open WebUI.
 
 ## Prerequisites
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [run your own node](../../getting-started/quick-start)
+* [use a public node](../nodes)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://llama.us.gaianet.network/v1 | llama |
-| Embedding | https://llama.us.gaianet.network/v1 | nomic |
+| Chat | https://llama8b.gaia.domains/v1 | llama |
+| Embedding | https://llama8b.gaia.domains/v1 | nomic |
 
 ## Start the Open WebUI on your machine
 
-After successfully starting the GaiaNet node, you can use `docker run` to start the Open WebUI.
+After successfully starting the Gaia node, you can use `docker run` to start the Open WebUI.
 
 ```
 docker run -d -p 3000:8080 \
   -v open-webui:/app/backend/data \
-  -e OPENAI_API_BASE_URL="https://llama.us.gaianet.network/v1" \
+  -e OPENAI_API_BASE_URL="https://llama8b.gaia.domains/v1" \
   -e OPENAI_API_KEYS="gaianet" \
   --name open-webui \
   --restart always \
@@ -47,16 +46,16 @@ You can also configure your own node when the webUI is started.
 
 ## Use Open WebUI as a Chatbot UI
 
-Simply choose the chat model under **Select a model** and then you can send messages to the GaiaNet node.
+Simply choose the chat model under **Select a model** and then you can send messages to the Gaia node.
 
 ![](openwebui-01.png)
 
 
 ## Use Open WebUI as a client-side RAG tool
 
-Open WebUI also offers a way to implement RAG application. Since the Gaianet nodes have OpenAI-compatible embedding APIs, you can also use this feature. However, to use this feature, it's recommend to start a node without any snapshots, like [this one](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-8b-instruct).
+Open WebUI also offers a way to implement RAG application. Since the Gaia nodes have OpenAI-compatible embedding APIs, you can also use this feature. However, to use this feature, it's recommend to start a node without any snapshots, like [this one](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-8b-instruct).
 
-**Step 1:** Use GaiaNet node as the embedding API
+**Step 1:** Use Gaia node as the embedding API
 
 * Click on **Workspace** on left top and choose **Documents** tab. This is where you manage the uploaded documents.
 * Click on **Document Settings** to configure the embedding setting.
@@ -64,7 +63,7 @@ Open WebUI also offers a way to implement RAG application. Since the Gaianet nod
 
 ![](openwebui-04.png)
 
-**Step 2:** Use GaiaNet node as the embedding API
+**Step 2:** Use Gaia node as the embedding API
 
 Click on **+** to upload your documentations.
 

@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Start a node on AWS using AMI images
 
-We have created a series of public AMIs for you to start GaiaNet nodes in AWS with just a few clicks.
+We have created a series of public AMIs for you to start Gaia nodes in AWS with just a few clicks.
 
 Now we have three AMI images available in the Asia Pacific (Osaka) and all the US regions including N. Virginia, Ohio, N. California, and Oregon.
 
@@ -40,10 +40,10 @@ gaianet init
 gaianet start
 ```
 
-The node is ready when it shows `The GaiaNet node is started at: https://...` on the console.
-You can go to that URL from your browser to interact with the GaiaNet node.
+The node is ready when it shows `The Gaia node is started at: https://...` on the console.
+You can go to that URL from your browser to interact with the Gaia node.
 
-You can [customize your GaiaNet node](../customize.md) with your own choice of LLMs and knowledge base snapshots.
+You can [customize your Gaia node](../customize.md) with your own choice of LLMs and knowledge base snapshots.
 
 ## Running a CPU-only AWS instance
 
@@ -67,10 +67,7 @@ gaianet init
 gaianet start
 ```
 
-The node is ready when it shows `The GaiaNet node is started at: https://...` on the console.
-You can go to that URL from your browser to interact with the GaiaNet node.
+The node is ready when it shows `The Gaia node is started at: https://...` on the console.
+You can go to that URL from your browser to interact with the Gaia node.
 
-You can [customize your GaiaNet node](../customize.md) with your own choice of LLMs and knowledge base snapshots.
-
-Good luck!
-
+You can [customize your Gaia node](../customize.md) with your own choice of LLMs and knowledge base snapshots.

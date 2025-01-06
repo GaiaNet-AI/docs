@@ -5,8 +5,7 @@ sidebar_position: 105
 # LlamaTutor
 
 The [LlamaTutor](https://github.com/Nutlope/llamatutor) is a TypeScript
-application using Llama 3.1 to act as an open-source AI personal tutor. When you run it, it will ask the LLM
-to search on the web based on your inquiry topic and then generate content for you to learn.
+application using Llama 3.1 to act as an open-source AI personal tutor. When you run it, it will ask the LLM to search on the web based on your inquiry topic and then generate content for you to learn.
 
 The program didn't use the official OpenAI library, we can use the forked one that supports [using a Gaia node](intro.md) as the LLM backend.
 
@@ -14,14 +13,14 @@ The program didn't use the official OpenAI library, we can use the forked one th
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [Run your own node](../../node-guide/quick-start.md)
-* [Use a public node](../nodes.md)
+* [Run your own node](../../getting-started/quick-start)
+* [Use a public node](../nodes)
 
 In this tutorial, we will use a public Llama3 node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 | API KEY | gaia |
 

@@ -6,7 +6,7 @@ sidebar_position: 105
 
 ## Protect the server process
 
-Sometimes, the OS could kill the `wasmedge` process on the GaiaNet node if it consumes too much resources. For production
+Sometimes, the OS could kill the `wasmedge` process on the Gaia node if it consumes too much resources. For production
 servers, you should protect the server process.
 
 ## Use Supervise
@@ -32,6 +32,3 @@ of the `wasmedge` process.
 ```
 sudo renice -n -19 $(cat $HOME/gaianet/llamaedge.pid)
 ```
-
-Good luck!
-

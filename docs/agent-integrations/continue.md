@@ -5,9 +5,8 @@ sidebar_position: 102
 # AI coding assistant: Continue
 
 [Continue](https://github.com/continuedev/continue) is the leading open-source AI code assistant.
-It is a copilot-like plugin for VSCode and JetBrains to provide custom autocomplete and chat experiences inside 
-those IDEs. You can easily configure it to use Gaia nodes as LLM backends. In fact, you can choose different Gaia 
-nodes for
+
+It is a copilot-like plugin for VSCode and JetBrains to provide custom autocomplete and chat experiences inside those IDEs. You can easily configure it to use Gaia nodes as LLM backends. In fact, you can choose different Gaia nodes for
 
 * The autocomplete model for coding tasks.
 * The chat model for understanding and discussing code.
@@ -17,15 +16,15 @@ nodes for
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [Run your own node](../../node-guide/quick-start.md)
-* [Use a public node](../nodes.md)
+* [Run your own node](../../getting-started/quick-start)
+* [Use a public node](../nodes)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://gemma.us.gaianet.network/v1/ | gemma |
-| Embedding | https://gemma.us.gaianet.network/v1/ | nomic |
+| Chat | https://llama8b.gaia.domains/v1/ | llama |
+| Embedding | https://llama8b.gaia.domains/v1/ | nomic |
 | Autocompletion | https://codestral.us.gaianet.network/v1/ | codestral |
 
 > It is important to note that Continue requires the API endpoint to include a `/` at the end.
@@ -48,9 +47,9 @@ chat, code autocomplete and embeddings.
 {
   "models": [
     {
-      "model": "gemma",
+      "model": "llama",
       "title": "LlamaEdge",
-      "apiBase": "https://gemma.us.gaianet.network/v1/",
+      "apiBase": "https://llama8b.gaia.domains/v1/",
       "provider": "openai"
     }
   ],
@@ -63,7 +62,7 @@ chat, code autocomplete and embeddings.
   "embeddingsProvider": {
     "provider": "openai",
     "model": "nomic-embed",
-    "apiBase": "https://gemma.us.gaianet.network/v1/"
+    "apiBase": "https://llama8b.gaia.domains/v1/"
   },
   "customCommands": [
     {
@@ -84,6 +83,3 @@ The following screenshot shows how you can chat with an error message
 inside the IDE.
 
 ![](continue-01.png)
-
-
-

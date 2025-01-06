@@ -10,11 +10,11 @@ By default, the container uses the CPU to perform computations, which could be s
 * Mac: Everything here works on [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/). However, the Apple GPU cores will not be available inside Docker containers until [WebGPU is supported by Docker](https://github.com/LlamaEdge/LlamaEdge/blob/main/docker/webgpu.md) later in 2024.
 * Windows and Linux with Nvidia GPU: You will need to install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation) for Docker. In the instructions below, replace the `latest` tag with `cuda12` or `cuda11` to use take advantage of the GPU, and add the `--device nvidia.com/gpu=all` flag. If you need to build the images yourself, replace `Dockerfile` with `Dockerfile.cuda12` or `Dockerfile.cuda11`.
 
-Find [GaiaNet Docker images](https://hub.docker.com/?namespace=gaianet) you can run!
+Find [Gaia Docker images](https://hub.docker.com/?namespace=gaianet) you can run!
 
 ## Quick start
 
-Start a Docker container for the GaiaNet node. It will print running logs from the GaiaNet node in this terminal. 
+Start a Docker container for the Gaia node. It will print running logs from the Gaia node in this terminal. 
 
 ```
 docker run --name gaianet \
@@ -23,15 +23,15 @@ docker run --name gaianet \
   gaianet/phi-3-mini-instruct-4k_paris:latest
 ```
 
-The node is ready when it shows `The GaiaNet node is started at: https://...` on the console.
-You can go to that URL from your browser to interact with the GaiaNet node.
+The node is ready when it shows `The Gaia node is started at: https://...` on the console.
+You can go to that URL from your browser to interact with the Gaia node.
 
 The docker image contains the LLM and embedding models required by the node. However, the vector
 collection snapshot (i.e., knowledge base) is downloaded and imported at the time when the node
 starts up. That is because the knowledge based could be updated frequently. The `qdrant_storage`
 directory on the host machine stores the vector database content.
 
-Alternatively, the command to run the GaiaNet on your Nvidia CUDA 12 machine is as follows.
+Alternatively, the command to run the Gaia on your Nvidia CUDA 12 machine is as follows.
 
 ```
 docker run --name gaianet \
@@ -104,7 +104,7 @@ docker start gaianet
 
 ## Build a node image locally
 
-Each GaiaNet is defined by a `config.json` file. It defines the node's required
+Each Gaia is defined by a `config.json` file. It defines the node's required
 LLM and embedding models, model parameters,
 prompts, and vector snapshots (e.g., knowledge base). 
 The following command builds a Docker image with two platforms 
@@ -123,6 +123,3 @@ You can publish your node for other people to use it.
 ```
 docker push gaianet/phi-3-mini-instruct-4k_paris:latest
 ```
-
-Good luck!
-

@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Working with eliza
 
-eliza is a simple, fast, and lightweight AI agent framework. Recently, eliza has integrated Gaia as one of the [model service provider](https://github.com/elizaOS/eliza/pull/762). This means you can now use Gaia as the LLM service backend for the Eliza framework.
+Eliza is a simple, fast, and lightweight AI agent framework. Recently, eliza has integrated Gaia as one of the [model service provider](https://github.com/elizaOS/eliza/pull/762). This means you can now use Gaia as the LLM service backend for the Eliza framework.
 
 ### Build a Trump agent with eliza and Gaia
 
@@ -98,9 +98,4 @@ Finally, open `http://localhost:5174/` on your browser to start chatting with th
 
 ### Advanced use case
 
-For more inspiration, refer to[Nader Fabit's example on building a Twitter AI bot](https://x.com/dabit3/status/1863772029565981144).
-
-
-
-
-
+For more inspiration, refer to [Nader Dabit's example on building a Twitter AI bot](https://x.com/dabit3/status/1863772029565981144).

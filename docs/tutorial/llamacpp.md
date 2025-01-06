@@ -17,13 +17,11 @@ You could fine-tune an open-source LLM to
 * Teach it certain knowledge.
 
 To do that, you need to create a set of question and answer pairs to show the model the prompt and the expected response.
-Then, you can use a fine-tuning tool to perform the training and make the model respond the expected answer for
-each question.
+Then, you can use a fine-tuning tool to perform the training and make the model respond the expected answer for each question.
 
 # How to fine-tune an open-source LLM with llama.cpp
 
-The popular llama.cpp tool comes with a `finetune` utility. It works well on CPUs! This fine-tune guide is reproduced with 
-permission from Tony Yuan's [Finetune an open-source LLM for the chemistry subject](https://github.com/YuanTony/chemistry-assistant/tree/main/fine-tune-model) project.
+The popular llama.cpp tool comes with a `finetune` utility. It works well on CPUs! This fine-tune guide is reproduced with permission from Tony Yuan's [Finetune an open-source LLM for the chemistry subject](https://github.com/YuanTony/chemistry-assistant/tree/main/fine-tune-model) project.
 
 ## Build the fine-tune utility from llama.cpp
 
@@ -120,4 +118,3 @@ curl -LO https://huggingface.co/juntaoyuan/chemistry-assistant-13b/resolve/main/
 ```
 ../build/bin/finetune --model-base llama-2-13b-chat.Q5_K_M.gguf --checkpoint-in checkpoint-250.gguf --only-write-lora --lora-out lora.bin
 ```
-

@@ -4,10 +4,7 @@ sidebar_position: 104
 
 # A planning agent
 
-The [gpt planner](https://github.com/mshumer/gpt-prompt-engineer/blob/main/gpt_planner.ipynb) is a Python
-application that demonstrate the planning capabilities of LLMs. When you run it, it will ask the LLM
-to generate multiple action plans for a goal or a query. It will then ask the LLM to compare and select
-the best plan, and then rewrite it to answer the user query.
+The [gpt planner](https://github.com/mshumer/gpt-prompt-engineer/blob/main/gpt_planner.ipynb) is a Python application that demonstrate the planning capabilities of LLMs. When you run it, it will ask the LLM to generate multiple action plans for a goal or a query. It will then ask the LLM to compare and select the best plan, and then rewrite it to answer the user query.
 
 Since the program uses the official OpenAI Python library, we can [easily change it to use a Gaia node](intro.md).
 
@@ -15,14 +12,14 @@ Since the program uses the official OpenAI Python library, we can [easily change
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [run your own node](../../getting-started/quick-start)
+* [use a public node](../nodes)
 
 In this tutorial, we will use a public node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 
 ## Run the agent
@@ -32,7 +29,7 @@ First, [load the nodebook in colab](https://colab.research.google.com/github/msh
 Edit the code to create an OpenAI client. We will pass in the `base_url` here.
 
 ```
-client = openai.OpenAI(base_url="https://llama.us.gaianet.network/v1", api_key=OPENAI_API_KEY)
+client = openai.OpenAI(base_url="https://llama8b.gaia.domains/v1", api_key=OPENAI_API_KEY)
 ```
 
 Next, replace all the `gpt-4o-mini` model name with the `llama` model name in the code. 

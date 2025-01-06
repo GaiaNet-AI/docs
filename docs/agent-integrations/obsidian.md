@@ -10,20 +10,20 @@ Obsidian is a note-taking application that enables users to create, link, and vi
 
 A key feature of this plugin is that it supports a large number of open source LLMs. You can choose an LLM that is finetuned for your specific task — eg if you take a lot of coding notes, you could choose a Codestral or CodeLlama or DeepSeek LLM. Furthermore, if you choose to run the LLM locally on your own computer, the plugin would support private and offline use of the LLM features. For more details, you can visit the [obsidian-local-gpt GitHub page](https://github.com/pfrankov/obsidian-local-gpt).
 
-This guide explains how to set up and use the plugin with a GaiaNet node as an alternative to OpenAI or Ollama.
+This guide explains how to set up and use the plugin with a Gaia node as an alternative to OpenAI or Ollama.
 
 ## Prerequisites
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [Run your own node](../../node-guide/quick-start.md)
-* [Use a public node](../nodes.md)
+* [Run your own node](../../getting-started/quick-start)
+* [Use a public node](../nodes)
 
 In this tutorial, we will use a public node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 
 ## Obsidian-local-gpt Plugin Setup
@@ -45,12 +45,12 @@ Then click “Enable”.
 
 1. Go to the plugin settings.
 2. Select "AI Provider" as "OpenAI compatible server".
-3. Set the server URL. Use https://llama.us.gaianet.network/ if you are using a public GaiaNet node. Or, use http://localhost:8080/ if you are running a local GaiaNet node. 
-4. Configure API key to GaiaNet.
+3. Set the server URL. Use https://llama8b.gaia.domains/ if you are using a public Gaia node. Or, use http://localhost:8080/ if you are running a local Gaia node. 
+4. Configure API key to Gaia.
 
 ![](obsidian-configure.png)
 
-Make sure to click the refresh button and choose the **llama** model if you’re using the public GaiaNet node url and **Phi-3-mini-4k-instruct** if you’re using the local GaiaNet node.
+Make sure to click the refresh button and choose the **llama** model if you’re using the public Gaia node url and **Phi-3-mini-4k-instruct** if you’re using the local Gaia node.
 
 ![](obsidian-model.png)
 
@@ -124,7 +124,7 @@ Because llama3 has not been trained with info on this conference, so the output 
 
 ## Try it now!
 
-Ready to supercharge your note-taking with AI? Get started with the Obsidian-local-gpt plugin and GaiaNet today:
+Ready to supercharge your note-taking with AI? Get started with the Obsidian-local-gpt plugin and Gaia today:
 
 1. Set up the Obsidian-local-gpt plugin in your Obsidian app.
 2. Explore the various AI-powered features to enhance your productivity.

@@ -67,5 +67,3 @@ It is like this.
 ```
 
 Then, you can just tell the Telegram bot what you want to do on-chain, and the agent will do it for you.
-
-

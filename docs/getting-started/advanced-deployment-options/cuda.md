@@ -90,6 +90,3 @@ Here are more scripts that could help you in case you are stuck.
 * The [Nvidia official install guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/) for Linux.
 * [Yam Peleg's popular script](https://x.com/yampeleg/status/1751823896800583924) for Ubuntu 22.04
 * [Make CUDA available in Docker containers](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
-
-Good luck!
-

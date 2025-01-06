@@ -10,8 +10,8 @@ CodeGPT is a pair-programming partner for developers. It offers AI chat assistan
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [run your own node](../../getting-started/quick-start)
+* [use a public node](../nodes)
 
 In this tutorial, we will use the public CodeStral nodes to power the CodeGPT plugin.
 
@@ -55,4 +55,6 @@ You can summon the coding assistant using slash commands defined in the plugin. 
 
 ![](codegpt-04.png)
 
+## Video Guide
 
+<iframe width="100%" style={{"aspect-ratio": "16 / 9"}} src="https://www.youtube.com/embed/JdIB7g01zBM?si=Kpw18sjb5vSR0eu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

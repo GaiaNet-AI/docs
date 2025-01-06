@@ -11,15 +11,15 @@ It is designed to be dynamic, organically growing, and learning as users use it.
 
 You will need a Gaia node to provide LLM services to the agent app. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [run your own node](../../getting-started/quick-start)
+* [use a public node](../nodes)
 
 In this tutorial, we will use the public [Llama-3.1-8B node](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) to power the Agent Zero.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://llama.us.gaianet.network/v1/ | llama |
-| Embedding | https://llama.us.gaianet.network/v1/ | nomic-embed |
+| Chat | https://llama8b.gaia.domains/v1/ | llama |
+| Embedding | https://llama8b.gaia.domains/v1/ | nomic-embed |
 
 **You will also need to make sure your Docker engine is running.** Because the Agent Zero framework will leverage Docker to execute the generated code.
 
@@ -48,10 +48,10 @@ cp example.env .env
 
 You will need to configure the following items:
 
-* `CHAT_MODEL_BASE_URL`: URL for the LLM API base URL. E.g., `https://llama.us.gaianet.network/v1/`
+* `CHAT_MODEL_BASE_URL`: URL for the LLM API base URL. E.g., `https://llama8b.gaia.domains/v1/`
 * `CHAT_MODEL_NAME`: Name of the chat model to be used. E.g., `llama`
 * `CHAT_API_KEY`: An API key to access the LLM services. You can enter several random characters here. E.g., `GAIA`
-* `EMBEDDING_MODEL_BASE_URL`: URL for the embedding model API base URL. E.g., `https://llama.us.gaianet.network/v1/`
+* `EMBEDDING_MODEL_BASE_URL`: URL for the embedding model API base URL. E.g., `https://llama8b.gaia.domains/v1/`
 * `EMBEDDING_MODEL_NAME`: Name of the embedding model name. E.g., `nomic-embed`
 * `EMBEDDING_API_KEY`: An API key to access the embedding services. You can enter several random characters here. E.g., `GAIA`
 
@@ -104,6 +104,3 @@ Extract an mp3 audio track from a mp4 video file using ffmpeg. You will need to 
 ![](agent-zero-08.png)
 
 ![](agent-zero-09.png)
-
-
-

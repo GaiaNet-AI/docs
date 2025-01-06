@@ -4,9 +4,7 @@ sidebar_position: 1
 
 # OpenAI ecosystem apps
 
-Since each GaiaNet node provides an OpenAI-compatible API service, it can be a drop-in replacement for
-OpenAI in almost all LLM applications and frameworks. Checkout the articles in this section for instructions 
-and examples for how to use GaiaNet in popular LLM apps.
+Since each Gaia node provides an OpenAI-compatible API service, it can be a drop-in replacement for OpenAI in almost all LLM applications and frameworks. Checkout the articles in this section for instructions and examples for how to use Gaia in popular LLM apps.
 
 ## The OpenAI Python library
 
@@ -52,7 +50,7 @@ as its backend!
 
 ## The OpenAI Node API library
 
-You can install the OpenAI Node library which provides convenient access to the OpenAI REST API from TypeScript or JavaScript as follows:
+You can install the [OpenAI Node library](https://www.npmjs.com/package/openai) which provides convenient access to the OpenAI REST API from TypeScript or JavaScript as follows:
 
 ```
 npm install openai

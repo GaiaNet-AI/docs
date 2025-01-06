@@ -23,7 +23,7 @@ cd translation-agent
 git checkout use_llamaedge
 ```
 
-Next, we will install a local Gaia node, which provides the backend API services required by the agent. You can, of course, use [Gaia nodes from the community](https://docs.gaianet.ai/user-guide/nodes) if you do not want to start your own.
+Next, we will install a local Gaia node, which provides the backend API services required by the agent. You can, of course, use [Gaia nodes from the community](../nodes) if you do not want to start your own.
 
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash

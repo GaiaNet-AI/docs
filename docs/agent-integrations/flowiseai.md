@@ -10,15 +10,15 @@ FlowiseAI is a low-code tool for developers to build customized LLM orchestratio
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [run your own node](../../getting-started/quick-start)
+* [use a public node](../nodes)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://llama.us.gaianet.network/v1 | llama |
-| Embedding | https://llama.us.gaianet.network/v1 | nomic |
+| Chat | https://llama8b.gaia.domains/v1 | llama |
+| Embedding | https://llama8b.gaia.domains/v1 | nomic |
 
 ## Start a FlowiseAI server
 
@@ -55,7 +55,7 @@ You will need to delete the ChatOpenAI component and click the + button to searc
 
 Then, you will need to input 
 
-* the Gaia node base URL `https://llama.us.gaianet.network/v1` 
+* the Gaia node base URL `https://llama8b.gaia.domains/v1` 
 * the model name `llama`
 
 Next, connect the ChatLocalAI component with the field `Chat model` in the **Conversational Retrieval QA Chain** component.
@@ -64,23 +64,23 @@ Next, connect the ChatLocalAI component with the field `Chat model` in the **Con
 
 The default template uses the OpenAI Embeddings component to create embeddings for your documents. We need to replace the **OpenAI Embeddings** component with the **LocalAI Embeddings** component.
 
-* Use the Gaia node base URL `https://llama.us.gaianet.network/v1` in the Base Path field.
+* Use the Gaia node base URL `https://llama8b.gaia.domains/v1` in the Base Path field.
 * Input the model name `nomic-embed-text-v1.5.f16` in the Model Name field.
 
 Next, connect the **LocalAI Embeddings** component with the field `embedding` in the **In-Memory Vector Store** component.
 
 ### Set up your documents
 
-Then, let's go through the GitHub component to connect the chat application to our documents on GitHub. You will need to put your docs GitHub link into the **Repo Link** field. For example, you can put GaiaNet's docs link: `https://github.com/GaiaNet-AI/docs/tree/main/docs`.
+Then, let's go through the GitHub component to connect the chat application to our documents on GitHub. You will need to put your docs GitHub link into the **Repo Link** field. For example, you can put Gaia's docs link: `https://github.com/GaiaNet-AI/docs/tree/main/docs`.
 
 ## Give it a try
 
-You can send a question like "How to install a GaiaNet node" after saving the current chatflow. 
+You can send a question like "How to install a Gaia node" after saving the current chatflow. 
 
 ![](flowise-04.png)
 
-You will get the answer based on the GaiaNet docs, which are more accurate.
+You will get the answer based on the Gaia docs, which are more accurate.
 
 ## More examples
 
-There are lots of examples on the Flowise marketplace. To build a Flowise agent based on GaiaNet, simply replace the **Chat OpenAI** and **OpenAI Embeddings** component with the GaiaNet base URL.
+There are lots of examples on the Flowise marketplace. To build a Flowise agent based on Gaia, simply replace the **Chat OpenAI** and **OpenAI Embeddings** component with the Gaia base URL.

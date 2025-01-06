@@ -13,8 +13,8 @@ Stockbot is a lightning fast AI Chatbot that responds with live interactive stoc
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../node-guide/quick-start.md)
-* [use a public node](../nodes.md)
+* [run your own node](../../getting-started/quick-start)
+* [use a public node](../nodes)
 
 In this tutorial, we will use a public Llama3 node with the function call support.
 

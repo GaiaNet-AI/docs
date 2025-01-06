@@ -14,14 +14,11 @@ Since the application's long-term memory is stable (even immutable), we package 
 
 > The long context length supported by modern LLMs are especially well-suited for long-term knowledge that are best represented by chapters of text.
 
-A Gaia node is an OpenAI
-compatible LLM service that is grounded by long-term knowledge on the server side. The client application
-can simply chat with it or provide realtime / short-term memory since the LLM is already aware of the 
-domain or background.
+A Gaia node is an OpenAI compatible LLM service that is grounded by long-term knowledge on the server side. The client application can simply chat with it or provide realtime / short-term memory since the LLM is already aware of the domain or background.
 
 > For example, if you ask ChatGPT the question What is Layer 2, the answer is that Layer 2 is a concept from the computer network. However, if you ask a blockchain person, they answer that Layer 2 is a way to scale the original Ethereum network. That's the difference between a generic LLM and knowledge-supplemented LLMs.
 
-We will cover the external knowledge preparation and how a knowledge-supplemented LLM completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with Gaia](web-tool) to start building one.
+We will cover the external knowledge preparation and how a knowledge-supplemented LLM completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with Gaia](../knowledge-bases/how-to/web-tool) to start building one.
 
 1. Create embeddings for your own knowledge as the long-term memory.
 2. Lifecycle of a user query on a knowledge-supplemented LLM.
@@ -45,7 +42,7 @@ After chunking the document, we can convert these chunks into embeddings leverag
 
 Additionally, we will need a vector DB to store the embeddings so that we can retrieve these embeddings quickly at any time. 
 
-On a Gaia node, we will get a database snapshot with the embeddings to use at last. Check out how to create your embeddings using [Gaia web tool](web-tool.md), [from a plain text file](text.md), and [from a markdown file](markdown.md).
+On a Gaia node, we will get a database snapshot with the embeddings to use at last. Check out how to create your embeddings using [Gaia web tool](../knowledge-bases/how-to/web-tool), [from a plain text file](../knowledge-bases/how-to/text), and [from a markdown file](../knowledge-bases/how-to/markdown).
 
 ##  Lifecycle of a user query on a knowledge-supplemented LLM
 
@@ -64,4 +61,3 @@ Then, the embedding model will search all the embeddings stored in the Qdrant ve
 ### Response to the user query
 
 The embedding node will return the retrieved embeddings to the chat model. The chat model will use the retrieved embeddings plus your input questions as context to answer your queries finally.
-
