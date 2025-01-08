@@ -1,20 +1,14 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 ---
 
-# Knowledge base from source / summary pairs
+# Why Delegation Is Important
 
-In this section, we will discuss how to create a vector collection snapshot for optimal retrieval of 
-long-form text documents. The approach is to create two columns of text in a CSV file.
+In this section, we will discuss how to create a vector collection snapshot from a markdown file. The
+snapshot file can then be [loaded by a Gaia node as its knowledge base](../../node-guide/customize#select-a-knowledge-base).
 
-* The first column is the long-form source text from the knowledge document, such as a book chapter or a markdown section.
-* The long-form source text is difficult to search. The second column is a "search-friendly" summary of the source text. It could contain a list of questions that can be answered by the first column source text.
-
-We will create a vector snapshot where each vector is computed from the summary text (second column), but the 
-retrieved source text for that vector is from the first column.
-The snapshot file can then be [loaded by a Gaia node as its knowledge base](../../node-guide/customize#select-a-knowledge-base).
-
-> We have a simple Python script to build properly formatted CSV files from a set of articles or chapters. [See how it works](https://github.com/GaiaNet-AI/embedding-tools/tree/main/csv_embed#create-a-csv-file).
+The markdown file is segmented into multiple sections by headings. [See an example](https://huggingface.co/datasets/gaianet/paris/raw/main/paris.md). Each section is turned into a vector, and when
+retrieved, added to the prompt context for the LLM.
 
 ## Prerequisites
 
@@ -73,23 +67,22 @@ curl -X PUT 'http://localhost:6333/collections/default' \
   }'
 ```
 
-Download a program to create embeddings from the CSV file.
+Download a program to segment the markdown document and create embeddings.
 
 ```
-curl -LO https://github.com/GaiaNet-AI/embedding-tools/raw/main/csv_embed/csv_embed.wasm
+curl -LO https://github.com/GaiaNet-AI/embedding-tools/raw/main/markdown_embed/markdown_embed.wasm
 ```
 
-You can check out the [Rust source code](https://github.com/GaiaNet-AI/embedding-tools/tree/main/csv_embed) here and modify it if you need to use a different CSV layout.
+It chunks the document based on markdown sections. You can check out the [Rust source code](https://github.com/GaiaNet-AI/embedding-tools/tree/main/markdown_embed) here and modify it if you need to use a different chunking strategy.
 
-Next, you can run the program by passing a collection name, vector dimension, and the CSV document. 
-The `--ctx_size` option matches the embedding model's context window size, which in this case is 8192 tokens allowing it to process long sections of text. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 768-dimension vectors from `paris.csv` and saves them into the default collection.
+Next, you can run the program by passing a collection name, vector dimension, and the source document. You can pass in the desired markdown heading level for chunking using the `--heading_level` option. The `--ctx_size` option matches the embedding model's context window size, which in this case is 8192 tokens allowing it to process long sections of text. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 768-dimension vectors from `paris.md` and saves them into the default collection.
 
 ```
-curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris.csv
+curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris.md
 
 wasmedge --dir .:. \
   --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5.f16.gguf \
-  csv_embed.wasm embedding default 768 paris.csv --ctx_size 8192
+  markdown_embed.wasm embedding default 768 paris.md --heading_level 1 --ctx_size 8192
 ```
 
 ### Options
@@ -97,6 +90,7 @@ wasmedge --dir .:. \
 You can pass the following options to the program.
 
 * Using `-c` or `--ctx_size` to specify the context size of the input. This defaults to 512.
+* Using `-l` or `--heading_level` to specify the markdown heading level for each vector. This defaults to 1.
 * Using `-m` or `--maximum_context_length` to specify a context length in the CLI argument. That is to truncate and warn for each text segment that goes above the context length.
 * Using `-s` or `--start_vector_id` to specify the start vector ID in the CLI argument. This will allow us to run this app multiple times on multiple documents on the same vector collection.
 
@@ -105,7 +99,7 @@ Example: the above example but to append the London guide to the end of an exist
 ```
 wasmedge --dir .:. \
   --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5.f16.gguf \
-   csv_embed.wasm embedding default 768 london.csv -c 8192 -l 1 -s 42
+   markdown_embed.wasm embedding default 768 london.md -c 8192 -l 1 -s 42
 ```
 
 ## Create a vector snapshot

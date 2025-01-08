@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Gaia nodes with long-term knowledge
+# Gaia Delegation
 
 The LLM app requires both long-term and short-term memories. Long-term memory includes factual knowledge, historical facts, background stories etc. They are best added to the context as complete chapters instead of small chunks of text to maintain the internal consistency of the knowledge.  
 

@@ -1,14 +1,20 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Knowledge base from a plain text file
+# How to Delegate
 
-In this section, we will discuss how to create a vector collection snapshot from a plain text file. The 
-snapshot file can then be [loaded by a Gaia node as its knowledge base](../../node-guide/customize#select-a-knowledge-base).
+In this section, we will discuss how to create a vector collection snapshot for optimal retrieval of 
+long-form text documents. The approach is to create two columns of text in a CSV file.
 
-The text file is segmented into multiple chunks by blank lines. [See an example](https://huggingface.co/datasets/gaianet/paris/raw/main/paris_chunks.txt). Each chunk is turned into a vector, and when 
-retrieved, added to the prompt context for the LLM.
+* The first column is the long-form source text from the knowledge document, such as a book chapter or a markdown section.
+* The long-form source text is difficult to search. The second column is a "search-friendly" summary of the source text. It could contain a list of questions that can be answered by the first column source text.
+
+We will create a vector snapshot where each vector is computed from the summary text (second column), but the 
+retrieved source text for that vector is from the first column.
+The snapshot file can then be [loaded by a Gaia node as its knowledge base](../../node-guide/customize#select-a-knowledge-base).
+
+> We have a simple Python script to build properly formatted CSV files from a set of articles or chapters. [See how it works](https://github.com/GaiaNet-AI/embedding-tools/tree/main/csv_embed#create-a-csv-file).
 
 ## Prerequisites
 
@@ -24,11 +30,11 @@ Download an embedding model.
 curl -LO https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf
 ```
 
-The embedding model is a special kind of LLM that turns sentences into vectors. The vectors can then be stored in a vector database and searched later. When the sentences are from a body of text that represents a knowledge domain, that vector database becomes our RAG knowledge base. 
+The embedding model is a special kind of LLM that turns sentences into vectors. The vectors can then be stored in a vector database and searched later. When the sentences are from a body of text that represents a knowledge domain, that vector database becomes our RAG knowledge base.
 
 ## Start a vector database
 
-By default, we use Qdrant as the vector database. You can start a Qdrant instance 
+By default, we use Qdrant as the vector database. You can start a Qdrant instance
 by [starting a Gaia node with a knowledge snapshot](../../node-guide/quick-start.md).
 
 :::note
@@ -67,40 +73,39 @@ curl -X PUT 'http://localhost:6333/collections/default' \
   }'
 ```
 
-Download a program to chunk a document and create embeddings.
+Download a program to create embeddings from the CSV file.
 
 ```
-curl -LO https://github.com/GaiaNet-AI/embedding-tools/raw/main/paragraph_embed/paragraph_embed.wasm
+curl -LO https://github.com/GaiaNet-AI/embedding-tools/raw/main/csv_embed/csv_embed.wasm
 ```
 
-It chunks the document based on empty lines. So, you MUST prepare your source document this way -- segment the document into sections of around 200 words with empty lines. You can check out the [Rust source code here](https://github.com/GaiaNet-AI/embedding-tools/tree/main/paragraph_embed) and modify it if you need to use a different chunking strategy.
+You can check out the [Rust source code](https://github.com/GaiaNet-AI/embedding-tools/tree/main/csv_embed) here and modify it if you need to use a different CSV layout.
 
-> The `paragraph_embed.wasm` program would NOT break up code listings even if there are empty lines with in the listing.
-
-Next, you can run the program by passing a collection name, vector dimension, and the source document. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 768-dimension vectors from [paris_chunks.txt](https://huggingface.co/datasets/gaianet/paris/raw/main/paris_chunks.txt) and saves them into the default collection.
+Next, you can run the program by passing a collection name, vector dimension, and the CSV document. 
+The `--ctx_size` option matches the embedding model's context window size, which in this case is 8192 tokens allowing it to process long sections of text. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 768-dimension vectors from `paris.csv` and saves them into the default collection.
 
 ```
-curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris_chunks.txt
+curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris.csv
 
 wasmedge --dir .:. \
   --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5.f16.gguf \
-  paragraph_embed.wasm embedding default 768 paris_chunks.txt -c 8192
+  csv_embed.wasm embedding default 768 paris.csv --ctx_size 8192
 ```
 
 ### Options
 
 You can pass the following options to the program.
 
+* Using `-c` or `--ctx_size` to specify the context size of the input. This defaults to 512.
 * Using `-m` or `--maximum_context_length` to specify a context length in the CLI argument. That is to truncate and warn for each text segment that goes above the context length.
 * Using `-s` or `--start_vector_id` to specify the start vector ID in the CLI argument. This will allow us to run this app multiple times on multiple documents on the same vector collection.
-* Using `-c` or `--ctx_size` to specify the context size of the input. This defaults to 512.
 
 Example: the above example but to append the London guide to the end of an existing collection starting from index 42.
 
 ```
 wasmedge --dir .:. \
   --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5.f16.gguf \
-   paragraph_embed.wasm embedding default 768 london.txt -c 8192 -s 42
+   csv_embed.wasm embedding default 768 london.csv -c 8192 -l 1 -s 42
 ```
 
 ## Create a vector snapshot
