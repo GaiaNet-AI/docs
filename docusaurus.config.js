@@ -46,7 +46,65 @@ const config = {
       {
         containerId: 'GTM-PCJ5QG6R'
       },
-    ]
+    ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          { from: '/user-guide/nodes', to: '/nodes' },
+          { from: '/user-guide/mynode', to: '/getting-started' },
+          { from: '/category/agent-framework-and-apps', to: '/agent-integrations' },
+          { from: '/user-guide/apps/intro', to: '/agent-integrations/intro' },
+          { from: '/user-guide/apps/dify', to: '/agent-integrations/dify' },
+          { from: '/user-guide/apps/openwebui', to: '/agent-integrations/openwebui' },
+          { from: '/user-guide/apps/anything_llm', to: '/agent-integrations/anything_llm' },
+          { from: '/user-guide/apps/cursor', to: '/agent-integrations/cursor' },
+          { from: '/user-guide/apps/stockbot', to: '/agent-integrations/stockbot' },
+          { from: '/user-guide/apps/flowiseai', to: '/agent-integrations/flowiseai' },
+          { from: '/user-guide/apps/flowiseai-tool-call', to: '/agent-integrations/flowiseai-tool-call' },
+          { from: '/user-guide/apps/lobechat', to: '/agent-integrations/lobechat' },
+          { from: '/user-guide/apps/llamaparse', to: '/agent-integrations/llamaparse' },
+          { from: '/user-guide/apps/zed', to: '/agent-integrations/zed' },
+          { from: '/user-guide/apps/obsidian', to: '/agent-integrations/obsidian' },
+          { from: '/user-guide/apps/codegpt', to: '/agent-integrations/codegpt' },
+          { from: '/user-guide/apps/continue', to: '/agent-integrations/continue' },
+          { from: '/user-guide/apps/llamacoder', to: '/agent-integrations/llamacoder' },
+          { from: '/user-guide/apps/agent-zero', to: '/agent-integrations/agent-zero' },
+          { from: '/user-guide/apps/translation-agent', to: '/agent-integrations/translation-agent' },
+          { from: '/user-guide/apps/gpt-planner', to: '/agent-integrations/gpt-planner' },
+          { from: '/user-guide/apps/llamaedge-book', to: '/agent-integrations/llamaedgebook' },
+          { from: '/user-guide/apps/llamatutor', to: '/agent-integrations/llamatutor' },
+          { from: '/user-guide/api-reference', to: '/getting-started/api-reference' },
+          { from: '/category/node-operator-guide', to: '/getting-started' },
+          { from: '/node-guide/quick-start', to: '/getting-started/quick-start' },
+          { from: '/node-guide/install_uninstall', to: '/getting-started/install' },
+          { from: '/node-guide/system-requirements', to: '/getting-started/system-requirements' },
+          { from: '/node-guide/customize', to: '/getting-started/customize' },
+          { from: '/node-guide/register', to: '/getting-started/register' },
+          { from: '/node-guide/cli-options', to: '/getting-started/cli-options' },
+          { from: '/node-guide/troubleshooting', to: '/getting-started/troubleshooting' },
+          { from: '/category/how-do-i-', to: '/category/advanced-deployment-options' },
+          { from: '/node-guide/tasks/docker', to: '/getting-started/advanced-deployment-options/docker' },
+          { from: '/node-guide/tasks/aws', to: '/getting-started/advanced-deployment-options/aws' },
+          { from: '/node-guide/tasks/cuda', to: '/getting-started/advanced-deployment-options/cuda' },
+          { from: '/node-guide/tasks/multiple', to: '/getting-started/advanced-deployment-options/multiple' },
+          { from: '/node-guide/tasks/local', to: '/getting-started/advanced-deployment-options/local' },
+          { from: '/node-guide/tasks/protect', to: '/getting-started/advanced-deployment-options/protect' },
+          { from: '/category/creator-guide', to: '/knowledge-bases/intro' },
+          { from: '/category/gaianet-node-with-finetuned-llms', to: '/tutorial/llamacpp' },
+          { from: '/creator-guide/finetune/intro', to: '/tutorial/llamacpp' },
+          { from: '/creator-guide/finetune/llamacpp', to: '/tutorial/llamacpp' },
+          { from: '/category/knowledge-bases', to: '/knowledge-bases/intro' },
+          { from: '/creator-guide/knowledge/concepts', to: '/tutorial/concepts' },
+          { from: '/creator-guide/knowledge/markdown', to: '/knowledge-bases/how-to/markdown' },
+          { from: '/creator-guide/knowledge/text', to: '/knowledge-bases/how-to/text' },
+          { from: '/creator-guide/knowledge/csv', to: '/knowledge-bases/how-to/csv' },
+          { from: '/creator-guide/knowledge/pdf', to: '/knowledge-bases/how-to/pdf' },
+          { from: '/creator-guide/knowledge/firecrawl', to: '/knowledge-bases/how-to/firecrawl' },
+          { from: '/creator-guide/knowledge/web-tool', to: '/knowledge-bases/web-tool' },
+        ],
+      },
+    ],
   ],
 
   presets: [
@@ -188,16 +246,28 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Important Links',
             items: [
               {
-                label: 'Tutorial',
-                to: '/intro',
+                label: 'For Developers & Builders',
+                to: '/getting-started',
               },
+              {
+                label: 'For Domain Operators',
+                to: '/domain-operator-guide',
+              },   
+              {
+                label: 'For Knowledge Creators',
+                to: '/knowledge-bases',
+              },  
+              {
+                label: 'Gaia\'s Public Nodes',
+                to: '/nodes',
+              },  
             ],
           },
           {
-            title: 'Community',
+            title: 'Join Our Community',
             items: [
               {
                 label: 'Discord',
@@ -207,20 +277,39 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/Gaianet_AI',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-
+              {
+                label: 'Gaia Builders',
+                href: 'https://t.me/+a0bJInD5lsYxNDJl',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/GaiaNet-AI',
               },
             ],
           },
+          {
+            title: 'Tutorials',
+            items: [
+              {
+                label: 'Gaia with Eliza',
+                to: '/tutorial/eliza',
+              },
+              {
+                label: 'Gaia + Coinbase AgentKit',
+                to: '/tutorial/coinbase',
+              },
+              {
+                label: 'Calling External Tools',
+                to: '/tutorial/tool-call',
+              },
+              {
+                label: 'Build a Translator Agent',
+                to: '/tutorial/translator-agent',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} GaiaNet. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Gaia. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
