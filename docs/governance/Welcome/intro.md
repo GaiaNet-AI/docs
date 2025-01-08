@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Fine-tune LLMs
+# Welcome to Gaia Governance
 
 You could fine-tune an open-source LLM to
 
