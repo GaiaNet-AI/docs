@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Welcome to GaiaNet Governance
 In these docs, you can find information about GaiaNet, the GAIA token, the GaiaNet governance system, and frequently asked questions.
 
