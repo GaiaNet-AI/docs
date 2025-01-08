@@ -27,11 +27,11 @@ Proposals should aim to achieve goals supporting the mission of GaiaNet. In turn
 # Primary Goals and KPIs
 
 - **Secure GaiaNet:** GaiaNet, its builders, and the community are protected from adversarial actors seeking to control the network for their own interests.
--   Example KPI: Number of Incidents (Objective = 0)
+  - Example KPI: Number of Incidents (Objective = 0)
 - **Increase Active Builders:** GaiaNet has a talented and diverse network of active builders, accelerating the development of LLM agent apps.
--   Example KPI: Number of Bronze, Silver, Gold, Diamond, and Supreme Domains registered
+  - Example KPI: Number of Bronze, Silver, Gold, Diamond, and Supreme Domains registered
 - **Strengthen the GAIA Community:** GaiaNet has an engaged, interconnected, and knowledgeable community of participants (incl. users, developers, and partners). The community uses and advocates for GaiaNet.
--   Example KPI: Number of nodes/throughputs
+  - Example KPI: Number of nodes/throughputs
 
 # GaiaNet Governance Contract Addresses
 
