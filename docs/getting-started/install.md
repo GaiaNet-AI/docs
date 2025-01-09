@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Install or Update the CLI
+# Install or Uninstall the CLI
 
 The Gaia node utilizes version control from [its source GitHub repo](https://github.com/GaiaNet-AI/gaianet-node). You can check out the Gaia node versions from [the release page](https://github.com/GaiaNet-AI/gaianet-node/releases).
 
@@ -49,7 +49,11 @@ Simply run the following command to upgrade your node.
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --upgrade
 ```
 
+:::tip
+
 The `upgrade` option will keep your node id.
+
+:::
 
 ## What's installed
 
@@ -84,4 +88,16 @@ Options:
   --help             Print usage
 ```
 
+## Uninstalling the Gaia CLI
 
+To uninstall or clear the environment, run the following command.
+
+```
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/uninstall.sh' | bash
+```
+
+:::danger
+
+**Important Reminder: This command will remove all the Gaia-related files, including the `nodeid.json`. It's your responsibility to keep your nodeid.json safe. If you want to run the same node after reinstalling, please save the `nodeid.json` file and `frpc.toml` file carefully.**
+
+:::
