@@ -119,8 +119,19 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/GaiaNet-AI/docs/edit/main',
-          includeCurrentVersion: true,
           lastVersion: 'current',
+          versions: {
+            current: {
+              label: '2.0.0', 
+              path: '',
+              badge: true,
+            },
+            '1.0.0': {
+              label: '1.0.0',
+              path: '1.0.0',
+              banner: 'none',
+            },
+          },
         },
         theme: {
           customCss: './src/css/custom.css',
