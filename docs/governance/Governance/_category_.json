@@ -1,6 +1,6 @@
 {
-  "label": "Voting",
-  "position": 3,
+  "label": "Governance",
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "An explanation of how delegation works in GaiaNet governance"
