@@ -9,7 +9,7 @@ GaiaNet Improvement Proposals (“**GIPs**") are the primary mechanism for enact
 Ideas for GaiaNet improvements, new features, integrations, and governance changes are initially discussed on the GaiaNet Governance Forum (link). The author(s) are encouraged to engage in active dialogue with the community to refine their ideas and gauge early feedback. Well-developed ideas with strong community support should proceed to the proposal drafting stage.
 
 ## Step 2: Proposal Drafting
-GaiaNet Improvement Proposals (GIPs) include all proposals submitted through the GaiaNet Governor contract. The Governor contract is a smart contract deployed on Ethereum, and GIPs are used to propose upgrades to GaiaNet. 
+GaiaNet Improvement Proposals (GIPs) include all proposals submitted through the Governor contract. The Governor contract is a smart contract deployed on Ethereum, and GIPs are used to propose upgrades to GaiaNet. 
 
 For the GIP template, see [this page].
 
