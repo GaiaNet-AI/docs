@@ -20,6 +20,7 @@ Once the Discussion Period has concluded they will post an update on the governa
 
 ## Step 4: Signal Voting
 As a supplement during the “Discussion Period” and prior to onchain GIP submission, proposal authors are encouraged to conduct offchain signal voting to gauge community sentiment and gather preliminary feedback. This non-binding voting process allows for early insights into the proposal’s potential acceptance and may highlight potential areas for improvement.
+
 Offchain signal voting aims to provide a lightweight method for community members to express their opinions and preferences regarding ideas, proposals, or new initiatives within the Gaia Ecosystem. It may be facilitated through platforms designated by the Foundation, including the GaiaNet Snapshot Portal.
 
 Proposal authors should outline the specifics of the vote, including options, duration, and how the results will influence the proposal’s progression. Clear communication regarding the non-binding nature of these votes is crucial. A strong positive response is an encouraging indicator for proceeding to the "Onchain GIP Submission'' stage. Conversely, if the signal vote reveals substantial opposition or concerns, authors should consider revisiting and revising their proposal in consultation with the community before moving forward.
