@@ -14,7 +14,7 @@ GaiaNet Improvement Proposals (GIPs) include all proposals submitted through the
 For the GIP template, see [this page].
 
 ## Step 3: Proposal Discussion
-Once proposals have been posted to the forum, they should initially stay open for community discussion for a recommended period (the “Discussion Period”) of **seven (7)** days. While proposal authors can submit a GIP directly without prior forum discussion, it is recommended that tokenholders consider voting against such proposals to enforce a more democratic Discussion Period. 
+Once proposals have been posted to the forum, they should initially stay open for community discussion for a recommended period (the “**Discussion Period**”) of **seven (7)** days. While proposal authors can submit a GIP directly without prior forum discussion, it is recommended that tokenholders consider voting against such proposals to enforce a more democratic Discussion Period. 
 
 Once the Discussion Period has concluded they will post an update on the governance forum, indicating that the proposal is now eligible for submission. This post will serve as a signal to the proposal author and the wider community that the GIP can proceed to the next stage of the governance process.
 
