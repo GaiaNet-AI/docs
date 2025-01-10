@@ -4,8 +4,5 @@ sidebar_position: 5
 
 # Supporting Entities
 
-* Visit [Tally link]
-* Connect your wallet
-* Follow the prompts to select a Delegate or self-delegate
-
-For more details on how to delegate your voting power on Tally, see [this guide](https://docs.tally.xyz/knowledge-base/delegations-on-tally/delegating-voting-power).
+* **GaiaNet Foundation**: a Cayman Islands foundation company (the "Foundation") has been formed to serve the GaiaNet DAO. The Foundation aims to facilitate the growth and development of GaiaNet and its ecosystem.
+   * The GaiaNet Foundation controls the following multisig ("GaiaNet Foundation Multisig"): [contract]
