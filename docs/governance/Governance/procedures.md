@@ -3,13 +3,13 @@ sidebar_position: 6
 ---
 
 # Governance Procedures
-GaiaNet Improvement Proposals (“**GIPs**") are the primary mechanism for enacting changes to GaiaNet and the GaiaNet DAO’s governance procedures. GIPs serve as a means of fostering community discourse and collective decision-making within the GaiaNet DAO. 
+Gaia Improvement Proposals (“**GIPs**") are the primary mechanism for enacting changes to Gaia and the Gaia DAO’s governance procedures. GIPs serve as a means of fostering community discourse and collective decision-making within the Gaia DAO. 
 
 ## Step 1: Ideation
-Ideas for GaiaNet improvements, new features, integrations, and governance changes are initially discussed on the GaiaNet Governance Forum (link). The author(s) are encouraged to engage in active dialogue with the community to refine their ideas and gauge early feedback. Well-developed ideas with strong community support should proceed to the proposal drafting stage.
+Ideas for Gaia improvements, new features, integrations, and governance changes are initially discussed on the Gaia Governance Forum (link). The author(s) are encouraged to engage in active dialogue with the community to refine their ideas and gauge early feedback. Well-developed ideas with strong community support should proceed to the proposal drafting stage.
 
 ## Step 2: Proposal Drafting
-GaiaNet Improvement Proposals (GIPs) include all proposals submitted through the Governor contract. The Governor contract is a smart contract deployed on Ethereum, and GIPs are used to propose upgrades to GaiaNet. 
+Gaia Improvement Proposals (GIPs) include all proposals submitted through the Governor contract. The Governor contract is a smart contract deployed on Ethereum, and GIPs are used to propose upgrades to Gaia. 
 
 For the GIP template, see [this page].
 
@@ -21,16 +21,16 @@ Once the Discussion Period has concluded they will post an update on the governa
 ## Step 4: Signal Voting
 As a supplement during the “Discussion Period” and prior to onchain GIP submission, proposal authors are encouraged to conduct offchain signal voting to gauge community sentiment and gather preliminary feedback. This non-binding voting process allows for early insights into the proposal’s potential acceptance and may highlight potential areas for improvement.
 
-Offchain signal voting aims to provide a lightweight method for community members to express their opinions and preferences regarding ideas, proposals, or new initiatives within the Gaia Ecosystem. It may be facilitated through platforms designated by the Foundation, including the GaiaNet Snapshot Portal.
+Offchain signal voting aims to provide a lightweight method for community members to express their opinions and preferences regarding ideas, proposals, or new initiatives within the Gaia Ecosystem. It may be facilitated through platforms designated by the Foundation, including the Gaia Snapshot Portal.
 
 Proposal authors should outline the specifics of the vote, including options, duration, and how the results will influence the proposal’s progression. Clear communication regarding the non-binding nature of these votes is crucial. A strong positive response is an encouraging indicator for proceeding to the "Onchain GIP Submission'' stage. Conversely, if the signal vote reveals substantial opposition or concerns, authors should consider revisiting and revising their proposal in consultation with the community before moving forward.
 
 ## Step 5: Onchain GIP Submission
-Proposals should be submitted for onchain voting once the Discussion Period is complete. The GaiaNet DAO currently has a threshold of 0.2% (or 2 million) GAIA as a requirement for proposal submission. Any Delegate who meets this proposal threshold may submit their proposal for onchain voting. If a Delegate does not meet the minimum token threshold for submitting proposals, they may work with someone who does to submit the proposal on their behalf or ask the DAO for GAIA delegations. Delegate profiles can be viewed at [link].
+Proposals should be submitted for onchain voting once the Discussion Period is complete. The Gaia DAO currently has a threshold of 0.2% (or 2 million) GAIA as a requirement for proposal submission. Any Delegate who meets this proposal threshold may submit their proposal for onchain voting. If a Delegate does not meet the minimum token threshold for submitting proposals, they may work with someone who does to submit the proposal on their behalf or ask the DAO for GAIA delegations. Delegate profiles can be viewed at [link].
 
-Proposals are submitted onchain on the GaiaNet Governance Portal (via Tally) or on other applications connected to GaiaNet governance contracts. Upon submission, a proposal enters a **three (3)** day Vote Delay period, prior to the commencement of the **seven (7)** day Voting Period.
+Proposals are submitted onchain on the Gaia Governance Portal (via Tally) or on other applications connected to Gaia governance contracts. Upon submission, a proposal enters a **three (3)** day Vote Delay period, prior to the commencement of the **seven (7)** day Voting Period.
 
-GaiaNet Governance Proposals pass a vote if delegates reach quorum, defined as 4% (or 40 million) GAIA voting power in support of the proposal, AND have a simple majority of “For” votes (>50%). Each proposal must also be consistent with the values of GaiaNet and must not violate applicable law. 
+Gaia Governance Proposals pass a vote if delegates reach quorum, defined as 4% (or 40 million) GAIA voting power in support of the proposal, AND have a simple majority of “For” votes (>50%). Each proposal must also be consistent with the values of Gaia and must not violate applicable law. 
 
 For the GIP template, see [this page].
 
@@ -45,7 +45,7 @@ If a GIP fails to pass the onchain voting process, it can be resubmitted for ano
 As a general recommendation, resubmitted GIPs should demonstrate meaningful improvements and address the key feedback points raised during the previous voting round.
 
 ## Step 6: Voting & Voting Parameters
-GIPs can be voted on via the GaiaNet Governance Portal on Tally, on other independent applications, or directly onchain via the block explorer. 
+GIPs can be voted on via the Gaia Governance Portal on Tally, on other independent applications, or directly onchain via the block explorer. 
 
 Governor contract proposals must meet a quorum requirement and receive a simple majority of the total number of "for" and "against" votes  to pass.
 
