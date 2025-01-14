@@ -11,13 +11,12 @@ Open source LLMs are increasingly good at using tools. The Llama 3 models have n
 
 In this tutorial, we will show you a simple Python program that allows a local LLM to run code and manipulate data on the local computer!
 
-
 ## Prerequisites
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../node-guide/quick-start.md). You will need to start a Gaia node for the [Llama-3-Groq model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-groq-8b-tool) or the [Mistral-7B-v0.3 Instruct model](https://github.com/GaiaNet-AI/node-configs/tree/main/mistral-0.3-7b-instruct-tool-call) . You can then use the node's API URL endpoint and model name in your tool call apps.
-* [use a public node](../user-guide/nodes.md)
+* [run your own node](../getting-started/quick-start). You will need to start a Gaia node for the [Llama-3-Groq model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-groq-8b-tool) or the [Mistral-7B-v0.3 Instruct model](https://github.com/GaiaNet-AI/node-configs/tree/main/mistral-0.3-7b-instruct-tool-call) . You can then use the node's API URL endpoint and model name in your tool call apps.
+* [use a public node](../nodes)
 
 In this tutorial, we will use a public Llama3 node with the function call support.
 
@@ -89,7 +88,6 @@ You can continue the conversation.
 
 To learn more about how tool calling works, see [this article](https://github.com/LlamaEdge/LlamaEdge/blob/main/api-server/ToolUse.md).
 
-
 ## Make it robust 
 
 One of the major challenges for LLM applications is the frequent unreliability of their responses. For example:
@@ -98,10 +96,8 @@ One of the major challenges for LLM applications is the frequent unreliability o
 
 you can refine and optimize the descriptions for each tool call function. The LLM chooses its tools based on these descriptions, so it's vital to craft them in a way that aligns with typical user queries.
 
-If the LLM hallucinates and produces tool calls with non-existent function names or incorrect parameters,
+*If the LLM hallucinates and produces tool calls with non-existent function names or incorrect parameters,*
 
-*the agent app should identify this issue and prompt the LLM to create a new response.*
+the agent app should identify this issue and prompt the LLM to create a new response.
 
 Tool calling is a fundamental feature in the evolving field of agentic LLM applications. We’re eager to see the innovative ideas you bring forward!
-
-

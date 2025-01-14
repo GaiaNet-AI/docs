@@ -1,13 +1,13 @@
 
-# GaiaNet Docs
+# Gaia Docs
    
-The documentation is for GaiaNet node operators, users, and creators.
+The documentation is for Gaia node operators, users, and creators.
 
 ## Contributing   
 
 We welcome contributions to improve our documentation! Here's how you can contribute:   
 1. Fork the repository:  
-	- Visit the [GaiaNet docs repository](https://github.com/GaiaNet-AI/docs) on GitHub 
+	- Visit the [Gaia docs repository](https://github.com/GaiaNet-AI/docs) on GitHub 
 	- Click the "Fork" button in the top-right corner 
 	- Select where you want to fork the repository (your personal account or an organization)   
 2. Clone your forked repository:`
@@ -56,4 +56,4 @@ This documentation is automatically deployed to [docs.gaianet.ai](https://docs.g
 ## Need Help?   
 If you have any questions or need assistance, please open an issue in this repository or reach out through our community channels.  
  
-Thank you for contributing to GaiaNet's documentation!
+Thank you for contributing to Gaia's documentation!

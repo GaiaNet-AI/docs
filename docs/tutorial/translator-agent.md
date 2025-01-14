@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# Agentic translation on GaiaNet
+# Agentic translation on Gaia
 
 Prof. Andrew Ng's [agentic translation](https://www.linkedin.com/posts/andrewyng_github-andrewyngtranslation-agent-activity-7206347897938866176-5tDJ/) is a great demonstration on how to coordinate multiple LLM "agents" to work on a single task. It allows multiple smaller LLMs (like Llama-3 or Gemma-2) to work together and produce better results than a single large LLM (like ChatGPT).
 
-[GaiaNet](https://www.gaianet.ai/), with 2000+ nodes running all kinds of finetuned LLms and knowledge bases, provides a huge opportunity for agentic apps to choose and use their own LLM backends.
+[Gaia](https://www.gaianet.ai/), with 2000+ nodes running all kinds of finetuned LLms and knowledge bases, provides a huge opportunity for agentic apps to choose and use their own LLM backends.
 
 ## Introduction to the LLM Translation Agent
 
@@ -23,13 +23,13 @@ cd translation-agent
 git checkout use_llamaedge
 ```
 
-Next, we will install a local GaiaNet node, which provides the backend API services required by the agent. You can, of course, use [GaiaNet nodes from the community](https://docs.gaianet.ai/user-guide/nodes) if you do not want to start your own.
+Next, we will install a local Gaia node, which provides the backend API services required by the agent. You can, of course, use [Gaia nodes from the community](../nodes) if you do not want to start your own.
 
 ```
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 
-You will also need the following configurations and prerequisites to run the agent app. If you are using a public GaiaNet node instead of your local node, replace the `http://localhost:8080` with `https://node_id.us.gaianet.network`.
+You will also need the following configurations and prerequisites to run the agent app. If you are using a public Gaia node instead of your local node, replace the `http://localhost:8080` with `https://node_id.us.gaianet.network`.
 
 ```
 export OPENAI_BASE_URL="http://localhost:8080/v1"
@@ -44,7 +44,7 @@ pip install openai tiktoken icecream langchain_text_splitters
 
 First, let's run the translation agent with Meta AI's popular Llama-3 model. We select the smallest Llama-3 model (the 8b model) for this demo. The translation task is from Chinese to English. Our [source text](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#Source-text) is in Chinese, a brief intro to the ancient Chinese royal palace, the Forbidden City.
 
-### Step 1.1: Run a Llama-3-8B GaiaNet node
+### Step 1.1: Run a Llama-3-8B Gaia node
 
 Configure and download the model. Since the size of the model is 5.73 GB. It can take a while to download.
 
@@ -52,7 +52,7 @@ Configure and download the model. Since the size of the model is 5.73 GB. It can
 gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/llama-3-8b-instruct/config.json
 ```
 
-Next, use the following command to start the GaiaNet node.
+Next, use the following command to start the Gaia node.
 
 ```
 gaianet start
@@ -103,11 +103,11 @@ Wait for several minutes and you will have [a fully translated version](https://
 
 ## Demo 2: Running Translation Agents with gemma-2-27b
 
-The benefit of running the Translation Agent with GaiaNet is the ability for users to choose and embed different LLMs for different agentic tasks. To demonstrate this point, we will now change the translation agent LLM from Llama-3-8b to Google's gemma-2-27b, which is of similar size but scores higher on many language-related benchmarks.
+The benefit of running the Translation Agent with Gaia is the ability for users to choose and embed different LLMs for different agentic tasks. To demonstrate this point, we will now change the translation agent LLM from Llama-3-8b to Google's gemma-2-27b, which is of similar size but scores higher on many language-related benchmarks.
 
 The translation task is the same as before. Our [source text](https://hackmd.io/tdLiVR3TSc-8eVg_E-j9QA?view#Source-text) is in Chinese, a brief intro to the ancient Chinese royal palace, the Forbidden City. The translation target is English.
 
-### Step 2.1 Run a gemma-2-27b GaiaNet node
+### Step 2.1 Run a gemma-2-27b Gaia node
 
 Configure and download the model. Since the size of the model is 6.40G, it could take a while to download.
 
@@ -115,7 +115,7 @@ Configure and download the model. Since the size of the model is 6.40G, it could
 gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/gemma-2-27b-it/config.json
 ```    
 
-Next, use the following command to start the GaiaNet node.
+Next, use the following command to start the Gaia node.
 
 ```
 gaianet start
@@ -170,7 +170,7 @@ The Llama-3 and Gemma-2 models are great LLMs, but they have relatively small co
 
 We run [a lengthy Chinese article on Forbidden City's collaboration with the Varsaille Palace](https://hackmd.io/vuFYZTVsQZyKmkeQ3ThZQw?view#Source-text) through our Translation Agent powered by a Phi-3-medium-128k model we start locally.
 
-### Step 3.1: Run a Phi-3-medium-128k GaiaNet node
+### Step 3.1: Run a Phi-3-medium-128k Gaia node
 
 Configure and download the model. 
 
@@ -178,7 +178,7 @@ Configure and download the model.
 gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/phi-3-medium-instruct-128k/config_full.json
 ```
 
-Next, use the following command to start the GaiaNet node with a 128k context window.
+Next, use the following command to start the Gaia node with a 128k context window.
 
 ```
 gaianet start
@@ -239,6 +239,6 @@ Overall, each model has its strengths, with gemma-2-27b standing out for linguis
 
 ## Conclusion
 
-[GaiaNet](https://github.com/GaiaNet-AI) provides an easy way to select and use different open-source LLMs in your agentic applications to fully take advantage of their finetuned capabilities for specific tasks.
+[Gaia](https://github.com/GaiaNet-AI) provides an easy way to select and use different open-source LLMs in your agentic applications to fully take advantage of their finetuned capabilities for specific tasks.
 
-Once you have a local GaiaNet node up and running, you could share it with others and make $$$ by joining the [GaiaNet network](https://www.gaianet.ai/)!
+Once you have a local Gaia node up and running, you could share it with others and make $$$ by joining the [Gaia network](https://www.gaianet.ai/)!
