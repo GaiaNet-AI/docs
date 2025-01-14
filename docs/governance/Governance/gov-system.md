@@ -2,8 +2,8 @@
 sidebar_position: 2
 ---
 
-# GaiaNet Governance System
+# Gaia Governance System
 
-The GaiaNet governance system governs smart contracts related to GaiaNet, including:
+The Gaia governance system governs smart contracts related to Gaia, including:
 * ContractTitle contract deployed at [contract] on Ethereum
 * ContractTitle contract deployed at [contract] on Base
