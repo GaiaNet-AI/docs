@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # GIP Template
 
-> **_✍️ TEMPLATE:_** Proposers are encouraged to follow the standard proposal template for GaiaNet Improvement Proposals. Proposals can be submitted via Tally or other governance applications supporting GaiaNet governance. 
+> **_✍️ TEMPLATE:_** Proposers are encouraged to follow the standard proposal template for Gaia Improvement Proposals. Proposals can be submitted via Tally or other governance applications supporting Gaia governance. 
 
 
 **TITLE: [GIP-#: Proposal Title]**
@@ -18,11 +18,11 @@ Add a one-sentence summary of the proposal.
 
 Use this initial section to provide a ~250-word summary of the proposal. This summary should include ~2 paragraphs explaining the motivation and impact of the upgrade you are proposing.
 
-This information should be simple, direct, and in accessible language. Describe the problem that the GaiaNet Improvement Proposal addresses, and how it improves or contributes to GaiaNet.
+This information should be simple, direct, and in accessible language. Describe the problem that the Gaia Improvement Proposal addresses, and how it improves or contributes to Gaia.
 
 **Motivation**
 
-Detail why this GIP is necessary and what issues or opportunities it seeks to address within the GaiaNet ecosystem. Discuss the benefits of the proposed changes to users and developers.
+Detail why this GIP is necessary and what issues or opportunities it seeks to address within the Gaia ecosystem. Discuss the benefits of the proposed changes to users and developers.
 
 **Specification**
 
