@@ -57,10 +57,60 @@ The device ID is only visible to yourself.
 
 :::
 
-### Select a different domain
+## Join a Domain
 
-By default, a new Gaia node joins the `gaianet.network` domain. You can select a different domain to join by putting
-the Gaia domain's public DNS name in the `domain` field in the `config.json`. Please note that most Gaia domains
-require approval for nodes to join. You have to abide by the domain's rules before your node can become publicly accessible
-on the domain URL.
+Once your node is successfully bound, you can proceed to join a Gaia Domain. There are two ways to join a domain:
+* Join a domain from your nodes management page
+* Join a domain from the [AI Agent Domains page](https://www.gaianet.ai/agents)
+
+### Steps to Join a Domain from Your Node Management Page
+
+1. **Locate Your Nodes**  
+   Navigate to **Profile → Nodes** to view the list of nodes you already registered.
+
+2. **Initiate the Join Process**  
+   Click the `...` button next to your node and select **Join Domain**. This will guide you through the steps to join a Gaia Domain.
+
+<img width="1058" alt="image" src="https://github.com/user-attachments/assets/e7b0613b-332f-46bd-ae35-88ab5e0e8280" />
+
+
+3. **Follow the Join Steps**  
+   - **Update Node Domain**  
+     Change your node's domain to `gaia.domains`, which is necessary. The following command line will change your node's domain to `gaia.domains`. If your node has already used `gaia.domains`, then you can skip this step.
+   
+     ``` 
+     gaianet stop
+     gaianet config --domain gaia.domains
+     gaianet init
+     gaianet start
+     ```
+     
+   - **Select a Domain**  
+     Choose a domain from the available online domain list. You can review essential details for each domain, such as:  
+       - Required LLM  
+       - Join policy  
+       - Number of joined nodes
+   
+   <img width="1336" alt="image" src="https://github.com/user-attachments/assets/fa99b0ef-e25d-4e51-933a-30062cb480d5" />
+
+   - **Verify Node Status**  
+     Ensure your node meets the domain's requirements. If everything checks out, you can submit a join request to the domain.
+
+   <img width="933" alt="image" src="https://github.com/user-attachments/assets/caafe74c-9393-43a2-a428-1b008b7ce717" />
+
+    > Normally, your node needs to be online and meet the specific LLM requirement.
+
+### Steps to Join a Domain from the AI Agent Domains page
+
+The AI agent Domains page featured lots of domains various from crypto knowledge to useful tools. Each has options for "Chat Now" or "Join Now". You can click on "Join Now" to join that domain.
+
+<img width="1406" alt="image" src="https://github.com/user-attachments/assets/6dbcc6fd-f6d8-452a-8e1c-2581bd637c9f" />
+
+
+### Important Notes
+
+- Some Gaia Domains require approval for new nodes to join.  
+- Ensure you comply with the domain's rules before your node becomes publicly accessible under the domain's URL. 
+
+Following these steps will seamlessly integrate your node into a Gaia Domain.
 

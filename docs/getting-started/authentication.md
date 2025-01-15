@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Authentication
+# Get your API key
 
 ## API Keys
 
