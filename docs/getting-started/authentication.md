@@ -2,9 +2,7 @@
 sidebar_position: 3
 ---
 
-# Authentication
-
-## API Keys
+# Get your API key
 
 We're introducing API keys for authentication. You can create API keys by following the steps below:
 
