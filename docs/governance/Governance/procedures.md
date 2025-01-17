@@ -26,11 +26,11 @@ Offchain signal voting aims to provide a lightweight method for community member
 Proposal authors should outline the specifics of the vote, including options, duration, and how the results will influence the proposal’s progression. Clear communication regarding the non-binding nature of these votes is crucial. A strong positive response is an encouraging indicator for proceeding to the "Onchain GIP Submission'' stage. Conversely, if the signal vote reveals substantial opposition or concerns, authors should consider revisiting and revising their proposal in consultation with the community before moving forward.
 
 ## Step 5: Onchain GIP Submission
-Proposals should be submitted for onchain voting once the Discussion Period is complete. The Gaia DAO currently has a threshold of 0.2% (or 2 million) GAIA as a requirement for proposal submission. Any Delegate who meets this proposal threshold may submit their proposal for onchain voting. If a Delegate does not meet the minimum token threshold for submitting proposals, they may work with someone who does to submit the proposal on their behalf or ask the DAO for GAIA delegations. Delegate profiles can be viewed at [link].
+Proposals should be submitted for onchain voting once the Discussion Period is complete. The Gaia DAO currently has a threshold of [placeholder] GAIA as a requirement for proposal submission. Any Delegate who meets this proposal threshold may submit their proposal for onchain voting. If a Delegate does not meet the minimum token threshold for submitting proposals, they may work with someone who does to submit the proposal on their behalf or ask the DAO for GAIA delegations. Delegate profiles can be viewed at [link].
 
 Proposals are submitted onchain on the Gaia Governance Portal (via Tally) or on other applications connected to Gaia governance contracts. Upon submission, a proposal enters a **three (3)** day Vote Delay period, prior to the commencement of the **seven (7)** day Voting Period.
 
-Gaia Governance Proposals pass a vote if delegates reach quorum, defined as 4% (or 40 million) GAIA voting power in support of the proposal, AND have a simple majority of “For” votes (>50%). Each proposal must also be consistent with the values of Gaia and must not violate applicable law. 
+Gaia Governance Proposals pass a vote if delegates reach quorum, defined as [placeholder] GAIA in support of the proposal, AND have a simple majority of “For” votes (>50%). Each proposal must also be consistent with the values of Gaia and must not violate applicable law. 
 
 For the GIP template, see [this page].
 
@@ -56,8 +56,8 @@ The voting parameters for Tokenholders are as follows, which may be subject to f
 * **Vote Delay Period:** Upon submission, a proposal enters a three (3) day vote delay period, prior to the Voting Period. The proposer may cancel a proposal during the Vote Delay Period, at their discretion.
 * **Voting Period:** The Voting Period is the seven (7) day time period during which Delegates can cast “Yes,” “No,” or “Abstain” votes on a submitted proposal.
 * **Timelock Period:** Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of three (3) days. This period serves as a delay before proposal execution, giving the community time to adjust to any changes introduced by a successful proposal.
-* **Proposal Threshold:** 0.2% (or 2 million) GAIA. The Proposal Threshold is the minimum voting power (whether through holding GAIA tokens themselves or having tokens delegated to them by third parties) needed to submit a GIP for an onchain vote.
-* **Quorum:** 4% (or 40 million) GAIA
+* **Proposal Threshold:** [placeholder] GAIA. The Proposal Threshold is the minimum voting power (whether through holding GAIA tokens themselves or having tokens delegated to them by third parties) needed to submit a GIP for an onchain vote.
+* **Quorum:** [placeholder] GAIA
 
 > _Note:_ The above values, time periods, and thresholds may be modified by tokenholders through the governance process itself.
 
