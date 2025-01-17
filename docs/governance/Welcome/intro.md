@@ -41,5 +41,4 @@ Proposals should aim to achieve goals supporting the mission of Gaia. In turn, d
 
 - GAIA Token: [contract address]
 - Governor: [contract address]
-- Foundation Address:
-- Security Council Address:
+- [placeholder] 
