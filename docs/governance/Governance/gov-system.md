@@ -6,4 +6,3 @@ sidebar_position: 2
 
 The Gaia governance system governs smart contracts related to Gaia, including:
 * ContractTitle contract deployed at [contract] on Ethereum
-* ContractTitle contract deployed at [contract] on Base
