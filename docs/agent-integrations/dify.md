@@ -20,7 +20,7 @@ Leave the API Key field empty.
 ![Configure a Gaia Llama3 8b model in Dify](dify_chat.png)
 
 Most Dify applications also require an embedding model to search text in the vector space.
-Add an mebedding model with the modela name and API endpoint listed on your Gaia node's web dashboard. Or, you can just add [a popular Gaia node](../nodes).
+Add an embedding model with the model name and API endpoint listed on your Gaia node's web dashboard. Or, you can just add [a popular Gaia node](../nodes).
 Leave the API Key field empty.
 
 ![Configure a Gaia embedding model in Dify](dify_embedding.png)
