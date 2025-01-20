@@ -79,6 +79,8 @@ const config = {
           { from: '/node-guide/quick-start', to: '/getting-started/quick-start' },
           { from: '/node-guide/install_uninstall', to: '/getting-started/install' },
           { from: '/node-guide/system-requirements', to: '/getting-started/system-requirements' },
+          { from: '/getting-started/quick-start/system-requirements', to: '/getting-started/system-requirements' },
+          { from: '/getting-started/system-requirements/advanced-deployment-options/cuda', to: '/getting-started/advanced-deployment-options/cuda' },
           { from: '/node-guide/customize', to: '/getting-started/customize' },
           { from: '/node-guide/register', to: '/getting-started/register' },
           { from: '/node-guide/cli-options', to: '/getting-started/cli-options' },

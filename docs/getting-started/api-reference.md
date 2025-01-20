@@ -11,6 +11,12 @@ can also replace OpenAI API configuration with the Gaia node API in other AI age
 
 The base URL to send all API requests is `https://node_id.gaianet.network/v1`.
 
+:::note
+
+    Make sure to replace `YOUR_API_KEY_GOES_HERE` with your **own API key**. To get your own API key, follow [this](./authentication) tutorial.
+
+:::
+
 ## Endpoints
 
 ### Chat
@@ -27,6 +33,7 @@ By default, the API responds with a full answer in the HTTP response.
 curl -X POST https://node_id.gaianet.network/v1/chat/completions \
   -H 'accept:application/json' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer YOUR_API_KEY_GOES_HERE' \
   -d '{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "What is the capital of France?"}], "model": "model_name"}'
 ```
 
@@ -46,6 +53,7 @@ Add `"stream":true` in your request to make the API send back partial responses 
 curl -X POST https://node_id.gaianet.network/v1/chat/completions \
   -H 'accept:application/json' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer YOUR_API_KEY_GOES_HERE' \
   -d '{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "What is the capital of France?"}], "model": "model_name", "stream":true}'
 ```
 
@@ -102,6 +110,7 @@ The `embeddings` endpoint computes embeddings for user queries or file chunks.
 curl -X POST https://node_id.gaianet.network/v1/embeddings \
     -H 'accept:application/json' \
     -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer YOUR_API_KEY_GOES_HERE' \
     -d '{"model": "nomic-embed-text-v1.5.f16", "input":["Paris, city and capital of France, ..., for Paris has retained its importance as a centre for education and intellectual pursuits.", "Paris’s site at a crossroads ..., drawing to itself much of the talent and vitality of the provinces."]}'
 ```
 
@@ -161,6 +170,7 @@ The `retrieve` endpoint can retrieve text from the node's vector collection base
 curl -X POST https://node_id.gaianet.network/v1/retrieve \
     -H 'accept:application/json' \
     -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer YOUR_API_KEY_GOES_HERE' \
     -d '{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "What is the location of Paris?"}], "model":"nomic-embed-text-v1.5.f16"}'
 ```
 
