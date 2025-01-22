@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# 🌐 Public Gaia nodes
+# 🌐 Public Gaia Domain
 
 Each Gaia node provides a web-based chatbot UI and an OpenAI compatible web service.
 Here are some popular nodes. Please refer to the [agent apps](./agent-integrations/intro) section to see how
@@ -10,7 +10,7 @@ to use the Gaia API in your favorite agent frameworks or apps.
 
 Gaia nodes are organized into Gaia domains to provide public services. Each domain has a single API endpoint that load-balances across multiple nodes to ensure service availability. 
 
-Below are some Gaia domains we provider for free to the public.
+Below are some Gaia domains we provide for free to the public.
 
 ## Public Gaia domains
 
@@ -26,7 +26,7 @@ It is capable of tool / function calling.
 | API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name (for LLM) | llama |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
+| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
 
 ### Voice-to-text: Whisper v2 large
 
@@ -37,7 +37,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 |-----|--------|
 | API endpoint URL | https://whisper.gaia.domains/v1 |
 | Model Name | whisper |
-| API key | Empty or any value |
+| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
 
 ### Text-to-image: Realistic vision
 
@@ -49,7 +49,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 |-----|--------|
 | API endpoint URL | https://portrait.gaia.domains/v1 |
 | Model Name | portrait |
-| API key | Empty or any value |
+| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
 
 ### Text-to-voice: GPT-SoVITS
 
@@ -69,7 +69,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 | API endpoint URL | https://coder.gaia.domains/v1 |
 | Model Name (for LLM) | coder |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
+| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
 
 ### Rust Coder
 
@@ -82,7 +82,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 | API endpoint URL | https://rustcoder.gaia.domains/v1 |
 | Model Name (for LLM) | rustcoder |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
+| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
 
 ## Alternative LLM domains
 
@@ -96,7 +96,7 @@ This domain runs plain Llama 3.2 3b agent nodes without any additional knowledge
 | API endpoint URL | https://llama3b.gaia.domains/v1 |
 | Model Name (for LLM) | llama3b |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
+| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
 
 ### Qwen 7b
 
@@ -108,7 +108,7 @@ The Qwen 7b LLM is great for non-English tasks such as translation.
 | API endpoint URL | https://qwen7b.gaia.domains/v1 |
 | Model Name (for LLM) | qwen7b |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
+| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
 
 
 ### Qwen 72b
@@ -123,4 +123,4 @@ It is capable of tool / function calling.
 | API endpoint URL | https://qwen72b.gaia.domains/v1 |
 | Model Name (for LLM) | qwen72b |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | Empty or any value |
+| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
