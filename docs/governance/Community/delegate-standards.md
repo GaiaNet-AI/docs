@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 # Gaia DAO Delegate Standards
-> **_ℹ️_** The Gaia Delegate Standards are opt-in, but all Delegates within Gaia are expected to adhere to the following set of standards in addition to the Gaia DAO Code of Conduct.
+> **_Note:_** The Gaia Delegate Standards are opt-in, but all Delegates within Gaia are expected to adhere to the following set of standards in addition to the Gaia DAO Code of Conduct.
 
 In addition to the general community standards outlined in the Gaia DAO Code of Conduct, delegates are held to a set of more specific standards:
 
