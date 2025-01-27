@@ -2,43 +2,24 @@
 sidebar_position: 1
 ---
 
-# Welcome to Gaia Governance
-In these docs, you can find information about GaiaNet, the GAIA token, the Gaia governance system, and frequently asked questions.
+# Welcome to the Gaia Community!  
+Our goal is to cultivate a safe and inclusive space that benefits all participants of the Gaia DAO while remaining in alignment with the values of the  DAO Mission. This Code of Conduct outlines our shared values and expectations.
 
-# Links
+This is your guide for participating in the Gaia community. This Code of Conduct applies to all spaces related to the Gaia DAO, which include:
+* The Gaia Docs at https://docs.gaianet.ai/intro/ 
+* The Gaia Governance Portal at [link]
+* The Gaia Forum [link]
 
-- View the GAIA token contract at [Enter Token Contract address]
-- Delegate voting power at [Tally Delegate Page]
-- View the Gaia Governance contract code at [github repo]
-- Visit the main GaiaNet documentation at <https://docs.gaianet.ai/intro> 
-- Open the app at <https://www.gaianet.ai/> 
-- Follow the blog at <https://www.gaianet.ai/blog/> 
+# Expected Behaviors
 
-# Gaia DAO Mission
-Gaia is a decentralized, open-source AI agent developer tool built to incentivize sovereign living knowledge systems. The DAO's mission is to decentralize the coordination between AI computation, inference, and governance, ensuring transparency, community-driven development, and equitable economic incentives while fostering a sustainable and scalable open-source ecosystem. As a community, we adhere to the following principles:
+* **Promote Integrity and Transparency.** Build trust within the Gaia community by being honest and transparent in your contributions. Avoid spreading misinformation, engaging in deceptive practices, or making unsupported claims. Always prioritize the collective goals of the community over personal agendas.
+* **Uphold Constructive Engagement.** Strive for discussions that are solutions-focused and constructive. When debating or critiquing, focus on the topic at hand rather than personal attacks. Aim to make the Gaia community a space where meaningful innovation and ideas flourish.
+* **Encourage Collaboration.** Collaboration drives progress. Share your expertise openly, seek advice when needed, and offer support to fellow members. By working together, we can achieve outcomes that are greater than the sum of individual efforts.
+* **Be Respectful.** Treat everyone in the Gaia community with kindness and empathy. Everyone in the community offers different perspectives and no one should feel as if they are not welcome. We have a zero-tolerance policy for any form of hate speech, bullying, harassment, or discrimination
+* **Stay Curious and Adaptable.** In a space that’s as rapidly evolving as AI, curiosity fuels growth. Ask questions, explore new ideas, and remain adaptable to change. Embrace experimentation and view setbacks as learning opportunities.
+* **Support Security and Safety.** Help maintain a secure environment by avoiding activities that could jeopardize the safety of others or the integrity of the network. Report vulnerabilities, scams, or suspicious behavior promptly to moderators or administrators. Always seek consent before sharing personal information about others.
+* **Explore and Have Fun.** Remember, this community is not just a place for work, but also a place for growth and fun. Encourage creative projects, enjoy the process of building together, and make the most of shared experiences.
 
-- **Protecting human knowledge:** Gaia's decentralized platform ensures robust protection for user data and IP. Gaia allows secure ownership and monetization of IP without compromising privacy.
-- **Continuous adaptation & growth:** Gaia's living knowledge organisms continuously adapt and grow in real-time, keeping solutions relevant and cutting-edge. Developers can build applications that evolve and improve over time.
-- **Extensible knowledge environments:** Gaia simplifies decentralized AI, making it accessible to developers and end-users to build a more collaborative environment for sharing knowledge and innovation.
-- **Applications powered by rich knowledge:** Gaia enables the creation of applications using high-quality, specific knowledge bases, ensuring AI models are built on rich, precise data for more accurate and specialized solutions.
 
-# The Purpose of the Gaia Governance System
-The Gaia Governance System is composed of smart contracts, interfaces like the delegation portal, and governing bodies. Together, they are meant to provide a comprehensive and intuitive way for governance participants to have a tangible impact on Gaia's future.
-
-# Evaluating the Impact of Gaia Governance Proposals
-Proposals should aim to achieve goals supporting the mission of Gaia. In turn, delegates and other governance system participants should define and evaluate the impact of proposals based on each proposal's goals and corresponding KPIs. Each KPI should be related to the proposal goals, and to the purposes of the Gaia governance system.
-
-# Primary Goals and KPIs
-
-- **Secure GaiaNet:** GaiaNet, its builders, and the community are protected from adversarial actors seeking to control the network for their own interests.
-  - Example KPI: Number of Incidents (Objective = 0)
-- **Increase Active Builders:** Gaia has a talented and diverse network of active builders, accelerating the development of LLM agent apps.
-  - Example KPI: Number of Bronze, Silver, Gold, Diamond, and Supreme Domains registered
-- **Strengthen the GAIA Community:** Gaia has an engaged, interconnected, and knowledgeable community of participants (incl. users, developers, and partners). The community uses and advocates for Gaia.
-  - Example KPI: Number of nodes/throughputs
-
-# Gaia Governance Contract Addresses
-
-- GAIA Token: [contract address]
-- Governor: [contract address]
-- [placeholder] 
+# Managing Violations
+If you are the subject of or witness to any violations of this Code of Conduct, please contact us at [email].
