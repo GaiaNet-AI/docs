@@ -21,8 +21,8 @@ First, you need a [Coinbase Developer Platform account](https://www.coinbase.com
 Next, check out the AgentKit example code.
 
 ```
-git clone https://github.com/coinbase/cdp-agentkit
-cd cdp-agentkit/cdp-langchain/examples/chatbot
+git clone https://github.com/coinbase/agentkit
+cd agentkit//python/examples/cdp-langchain-chatbot/
 ```
 
 Set the environment variables for your API key.
