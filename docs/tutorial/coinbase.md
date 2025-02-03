@@ -4,14 +4,14 @@ sidebar_position: 3
 
 # Working with Coinbase AgentKit
 
-You can use a Gaia node to power the [Coinbase AgentKit](https://github.com/coinbase/cdp-agentkit).
+You can use a Gaia node to power the [Coinbase AgentKit](https://github.com/coinbase/agentkit).
 The Gaia node must run an LLM that is optimized for [tool calling](tool-call.md). 
 Or, you could simply use our public node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llamatool.us.gaianet.network/v1 |
-| Model Name | llama |
+| API endpoint URL | https://llama70b.gaia.domains/v1 |
+| Model Name | llama70b |
 | API KEY | gaia |
 
 ## Quickstart
@@ -22,7 +22,7 @@ Next, check out the AgentKit example code.
 
 ```
 git clone https://github.com/coinbase/agentkit
-cd agentkit//python/examples/cdp-langchain-chatbot/
+cd agentkit/python/examples/cdp-langchain-chatbot/
 ```
 
 Set the environment variables for your API key.
