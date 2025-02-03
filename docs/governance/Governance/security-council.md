@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Gaia Security Council
 
-The Security Council is a committee of the Foundation Company comprising [amount] committee members who are signers on a specific Foundation multi-sig wallet, which have powers to perform certain Emergency Actions, as delegated to it by the Gaia DAO and The Gaia Foundation and is responsible for upholding the Gaia DAO Mission. 
+The Security Council is a committee comprising [amount] members who are signers on a specific Foundation multi-sig wallet, which have powers to perform certain Emergency Actions, as delegated to it by the Gaia DAO and The Gaia Foundation and is responsible for upholding the Gaia DAO Mission. 
 
 ## Emergency Actions
 The Security Council has the power to execute any pause functionality, or perform other required actions with no delay in order to respond to a security emergency, should one arise (such actions, "**Emergency Actions**"). 
