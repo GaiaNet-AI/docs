@@ -28,7 +28,7 @@ Proposal authors should outline the specifics of the vote, including options, du
 ## Step 5: Onchain GIP Submission
 Proposals should be submitted for onchain voting once the Discussion Period is complete. The Gaia DAO currently has a threshold of [placeholder] GAIA as a requirement for proposal submission. Any Delegate who meets this proposal threshold may submit their proposal for onchain voting. If a Delegate does not meet the minimum token threshold for submitting proposals, they may work with someone who does to submit the proposal on their behalf or ask the DAO for GAIA delegations. Delegate profiles can be viewed at [link].
 
-Proposals are submitted onchain on the Gaia Governance Portal (via Tally) or on other applications connected to Gaia governance contracts. Upon submission, a proposal enters a **three (3)** day Vote Delay period, prior to the commencement of the **seven (7)** day Voting Period.
+Proposals are submitted onchain on the Gaia Governance Portal (via Tally) or on other applications connected to Gaia governance contracts. Upon submission, a proposal enters a **[placeholder]** day Vote Delay period, prior to the commencement of the **[placeholder]** day Voting Period.
 
 Gaia Governance Proposals pass a vote if delegates reach quorum, defined as [placeholder] GAIA in support of the proposal, AND have a simple majority of “For” votes (>50%). Each proposal must also be consistent with the values of Gaia and must not violate applicable law. 
 
@@ -49,13 +49,13 @@ GIPs can be voted on via the Gaia Governance Portal on Tally, on other independe
 
 Governor contract proposals must meet a quorum requirement and receive a simple majority of the total number of "for" and "against" votes  to pass.
 
-If a vote causes a quorum to be reached, the proposal's voting period is extended so that it does not end before the following 7 days have passed.
+If a vote causes a quorum to be reached, the proposal's voting period is extended so that it does not end before the following [placeholder] days have passed.
 
 The voting parameters for Tokenholders are as follows, which may be subject to further changes in accordance with a GIP related to the governance process (the “**Voting Parameters**”):
 
-* **Vote Delay Period:** Upon submission, a proposal enters a three (3) day vote delay period, prior to the Voting Period. The proposer may cancel a proposal during the Vote Delay Period, at their discretion.
-* **Voting Period:** The Voting Period is the seven (7) day time period during which Delegates can cast “Yes,” “No,” or “Abstain” votes on a submitted proposal.
-* **Timelock Period:** Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of three (3) days. This period serves as a delay before proposal execution, giving the community time to adjust to any changes introduced by a successful proposal.
+* **Vote Delay Period:** Upon submission, a proposal enters a [placeholder] day vote delay period, prior to the Voting Period. The proposer may cancel a proposal during the Vote Delay Period, at their discretion.
+* **Voting Period:** The Voting Period is the [placeholder] day time period during which Delegates can cast “Yes,” “No,” or “Abstain” votes on a submitted proposal.
+* **Timelock Period:** Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of [placeholder] days. This period serves as a delay before proposal execution, giving the community time to adjust to any changes introduced by a successful proposal.
 * **Proposal Threshold:** [placeholder] GAIA. The Proposal Threshold is the minimum voting power (whether through holding GAIA tokens themselves or having tokens delegated to them by third parties) needed to submit a GIP for an onchain vote.
 * **Quorum:** [placeholder] GAIA
 
@@ -69,7 +69,7 @@ Click here to learn more about voting on proposals.
 One (1) GAIA token equals one (1) vote over any proposals submitted to the GaiaNet DAO (the “**Voting Power**”). This will allow tokenholders to participate in the governance process proportionally to their holdings.
 
 ## Step 7: Timelock Period
-Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of **three (3)** days.
+Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of **[placeholder]** days.
 
 ## Step 8: Implementation Period
 Following the expiration of the Timelock Period:
