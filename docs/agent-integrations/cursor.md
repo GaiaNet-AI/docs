@@ -38,7 +38,7 @@ Second, add a model named `coder` and turn off all the other models like `gpt-4o
 Third, go to the OpenAI API Key section,
 
 * Click on **Override OpenAI Base URL**. Type `https://coder.gaia.domains/v1` here.
-* For the OpenAI API key, you can use any random chars such as `GAIA`. Click on **Verfiy** to test if the connection is correct.
+* For the OpenAI API key, you can use any random chars such as `GAIA`. Click on **Verify** to test if the connection is correct.
 
 ![](cursor-01.png)
 
