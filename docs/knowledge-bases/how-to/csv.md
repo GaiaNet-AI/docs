@@ -83,7 +83,7 @@ Next, you can run the program by passing a collection name, vector dimension, an
 The `--ctx_size` option matches the embedding model's context window size, which in this case is 8192 tokens allowing it to process long sections of text. Make sure that Qdrant is running on your local machine. The model is preloaded under the name embedding. The wasm app then uses the embedding model to create the 768-dimension vectors from `paris.csv` and saves them into the default collection.
 
 ```
-curl -LO https://huggingface.co/datasets/gaianet/paris/raw/main/paris.csv
+curl -LO https://huggingface.co/datasets/gaianet/eigenlayerKannan/resolve/main/eigen_vectors.csv
 
 wasmedge --dir .:. \
   --nn-preload embedding:GGML:AUTO:nomic-embed-text-v1.5.f16.gguf \
