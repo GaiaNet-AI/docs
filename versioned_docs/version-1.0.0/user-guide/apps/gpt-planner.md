@@ -27,7 +27,7 @@ In this tutorial, we will use a public node.
 
 ## Run the agent
 
-First, [load the nodebook in colab](https://colab.research.google.com/github/mshumer/gpt-prompt-engineer/blob/main/gpt_planner.ipynb).
+First, [load the notebook in colab](https://colab.research.google.com/github/mshumer/gpt-prompt-engineer/blob/main/gpt_planner.ipynb).
 
 Edit the code to create an OpenAI client. We will pass in the `base_url` here.
 
