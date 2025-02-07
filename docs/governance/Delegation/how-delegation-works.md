@@ -21,6 +21,16 @@ Tally is a third-party governance platform which will facilitate aspects of Gaia
 
 Once inside the registration portal, take some time to fill out the information. You will need to prepare a Statement of Intent, Core Values, and Disclosures/Conflicts of Interest. At the bottom, you have the option to choose from eight **Focus Areas**. These Focus Areas have been established specifically for Gaia, enabling delegates to lend themselves to a specific component of governance that best fits their background/interest. Note that these Focus Areas are non-binding, but they help add structure and work cohesion among the delegate body.
 
+The eight focus areas are: 
+- Staking and Rewards
+- Treasury Management
+- Network Upgrades
+- Open Source
+- Grant Programs
+- Community Outreach
+- Public Goods
+- Partnerships
+
 **Step 3: Cross-Post your Full Statement on the Forum**
 
 Once you have successfully registered through Tally, the final step is to cross-post the information from your Full Statement to the governance forum within the “Delegate Statements” sub-category. For the title, use “(Delegate name) Delegate Statement”. The post body should simply be a copy/paste of the Full Statement that was submitted through Tally.
