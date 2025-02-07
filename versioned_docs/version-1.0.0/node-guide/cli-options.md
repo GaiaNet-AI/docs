@@ -80,7 +80,7 @@ The `gaianet config` can update the key fields defined in the `config.json` file
 * `gaianet config --reverse-prompt "<prompt>"` will change the reverse prompt.
 * `gainet config --base <path> ` will modify the `<path>/config.json` parameters.
 
-After you use `gaianet conifg` to change some parameters, please
+After you use `gaianet config` to change some parameters, please
 
 1. use `gaianet init` to make your settings take effect.
 2. use `gaianet start` to start your new node.
