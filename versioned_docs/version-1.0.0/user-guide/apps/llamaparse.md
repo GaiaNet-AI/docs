@@ -43,7 +43,7 @@ npm install llamaindex
 npm install dotenv
 ```
 
-Start a Qdant instance. The Qdrant instance is to store the embeddings.
+Start a Qdrant instance. The Qdrant instance is to store the embeddings.
 
 ```
 mkdir qdrant_storage
