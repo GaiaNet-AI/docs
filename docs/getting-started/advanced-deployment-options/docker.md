@@ -42,7 +42,7 @@ docker run --name gaianet \
 
 ## Stop and re-start
 
-You can stop and re-start the node as follows. Every time you re-start, it will re-initailize the vector
+You can stop and re-start the node as follows. Every time you re-start, it will re-initialize the vector
 collection (knowledge base).
 
 ```
@@ -95,7 +95,7 @@ docker cp /local/path/to/nodeid.json gaianet:/root/gaianet/nodeid.json
 docker cp /local/path/to/1234-abcd-key-store gaianet:/root/gaianet/1234-abcd-key-store
 ```
 
-THen, restart the node for the new address and keystore to take effect.
+Then, restart the node for the new address and keystore to take effect.
 
 ```
 docker stop gaianet
