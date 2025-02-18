@@ -10,7 +10,7 @@ to use the Gaia API in your favorite agent frameworks or apps.
 
 Gaia nodes are organized into Gaia domains to provide public services. Each domain has a single API endpoint that load-balances across multiple nodes to ensure service availability. 
 
-Below are some Gaia domains we provide for free to the public.
+Below are some Gaia domains we offer developers for free. **However, you must apply for a developer account to access these domains**.
 
 ## Public Gaia domains
 
@@ -86,6 +86,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 
 ## Alternative LLM domains
 
+<!-----
 ### Llama 3b
 
 This domain runs plain Llama 3.2 3b agent nodes without any additional knowledge.
@@ -97,6 +98,8 @@ This domain runs plain Llama 3.2 3b agent nodes without any additional knowledge
 | Model Name (for LLM) | llama3b |
 | Model Name (for Text embedding) | nomic-embed |
 | API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+
+----->
 
 ### Qwen 7b
 
