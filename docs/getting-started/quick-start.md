@@ -14,7 +14,7 @@ Before you get started, ensure that you have the following on your system:
 | Ubuntu Linux 20.04 with Nvidia CUDA 12 SDK | 8GB VRAM on GPU |
 | Azure/AWS | Nvidia T4 GPU Instance |
 
-Learn more about [system requirements](system-requirements).
+Learn more about [system requirements](system-requirements). (Also Note when you're using a windows system you should have ubuntu installed so you use wsl in the command line)
 
 ### Installing the node
 
