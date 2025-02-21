@@ -10,9 +10,9 @@ Access it here: https://tools.gaianet.xyz/
 
 ## Segment your text file
 
-First, copy unformatted text into a txt file. Then follow the two rules to chunk your content, ie putting similar content together.
+First, copy unformatted text into a txt file. Then follow the two rules to chunk your content, i.e. putting similar content together.
 
-- Each title and related content are a chunk. There is no blank lines in one chunk.
+- Each title and related content are a chunk. There are no blank lines in one chunk.
 - Use a blank line to recognize different chunks.
 
 After that, save it as a txt file.
@@ -21,7 +21,7 @@ For example, below is your source.
 
 ![The input knowledge in a text file](web_tool_input.png)
 
-After formatted, it will look like the following.
+After formatting, it will look like the following.
 
 ```
 What is a blockchain?
