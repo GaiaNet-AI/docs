@@ -42,7 +42,7 @@ Click the CODEGPT on the right sidebar and enter the settings page for CodeGPT.
 
 | Attribute | Value | 
 |-----|--------|
-| API endponit URL | https://codestral.us.gaianet.network/v1/v1/ |
+| API endpoint URL | https://codestral.us.gaianet.network/v1/v1/ |
 | API Key | gaia |
 
 ![](codegpt-03.png)

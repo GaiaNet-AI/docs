@@ -91,7 +91,7 @@ What's the location of this address 35.222.115.181
 
 The LLM understands that the request is to find a location for an IP address, and sees that we have a function
 called `get_ip_address_geo_location` in tools, which has a description that matches this task. 
-So, it responses with a JSON message to call this function with
+So, it responds with a JSON message to call this function with
 the IP address it extracts from the user query.
 
 This tool calling JSON message is NOT displayed to the user in the chatbot. Instead, the FlowiseAI

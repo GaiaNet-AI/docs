@@ -62,6 +62,6 @@ Next, let's run the application locally.
 npm run dev
 ```
 
-Finally, open http://localhost:3000 in your browser and start to build your React app.
+Finally, open http://localhost:3000 in your browser and start building your React app.
 
 ![](llamacoder.png)
