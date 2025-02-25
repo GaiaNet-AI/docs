@@ -22,8 +22,8 @@ Device ID: device-e77---1446f1b51
 
 To receive rewards, bind your node and device IDs with a Metamask account using the Gaia web portal:
 
-1. Open https://www.gaianet.ai/ on your browser and click **"Connect."**
-2. Log into Metamask using the QR code and connect your account. 
+1. Open https://www.gaianet.ai/ on your browser and click **"Launch App."**
+2. click **Connect** to log into the website with Metamask. 
 3. Hover on your profile and click **"Setting"** and click **"Nodes."** 
 4. Click **"Connect new node"** and enter your node and device IDs in the boxes.
 5. Click **"Join"**   
@@ -39,7 +39,7 @@ If you are running multiple nodes, you can bind the node IDs and their correspon
 
 ### Protect your node ID and device ID
 
-The Gaia installer generates a pair of ETH address and keystore and password for your node automatically. This information is stored in the `gaianet/nodeid.json` file. Please keep the JSON file carefully.
+The Gaia installer generates a pair of an ETH address and keystore and password for your node automatically. This information is stored in the `gaianet/nodeid.json` file. Please keep the JSON file carefully.
 
 - The ETH address is your node ID. You will use this ETH address to join the Gaia network.
 - The keystore stores the private key associated with the ETH address encrypted by the password.
@@ -53,7 +53,7 @@ In many protocol operations, you will need this private key to sign request mess
 
 :::note
 
-The device ID is only visible to yourself.
+The device ID is only visible to you.
 
 :::
 
