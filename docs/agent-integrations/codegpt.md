@@ -17,7 +17,7 @@ In this tutorial, we will use the public CodeStral nodes to power the CodeGPT pl
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://coder.gaia.domains/v1/v1/ | codestral |
+| Chat | https://coder.gaia.domains/v1/v1/ | coder |
 
 
 > For some reason, CodeGPT requires the API endpoint to include an extra `v1/` at the end.
@@ -48,6 +48,8 @@ Click the CODEGPT on the right sidebar and enter the settings page for CodeGPT.
 ![](codegpt-03.png)
 
 Save the above settings.
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 ## Use the plugin
 
