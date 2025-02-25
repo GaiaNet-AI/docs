@@ -18,8 +18,8 @@ In this tutorial, we will use the public [Llama-3.1-8B node](https://github.com/
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://llama.us.gaianet.network/v1/ | llama |
-| Embedding | https://llama.us.gaianet.network/v1/ | nomic-embed |
+| Chat | https://llama8b.gaia.domains/v1/ | llama |
+| Embedding | https://llama8b.gaia.domains/v1/ | nomic-embed |
 
 **You will also need to make sure your Docker engine is running.** Because the Agent Zero framework will leverage Docker to execute the generated code.
 
@@ -48,12 +48,12 @@ cp example.env .env
 
 You will need to configure the following items:
 
-* `CHAT_MODEL_BASE_URL`: URL for the LLM API base URL. E.g., `https://llama.us.gaianet.network/v1/`
+* `CHAT_MODEL_BASE_URL`: URL for the LLM API base URL. E.g., `https://llama8b.gaia.domains/v1/`
 * `CHAT_MODEL_NAME`: Name of the chat model to be used. E.g., `llama`
-* `CHAT_API_KEY`: An API key to access the LLM services. You can enter several random characters here. E.g., `GAIA`
-* `EMBEDDING_MODEL_BASE_URL`: URL for the embedding model API base URL. E.g., `https://llama.us.gaianet.network/v1/`
+* `CHAT_API_KEY`: An API key to access the LLM services. If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+* `EMBEDDING_MODEL_BASE_URL`: URL for the embedding model API base URL. E.g., `https://llama8b.gaia.domains/v1/`
 * `EMBEDDING_MODEL_NAME`: Name of the embedding model name. E.g., `nomic-embed`
-* `EMBEDDING_API_KEY`: An API key to access the embedding services. You can enter several random characters here. E.g., `GAIA`
+* `EMBEDDING_API_KEY`: An API key to access the embedding services. If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 ## Run the agent
 

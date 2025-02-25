@@ -20,9 +20,11 @@ In this tutorial, we will use a public Llama3 node with the function call suppor
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llamatool.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 | API KEY | gaia |
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 ## Run the agent
 
@@ -44,6 +46,8 @@ You will need to configure four parameters here.
 * LLAMAEDGE_BASE_URL: URL for the LLM API base URL.
 * LLAMAEDGE_MODEL_NAME: Name of the model to be used.
 * LLAMAEDGE_API_KEY: API key for accessing the LLM services.
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 Then, we will need to install the required dependencies.
 

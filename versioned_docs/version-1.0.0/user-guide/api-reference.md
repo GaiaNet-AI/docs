@@ -9,7 +9,7 @@ sidebar_position: 4
 Each GaiaNet node is an OpenAI compatible API server. You can build your application based on the GaiaNet node API. You
 can also replace OpenAI API configuration with the GaiaNet node API in other AI agent frameworks.
 
-The base URL to send all API requests is `https://node_id.gaianet.network/v1`.
+The base URL to send all API requests is `https://node_id.gaia.domains/v1`.
 
 ## Endpoints
 
@@ -24,7 +24,7 @@ By default, the API responds with a full answer in the HTTP response.
 **Request**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/chat/completions \
+curl -X POST https://node_id.gaia.domains/v1/chat/completions \
   -H 'accept:application/json' \
   -H 'Content-Type: application/json' \
   -d '{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "What is the capital of France?"}], "model": "model_name"}'
@@ -43,7 +43,7 @@ Add `"stream":true` in your request to make the API send back partial responses 
 **Request:**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/chat/completions \
+curl -X POST https://node_id.gaia.domains/v1/chat/completions \
   -H 'accept:application/json' \
   -H 'Content-Type: application/json' \
   -d '{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "What is the capital of France?"}], "model": "model_name", "stream":true}'
@@ -99,7 +99,7 @@ The `embeddings` endpoint computes embeddings for user queries or file chunks.
 **Request**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/embeddings \
+curl -X POST https://node_id.gaia.domains/v1/embeddings \
     -H 'accept:application/json' \
     -H 'Content-Type: application/json' \
     -d '{"model": "nomic-embed-text-v1.5.f16", "input":["Paris, city and capital of France, ..., for Paris has retained its importance as a centre for education and intellectual pursuits.", "Paris’s site at a crossroads ..., drawing to itself much of the talent and vitality of the provinces."]}'
@@ -158,7 +158,7 @@ The `retrieve` endpoint can retrieve text from the node's vector collection base
 **Request:**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/retrieve \
+curl -X POST https://node_id.gaia.domains/v1/retrieve \
     -H 'accept:application/json' \
     -H 'Content-Type: application/json' \
     -d '{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "What is the location of Paris?"}], "model":"nomic-embed-text-v1.5.f16"}'
@@ -202,7 +202,7 @@ The `models` endpoint provides the chat and embedding models available on the no
 **Request:**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/models
+curl -X POST https://node_id.gaia.domains/v1/models
 ```
 
 **Response:**
@@ -218,7 +218,7 @@ The `info` endpoint provides detailed information about the node.
 **Request:**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/info
+curl -X POST https://node_id.gaia.domains/v1/info
 ```
 
 **Response:**

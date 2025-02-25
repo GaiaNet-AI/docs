@@ -24,9 +24,9 @@ In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://gemma.us.gaianet.network/v1/ | gemma |
-| Embedding | https://gemma.us.gaianet.network/v1/ | nomic |
-| Autocompletion | https://codestral.us.gaianet.network/v1/ | codestral |
+| Chat | https://llama8b.gaia.domains/v1/ | gemma |
+| Embedding | https://llama8b.gaia.domains/v1/ | nomic |
+| Autocompletion | https://coder.gaia.domains/v1/ | codestral |
 
 > It is important to note that Continue requires the API endpoint to include a `/` at the end.
 
@@ -50,20 +50,20 @@ chat, code autocomplete and embeddings.
     {
       "model": "gemma",
       "title": "LlamaEdge",
-      "apiBase": "https://gemma.us.gaianet.network/v1/",
+      "apiBase": "https://llama8b.gaia.domains/v1/",
       "provider": "openai"
     }
   ],
   "tabAutocompleteModel": {
       "title": "Autocomplete",
-      "apiBase": "https://codestral.us.gaianet.network/v1/",
+      "apiBase": "https://coder.gaia.domains/v1/",
       "model": "codestral",
       "provider": "openai"
   },
   "embeddingsProvider": {
     "provider": "openai",
     "model": "nomic-embed",
-    "apiBase": "https://gemma.us.gaianet.network/v1/"
+    "apiBase": "https://llama8b.gaia.domains/v1/"
   },
   "customCommands": [
     {

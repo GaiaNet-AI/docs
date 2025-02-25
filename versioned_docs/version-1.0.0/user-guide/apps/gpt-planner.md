@@ -22,7 +22,7 @@ In this tutorial, we will use a public node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 
 ## Run the agent
@@ -32,8 +32,9 @@ First, [load the notebook in colab](https://colab.research.google.com/github/msh
 Edit the code to create an OpenAI client. We will pass in the `base_url` here.
 
 ```
-client = openai.OpenAI(base_url="https://llama.us.gaianet.network/v1", api_key=OPENAI_API_KEY)
+client = openai.OpenAI(base_url="https://llama8b.gaia.domains/v1", api_key=OPENAI_API_KEY)
 ```
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 Next, replace all the `gpt-4o-mini` model name with the `llama` model name in the code. 
 Here is an example.

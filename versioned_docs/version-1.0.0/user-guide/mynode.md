@@ -9,7 +9,7 @@ web-based chatbot UI and an OpenAI compatible web service. Just load the node's 
 Let's say the URL is as follows.
 
 ```
-https://0x1234...xyz.gaianet.network/
+https://0x1234...xyz.gaia.domains/
 ```
 
 > Please refer to the [agent apps](apps/intro) section to see how to use the GaiaNet node API in your favorite agent frameworks or apps.

@@ -43,7 +43,7 @@ Set the environment variables for the API server and model name we just set up.
 
 ```
 export OPENAI_MODEL_NAME="llama"
-export OPENAI_BASE_URL= "https://llamatool.us.gaianet.network/v1"
+export OPENAI_BASE_URL= "https://llama8b.gaia.domains/v1"
 ```
 
 Run the `main.py` application and bring up the command line chat interface. 

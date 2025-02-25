@@ -37,8 +37,9 @@ export CDP_API_KEY_PRIVATE_KEY='-----BEGIN EC...END EC PRIVATE KEY-----\n'
 Edit the `chatbot.py` file to configure the agent to use the Gaia node above.
 
 ```
-llm = ChatOpenAI(model="llama", api_key="GAIA", base_url="https://llamatool.us.gaianet.network/v1")
+llm = ChatOpenAI(model="llama", api_key="GAIA", base_url="https://llama8b.gaia.domains/v1")
 ```
+> You will need to get an API key from Gaia.
 
 Finally, run the agent using Python.
 

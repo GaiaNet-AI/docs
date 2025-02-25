@@ -23,8 +23,10 @@ In this tutorial, we will use a public node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 ## Obsidian-local-gpt Plugin Setup
 
@@ -45,7 +47,7 @@ Then click “Enable”.
 
 1. Go to the plugin settings.
 2. Select "AI Provider" as "OpenAI compatible server".
-3. Set the server URL. Use https://llama.us.gaianet.network/ if you are using a public GaiaNet node. Or, use http://localhost:8080/ if you are running a local GaiaNet node. 
+3. Set the server URL. Use https://llama8b.gaia.domains/ if you are using a public GaiaNet node. Or, use http://localhost:8080/ if you are running a local GaiaNet node. 
 4. Configure API key to GaiaNet.
 
 ![](obsidian-configure.png)

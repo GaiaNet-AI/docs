@@ -9,7 +9,7 @@ sidebar_position: 10
 Each Gaia node is an OpenAI compatible API server. You can build your application based on the Gaia node API. You
 can also replace OpenAI API configuration with the Gaia node API in other AI agent frameworks.
 
-The base URL to send all API requests is `https://node_id.gaianet.network/v1`.
+The base URL to send all API requests is `https://node_id.gaia.domains/v1`.
 
 :::note
 
@@ -30,7 +30,7 @@ By default, the API responds with a full answer in the HTTP response.
 **Request**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/chat/completions \
+curl -X POST https://node_id.gaia.domains/v1/chat/completions \
   -H 'accept:application/json' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer YOUR_API_KEY_GOES_HERE' \
@@ -50,7 +50,7 @@ Add `"stream":true` in your request to make the API send back partial responses 
 **Request:**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/chat/completions \
+curl -X POST https://node_id.gaia.domains/v1/chat/completions \
   -H 'accept:application/json' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer YOUR_API_KEY_GOES_HERE' \
@@ -107,7 +107,7 @@ The `embeddings` endpoint computes embeddings for user queries or file chunks.
 **Request**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/embeddings \
+curl -X POST https://node_id.gaia.domains/v1/embeddings \
     -H 'accept:application/json' \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer YOUR_API_KEY_GOES_HERE' \
@@ -167,7 +167,7 @@ The `retrieve` endpoint can retrieve text from the node's vector collection base
 **Request:**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/retrieve \
+curl -X POST https://node_id.gaia.domains/v1/retrieve \
     -H 'accept:application/json' \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer YOUR_API_KEY_GOES_HERE' \
@@ -212,7 +212,7 @@ The `models` endpoint provides the chat and embedding models available on the no
 **Request:**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/models
+curl -X POST https://node_id.gaia.domains/v1/models
 ```
 
 **Response:**
@@ -228,7 +228,7 @@ The `info` endpoint provides detailed information about the node.
 **Request:**
 
 ```
-curl -X POST https://node_id.gaianet.network/v1/info
+curl -X POST https://node_id.gaia.domains/v1/info
 ```
 
 **Response:**

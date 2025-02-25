@@ -10,9 +10,11 @@ Or, you could simply use our public node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llamatool.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 | API KEY | gaia |
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 ## Quickstart
 
@@ -35,8 +37,10 @@ export CDP_API_KEY_PRIVATE_KEY='-----BEGIN EC...END EC PRIVATE KEY-----\n'
 Edit the `chatbot.py` file to configure the agent to use the Gaia node above.
 
 ```
-llm = ChatOpenAI(model="llama", api_key="GAIA", base_url="https://llamatool.us.gaianet.network/v1")
+llm = ChatOpenAI(model="llama", api_key="GAIA", base_url="https://llama8b.gaia.domains/v1")
 ```
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 Finally, run the agent using Python.
 

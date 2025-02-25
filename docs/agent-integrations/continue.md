@@ -25,7 +25,7 @@ In this tutorial, we will use public nodes to power the Continue plugin.
 |-----|--------|-----|
 | Chat | https://llama8b.gaia.domains/v1/ | llama |
 | Embedding | https://llama8b.gaia.domains/v1/ | nomic |
-| Autocompletion | https://codestral.us.gaianet.network/v1/ | codestral |
+| Autocompletion | https://coder.gaia.domains./v1/ | codestral |
 
 > It is important to note that Continue requires the API endpoint to include a `/` at the end.
 
@@ -55,7 +55,7 @@ chat, code autocomplete and embeddings.
   ],
   "tabAutocompleteModel": {
       "title": "Autocomplete",
-      "apiBase": "https://codestral.us.gaianet.network/v1/",
+      "apiBase": "https://coder.gaia.domains/v1/",
       "model": "codestral",
       "provider": "openai"
   },

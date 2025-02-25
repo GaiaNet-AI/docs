@@ -18,8 +18,8 @@ In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://llama.us.gaianet.network/v1 | llama |
-| Embedding | https://llama.us.gaianet.network/v1 | nomic |
+| Chat | https://llama8b.gaia.domains/v1 | llama |
+| Embedding | https://llama8b.gaia.domains/v1 | nomic |
 
 ## Start the Open WebUI on your machine
 
@@ -28,12 +28,14 @@ After successfully starting the GaiaNet node, you can use `docker run` to start 
 ```
 docker run -d -p 3000:8080 \
   -v open-webui:/app/backend/data \
-  -e OPENAI_API_BASE_URL="https://llama.us.gaianet.network/v1" \
+  -e OPENAI_API_BASE_URL="https://llama8b.gaia.domains/v1" \
   -e OPENAI_API_KEYS="gaianet" \
   --name open-webui \
   --restart always \
   ghcr.io/open-webui/open-webui:main
 ```
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 Then, open `http://localhost:3000` in your browser and you will see the Open WebUI page.
 
