@@ -26,7 +26,7 @@ In this tutorial, we will use a public node.
 | API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 ## Obsidian-local-gpt Plugin Setup
 

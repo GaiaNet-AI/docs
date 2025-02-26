@@ -28,7 +28,7 @@ export OPENAI_BASE_URL="https://llama8b.gaia.domains/v1"
 export OPENAI_MODEL_NAME="gemma" 
 export OPENAI_API_KEY="GAIANET" 
 ```
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 **Hint:** if you don't know the model name of the GaiaNet node, you can retrieve the model information using:
 

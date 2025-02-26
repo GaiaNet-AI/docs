@@ -48,7 +48,7 @@ export OPENAI_MODEL_NAME="llama"
 export OPENAI_BASE_URL= "https://llama8b.gaia.domains/v1"
 export OPENAI_API_KEY="GAIANET"
 ```
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 Run the `main.py` application and bring up the command line chat interface. 
 

@@ -50,10 +50,10 @@ You will need to configure the following items:
 
 * `CHAT_MODEL_BASE_URL`: URL for the LLM API base URL. E.g., `https://llama8b.gaia.domains/v1/`
 * `CHAT_MODEL_NAME`: Name of the chat model to be used. E.g., `llama`
-* `CHAT_API_KEY`: An API key to access the LLM services. If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+* `CHAT_API_KEY`: An API key to access the LLM services. If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 * `EMBEDDING_MODEL_BASE_URL`: URL for the embedding model API base URL. E.g., `https://llama8b.gaia.domains/v1/`
 * `EMBEDDING_MODEL_NAME`: Name of the embedding model name. E.g., `nomic-embed`
-* `EMBEDDING_API_KEY`: An API key to access the embedding services. If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+* `EMBEDDING_API_KEY`: An API key to access the embedding services. If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 ## Run the agent
 

@@ -40,7 +40,7 @@ Edit the `chatbot.py` file to configure the agent to use the Gaia node above.
 llm = ChatOpenAI(model="llama", api_key="GAIA", base_url="https://llama8b.gaia.domains/v1")
 ```
 
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 Finally, run the agent using Python.
 

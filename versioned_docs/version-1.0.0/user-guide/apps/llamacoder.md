@@ -42,7 +42,7 @@ You will need to configure three parameters here.
 * LLAMAEDGE_MODEL_NAME: Name of the model to be used.
 * LLAMAEDGE_API_KEY: API key for accessing the LLM services.
 
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 For example, you can use the following `.env` setting.
 

@@ -83,7 +83,7 @@ Click on **Open configuration** to set up the API Key.
   
 ![](zed-03.png)
 
-Since we are using a free public Gaia node, you can use any API key in the OpenAI section at the bottom of the screen. For example, you can enter `GAIA`.
+Get your Gaia API key from [here](https://docs.gaianet.ai/getting-started/authentication).
 
 Now, we have everything ready.
 
