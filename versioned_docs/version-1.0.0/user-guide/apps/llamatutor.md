@@ -25,7 +25,7 @@ In this tutorial, we will use a public Llama3 node.
 | Model Name | llama |
 | API KEY | gaia |
 
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 ## Run the agent
 

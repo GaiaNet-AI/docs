@@ -34,7 +34,7 @@ Edit the code to create an OpenAI client. We will pass in the `base_url` here.
 ```
 client = openai.OpenAI(base_url="https://llama8b.gaia.domains/v1", api_key=OPENAI_API_KEY)
 ```
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 Next, replace all the `gpt-4o-mini` model name with the `llama` model name in the code. 
 Here is an example.

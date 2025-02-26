@@ -14,7 +14,7 @@ Or, you could simply use our public node.
 | Model Name | llama |
 | API KEY | gaia |
 
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 ## Quickstart
 
