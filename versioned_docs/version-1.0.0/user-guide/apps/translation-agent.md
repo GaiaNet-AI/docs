@@ -41,7 +41,7 @@ export OPENAI_API_KEY="GAIANET"
 pip install python-dotenv
 pip install openai tiktoken icecream langchain_text_splitters
 ```
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 ## Prepare your translation task
 
