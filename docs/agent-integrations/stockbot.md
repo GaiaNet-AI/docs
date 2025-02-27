@@ -20,7 +20,7 @@ In this tutorial, we will use a public Llama3 node with the function call suppor
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llamatool.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 | API KEY | gaia |
 

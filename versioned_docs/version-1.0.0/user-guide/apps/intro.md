@@ -22,13 +22,13 @@ Remember to append the `/v1` after the host name. You can find a list of public 
 ```
 import openai
 
-client = openai.OpenAI(base_url="https://YOUR-NODE-ID.us.gaianet.network/v1", api_key="")
+client = openai.OpenAI(base_url="https://YOUR-NODE-ID.gaia.domains/v1", api_key="")
 ```
 
 Alternatively, you could set an environment variable at the OS level.
 
 ```
-export OPENAI_API_BASE=https://YOUR-NODE-ID.us.gaianet.network/v1
+export OPENAI_API_BASE=https://YOUR-NODE-ID.gaia.domains/v1
 ```
 
 Then, when you make API calls from the `client`, make sure that the `model` is set to the model name
@@ -68,14 +68,14 @@ Create an OpenAI client with a custom base URL. Remember to append the `/v1` aft
 
 ```
 const client = new OpenAI({
-  baseURL: 'https://YOUR-NODE-ID.us.gaianet.network/v1',
+  baseURL: 'https://YOUR-NODE-ID.gaia.domains/v1',
   apiKey: '' // Leave this empty when using Gaia
 });
 ```
 
 Alternatively, you can set an environment variable using `dotenv` in Node.
 ```
-process.env.OPENAI_API_BASE = 'https://YOUR-NODE-ID.us.gaianet.network/v1';
+process.env.OPENAI_API_BASE = 'https://YOUR-NODE-ID.gaia.domains/v1';
 ```
 
 Then, when you make API calls from the `client`, make sure that the `model` is set to the model name

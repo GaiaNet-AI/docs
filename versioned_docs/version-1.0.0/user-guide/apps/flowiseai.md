@@ -17,8 +17,8 @@ In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://llama.us.gaianet.network/v1 | llama |
-| Embedding | https://llama.us.gaianet.network/v1 | nomic |
+| Chat | https://llama8b.gaia.domains/v1 | llama |
+| Embedding | https://llama8b.gaia.domains/v1 | nomic |
 
 ## Start a FlowiseAI server
 
@@ -55,7 +55,7 @@ You will need to delete the ChatOpenAI component and click the + button to searc
 
 Then, you will need to input 
 
-* the Gaia node base URL `https://llama.us.gaianet.network/v1` 
+* the Gaia node base URL `https://llama8b.gaia.domains/v1` 
 * the model name `llama`
 
 Next, connect the ChatLocalAI component with the field `Chat model` in the **Conversational Retrieval QA Chain** component.
@@ -64,7 +64,7 @@ Next, connect the ChatLocalAI component with the field `Chat model` in the **Con
 
 The default template uses the OpenAI Embeddings component to create embeddings for your documents. We need to replace the **OpenAI Embeddings** component with the **LocalAI Embeddings** component.
 
-* Use the Gaia node base URL `https://llama.us.gaianet.network/v1` in the Base Path field.
+* Use the Gaia node base URL `https://llama8b.gaia.domains/v1` in the Base Path field.
 * Input the model name `nomic-embed-text-v1.5.f16` in the Model Name field.
 
 Next, connect the **LocalAI Embeddings** component with the field `embedding` in the **In-Memory Vector Store** component.

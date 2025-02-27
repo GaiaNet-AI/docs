@@ -19,8 +19,10 @@ In this tutorial, we will use public nodes to power the Continue plugin.
 
 | Model type | API base URL | Model name |
 |-----|--------|-----|
-| Chat | https://gemma.us.gaianet.network/v1 | gemma |
-| Embedding | https://gemma.us.gaianet.network/v1 | nomic-embed |
+| Chat | https://llama8b.gaia.domains/v1 | gemma |
+| Embedding | https://llama8b.gaia.domains/v1 | nomic-embed |
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 ## Steps
 
@@ -58,7 +60,7 @@ nohup docker run -d -p 6333:6333 -p 6334:6334 \
 Then, we will need to set up the LLM  model settings. We can configure the model setting in the `.env` file. 
 
 ```
-OPENAI_BASE_URL=https://gemma.us.gaianet.network/v1/
+OPENAI_BASE_URL=https://llama8b.gaia.domains/v1/
 OPENAI_API_KEY=gaianet
 LLAMAEDGE_CHAT_MODEL=gemma
 LLAMAEDGE_EMBEDDING_MODEL=nomic

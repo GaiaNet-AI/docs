@@ -24,15 +24,16 @@ pip install -r requirements.txt
 Next, let's configure the GaiaNet node as the LLM backend.
 
 ```
-export OPENAI_BASE_URL="https://gemma.us.gaianet.network/v1"
+export OPENAI_BASE_URL="https://llama8b.gaia.domains/v1"
 export OPENAI_MODEL_NAME="gemma" 
 export OPENAI_API_KEY="GAIANET" 
 ```
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 **Hint:** if you don't know the model name of the GaiaNet node, you can retrieve the model information using:
 
 ```
-curl -X POST https://0x57b00e4f3d040e28dc8aabdbe201212e5fb60ebc.us.gaianet.network/v1/models
+curl -X POST https://0x57b00e4f3d040e28dc8aabdbe201212e5fb60ebc.gaia.domains/v1/models
 ```
 
 Then, use the following command line to run the app.

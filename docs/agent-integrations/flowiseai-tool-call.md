@@ -35,7 +35,7 @@ Step 2: On the **Chatflow** canvas, add a node called **ChatLocalAI**.
 
 Step 3: Configure the **ChatLocalAI** widget to use the Gaia node with tool call support you have created.
 
-* Base path: `https://YOUR-NODE-ID.us.gaianet.network/v1`
+* Base path: `https://YOUR-NODE-ID.gaia.domains/v1`
 * Model name: e.g., `Mistral-7B-Instruct-v0.3.Q5_K_M`
 
 Step 4: Add a node called **Custom Tool** 

@@ -19,14 +19,15 @@ You will need a Gaia node ready to provide LLM services through a public URL. Yo
 * [run your own node](../node-guide/quick-start.md). You will need to start a Gaia node for the [Llama-3-Groq model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-groq-8b-tool) or the [Mistral-7B-v0.3 Instruct model](https://github.com/GaiaNet-AI/node-configs/tree/main/mistral-0.3-7b-instruct-tool-call) . You can then use the node's API URL endpoint and model name in your tool call apps.
 * [use a public node](../user-guide/nodes.md)
 
-In this tutorial, we will use a public Llama3 node with the function call support.
+In this tutorial, we will use a public Llama3 domain with the function call support.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llamatool.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 | API KEY | gaia |
 
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 ## Run the demo agent
 
@@ -44,8 +45,10 @@ Set the environment variables for the API server and model name we just set up.
 
 ```
 export OPENAI_MODEL_NAME="llama"
-export OPENAI_BASE_URL= "https://llamatool.us.gaianet.network/v1"
+export OPENAI_BASE_URL= "https://llama8b.gaia.domains/v1"
+export OPENAI_API_KEY="GAIANET"
 ```
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 Run the `main.py` application and bring up the command line chat interface. 
 

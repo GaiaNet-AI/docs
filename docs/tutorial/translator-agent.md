@@ -29,7 +29,7 @@ Next, we will install a local Gaia node, which provides the backend API services
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 
-You will also need the following configurations and prerequisites to run the agent app. If you are using a public Gaia node instead of your local node, replace the `http://localhost:8080` with `https://node_id.us.gaianet.network`.
+You will also need the following configurations and prerequisites to run the agent app. If you are using a Gaia node instead of your local node, replace the `http://localhost:8080` with `https://node_id.gaia.domains`.
 
 ```
 export OPENAI_BASE_URL="http://localhost:8080/v1"
@@ -39,6 +39,7 @@ export OPENAI_API_KEY="GAIANET"
 pip install python-dotenv
 pip install openai tiktoken icecream langchain_text_splitters
 ```
+> If you're using a Domain service, you will [need to get an API key from Gaia](../getting-started/authentication.md).
 
 ## Demo 1: Running Translation Agents with Llama-3-8B
 

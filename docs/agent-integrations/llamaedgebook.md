@@ -32,7 +32,7 @@ export OPENAI_API_KEY="GAIANET"
 **Hint:** if you don't know the model name of the Gaia node, you can retrieve the model information using:
 
 ```
-curl -X POST https://0x57b00e4f3d040e28dc8aabdbe201212e5fb60ebc.us.gaianet.network/v1/models
+curl -X POST https://0x57b00e4f3d040e28dc8aabdbe201212e5fb60ebc.gaia.domains/v1/models
 ```
 
 Then, use the following command line to run the app.

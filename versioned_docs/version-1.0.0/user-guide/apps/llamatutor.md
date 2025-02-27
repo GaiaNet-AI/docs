@@ -21,9 +21,11 @@ In this tutorial, we will use a public Llama3 node.
 
 | Attribute | Value |
 |-----|--------|
-| API endpoint URL | https://llama.us.gaianet.network/v1 |
+| API endpoint URL | https://llama8b.gaia.domains/v1 |
 | Model Name | llama |
 | API KEY | gaia |
+
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](https://docs.gaianet.ai/getting-started/authentication).
 
 ## Run the agent
 

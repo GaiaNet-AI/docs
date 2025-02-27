@@ -13,10 +13,10 @@ You can run the Translation Agent on top of a public Gaia Node as a backend and 
 
 ## Prepare the environment
 
-Here, we will use the public Gaia node with gemma-2-27b model.  `https://gemma.us.gaianet.network/`. 
+Here, we will use the public Gaia node with Llama 3.1 8b model.  `https://llama8b.gaia.domains/`. 
 
 
->As an alternative, you can also start a Gaia node locally on your device. Refer to [this guide](https://github.com/GaiaNet-AI/node-configs/tree/main/gemma-2-27b-it).
+>As an alternative, you can also start a Gaia node locally on your device. Refer to [this guide](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct).
 
 
 To get started, clone the Translation Agent that supports open source LLMs.
@@ -28,12 +28,12 @@ cd translation-agent
 git checkout use_llamaedge
 ```
 
-Set environment variables and install necessary Python packages if needed. Replace the OPENAI_BASE_URL with `https://gemma.us.gaianet.network/`
+Set environment variables and install necessary Python packages if needed. Replace the OPENAI_BASE_URL with `https://llama8b.gaia.domains/`
 
 ```
-export OPENAI_BASE_URL="https://gemma.us.gaianet.network/v1"
+export OPENAI_BASE_URL="https://llama8b.gaia.domains/v1"
 export PYTHONPATH=${PWD}/src
-export OPENAI_API_KEY="GAIANET"
+export OPENAI_API_KEY="GET YOUR OWN API KEY"
 
 pip install python-dotenv
 pip install openai tiktoken icecream langchain_text_splitters

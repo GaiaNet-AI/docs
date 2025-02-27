@@ -49,7 +49,7 @@ On a Gaia node, we will get a database snapshot with the embeddings to use at la
 
 ##  Lifecycle of a user query on a knowledge-supplemented LLM
 
-Next, let's learn the lifecycle of a user query on a knowledge-supplemented LLM. We will take [a Gaia Node with Gaia knowledge](https://knowledge.gaianet.network/chatbot-ui/index.html) as an example.
+Next, let's learn the lifecycle of a user query on a knowledge-supplemented LLM. We will take [a Gaia Node with Gaia knowledge](https://gaia.gaia.domains/chatbot-ui/index.html) as an example.
 
 ![user-query-rag](https://github.com/GaiaNet-AI/docs/assets/45785633/c64b85ea-65f0-43d2-8ab3-78889d21c248)
 
