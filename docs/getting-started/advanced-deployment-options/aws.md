@@ -6,7 +6,7 @@ sidebar_position: 2
 
 We have created a series of public AMIs for you to start Gaia nodes in AWS with just a few clicks.
 
-Now we have three AMI images available in the Asia Pacific (Osaka) and all the US regions including N. Virginia, Ohio, N. California, and Oregon.
+Now we have three AMI images available in Asia Pacific (Osaka) and all the US regions including N. Virginia, Ohio, N. California, and Oregon.
 
 | AMI Images Name                  | Architecture                                                                                                                  | Regions                                                 |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
