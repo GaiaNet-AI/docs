@@ -2,6 +2,6 @@
 sidebar_position: 3
 ---
 
-# Mission
+# Core Mission
 
-The [Gaia DAO Mission] sets out the vision and values of the Gaia DAO.
+The [Gaia DAO Core Mission] sets out the vision and values of the Gaia DAO.
