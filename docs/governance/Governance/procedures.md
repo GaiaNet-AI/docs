@@ -3,6 +3,17 @@ sidebar_position: 6
 ---
 
 # Governance Procedures
+* The standard procedures for governance proposals voted on by Delegates - using the voting power conveyed by the GAIA token - are set out here.
+  * The Governor contract is responsible for executing Gaia Improvement Proposals ("GIPs") that upgrade Gaia and/or components of the Gaia governance system. It allows for delegated voting power to be used to vote on GIPs, which are queued for permissionless execution on Ethereum if passed.
+  * The Governor contract is an OpenZeppelin smart contract deployed on Ethereum: [contract]
+  * The Timelock contract is an OpenZeppelin smart contract deployed on Ethereum: [contract]
+* The Governor contract is responsible for executing proposals related to:
+  * Gaia upgrades;
+  * Upgrades to the Governor contract;
+  * Upgrades to the GAIA token contract; and
+  * Upgrades to the Security Multisig (i.e. to the Security Council and Security Council Members).
+
+# Gaia Improvement Proposals (GIPs) 
 Gaia Improvement Proposals (“**GIPs**") are the primary mechanism for enacting changes to Gaia and the Gaia DAO’s governance procedures. GIPs serve as a means of fostering community discourse and collective decision-making within the Gaia DAO. 
 
 ## Step 1: Ideation
@@ -16,7 +27,7 @@ For the GIP template, see [this page].
 ## Step 3: Proposal Discussion
 Once proposals have been posted to the forum, they should initially stay open for community discussion for a recommended period (the “**Discussion Period**”) of **seven (7)** days. While proposal authors can submit a GIP directly without prior forum discussion, it is recommended that tokenholders consider voting against such proposals to enforce a more democratic Discussion Period. 
 
-Once the Discussion Period has concluded they will post an update on the governance forum, indicating that the proposal is now eligible for submission. This post will serve as a signal to the proposal author and the wider community that the GIP can proceed to the next stage of the governance process.
+Once the Discussion Period has concluded, the proposal is then eligible for submission. The proposal author and the wider community may now proceed to the next stage of the governance process.
 
 ## Step 4: Signal Voting
 As a supplement during the “Discussion Period” and prior to onchain GIP submission, proposal authors are encouraged to conduct offchain signal voting to gauge community sentiment and gather preliminary feedback. This non-binding voting process allows for early insights into the proposal’s potential acceptance and may highlight potential areas for improvement.
