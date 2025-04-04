@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Welcome to the Gaia Community!  
-Our goal is to cultivate a safe and inclusive space that benefits all participants of the Gaia DAO while remaining in alignment with the values of the  DAO Mission. This Code of Conduct outlines our shared values and expectations.
+Our goal is to cultivate a safe and inclusive space that benefits all participants of the Gaia DAO while remaining in alignment with the values of the [Gaia DAO Core Mission](). This Code of Conduct outlines our shared values and expectations.
 
 This is your guide for participating in the Gaia community. This Code of Conduct applies to all spaces related to the Gaia DAO, which include:
 * The Gaia Docs at https://docs.gaianet.ai/intro/ 
@@ -19,7 +19,6 @@ This is your guide for participating in the Gaia community. This Code of Conduct
 * **Stay Curious and Adaptable.** In a space that’s as rapidly evolving as AI, curiosity fuels growth. Ask questions, explore new ideas, and remain adaptable to change. Embrace experimentation and view setbacks as learning opportunities.
 * **Support Security and Safety.** Help maintain a secure environment by avoiding activities that could jeopardize the safety of others or the integrity of the network. Report vulnerabilities, scams, or suspicious behavior promptly to moderators or administrators. Always seek consent before sharing personal information about others.
 * **Explore and Have Fun.** Remember, this community is not just a place for work, but also a place for growth and fun. Encourage creative projects, enjoy the process of building together, and make the most of shared experiences.
-
 
 # Managing Violations
 If you are the subject of or witness to any violations of this Code of Conduct, please contact us at [email].
