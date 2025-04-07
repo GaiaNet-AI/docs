@@ -76,7 +76,7 @@ Click here to learn more about delegation.
 
 Click here to learn more about voting on proposals.
 
-## Step 6b: Voting Power
+## Step 6a: Voting Power
 One (1) GAIA token equals one (1) vote over any proposals submitted to the GaiaNet DAO (the “**Voting Power**”). This will allow tokenholders to participate in the governance process proportionally to their holdings.
 
 ## Step 7: Timelock Period
