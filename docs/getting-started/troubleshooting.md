@@ -148,7 +148,7 @@ Warning: /main/consensus/consensus.snapshot: No such file or directory
 curl: (23) Failure writing output to destination
 ```
 
-The reason for this type of error is a mis-configured `config.json` file. The solution is to delete the comments in `config.json` and re-run the `gaianet init` command.
+The reason for this type of error is a misconfigured `config.json` file. The solution is to delete the comments in `config.json` and re-run the `gaianet init` command.
 
 ## The "Too many open files" Error on macOS
 

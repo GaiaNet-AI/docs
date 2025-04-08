@@ -6,7 +6,7 @@ sidebar_position: 105
 
 ## Protect the server process
 
-Sometimes, the OS could kill the `wasmedge` process on the Gaia node if it consumes too much resources. For production
+Sometimes, the OS could kill the `wasmedge` process on the Gaia node if it consumes too many resources. For production
 servers, you should protect the server process.
 
 ## Use Supervise

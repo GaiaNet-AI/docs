@@ -146,7 +146,7 @@ Each GaiaNet node has an unique node ID in the form of an ETH address. The priva
 
 Each GaiaNet domain has an associated smart contract that is used for escrow payments. It is similar to OpenAI’s credit payment model, where users purchase credits first, and then consume them over time. When the user pays into the smart contract, an access token will be automatically issued to him. He uses this token to make API calls to the domain, which is then load-balanced to random nodes in the domain. As the user consumes those services, his fund in the contract depletes and the access token stops working if he no longer has any balance. 
 
-The pricing and payment of the API service are determined by the domain operator. It is typically denominated in USD stable coins. The domain operator pays a share of the revenue to node operators who provided the services. The GaiaNet network is a decentralized marketplace of agent services.
+The pricing and payment for the API service are determined by the domain operator. It is typically denominated in USD stable coins. The domain operator pays a share of the revenue to node operators who provided the services. The GaiaNet network is a decentralized marketplace of agent services.
 
 > The funds locked in GaiaNet domain contracts are for a single purpose of consuming API services. It is called Purpose Bound Money. 
 

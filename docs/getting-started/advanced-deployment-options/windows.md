@@ -6,7 +6,7 @@ sidebar_position: 5
 
 Here is the complete guide to installing and running your own decentralised AI inference using Gaia from a Windows machine.
 
-## Pre-requisites
+## Prerequisites
 
 - Windows Sub-system for Linux
 - Ubuntu (Latest distribution)

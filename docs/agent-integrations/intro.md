@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # OpenAI ecosystem apps
 
-Since each Gaia node provides an OpenAI-compatible API service, it can be a drop-in replacement for OpenAI in almost all LLM applications and frameworks. Checkout the articles in this section for instructions and examples for how to use Gaia in popular LLM apps.
+Since each Gaia node provides an OpenAI-compatible API service, it can be a drop-in replacement for OpenAI in almost all LLM applications and frameworks. Check out the articles in this section for instructions and examples for how to use Gaia in popular LLM apps.
 
 ## The OpenAI Python library
 
