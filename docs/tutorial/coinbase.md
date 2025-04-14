@@ -18,13 +18,14 @@ Or, you could simply use our public Gaia domain as follows.
 
 ## Quickstart
 
-First, you need a [Coinbase Developer Platform account](https://www.coinbase.com/developer-platform) and then [create an API key](https://docs.cdp.coinbase.com/advanced-trade/docs/auth/#creating-api-keys).
+First, you need a [Coinbase Developer Platform account](https://www.coinbase.com/developer-platform) and then [create an API key](https://portal.cdp.coinbase.com/projects/api-keys).
 
 Next, check out the AgentKit example code.
 
 ```
 git clone https://github.com/coinbase/agentkit
-cd agentkit/python/examples/cdp-langchain-chatbot/
+cd agentkit/python/examples/langchain-cdp-chatbot/
+uv sync
 ```
 
 Set the environment variables for your API key.
@@ -37,7 +38,7 @@ export CDP_API_KEY_PRIVATE_KEY='-----BEGIN EC...END EC PRIVATE KEY-----\n'
 Edit the `chatbot.py` file to configure the agent to use the Gaia node above.
 
 ```
-llm = ChatOpenAI(model="llama", api_key="GAIA", base_url="https://llama8b.gaia.domains/v1")
+llm = ChatOpenAI(model="llama", api_key="your-gaia-key", base_url="https://llama8b.gaia.domains/v1")
 ```
 > You will need to get an API key from Gaia.
 
