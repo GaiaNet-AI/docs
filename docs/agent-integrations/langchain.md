@@ -72,4 +72,4 @@ Integrations with Langchain and Gaia can be done with any JavaScript or Python. 
   </TabItem>
 </Tabs>
 
-From the above, you can then start making invocations to the model and you're good to go!
+From the above, you can then start making invocations to the model. The LangChain also opens up integrations with [LangGraph](https://www.langchain.com/langgraph) and [LangSmith](https://www.langchain.com/langsmith).
