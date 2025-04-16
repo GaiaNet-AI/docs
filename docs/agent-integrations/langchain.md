@@ -58,6 +58,7 @@ Integrations with Langchain and Gaia can be done with any JavaScript or Python. 
   <TabItem value="python" label="Python">
     ```python
     from langchain_openai import ChatOpenAI, OpenAI
+    import os
 
     model = ChatOpenAI(
         api_key=os.environ.get("GAIANET_API_KEY"),
