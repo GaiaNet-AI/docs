@@ -22,13 +22,38 @@ You will need a Gaia node ready to provide LLM services through a public URL. Yo
 - [Run your own node](../../getting-started/quick-start)
 - [Use a public node](../nodes)
 
-If you are using a public node, you will need an [API key](https://www.gaianet.ai/setting/gaia-api-keys). Gaia overs free 50,000 API credits to use with the available services such as public nodes.
+If you are using a public node, you will need an [API key](https://www.gaianet.ai/setting/gaia-api-keys). **Gaia overs free 50,000 API credits to use with available services such as public nodes when you apply for a developer account**.
 
-In this tutorial, we will be running our not need an API key, you can use a string like: "Gaia".
+### Setup
 
- To get started with running your node, you can follow the guide on the [Setting up your own node](/getting-started/quick-start) page first and then come back here for integrations.
+- Project setup on machine (JavaScript or Python)
+
+- Langchain Installation:
+
+<Tabs>
+  <TabItem value="javascript" label="JavaScript" default>
+    ```bash
+    npm install @langchain/openai @langchain/core dotenv
+    ```
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+    ```bash
+    pip install langchain langchain-openai python-dotenv
+    ```
+
+  </TabItem>
+</Tabs>
 
 ## Integration with Gaia
+
+To get started with running your Gaia node, you can follow the guide on the [Setting up your own node](/getting-started/quick-start) page for a quickstart.
+
+In this guide, we will be running our Gaia node locally so we do not need an API key, you can use a string like: "Gaia" as a placeholder. Create a `.env` file and store your API key:
+
+```bash
+GAIANET_API_KEY="Gaia"
+```
 
 Integrations with Langchain and Gaia can be done with any JavaScript or Python. There are code snippets below that show how integration looks like in both languages:
 
@@ -40,7 +65,6 @@ Integrations with Langchain and Gaia can be done with any JavaScript or Python. 
     
     dotenv.config();
 
-    
     const model = new ChatOpenAI({
         configuration: {
             apiKey: process.env.GAIANET_API_KEY,
@@ -52,8 +76,9 @@ Integrations with Langchain and Gaia can be done with any JavaScript or Python. 
 
     const response = await model.invoke("Hello, world!");
 
-    console.log(response)   
+    console.log(response)
     ```
+
   </TabItem>
   <TabItem value="python" label="Python">
     ```python
@@ -70,7 +95,34 @@ Integrations with Langchain and Gaia can be done with any JavaScript or Python. 
 
     print(response)
     ```
+
   </TabItem>
 </Tabs>
 
-From the above, you can then start making invocations to the model. The LangChain also opens up integrations with [LangGraph](https://www.langchain.com/langgraph) and [LangSmith](https://www.langchain.com/langsmith).
+## Invoking Gaia models
+
+Once you have the basic connection established, you can start using Langchain's powerful features. Start by making invocations to the model.
+
+<Tabs>
+  <TabItem value="javascript" label="JavaScript" default>
+    ```js
+   
+    // ...
+    const response = await model.invoke("Hello, world!");
+
+    console.log(response)
+    ```
+
+  </TabItem>
+  <TabItem value="python" label="Python">
+    ```python
+    # ...
+    response = model.invoke("Hello, world!")
+
+    print(response)
+    ```
+
+  </TabItem>
+</Tabs>
+
+The LangChain support also opens up integrations with [LangGraph](https://www.langchain.com/langgraph) and [LangSmith](https://www.langchain.com/langsmith).
