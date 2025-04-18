@@ -69,7 +69,7 @@ NEXT_PUBLIC_DELEGATION_STORAGE_ENVIRONMENT=development
 
 # Gaia AI configuration
 GAIA_MODEL_BASE_URL=your_gaia_model_url
-GAIA_API_KEY=your_gaia_api_key
+GAIA_API_KEY=your_gaia_api_key // not needed if you run your own node
 ```
 
 5. Start the development server:

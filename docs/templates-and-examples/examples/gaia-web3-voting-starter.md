@@ -94,7 +94,7 @@ To use your own Gaia node with this application, follow these steps:
    - Modify `packages/site/app/api/chat/route.ts` to use your API key:
    ```typescript
    const GAIA_API_ENDPOINT = 'https://api.gaianet.ai/v1';
-   const GAIA_MODEL = 'Llama-3-Groq-8B-Tool';
+   const GAIA_MODEL = 'Llama';
     
     // Add your API key here
     const openai = createOpenAI({
