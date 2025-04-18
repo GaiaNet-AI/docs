@@ -18,6 +18,7 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+  trailingSlash: true,
 
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'GaiaNet-AI',
