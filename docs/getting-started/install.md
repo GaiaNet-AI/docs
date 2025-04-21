@@ -51,8 +51,13 @@ curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/
 
 :::tip
 
-The `upgrade` option will keep your node id.
+The `upgrade` option will keep your node id. To ensure your node ID and device ID are properly protected, it's recommended to back up the following files in a secure location. If anything goes wrong, you can use these files to recover your node:
 
+* nodeid.json
+
+* deviceid.txt
+
+* Keystore file (e.g., 0278996e-5dad-4xy9-b3xu7-be3xuxxxaac94)
 :::
 
 ## What's installed
