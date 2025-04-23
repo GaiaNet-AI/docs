@@ -59,7 +59,7 @@ In the "Instance type" section, select an instance with at least 8GB of RAM. For
 
 In the "Network settings", make sure that you allow SSH connections.
 
-Click on the "Launch instance" button and wait for instance to start up. Once the instance is ready, SSH
+Click on the "Launch instance" button and wait for the instance to start up. Once the instance is ready, SSH
 into its public IP address. Once you are in the VM, run the following two commands.
 
 ```
