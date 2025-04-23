@@ -29,7 +29,7 @@ If you are an end user of AI agent applications, you can:
 If you are interested in running Gaia nodes, you can
 
 * [Get started with a Gaia node](./getting-started/quick-start).
-* [Customize the Gaia node with a finetuned model and custom knowledge base](./getting-started/customize).
+* [Customize the Gaia node with a fine-tuned model and custom knowledge base](./getting-started/customize).
 * [Join the Gaia Protocol](./getting-started/register)
 
 ### Domain operators
@@ -44,4 +44,4 @@ If you are a Gaia Domain Name owner, you can
 If you are a creator or knowledge worker interested in creating your own AI agent service, you can:
 
 * [Create your own knowledge base](./knowledge-bases).
-* [Finetune a model to "speak" like you](./tutorial/llamacpp).
+* [Fine-tune a model to "speak" like you](./tutorial/llamacpp).
