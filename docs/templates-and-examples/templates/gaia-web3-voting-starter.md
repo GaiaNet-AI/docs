@@ -4,6 +4,7 @@
 ![Gaia AI Voting](./ai-voting.gif)
 
 A decentralized voting application built with Next.js, Hardhat, and [Gaia](https://docs.gaianet.ai/intro/).
+You can create voting situation and select the choices you want to vote and vote it with the AI Agent.
 
 
 
@@ -53,7 +54,7 @@ To use your own Gaia node with this application, follow these steps:
 
 ### Option 1: Run Your Own Node
 
-1. **Install GaiaNet Node**:
+1. **Install Gaia Node**:
    ```bash
    curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
    ```
@@ -165,7 +166,6 @@ vote for 0x1234...5678 option 2
 - `my votes` - View your voting history
 
 
-## Next Steps
 
 ### Enhancing the AI Agent with Knowledge Bases
 
@@ -193,25 +193,21 @@ To make your voting application's AI agent more powerful and context-aware, you 
    - **Scalability**: As your knowledge base grows, the agent's capabilities expand without retraining
    - **Efficiency**: The agent can quickly access pre-organized information rather than processing data in real-time
 
-5. **Maintenance and Updates**:
-   - Regularly update your knowledge base with new information
-   - Monitor the agent's performance and refine the knowledge base as needed
-   - Add new voting patterns and use cases as they emerge
 
 ### Pre-configured Knowledge Base
 
 We've created a pre-configured knowledge base specifically for Web3 voting DApps. You can use it with your Gaia node:
 
 1. **Knowledge Base Files**:
-   - Snapshot file: [https://huggingface.co/datasets/meowy-ai/voting-chunk-demo/resolve/main/default-7612045068912552-2025-04-09-10-43-06.snapshot.tar.gz](https://huggingface.co/datasets/meowy-ai/voting-chunk-demo/resolve/main/default-7612045068912552-2025-04-09-10-43-06.snapshot.tar.gz)
-   - Embedding files: [https://huggingface.co/datasets/meowy-ai/voting-chunk-demo/tree/main](https://huggingface.co/datasets/meowy-ai/voting-chunk-demo/tree/main)
+   - Snapshot file: [https://huggingface.co/datasets/meowy-ai/web3-knowledge-base/resolve/main/default-6695366476678026-2025-04-29-13-58-26.snapshot.tar.gz](https://huggingface.co/datasets/meowy-ai/web3-knowledge-base/resolve/main/default-6695366476678026-2025-04-29-13-58-26.snapshot.tar.gz)
+
 
 2. **Configure Your Gaia Node**:
    Run the following command to configure your Gaia node with the voting knowledge base:
    ```bash
-   gaianet config \
-     --snapshot https://huggingface.co/datasets/meowy-ai/voting-chunk-demo/resolve/main/default-7612045068912552-2025-04-09-10-43-06.snapshot.tar.gz \
-     --system-prompt "you are a friendly and knowledgeable AI assistant specializing in blockchain voting systems. Offer straightforward guidance for creating, viewing, and casting votes on-chain, breaking down each step to empower all users, even newcomers. Explain key blockchain concepts in a clear, conversational style, and demonstrate patience and professionalism in every interaction. If asked about topics beyond voting, provide concise yet informative responses and gently relate them back to blockchain voting when relevant. Always keep the tone friendly, approachable, and helpful, reminding users that secure, transparent on-chain voting can foster trust and efficiency in decision-making. When in doubt or faced with off-topic requests, steer the conversation back to core voting functionalities."
+gaianet config \
+  --snapshot https://huggingface.co/datasets/meowy-ai/web3-knowledge-base/resolve/main/default-8461598741381726-2025-04-29-07-50-41.snapshot.tar.gz \
+  --system-prompt "You are a helpful web3 instructor, please answer the questions"
    ```
 
 For more information on knowledge bases in Gaia, visit the [Gaia Knowledge Bases Documentation](https://docs.gaianet.ai/knowledge-bases/intro).
@@ -221,8 +217,8 @@ For more information on knowledge bases in Gaia, visit the [Gaia Knowledge Bases
 ### Prerequisites
 
 - Node.js installed
-- A wallet with some test ETH on Linea Sepolia (You can use any L1/L2 you want)
-- [Alchemy](https://www.alchemy.com/) API key 
+- A wallet with some test ETH on Sepolia (You can use any L1/L2 you want)
+- [Alchemy](https://www.alchemy.com/) or Infura API key 
 ### Setup
 
 1. Clone the repository:
@@ -263,8 +259,3 @@ pnpm dev
 - **Blockchain**: Linea Sepolia testnet for deployment
 - **AI Integration**: Custom tools for blockchain interaction
 
-## Resources
-
-- [Gaia Documentation](https://docs.gaianet.ai/intro/)
-- [Alchemy Documentation](https://docs.alchemy.com/)
-- [Linea Explorer](https://sepolia.lineascan.build/) 
