@@ -203,7 +203,7 @@ We've created a pre-configured knowledge base specifically for Web3 voting DApps
 
 
 2. **Configure Your Gaia Node**:
-   Run the following command to configure your Gaia node with the voting knowledge base:
+   Let's the following command to configure your Gaia node with the web3 knowledge base:
    ```bash
 gaianet config \
   --snapshot https://huggingface.co/datasets/meowy-ai/web3-knowledge-base/resolve/main/default-8461598741381726-2025-04-29-07-50-41.snapshot.tar.gz \
