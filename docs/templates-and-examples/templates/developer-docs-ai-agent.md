@@ -1,3 +1,6 @@
+# Build an Agent for your Developer Docs
+
+
 Normally AI Agents are considered as some bots that can do stuff and a bit intelligent. But in practice, most useful developer agents are super-focused specialized agents with private and highly curated knowledge. For example: the official docs of a programming language or maybe a protocol/company’s internal API reference. 
 
 Gaia provides the three pieces which lets anyone to create such a specialist agent without much complexity. A pluggable knowledge base where you can drop chunks, a RAG-aware chat stack that speaks the OPENAI style v1/chat/completions and modular system prompts.
@@ -8,7 +11,7 @@ Gaia provides the three pieces which lets anyone to create such a specialist age
 
 Let’s go ahead and create an agent for **Vyper smart-contract language** (a Python-flavored alternative to Solidity).  Everything you see here—directory layout, embedding commands, node config flags—translates 1-to-1 to any other doc set: Rust book chapters, Django REST API docs, an RFC archive or just any docs.
 
-Make sure you’ve your docker running and `vector qdrant` installed by running `docker pull qdrant/qdrant`
+Make sure you’ve your docker running and Qdrant vector database installed by running `docker pull qdrant/qdrant`
 
 ### **Prerequisites: Tooling You Install Once**
 
@@ -84,11 +87,11 @@ Lets Grab the Embedding CLI
 curl -LO https://github.com/GaiaNet-AI/embedding-tools/raw/main/csv_embed/csv_embed.wasm
 ```
 
-### **Prepare Your Documentation as**
+### **Preparing the Documentation**
 
-**Why CSV instead of Markdown?**  I found it easier to use CSV than markdown and it’s better if you paste your each chunk into different columns and one cell per column. Fell free to use `llm_info.txt` file, if that’s what you prefer.
+**Why CSV instead of Markdown?**  It's quite easier to use CSV than markdown and it’s better to paste your each chunk into different columns and one cell per column. Fell free to use `llm_info.txt` file, if that’s what you prefer.
 
-I’ve used [gitingest](https://gitingest.com/) to turn the vyper docs git repository into simple text digest of it’s codebase which is truly helpful for feeding a codebase/docs into LLM.
+You can use [gitingest](https://gitingest.com/) to turn the vyper docs git repository into simple text digest of it’s codebase which is truly helpful for feeding a codebase/docs into LLM.
 
 ### **Generate the Vectors**
 
@@ -126,7 +129,7 @@ Instead of `my.snapshot` just use the file name. Upload my.snapshot.tar.gz to hu
 
 ---
 
-## **Some Best Practices (Learned the Hard Way)**
+## **Some Best Practices**
 
 1. **Chunking Strategy**
     
