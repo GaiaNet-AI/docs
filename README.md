@@ -41,7 +41,7 @@ After forking and cloning the repository:
 
 This documentation is automatically deployed to [docs.gaianet.ai](https://docs.gaianet.ai) when changes are merged into the main branch.
 
-## 🤝 Contributing to Gaia Domain
+## 🤝 Contributing to Gaia docs
 
 Gaia docs is an open-source project, and contributions from the community are highly valued! We believe in collaborative development to build a robust and innovative platform.
 
