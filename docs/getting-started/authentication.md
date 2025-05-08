@@ -38,6 +38,6 @@ Your API Key is like a password and helps verify your usage. This will be one of
 
 #### API Keys are now available for all your applications and usage.
 
-Currently, we don't charge anything for usage or API key creation. However, it is highly recommendation that you start using and updating your existing applications or new ones with your own API keys to avoid any disruption in the future.
+Currently, we don't charge anything for usage or API key creation. However, it is highly recommended that you start using and updating your existing applications or new ones with your own API keys to avoid any disruption in the future.
 
 Please refer to the [API Reference](./api-reference) page for the updated examples with the API keys usage.
