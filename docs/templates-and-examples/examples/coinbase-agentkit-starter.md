@@ -1,8 +1,8 @@
-# Agentkit starter- Coinbase Developer Platform
+# CDP's Agentkit Starter Template
 
 ## Overview
 
-This project shows an onchain agent powered by Coinbase's AgentKit with the Next.js framework on the frontend and LangGraph for the agent's setup. The agent is designed for AI-driven on-chain capabilities.
+This template shows an onchain agent powered by Coinbase's AgentKit with the Next.js framework on the frontend and LangGraph for the agent's setup. The agent is designed for AI-driven on-chain capabilities.
 
 AgentKit handles these interactions by using a Gaia node for Large Language Model (LLM) inferencing.
 
@@ -54,9 +54,8 @@ Follow the instructions on the CLI to setup your project and choose the Smart wa
 
 - LangChain
 - Vercel AI SDK
-- Model Context Protocol (MCP)
 
-In this guide, we cover using the LangChain option.
+There is also an Model Context Protocol (MCP) option, but, in this guide, we cover using the LangChain option.
 
 ### Configure secrets and values
 
@@ -77,7 +76,7 @@ The `NETWORK_ID` can stay as `base-sepolia` and you can explore the possible [ne
 ## Project structure
 
 ```bash
-└── tobysolutions-agentkit-gaia-setup/
+└── onchain-agent/
     ├── README.md
     ├── next-env.d.ts
     ├── next.config.js
@@ -107,10 +106,10 @@ The `NETWORK_ID` can stay as `base-sepolia` and you can explore the possible [ne
 ## Gaia Integration
 
 :::info
-Local nodes do not require API ketys. You will need a [Gaia API key](https://www.gaianet.ai/setting/gaia-api-keys) to use public nodes.
+A local Gaia node does not require an API key. You will need a [Gaia API key](https://www.gaianet.ai/setting/gaia-api-keys) to use public nodes.
 :::
 
-The LLM inferencing is offloaded to a Gaia node: 
+The LLM inferencing is offloaded to a Gaia node:
 
 - The LLM is configured in `app/api/agent/create-agent.ts`.
 - The project uses `ChatOpenAI` from `@langchain/openai` to connect to the Gaia node.
@@ -123,21 +122,37 @@ For example with a local node running on a machine:
 const llm = new ChatOpenAI({
   model: "Llama-3-Groq-8B-Tool",
   configuration: {
-    baseURL: "https://0xf446b24f8bb10d479d76456f11a5643246d6fe5a.gaia.domains/v1", // Gaia node URL
+    baseURL: "https://YOUR_NODE_ID.gaia.domains/v1", // Gaia node URL
     apiKey: "gaia", // API key for the Gaia node (if required)
   },
 });
 ```
 
+## Run template
+
+The below command runs the template:
+
+```bash
+npm run dev
+```
+
+With the template running, there a few example prompts you can use to test the agent:
+
+- "What is your wallet address?"
+- "What is your wallet balance? Check and confirm."
+- "Share your wallet details including every relevant information."
+
 ## Documentation
+
 For further information and advanced topics, refer to the following official documentation:
 
 - **AgentKit Documentation**:
-    - GitHub: https://github.com/coinbase/agentkit
-    - CDP Docs: https://docs.cdp.coinbase.com/agentkit/docs/welcome
+
+  - GitHub: https://github.com/coinbase/agentkit
+  - CDP Docs: https://docs.cdp.coinbase.com/agentkit/docs/welcome
 
 - **GaiaNet Documentation**:
-    - Gaia Node Setup (example Llama-3-Groq-8B-Tool): https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-groq-8b-tool
+
+  - Gaia Node Setup (example Llama-3-Groq-8B-Tool): https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-groq-8b-tool
 
 - **Coinbase Developer Platform (CDP)**: https://docs.cdp.coinbase.com/
-
