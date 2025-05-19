@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+---
+
+
 # Gaia Web3 Voting Starter
 
 

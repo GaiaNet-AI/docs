@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # CDP's Agentkit Starter Template
 
 ## Overview

@@ -14,20 +14,6 @@ Below are some Gaia domains we offer developers for free. **However, you must ap
 
 ## Public Gaia domains
 
-### LLM: Llama 8b
-
-This domain runs Llama 3.1 8b agent nodes without any additional knowledge. 
-It is capable of tool / function calling.
-[Learn more](../tutorial/tool-call) how to use tool call models in your agent app.
-[Chat with it](https://llama8b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
-
-|Config option | Value |
-|-----|--------|
-| API endpoint URL | https://llama8b.gaia.domains/v1 |
-| Model Name (for LLM) | llama |
-| Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
-
 ### Voice-to-text: Whisper v2 large
 
 This domain runs Whisper v2 Large agent nodes for voice to text transcription and translation.

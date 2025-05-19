@@ -39,7 +39,7 @@ It also runs on all Apple Silicon M-series GPUs.
 * Apple M3 Max chips
 * Apple M3 Ultra chips
 
-### Oses
+### OSs
 
 * macOS
 * Linux-like OS
