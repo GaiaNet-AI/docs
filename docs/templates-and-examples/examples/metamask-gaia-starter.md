@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # MetaMask Delegation Toolkit Agent
 
 ## 🌟 Overview

@@ -47,7 +47,7 @@ gaianet start
 - A successful start prints a public URL for the node. Opening a browser to that URL will display the node information and allow you to chat with the AI agent on the node. 
 
 ```
-... ... https://0xf63939431ee11267f4855a166e11cc44d24960c0.gaianet.xyz
+... ... https://0xf63939431ee11267f4855a166e11cc44d24960c0.gaia.domains
 ```
 
 - To stop the node: `gaianet stop`
@@ -58,7 +58,7 @@ gaianet start
 
 ## Next steps
 
-- [Customize](customize) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
+- [Customize](customize.md) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
 - [Join the Gaia Protocol](register.md) and join the Gaia protocol network to receive payments.
-- [Ensure Node Reliability](./advanced-deployment-options/protect) the node server to ensure stable service.
+- [Ensure Node Reliability](advanced-deployment-options/protect.md) the node server to ensure stable service.
 
