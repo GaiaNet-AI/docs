@@ -217,6 +217,18 @@ const config = {
     {
       tagName: 'script',
       attributes: {
+        'data-collect-dnt': 'true',
+        async: true,
+        src: 'https://scripts.simpleanalyticscdn.com/latest.js',
+      },
+    },
+    {
+      tagName: 'noscript',
+      innerHTML: '<img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/>',
+    },
+    {
+      tagName: 'script',
+      attributes: {
         type: 'text/javascript',
         src: 'https://cdn.weglot.com/weglot.min.js',
       },
