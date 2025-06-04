@@ -1,14 +1,8 @@
 ---
-sidebar_position: 13
+sidebar_position: 1
 ---
 
-# Build a knowledge base using Gaia web tool
-
-Gaia has developed a tool for making vector collection snapshot files, so everyone can easily create their own knowledge base.
-
-Access it here: https://tools.gaianet.xyz/
-
-## Segment your text file
+# How to chunk and segment your knowledge base
 
 First, copy unformatted text into a txt file. Then follow the two rules to chunk your content, i.e. putting similar content together.
 
@@ -31,39 +25,7 @@ What is blockchain software?
 Blockchain software is like any other software. The first of its kind was Bitcoin, which was released as open source software, making it available to anyone to use or change. There are a wide variety of efforts across the blockchain ecosystem to improve upon Bitcoin's original software. Ethereum has its own open source blockchain software. Some blockchain software is proprietary and not available to the public.
 ```
 
-## Generate the snapshot file
+Once you have the chunked knowledge base in either `.txt` or `.md` formats, you can follow our tutorials to convert into a Qdrant vector database snapshot:
 
-1. Visit this URL: https://tools.gaianet.xyz/, upload the above prepared txt file.
-2. Edit your `dbname` . ***Note: Do not include spaces or special characters in the dbname***.
-3. Choose Embedding model, we suggest use `nomic-embed-text-v1.5.f16`.
-4. Click the "Make RAG" button and wait.
-
-When finished, the chatbot will display Gaia Node config info. It is a JSON format as follows.
-
-```
-{
-  "embedding": "https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf",
-  "embedding_ctx_size": 768,
-  "snapshot": "https://huggingface.co/datasets/max-id/gaianet-qdrant-snapshot/resolve/main/test/test.snapshot"
-}
-```
-
-## Update the node config
-
-Run the following
-
-```
-gaianet config \
-  --snapshot https://huggingface.co/datasets/max-id/gaianet-qdrant-snapshot/resolve/main/test/test.snapshot \
-  --embedding-url https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf \
-  --embedding-ctx-size 768
-```
-
-and then
-
-```
-gaianet init
-gaianet start
-```
-
-Have fun!
+- [Text to embeddings](/docs/knowledge-bases/how-to/text.md)
+- [Markdown to embeddings](/docs/knowledge-bases/how-to/markdown.md)
