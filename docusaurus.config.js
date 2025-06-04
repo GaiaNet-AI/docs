@@ -103,10 +103,9 @@ const config = {
           { from: '/creator-guide/knowledge/csv', to: '/knowledge-bases/how-to/csv' },
           { from: '/creator-guide/knowledge/pdf', to: '/knowledge-bases/how-to/pdf' },
           { from: '/creator-guide/knowledge/firecrawl', to: '/knowledge-bases/how-to/firecrawl' },
-          { from: '/creator-guide/knowledge/web-tool', to: '/knowledge-bases/web-tool' },
+          { from: '/creator-guide/knowledge/web-tool', to: '/knowledge-bases/how-to/web-tool' },
           { from: '/getting-started/quick-start/customize', to: '/getting-started/customize' },
-          { from: '/getting-started/quick-start/advanced-deployment-options/protect', to: '/getting-started/advanced-deployment-options/protect' },
-          { from: '/getting-started/quick-start/system-requirements', to: '/getting-started/system-requirements' },
+          { from: '/getting-started/quick-start/advanced-deployment-options/protect', to: '/getting-started/advanced-deployment-options/protect' }
         ],
       },
     ],
@@ -217,14 +216,16 @@ const config = {
     {
       tagName: 'script',
       attributes: {
-        'data-collect-dnt': 'true',
-        async: true,
         src: 'https://scripts.simpleanalyticscdn.com/latest.js',
+        async: 'true',
+        'data-collect-dnt': 'true',
       },
     },
     {
       tagName: 'noscript',
-      innerHTML: '<img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/>',
+      attributes: {}, // Required even if empty
+      innerHTML:
+        '<img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/>',
     },
     {
       tagName: 'script',
