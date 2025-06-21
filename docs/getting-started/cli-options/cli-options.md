@@ -113,7 +113,7 @@ The output is the following.
 
 ## info
 
-You can use `gaianet info` to display the id of the current running node and device running the node.
+You can use `gaianet info` to display the id of the current running node and device running the node, if you ever forget any.
 
 ```
 gaianet info
