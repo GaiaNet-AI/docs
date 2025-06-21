@@ -21,6 +21,7 @@ Subcommands:
   init               Initialize the GaiaNet node.
   run|start          Start the GaiaNet node.
   stop               Stop the GaiaNet node.
+  info               Show the device_id and node_id.
 
 Options:
   --help             Show this help message
@@ -109,6 +110,23 @@ The output is the following.
 
 [+] COMPLETED! The config.json is updated successfully.
 ```
+
+## info
+
+You can use `gaianet info` to display the id of the current running node and device running the node, if you ever forget any.
+
+```
+gaianet info
+```
+
+Running the command gives this output:
+
+```
+Node ID: 0x1234567890abcdef0987654321fedcbabcdef123
+
+Device ID: device-fedcbabcdef0123456789098
+```
+
 
 ## base
 
