@@ -11,7 +11,11 @@ CodeGPT is a pair-programming partner for developers. It offers AI chat assistan
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
 * [run your own node](../../getting-started/quick-start/quick-start.md)
+<<<<<<< HEAD
 * [use a public node](../../nodes/nodes.md)
+=======
+* [use a public node](/docs/nodes.md)
+>>>>>>> e27636d (update image paths and refences)
 
 In this tutorial, we will use the public CodeStral nodes to power the CodeGPT plugin.
 
