@@ -27,5 +27,5 @@ Blockchain software is like any other software. The first of its kind was Bitcoi
 
 Once you have the chunked knowledge base in either `.txt` or `.md` formats, you can follow our tutorials to convert into a Qdrant vector database snapshot:
 
-- [Text to embeddings](/docs/knowledge-bases/how-to/text.md)
-- [Markdown to embeddings](/docs/knowledge-bases/how-to/markdown.md)
+- [Text to embeddings](../text/text.md)
+- [Markdown to embeddings](../markdown/markdown.md)

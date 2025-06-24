@@ -58,7 +58,7 @@ gaianet start
 
 ## Next steps
 
-- [Customize](customize.md) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
-- [Join the Gaia Protocol](register.md) and join the Gaia protocol network to receive payments.
-- [Ensure Node Reliability](advanced-deployment-options/protect.md) the node server to ensure stable service.
+- [Customize](../customize/customize.md) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
+- [Join the Gaia Protocol](../register/register.md) and join the Gaia protocol network to receive payments.
+- [Ensure Node Reliability](../advanced-deployment-options/protect.md) the node server to ensure stable service.
 

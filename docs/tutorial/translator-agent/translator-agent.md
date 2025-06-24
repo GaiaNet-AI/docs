@@ -39,7 +39,7 @@ export OPENAI_API_KEY="GAIANET"
 pip install python-dotenv
 pip install openai tiktoken icecream langchain_text_splitters
 ```
-> If you're using a Domain service, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, you will [need to get an API key from Gaia](../../getting-started/authentication/authentication.md).
 
 ## Demo 1: Running Translation Agents with Llama-3-8B
 

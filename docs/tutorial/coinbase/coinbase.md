@@ -5,7 +5,7 @@ sidebar_position: 3
 # Working with Coinbase AgentKit
 
 You can use a Gaia node to power the [Coinbase AgentKit](https://github.com/coinbase/agentkit).
-The Gaia node must run an LLM that is optimized for [tool calling](tool-call.md). 
+The Gaia node must run an LLM that is optimized for [tool calling](../tool-call/tool-call.md). 
 Or, you could simply use our public Gaia domain as follows.
 
 | Attribute | Value |

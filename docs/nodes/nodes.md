@@ -23,7 +23,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 |-----|--------|
 | API endpoint URL | https://whisper.gaia.domains/v1 |
 | Model Name | whisper |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 ### Text-to-image: Realistic vision
 
@@ -35,7 +35,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 |-----|--------|
 | API endpoint URL | https://portrait.gaia.domains/v1 |
 | Model Name | portrait |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 ### Text-to-voice: GPT-SoVITS
 
@@ -55,7 +55,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 | API endpoint URL | https://coder.gaia.domains/v1 |
 | Model Name (for LLM) | coder |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 ### Rust Coder
 
@@ -68,7 +68,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 | API endpoint URL | https://rustcoder.gaia.domains/v1 |
 | Model Name (for LLM) | rustcoder |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 ## Alternative LLM domains
 
@@ -97,7 +97,7 @@ The Qwen 7b LLM is great for non-English tasks such as translation.
 | API endpoint URL | https://qwen7b.gaia.domains/v1 |
 | Model Name (for LLM) | qwen7b |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 
 ### Qwen 72b
@@ -112,4 +112,4 @@ It is capable of tool / function calling.
 | API endpoint URL | https://qwen72b.gaia.domains/v1 |
 | Model Name (for LLM) | qwen72b |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
