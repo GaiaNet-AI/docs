@@ -25,7 +25,7 @@ Agents are software applications that can complete tasks on its own autonomously
 * to answer “politically incorrect” questions (e.g., to analyze CVE exploits for an agent in the security domain). 
 * and to answer requests in a specific style (e.g., to mimic a person). 
 
-![What is a GaiaNet agent](gaianet_agent.png)
+![What is a GaiaNet agent](../gaianet/gaianet_agent.png)
 
 Agents are complex software that require significant amount of engineering and resources. Today, most agents are close-source and hosted on SaaS-based LLMs. Popular examples include GPTs and Microsoft/GitHub copilots on OpenAI LLMs, and Duet on Google’s Gemini LLMs. 
 
@@ -43,7 +43,7 @@ In this paper, we propose a decentralized software platform and protocol network
 
 As of April 2024, there are over 6000 open-source LLMs published on Hugging face. Compared with close-source LLMs, such as GPT-4, open-source LLMs offer advantages in privacy, cost, and systematic bias. Even with general QA performance, open-source LLMs are closing the gap with close-source counterparties quickly. 
 
-![Open vs close source LLMs](closed_vs_open.jpg)
+![Open vs close source LLMs](../close_vs_open/closed_vs_open.jpg)
 
 For AI agent use cases, it has been demonstrated that smaller but task-specific LLMs often outperform larger general models. 
 
@@ -57,7 +57,7 @@ The GaiaNet project provides a cross-platform and highly efficient SDK and runti
 
 The basic operational unit in the GaiaNet network is a node. A GaiaNet node is a streamlined software stack that allows any technically competent person to run an AI agent of his own. The software stack on the GaiaNet node consists of the following 7 key components.
 
-![GaiaNet node architecture](gaianet_node.png)
+![GaiaNet node architecture](../gaianet/gaianet_node.png)
 
 **1 Application runtime.** GaiaNet applications run in a lightweight, secure and high-performance sandbox called WasmEdge. As an open-source project managed by the Linux Foundation and CNCF, WasmEdge runtime works seamlessly with leading cloud native tools such as Docker, containerd, CRI-O, Podman and Kubernetes. It is also the virtual machine of choice by leading public blockchains to securely and efficiently execute on-chain and off-chain smart contracts. 
 
@@ -140,7 +140,7 @@ Those challenges have given rise to the GaiaNet domain, which forms the basis of
 * Getting paid by users. 
 * Pay nodes for their services.
 
-![GaiaNet network architecture](gaianet_eco.png)
+![GaiaNet network architecture](../gaianet/gaianet_eco.png)
 
 Each GaiaNet node has an unique node ID in the form of an ETH address. The private key associated with the ETH address is stored on the node. Once a node is successfully registered with a domain, it is entitled to receive payments from both service revenue and network awards from the domain. The domain could send payments directly to the node's ETH address. Or, the domain could provide a mechanism for a node operator to register multiple nodes under a single Metamask address, such as signing a challenge phrase using the node private keys. In that case, the node operator will receive aggregated payments in his Metamask account for all associated nodes.
 
