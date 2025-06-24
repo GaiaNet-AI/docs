@@ -1,34 +1,25 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #3a3d41;
-  --ifm-color-primary-dark: #303337;
-  --ifm-color-primary-darker: #26292d;
-  --ifm-color-primary-darkest: #1c1f23;
-  --ifm-color-primary-light: #44474b;
-  --ifm-color-primary-lighter: #4e5155;
-  --ifm-color-primary-lightest: #585b5f;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+/* === Light mode only: Glow Effect for Footer Links === */
+:root:not([data-theme='dark']) footer .footer__link,
+:root:not([data-theme='dark']) .footer .footer__link {
+  position: relative;
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #f3d8b9;
-  --ifm-color-primary-dark: #e9ceaf;
-  --ifm-color-primary-darker: #dfc4a5;
-  --ifm-color-primary-darkest: #d5ba9b;
-  --ifm-color-primary-light: #fde2c3;
-  --ifm-color-primary-lighter: #ffeccd;
-  --ifm-color-primary-lightest: #fff6d7;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-article {
-  --ifm-link-decoration:underline;
+:root:not([data-theme='dark']) footer .footer__link:hover,
+:root:not([data-theme='dark']) .footer .footer__link:hover {
+  text-shadow:
+    0 0 5px rgba(58, 61, 65, 0.2),
+    0 0 10px rgba(58, 61, 65, 0.15),
+    0 0 15px rgba(58, 61, 65, 0.1);
+  box-shadow:
+    0 0 5px rgba(58, 61, 65, 0.2),
+    0 0 10px rgba(58, 61, 65, 0.1),
+    inset 0 0 5px rgba(58, 61, 65, 0.1);
+  background: rgba(58, 61, 65, 0.05);
+  transform: translateY(-1px);
+  color: #3a3d41;
 }
