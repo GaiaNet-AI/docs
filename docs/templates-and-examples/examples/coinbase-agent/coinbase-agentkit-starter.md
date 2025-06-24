@@ -10,7 +10,7 @@ This template shows an onchain agent powered by Coinbase's AgentKit with the Nex
 
 AgentKit handles these interactions by using a Gaia node for Large Language Model (LLM) inferencing.
 
-![cdp-image](./cdp-image.png)
+![cdp-image](../cdp/cdp-image.png)
 
 ## Features
 

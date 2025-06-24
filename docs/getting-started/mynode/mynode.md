@@ -18,12 +18,12 @@ https://0x1234...xyz.gaia.domains/
 
 On the Gaia node dashboard, you will see a "Chat with this node" button. 
 
-![](chat_button.png)
+![](../chat-button/chat_button.png)
 
 ## OpenAI API replacement
 
 The Gaia node is a drop-in replacement for OpenAI API in [agent and LLM apps](../agent-integrations/intro).
 On the Gaia node dashboard, you will see a table that shows how to replace OpenAI parameters in those apps.
 
-![](openai_api_options.png)
+![](../openai/openai_api_options.png)
 

@@ -55,12 +55,12 @@ Collecting usage statistics. To deactivate, set browser.gatherUsageStats to fals
 
 Finally, you can open the `http://localhost:8501` in your browser to generate a book.
 
-![](book-01.png)
+![](../book/book-01.png)
 
 The LlamaEdgeBook will first generate an outline based on your prompt, and then create the chapter content based on the outline.
 
-![](book-02.png)
+![](../book/book-02.png)
 
 You can also download the book after the generation is complete.
 
-![](book-03.png)
+![](../book/book-03.png)

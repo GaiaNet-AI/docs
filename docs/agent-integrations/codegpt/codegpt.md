@@ -10,8 +10,8 @@ CodeGPT is a pair-programming partner for developers. It offers AI chat assistan
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../getting-started/quick-start)
-* [use a public node](../nodes)
+* [run your own node](../../getting-started/quick-start/quick-start.md)
+* [use a public node](/docs/nodes.md)
 
 In this tutorial, we will use the public CodeStral nodes to power the CodeGPT plugin.
 
@@ -49,7 +49,7 @@ Click the CODEGPT on the right sidebar and enter the settings page for CodeGPT.
 
 Save the above settings.
 
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](/docs/getting-started/authentication/authentication.md).
 
 ## Use the plugin
 

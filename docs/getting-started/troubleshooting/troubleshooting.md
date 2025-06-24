@@ -42,7 +42,7 @@ The solution is to disable the `autoMemoryReclaim` feature in WSL. Step to turn 
 1. Edit `C:\Users<Your user name>.wslconfig`
 2. Remove or comment out `autoMemoryReclaim` in `[experimental]` section.
 
-![](disable_autoMemoryReclaim_wsl.png)
+![](../disable-automemory/disable_autoMemoryReclaim_wsl.png)
 
 Thanks to [RoggeOhta](https://github.com/RoggeOhta) for discovering this. You can learn more about it [here](https://github.com/GaiaNet-AI/gaianet-node/issues/46).
 
@@ -173,7 +173,7 @@ This will temporarily set the FD limit to 10,000. Next, use `gaianet init` and `
 
 When running `curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash` to install GaiaNet node software, you may meet the permission denied error especially installing the WasmEdge runtime. 
 
-![](troubleshooting-01.png)
+![](../troubleshooting/troubleshooting-01.png)
 
 This error is caused by the lack of `/tmp` write permission. You can use `--tmpdir` to specify where you want to install the WasmEdge runtime. Please note, you will need to have written permission to the `<YOUR_PATH>` folder.
 

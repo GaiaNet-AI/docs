@@ -11,8 +11,8 @@ It is designed to be dynamic, organically growing, and learning as users use it.
 
 You will need a Gaia node to provide LLM services to the agent app. You can
 
-* [run your own node](../../getting-started/quick-start)
-* [use a public node](../nodes)
+* [run your own node](../../getting-started/quick-start/quick-start.md)
+* [use a public node](/docs/nodes.md)
 
 In this tutorial, we will use the public [Llama-3.1-8B node](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) to power the Agent Zero.
 
