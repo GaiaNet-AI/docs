@@ -252,6 +252,7 @@ const config = {
         logo: {
           alt: 'Decentralizing Generative AI Chatbots and Agents',
           src: 'img/icon-white.png',
+          srcDark: 'img/icon-dark.png',
         },
         items: [
           // {
