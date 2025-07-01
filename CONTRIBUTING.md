@@ -77,6 +77,55 @@ Visit `http://localhost:3000` to preview your changes.
 
 ---
 
+## Troubleshooting
+
+### Command failed: ps cax -o command...
+
+While running `npm start` you may run into a this error. This happens because of a bug that prevents docusaurus from starting on macOS computers without a Chrome/Chromium browser installed (or haven't opened one in a while). To fix this error, you can either run the update command in the error message or open a Chrome/Chromium tab.
+
+#### Error details
+
+```
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                         Update available 3.8.0 → 3.8.1
+
+                                                               To upgrade Docusaurus packages with the latest version, run the following command:
+      `npm i @docusaurus/core@latest @docusaurus/plugin-client-redirects@latest @docusaurus/plugin-google-analytics@latest @docusaurus/plugin-google-tag-manager@latest @docusaurus/preset-classic@latest
+                                                                       @docusaurus/module-type-aliases@latest @docusaurus/types@latest`
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO] Starting the development server...
+[SUCCESS] Docusaurus website is running at: http://localhost:3000/
+
+● Client █████████████████████████ building (10%) 0/3 entries 2/3 dependencies 0/2 modules 1 active
+ node_modules/webpack-dev-server/client/index.js
+
+
+[ERROR] Error: Command failed: ps cax -o command | grep -E "^(Google Chrome Canary|Google Chrome Dev|Google Chrome Beta|Google Chrome|Microsoft Edge|Brave Browser|Vivaldi|Chromium)$"
+
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at ChildProcess.exithandler (node:child_process:414:12)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  code: 1,
+  killed: false,
+  signal: null,
+  cmd: 'ps cax -o command | grep -E "^(Google Chrome Canary|Google Chrome Dev|Google Chrome Beta|Google Chrome|Microsoft Edge|Brave Browser|Vivaldi|Chromium)$"',
+  stdout: '',
+  stderr: ''
+}
+[INFO] Docusaurus version: 3.8.0
+Node version: v22.16.0
+```
+
+---
+
 ## Docs Structure Overview
 
 - `docs/` – Markdown files for core documentation
