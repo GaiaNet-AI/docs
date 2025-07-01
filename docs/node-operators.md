@@ -15,38 +15,38 @@ Here you'll find everything you need to get started with running and managing yo
 ## Getting Started
 Learn how to get started with your first GaiaNet node.
 
-[Learn More →](./getting-started/what-is-a-node)
+[Learn More →](/getting-started/what-is-a-node)
 
 ## Node Setup & Authentication
 
 Step-by-step guide for node installation, setup, and security.
 
-- [Setting up your own node](./getting-started/quick-start)
-- [Authentication guide](./getting-started/authentication)
+- [Setting up your own node](/getting-started/quick-start)
+- [Authentication guide](/getting-started/authentication)
 
 
 ## Node Operations
 Learn about day-to-day operations and customization.
 
-- [Using your Gaia Node](./getting-started/mynode)
-- [Customizing Your Gaia Node](./getting-started/customize)
+- [Using your Gaia Node](/getting-started/mynode)
+- [Customizing Your Gaia Node](/getting-started/customize)
 
 ## Network & Protocol
 Join the network and start earning rewards.
 
-- [Gaia CLI options](./getting-started/cli-options)
-- [Joining the Gaia Protocol](./getting-started/register)
+- [Gaia CLI options](/getting-started/cli-options)
+- [Joining the Gaia Protocol](/getting-started/register)
 
 ## System Requirements & Troubleshooting
 Make sure your system is ready and get help when needed.
 
-- [System requirements](./getting-started/system-requirements)
-- [Troubleshooting guide](./getting-started/troubleshooting)
+- [System requirements](/getting-started/system-requirements)
+- [Troubleshooting guide](/getting-started/troubleshooting)
 
 ## Advanced Deployment Options
 Learn about different deployment options.
 
-- [Install or Uninstall the CLI](./getting-started/install)
-- [Install multiple nodes](./getting-started/advanced-deployment-options/multiple)
-- [Run a local-only node](./getting-started/advanced-deployment-options/local)
-- [Protect the server process](./getting-started/advanced-deployment-options/protect)
+- [Install or Uninstall the CLI](/getting-started/install)
+- [Install multiple nodes](/getting-started/advanced-deployment-options/multiple)
+- [Run a local-only node](/getting-started/advanced-deployment-options/local)
+- [Protect the server process](/getting-started/advanced-deployment-options/protect)
