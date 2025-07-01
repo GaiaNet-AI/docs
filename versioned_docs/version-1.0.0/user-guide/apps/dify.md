@@ -15,18 +15,18 @@ or community GaiaNet nodes in any application built on Dify. It supports
 
 First, log into Dify's web portal and select `Settings | Model Provider`. From the list, you can add an OpenAI-API-compatible provider.
 
-Add an LLM model with the modela name and API endpoint listed on your GaiaNet node's web dashboard. Or, you can just add [a popular GaiaNet node](../nodes).
+Add an LLM model with the model name and API endpoint listed on your GaiaNet node's web dashboard. Or, you can just add [a popular GaiaNet node](../nodes).
 Leave the API Key field empty.
 
 ![Configure a GaiaNet Llama3 8b model in Dify](dify_chat.png)
 
 Most Dify applications also require an embedding model to search text in the vector space.
-Add an mebedding model with the modela name and API endpoint listed on your GaiaNet node's web dashboard. Or, you can just add [a popular GaiaNet node](../nodes).
+Add an embedding model with the model name and API endpoint listed on your GaiaNet node's web dashboard. Or, you can just add [a popular GaiaNet node](../nodes).
 Leave the API Key field empty.
 
 ![Configure a GaiaNet embedding model in Dify](dify_embedding.png)
 
-That's it. You can now see that the new models are available at the top panel of Dify for every chatbot or agent. Just select your GaiaNet models for chat or embedding, and the Dify app will automagically use it!
+That's it. You can now see that the new models are available at the top panel of Dify for every chatbot or agent. Just select your GaiaNet models for chat or embedding, and the Dify app will automatically use it!
 
 ![Select a GaiaNet node as backend model in Dify](dify_select.png)
 
