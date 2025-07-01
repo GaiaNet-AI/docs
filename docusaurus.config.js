@@ -109,6 +109,19 @@ const config = {
         ],
       },
     ],
+    [
+      'docusaurus-plugin-llms',
+      {
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        docsDir: 'docs',
+        includeUnmatchedLast: true,
+        pathTransformation: {
+          // Paths to ignore when constructing URLs (will be removed if found)
+          ignorePaths: ['versioned_docs', 'versioned_sidebars'],
+        },
+      },
+    ],
   ],
 
   presets: [

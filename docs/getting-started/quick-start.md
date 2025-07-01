@@ -29,7 +29,7 @@ curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/
 
 3. Use the following command to initialize the Gaia node according to the configuration options 
 in `$HOME/gaianet/config.json`.
-By default, the Gaia is initialized with a [Llama 3.2](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct) LLM and a [knowledge base about Paris](https://huggingface.co/datasets/gaianet/paris). 
+By default, the Gaia is initialized with a [Llama 3.2](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct) LLM. 
 This command could take some time since it will download a very large LLM file.
 
 ```
@@ -58,7 +58,13 @@ gaianet start
 
 ## Next steps
 
-- [Customize](customize.md) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
+- [Customize](customize.md) your node. Here are some knowledge bases you can try by customizing your node:
+    - [Rust](https://huggingface.co/datasets/gaianet/learn-rust)
+    - [Solidity](https://huggingface.co/datasets/harishkotra/solidity)
+    - [Paris](https://huggingface.co/datasets/gaianet/paris)
+    - [Vyper Lang Developer Docs](https://huggingface.co/datasets/meowy-ai/vyper-lang)
+    - [Monad Developer Docs](https://huggingface.co/datasets/harishkotra/monad-docs)
+    - [Web3 Knowledge Base](https://huggingface.co/datasets/meowy-ai/web3-knowledge-base)
 - [Join the Gaia Protocol](register.md) and join the Gaia protocol network to receive payments.
 - [Ensure Node Reliability](advanced-deployment-options/protect.md) the node server to ensure stable service.
 
