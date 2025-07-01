@@ -22,7 +22,7 @@ You will need a Gaia node ready to provide LLM services through a public URL. Yo
 - [Run your own node](../../getting-started/quick-start)
 - [Use a public node](../nodes)
 
-If you are using a public node, you will need an [API key](https://www.gaianet.ai/setting/gaia-api-keys). **Gaia overs free 50,000 API credits to use with available services such as public nodes when you apply for a developer account**.
+If you are using a public node, you will need an [API key](https://www.gaianet.ai/setting/gaia-api-keys). **Gaia offers free 50,000 API credits to use with available services such as public nodes when you apply for a developer account**.
 
 ### Setup
 
@@ -91,7 +91,7 @@ Integrations with Langchain and Gaia can be done with any JavaScript or Python. 
         base_url="gaia-node-url/v1"
     )
 
-    reponse = model.invoke("Hello, world!")
+    response = model.invoke("Hello, world!")
 
     print(response)
     ```
