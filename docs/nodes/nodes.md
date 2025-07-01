@@ -27,15 +27,7 @@ Replace OpenAI configuration in [your app](../agent-integrations/intro) with the
 
 ### Text-to-image: Realistic vision
 
-This domain runs stable diffusion agent nodes fine-tuned to generate realistic portraits.
-The model is [Realistic Vision V6.0 B1](https://civitai.com/models/4201/realistic-vision-v60-b1).
-Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
-
-|Config option | Value |
-|-----|--------|
-| API endpoint URL | https://portrait.gaia.domains/v1 |
-| Model Name | portrait |
-| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
+Coming soon!
 
 ### Text-to-voice: GPT-SoVITS
 
