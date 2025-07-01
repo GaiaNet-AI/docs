@@ -31,3 +31,5 @@ That's it. You can now see that the new models are available at the top panel of
 
 ![Chat with the Gaia Llama3 8b model in Dify](dify_chatbot_ui.png)
 
+
+
