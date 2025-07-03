@@ -16,8 +16,8 @@ This guide explains how to set up and use the plugin with a Gaia node as an alte
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [Run your own node](../../getting-started/quick-start)
-* [Use a public node](../nodes)
+* [Run your own node](../../getting-started/quick-start/quick-start.md)
+* [Use a public node](../../nodes/nodes.md)
 
 In this tutorial, we will use a public node.
 

@@ -10,8 +10,8 @@ FlowiseAI is a low-code tool for developers to build customized LLM orchestratio
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../getting-started/quick-start)
-* [use a public node](../nodes)
+* [run your own node](../../getting-started/quick-start/quick-start.md)
+* [use a public node](../../nodes/nodes.md)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 

@@ -19,8 +19,8 @@ You can configure Langchain to use any Gaia node as the LLM backend, that way yo
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can:
 
-- [Run your own node](../../getting-started/quick-start)
-- [Use a public node](../nodes)
+- [Run your own node](../../getting-started/quick-start/quick-start.md)
+- [Use a public node](../../nodes/nodes.md)
 
 If you are using a public node, you will need an [API key](https://www.gaianet.ai/setting/gaia-api-keys). **Gaia offers free 50,000 API credits to use with available services such as public nodes when you apply for a developer account**.
 
@@ -47,7 +47,7 @@ If you are using a public node, you will need an [API key](https://www.gaianet.a
 
 ## Integration with Gaia
 
-To get started with running your Gaia node, you can follow the guide on the [Setting up your own node](/getting-started/quick-start) page for a quickstart.
+To get started with running your Gaia node, you can follow the guide on the [Setting up your own node](../../getting-started/quick-start/quick-start.md) page for a quickstart.
 
 In this guide, we will be running our Gaia node locally so we do not need an API key, you can use a string like: "Gaia" as a placeholder. Create a `.env` file and store your API key:
 

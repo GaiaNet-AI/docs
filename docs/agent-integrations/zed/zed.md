@@ -16,8 +16,8 @@ sidebar_position: 10
 
 You will need a Gaia node to provide LLM services to Zed. You can
 
-* [run your own node](../../getting-started/quick-start)
-* [use a public node](../nodes)
+* [run your own node](../../getting-started/quick-start/quick-start.md)
+* [use a public node](../../nodes/nodes.md)
 
 In this tutorial, we will use public [Qwen 2.5 Coder](https://github.com/QwenLM/Qwen2.5-Coder) nodes to power Cursor.
 

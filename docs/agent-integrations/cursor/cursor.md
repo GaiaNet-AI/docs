@@ -16,8 +16,8 @@ You can use Cursor with your own Gaia node as the LLM backend. There are two big
 
 You will need a Gaia node to provide LLM API services. You can
 
-* [Run your own node](../../getting-started/quick-start)
-* [Use a public node](../nodes)
+* [Run your own node](../../getting-started/quick-start/quick-start.md)
+* [Use a public node](../../nodes/nodes.md)
 
 In this tutorial, we will use public [Qwen 2.5 Coder](https://github.com/QwenLM/Qwen2.5-Coder) nodes to power Cursor.
 

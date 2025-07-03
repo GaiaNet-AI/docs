@@ -21,7 +21,7 @@ domain or background.
 
 > For example, if you ask ChatGPT the question What is Layer 2, the answer is that Layer 2 is a concept from the computer network. However, if you ask a blockchain person, they answer that Layer 2 is a way to scale the original Ethereum network. That's the difference between a generic LLM and knowledge-supplemented LLMs.
 
-We will cover the external knowledge preparation and how a knowledge-supplemented LLM completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with Gaia](/docs/getting-started/quickstart/quick-start.md) to start building one.
+We will cover the external knowledge preparation and how a knowledge-supplemented LLM completes a conversation. If you have learned how a RAG application works, go to [Build a RAG application with Gaia](/docs/getting-started/quick-start/quick-start.md) to start building one.
 
 1. Create embeddings for your own knowledge as the long-term memory.
 2. Lifecycle of a user query on a knowledge-supplemented LLM.

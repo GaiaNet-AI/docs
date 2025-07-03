@@ -10,8 +10,8 @@ You can configure the Open WebUI framework, a self-hosted WebUI, using any Gaia 
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../getting-started/quick-start)
-* [use a public node](../nodes)
+* [run your own node](../../getting-started/quick-start/quick-start.md)
+* [use a public node](../../nodes/nodes.md)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 

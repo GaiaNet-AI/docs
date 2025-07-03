@@ -12,8 +12,8 @@ You can configure LlamaParse to use the Gaia node as the LLM backend, hence you 
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../../getting-started/quick-start)
-* [use a public node](../nodes)
+* [run your own node](../../getting-started/quick-start/quick-start.md)
+* [use a public node](../../nodes/nodes.md)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 

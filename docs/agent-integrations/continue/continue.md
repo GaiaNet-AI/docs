@@ -16,8 +16,8 @@ It is a copilot-like plugin for VSCode and JetBrains to provide custom autocompl
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [Run your own node](../../getting-started/quick-start)
-* [Use a public node](../nodes)
+* [Run your own node](../../getting-started/quick-start/quick-start.md)
+* [Use a public node](../../nodes/nodes.md)
 
 In this tutorial, we will use public nodes to power the Continue plugin.
 

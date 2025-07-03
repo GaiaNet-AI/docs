@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Using your Gaia Node
 
-When you [start a Gaia node](../quickstart/quick-start.md), or you find a node on the web, you could use it as a
+When you [start a Gaia node](../quick-start/quick-start.md), or you find a node on the web, you could use it as a
 web-based chatbot UI and an OpenAI compatible web service. Just load the node's public URL in the browser to open its dashboard.
 Let's say the URL is as follows.
 
