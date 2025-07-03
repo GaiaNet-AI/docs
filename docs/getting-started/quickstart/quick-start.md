@@ -58,7 +58,6 @@ gaianet start
 
 ## Next steps
 
-
 - [Customize](../customize) your node. Here are some knowledge bases you can try by customizing your node:
     - [Rust](https://huggingface.co/datasets/gaianet/learn-rust)
     - [Solidity](https://huggingface.co/datasets/harishkotra/solidity)
@@ -68,4 +67,5 @@ gaianet start
     - [Web3 Knowledge Base](https://huggingface.co/datasets/meowy-ai/web3-knowledge-base)
 - [Join the Gaia Protocol](../register) and join the Gaia protocol network to receive payments.
 - [Ensure Node Reliability](../advanced-deployment-options/protect.md) the node server to ensure stable service.
+
 
