@@ -4,7 +4,7 @@ sidebar_position: 103
 
 # Install multiple nodes on a single machine
 
-The [default Gaia installer](../quick-start) installs the node into the `$HOME/gaianet` base directory. 
+The [default Gaia installer](../quick-start/quick-start.md) installs the node into the `$HOME/gaianet` base directory. 
 You could install multiple nodes on the same machine. Each node has its own "base directory".
 To do that, you just need to use the `--base` option. 
 

@@ -21,7 +21,7 @@ pip install openai
 ```
 
 When you create an OpenAI client using the library, you can pass in the API endpoint point as the `base_url`.
-Remember to append the `/v1` after the host name. You can find a list of public nodes [here](../nodes.md).
+Remember to append the `/v1` after the host name. You can find a list of public nodes [here](../nodes/nodes.md).
 
 ```
 import openai
