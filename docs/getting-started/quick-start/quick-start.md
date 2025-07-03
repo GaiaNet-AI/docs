@@ -58,7 +58,6 @@ gaianet start
 
 ## Next steps
 
-
 - [Customize](../customize) your node. Here are some knowledge bases you can try by customizing your node:
     - [Rust](https://huggingface.co/datasets/gaianet/learn-rust)
     - [Solidity](https://huggingface.co/datasets/harishkotra/solidity)
