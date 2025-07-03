@@ -27,7 +27,7 @@ To receive rewards, bind your node and device IDs with a Metamask account using 
 3. Hover on your profile and click **"Setting"** and click **"Nodes."** 
 4. Click **"Connect new node"** and enter your node and device IDs in the boxes.
 5. Click **"Join"**   
-![](node-register.png)
+![](../mynode/node-register.png)
 
 After your node has successfully joined the network, it will be displayed in the list of nodes on the Node Page.
 

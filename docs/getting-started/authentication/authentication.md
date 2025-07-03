@@ -10,11 +10,11 @@ We're introducing API keys for authentication. You can create API keys by follow
 2. Click **CONNECT** and connect your Metamask Wallet
 3. After connecting your wallet, click on the profile drop down and then click **Setting**
    
-![](settings-for-api.png)
+![](../settings-for-api/settings-for-api.png)
 
 4. Under **Setting**, click on **Gaia API Keys** and then **Create API Key**
    
-![](settings-for-api-keys.png)
+![](../settings-for-api/settings-for-api-keys.png)
 
 5. Give your API Key a name and click **Create**
 
@@ -24,9 +24,9 @@ Remember that your API key is a secret! Do not share it with others or expose it
 
 :::
 
-![](create-api-key.png)
+![](../api/create-api-key.png)
 
-![](api-key-created.png)
+![](../api/api-key-created.png)
 
 :::tip Tip
 
@@ -40,4 +40,4 @@ Your API Key is like a password and helps verify your usage. This will be one of
 
 Currently, we don't charge anything for usage or API key creation. However, it is highly recommended that you start using and updating your existing applications or new ones with your own API keys to avoid any disruption in the future.
 
-Please refer to the [API Reference](../getting-started/api-reference) page for the updated examples with the API keys usage.
+Please refer to the [API Reference](../../getting-started/api-reference.md) page for the updated examples with the API keys usage.

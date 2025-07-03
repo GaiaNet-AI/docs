@@ -31,4 +31,4 @@ The Gaia node API service is fully compatible with the OpenAI JSON spec, and hen
 
 The Gaia protocol connects and incentivizes Gaia nodes and domains to form a coherent network of web services for AI agents. It provides a mechanism to discover, connect to, and pay for Gaia node services through a decentralized marketplace. It also incentivizes domains to manage node agents through a staking program. Furthermore, the Gaia protocol connects model creators (i.e., people who have skills to finetune models) and knowledge providers to node operators through a marketplace.
 
-![Gaia Protocol](./gaia-protocol.png)
+![Gaia Protocol](../gaia-protocol/gaia-protocol.png)

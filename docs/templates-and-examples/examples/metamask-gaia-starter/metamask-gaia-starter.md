@@ -8,7 +8,7 @@ sidebar_position: 1
 
 The MetaMask Gaia DTK Starter is a powerful Next.js template that seamlessly integrates Gaia's advanced capabilities with MetaMask's Develegation Toolkit (DTK). This project allows developers to build sophisticated blockchain applications with AI-enhanced functionalities while leveraging MetaMask's secure wallet infrastructure.
 
-![Gaia Delegation Toolkit Gif](./gaia-dtk-2.gif)
+![Gaia Delegation Toolkit Gif](../gaia-supavec/gaia-dtk-2.gif)
 
 The starter includes a full ERC20 token creation system through an integrated factory contract, allowing users to deploy custom tokens directly through the application. Combined with AI-powered interactions, this creates a powerful platform for building next-generation decentralized applications.
 

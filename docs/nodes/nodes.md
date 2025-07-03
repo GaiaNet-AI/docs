@@ -23,7 +23,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 |-----|--------|
 | API endpoint URL | https://whisper.gaia.domains/v1 |
 | Model Name | whisper |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 ### Text-to-image: Realistic vision
 
@@ -35,7 +35,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 |-----|--------|
 | API endpoint URL | https://portrait.gaia.domains/v1 |
 | Model Name | portrait |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 ### Text-to-voice: GPT-SoVITS
 
@@ -47,28 +47,28 @@ Coming soon!
 
 A general coding agent running a STOA coder LLM.
 It is a highly capable but slow model.
-[Chat with it](https://coder.gaia.domains/chatbot-ui/index.html) or use it from an IDE tool, such as [Cursor AI](./agent-integrations/cursor) or [Zed](./agent-integrations/zed). 
-Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
+[Chat with it](https://coder.gaia.domains/chatbot-ui/index.html) or use it from an IDE tool, such as [Cursor AI](../agent-integrations/cursor/cursor.md) or [Zed](../agent-integrations/zed/zed.md). 
+Replace OpenAI configuration in [your app](../agent-integrations/intro.md) with the following.
 
 |Config option | Value |
 |-----|--------|
 | API endpoint URL | https://coder.gaia.domains/v1 |
 | Model Name (for LLM) | coder |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 ### Rust Coder
 
 A coding agent supplemented with open-source [Rust content](https://huggingface.co/datasets/gaianet/learn-rust) from the Rust Foundation and published books.
-[Chat with it](https://rustcoder.gaia.domains/chatbot-ui/index.html) or use it from an IDE tool, such as [Cursor AI](./agent-integrations/cursor) or [Zed](./agent-integrations/zed).
-Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
+[Chat with it](https://rustcoder.gaia.domains/chatbot-ui/index.html) or use it from an IDE tool, such as [Cursor AI](../agent-integrations/cursor/cursor.md) or [Zed](../agent-integrations/zed/zed.md).
+Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
 | API endpoint URL | https://rustcoder.gaia.domains/v1 |
 | Model Name (for LLM) | rustcoder |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 ## Alternative LLM domains
 
@@ -90,26 +90,26 @@ This domain runs plain Llama 3.2 3b agent nodes without any additional knowledge
 ### Qwen 7b
 
 The Qwen 7b LLM is great for non-English tasks such as translation.
-[Chat with it](https://qwen7b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
+[Chat with it](https://qwen7b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
 | API endpoint URL | https://qwen7b.gaia.domains/v1 |
 | Model Name (for LLM) | qwen7b |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 
 ### Qwen 72b
 
 The Qwen 72b LLM is a top open source LLM. It is very capable but could also be slow.
 It is capable of tool / function calling.
-[Learn more](../tutorial/tool-call) how to use tool call models in your agent app.
-[Chat with it](https://qwen72b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
+[Learn more](../tutorial/tool-call/tool-call.md) how to use tool call models in your agent app.
+[Chat with it](https://qwen72b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
 | API endpoint URL | https://qwen72b.gaia.domains/v1 |
 | Model Name (for LLM) | qwen72b |
 | Model Name (for Text embedding) | nomic-embed |
-| API key | [Get your API Key here](/docs/getting-started/authentication.md) |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |

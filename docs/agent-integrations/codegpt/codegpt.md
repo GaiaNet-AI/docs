@@ -49,7 +49,7 @@ Click the CODEGPT on the right sidebar and enter the settings page for CodeGPT.
 
 Save the above settings.
 
-> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../getting-started/authentication.md).
+> If you're using a Domain service, not your own node, you will [need to get an API key from Gaia](../../getting-started/authentication/authentication.md).
 
 ## Use the plugin
 

@@ -57,18 +57,18 @@ We start the DeepSeek R1 model with an 8k context window by default. If your mac
 
 1. Open Cursor settings
 
-![Cursor Settings](cursor-settings.png)
+![Cursor Settings](../cursor/cursor-settings.png)
 
 2. Locate the LLM Backend configuration
 
-![LLM Backend configuration](model-config.png)
+![LLM Backend configuration](../model-config/model-config.png)
 
 3. Configure the following:
     - Base API URL: Your Gaia node HTTPS URL
     - Model Name: `DeepSeek-R1-Distill-Llama-8B`
     - API Key: Make sure to replace `YOUR_API_KEY_GOES_HERE` with your **own API key**. To get your own API key, follow [this](../getting-started/authentication) tutorial.
 
-![DeepSeek-R1 Setup](deepseek-setup.png)
+![DeepSeek-R1 Setup](../deepseek-cursor/deepseek-setup.png)
 
 ## Technical Details
 

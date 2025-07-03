@@ -6,7 +6,7 @@ sidebar_position: 2
 # Gaia Web3 Voting Starter
 
 
-![Gaia AI Voting](./ai-voting.gif)
+![Gaia AI Voting](../ai-voting//ai-voting.gif)
 
 A decentralized voting application built with Next.js, Hardhat, and [Gaia](https://docs.gaianet.ai/intro/).
 You can create voting situation and select the choices you want to vote and vote it with the AI Agent.

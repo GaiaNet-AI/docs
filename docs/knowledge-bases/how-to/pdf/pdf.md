@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # Knowledge base from a PDF file
 
-In this section, we will discuss how to create a vector collection snapshot from a PDF file. First, we will parse the unstructured PDF file to a structured markdown file. Then, we will follow the steps from [Knowledge base from a markdown file](markdown.md) to create embedding for your PDF files.
+In this section, we will discuss how to create a vector collection snapshot from a PDF file. First, we will parse the unstructured PDF file to a structured markdown file. Then, we will follow the steps from [Knowledge base from a markdown file](../markdown/markdown.md) to create embedding for your PDF files.
 
 ## Tools to convert a PDF file to a markdown file
 
@@ -61,4 +61,4 @@ The output markdown files called `output.md` will be located in your root direct
 
 ## Create embeddings from the markdown files
 
-Please follow the tutorial [Knowledge base from a markdown file](markdown.md) to convert your markdown file to a snapshot of embeddings that can be imported into a GaiaNet node.
+Please follow the tutorial [Knowledge base from a markdown file](../markdown/markdown.md) to convert your markdown file to a snapshot of embeddings that can be imported into a GaiaNet node.

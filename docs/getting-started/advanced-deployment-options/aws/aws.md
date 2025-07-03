@@ -43,7 +43,7 @@ gaianet start
 The node is ready when it shows `The Gaia node is started at: https://...` on the console.
 You can go to that URL from your browser to interact with the Gaia node.
 
-You can [customize your Gaia node](../customize.md) with your own choice of LLMs and knowledge base snapshots.
+You can [customize your Gaia node](../../customize/customize.md) with your own choice of LLMs and knowledge base snapshots.
 
 ## Running a CPU-only AWS instance
 
@@ -70,4 +70,4 @@ gaianet start
 The node is ready when it shows `The Gaia node is started at: https://...` on the console.
 You can go to that URL from your browser to interact with the Gaia node.
 
-You can [customize your Gaia node](../customize.md) with your own choice of LLMs and knowledge base snapshots.
+You can [customize your Gaia node](../../customize/customize.md) with your own choice of LLMs and knowledge base snapshots.

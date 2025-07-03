@@ -14,7 +14,7 @@ Before you get started, ensure that you have the following on your system:
 | Ubuntu Linux 20.04 with Nvidia CUDA 12 SDK | 8GB VRAM on GPU |
 | Azure/AWS | Nvidia T4 GPU Instance |
 
-Learn more about [system requirements](system-requirements). (Also Note when you're using a windows system you should have ubuntu installed so you use wsl in the command line)
+Learn more about [system requirements](../system-requirements/system-requirements). (Also Note when you're using a windows system you should have ubuntu installed so you use wsl in the command line)
 
 ### Installing the node
 
@@ -58,7 +58,7 @@ gaianet start
 
 ## Next steps
 
-- [Customize](customize.md) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
-- [Join the Gaia Protocol](register.md) and join the Gaia protocol network to receive payments.
-- [Ensure Node Reliability](advanced-deployment-options/protect.md) the node server to ensure stable service.
+- [Customize](../customize/customize.md) your node. You probably do not wish to just run the default Phi-3 model and Paris knowledge base. 
+- [Join the Gaia Protocol](../register/register.md) and join the Gaia protocol network to receive payments.
+- [Ensure Node Reliability](../advanced-deployment-options/protect.md) the node server to ensure stable service.
 

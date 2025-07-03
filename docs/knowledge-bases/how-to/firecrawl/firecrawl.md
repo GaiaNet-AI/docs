@@ -4,7 +4,7 @@ sidebar_position: 12
 
 # Knowledge base from a URL
 
-In this section, we will discuss how to create a vector collection snapshot from a Web URL. First, we will parse the URL to a structured markdown file. Then, we will follow the steps from [Knowledge base from a markdown file](markdown.md) to create embedding for your URL.
+In this section, we will discuss how to create a vector collection snapshot from a Web URL. First, we will parse the URL to a structured markdown file. Then, we will follow the steps from [Knowledge base from a markdown file](../markdown/markdown.md) to create embedding for your URL.
 
 ## Parse the URL content to a markdown file
 
@@ -45,4 +45,4 @@ The output markdown file will be located in this folder named `output.md`.
 
 ## Create embeddings from the markdown files
 
-Please follow the tutorial [Knowledge base from a markdown file](markdown.md) to convert your markdown file to a snapshot of embeddings that can be imported into a GaiaNet node.
+Please follow the tutorial [Knowledge base from a markdown file](../markdown/markdown.md) to convert your markdown file to a snapshot of embeddings that can be imported into a GaiaNet node.
