@@ -5,7 +5,7 @@ sidebar_position: 6
 # 🌐 Public Gaia Domain
 
 Each Gaia node provides a web-based chatbot UI and an OpenAI compatible web service.
-Here are some popular nodes. Please refer to the [agent apps](./agent-integrations/intro) section to see how
+Here are some popular nodes. Please refer to the [agent apps](../agent-integrations/intro) section to see how
 to use the Gaia API in your favorite agent frameworks or apps.
 
 Gaia nodes are organized into Gaia domains to provide public services. Each domain has a single API endpoint that load-balances across multiple nodes to ensure service availability. 
@@ -17,7 +17,7 @@ Below are some Gaia domains we offer developers for free. **However, you must ap
 ### Voice-to-text: Whisper v2 large
 
 This domain runs Whisper v2 Large agent nodes for voice to text transcription and translation.
-Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
+Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
@@ -29,7 +29,7 @@ Replace OpenAI configuration in [your app](./agent-integrations/intro) with the 
 
 This domain runs stable diffusion agent nodes fine-tuned to generate realistic portraits.
 The model is [Realistic Vision V6.0 B1](https://civitai.com/models/4201/realistic-vision-v60-b1).
-Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
+Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
