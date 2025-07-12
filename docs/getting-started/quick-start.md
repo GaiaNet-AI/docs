@@ -14,7 +14,10 @@ Before you get started, ensure that you have the following on your system:
 | Ubuntu Linux 20.04 with Nvidia CUDA 12 SDK | 8GB VRAM on GPU |
 | Azure/AWS | Nvidia T4 GPU Instance |
 
-Learn more about [system requirements](system-requirements). (Also Note when you're using a windows system you should have ubuntu installed so you use wsl in the command line)
+Learn more about [system requirements](system-requirements).
+
+**For Windows Users: Important Note on WSL (Windows Subsystem for Linux)**
+If you are using a Windows system, you **must** have [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) installed and configured with an Ubuntu distribution. The installation commands for the Gaia node are Linux-based and require a Linux environment to run, which WSL provides on Windows.
 
 ### Installing the node
 
