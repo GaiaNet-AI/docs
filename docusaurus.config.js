@@ -122,6 +122,10 @@ const config = {
         },
       },
     ],
+    [
+      "@gracefullight/docusaurus-plugin-microsoft-clarity",
+      { projectId: "sfupzgt3z7" },
+    ],
   ],
 
   presets: [

@@ -20,6 +20,7 @@
     "@docusaurus/plugin-google-tag-manager": "^3.8.1",
     "@docusaurus/preset-classic": "^3.8.1",
     "@easyops-cn/docusaurus-search-local": "^0.40.1",
+    "@gracefullight/docusaurus-plugin-microsoft-clarity": "^1.0.0",
     "@mdx-js/react": "^3.0.0",
     "cheerio": "1.0.0-rc.12",
     "clsx": "^2.0.0",
