@@ -130,8 +130,8 @@ gaianet start
 
 Next, you can
 
-* [Create a knowledge base](../knowledge-bases/how-to) from your proprietary knowledge or skills.
-* [Finetune](../tutorial/llamacpp) your own LLM.
+* [Create a knowledge base](../../knowledge-bases/how-to) from your proprietary knowledge or skills.
+* [Finetune](../../tutorial/llamacpp) your own LLM.
 
 Have fun!
 
