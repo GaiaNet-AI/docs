@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Knowledge base from a markdown file
 
-In this section, we will discuss how to create a vector collection snapshot from a markdown file. The snapshot file can then be [loaded by a Gaia node as its knowledge base](../../getting-started/customize#select-a-knowledge-base).
+In this section, we will discuss how to create a vector collection snapshot from a markdown file. The snapshot file can then be [loaded by a Gaia node as its knowledge base](../../../getting-started/customize#select-a-knowledge-base).
 
 The markdown file is segmented into multiple sections by headings. [See an example](https://huggingface.co/datasets/gaianet/paris/raw/main/paris.md). Each section is turned into a vector, and when retrieved, added to the prompt context for the LLM.
 
@@ -27,7 +27,7 @@ The embedding model is a special kind of LLM that turns sentences into vectors. 
 ## Start a vector database
 
 By default, we use Qdrant as the vector database. You can start a Qdrant instance
-by [starting a Gaia node with a knowledge snapshot](../../getting-started/quick-start).
+by [starting a Gaia node with a knowledge snapshot](../../../getting-started/quick-start).
 
 :::note
 Or, you can start a Qdrant server using Docker. The following command starts it in the background.
@@ -114,7 +114,7 @@ We also recommend you to compress the snapshot file.
 tar czvf my.snapshot.tar.gz my.snapshot
 ```
 
-Finally, upload the `my.snapshot.tar.gz` file to Huggingface so that the [Gaia node can download and use it](../../getting-started/customize#select-a-knowledge-base).
+Finally, upload the `my.snapshot.tar.gz` file to Huggingface so that the [Gaia node can download and use it](../../../getting-started/customize#select-a-knowledge-base).
 
 ## Video Guide
 
@@ -122,5 +122,5 @@ Finally, upload the `my.snapshot.tar.gz` file to Huggingface so that the [Gaia n
 
 ## Next steps
 
-* [Start](../../getting-started/quick-start) a new Gaia node
-* [Customize](../../getting-started/customize) the Gaia node
+* [Start](../../../getting-started/quick-start) a new Gaia node
+* [Customize](../../../getting-started/customize) the Gaia node

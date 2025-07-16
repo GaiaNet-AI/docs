@@ -66,7 +66,7 @@ We start the DeepSeek R1 model with an 8k context window by default. If your mac
 3. Configure the following:
     - Base API URL: Your Gaia node HTTPS URL
     - Model Name: `DeepSeek-R1-Distill-Llama-8B`
-    - API Key: Make sure to replace `YOUR_API_KEY_GOES_HERE` with your **own API key**. To get your own API key, follow [this](../getting-started/authentication) tutorial.
+    - API Key: Make sure to replace `YOUR_API_KEY_GOES_HERE` with your **own API key**. To get your own API key, follow [this](../../getting-started/authentication) tutorial.
 
 ![DeepSeek-R1 Setup](../deepseek-cursor/deepseek-setup.png)
 

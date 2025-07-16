@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Customizing Your Gaia Node
 
-A key goal of the Gaia project is to enable each individual to create and run his or her own agent service node using finetuned LLMs and proprietary knowledge. In all likelihood, you are not going to run a node with the [default](quick-start) Llama 3.2 LLM and Paris guidebook knowledge base.
+A key goal of the Gaia project is to enable each individual to create and run his or her own agent service node using finetuned LLMs and proprietary knowledge. In all likelihood, you are not going to run a node with the [default](../quick-start) Llama 3.2 LLM and Paris guidebook knowledge base.
 
 In this chapter, we will discuss ways to customize your node.
 
@@ -59,7 +59,7 @@ gaianet config \
 
 > The llama 3 8B model requires at least 16GB of RAM.
 
-If none of the published finetuned models are perfect for your use case, you can also finetune your own LLM by following [these guides](../tutorial/llamacpp). Your Gaia node can run your own finetuned models. 
+If none of the published finetuned models are perfect for your use case, you can also finetune your own LLM by following [these guides](../../tutorial/llamacpp). Your Gaia node can run your own finetuned models. 
 
 > The `--chat-url` argument could point to a local file under `$HOME/gaianet` instead of a public URL. That allows you to use a privately trained or finetuned LLM model file.
 
@@ -67,7 +67,7 @@ If none of the published finetuned models are perfect for your use case, you can
 
 A key feature of Gaia is that users can create and deploy proprietary knowledge base on the node to supplement
 the LLM. Each knowledge base is a snapshot file for a vector collection. 
-We encourage you to [create your own knowledge base](../knowledge-bases/how-to). But you can also use 
+We encourage you to [create your own knowledge base](../../knowledge-bases/how-to). But you can also use 
 ready-made knowledge bases. You will need to do the following.
 
 * specify the URL to the vector collection (i.e., the `snapshot` or `snapshot.tar.gz` file) in the `snapshot` option.

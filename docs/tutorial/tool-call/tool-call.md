@@ -15,8 +15,8 @@ In this tutorial, we will show you a simple Python program that allows a local L
 
 You will need a Gaia node ready to provide LLM services through a public URL. You can
 
-* [run your own node](../getting-started/quick-start). You will need to start a Gaia node for the [Llama 3.3 70B model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.3-70b-instruct) or the [Llama 3.1 8B model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) or the [Llama 3 Groq 8B model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-groq-8b-tool). You can then use the node's API URL endpoint and model name in your tool call apps.
-* [use a public node](../nodes)
+* [run your own node](../../getting-started/quick-start). You will need to start a Gaia node for the [Llama 3.3 70B model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.3-70b-instruct) or the [Llama 3.1 8B model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3.1-8b-instruct) or the [Llama 3 Groq 8B model](https://github.com/GaiaNet-AI/node-configs/tree/main/llama-3-groq-8b-tool). You can then use the node's API URL endpoint and model name in your tool call apps.
+* [use a public node](../../nodes)
 
 In this tutorial, we will use a public Llama 3.3 node with the function call support.
 
