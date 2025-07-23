@@ -5,7 +5,7 @@ sidebar_position: 6
 # FlowiseAI tool call
 
 FlowiseAI is a low-code tool for developers to build customized LLM orchestration flows & AI agents. 
-You can configure the FlowiseAI tool to use a Gaia node that supports [LLM tool calling](https://github.com/LlamaEdge/LlamaEdge/blob/main/api-server/ToolUse.md).
+You can configure the FlowiseAI tool to use a Gaia node that supports [LLM tool calling](https://github.com/LlamaEdge/LlamaEdge/blob/main/llama-api-server/doc/ToolUse.md).
 
 ## Prerequisites
 
