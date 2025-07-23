@@ -1,3 +1,8 @@
+---
+sidebar_position: 9
+---
+
+
 # Gaia CLI Toolkit
 
 The Gaia CLI Toolkit is a comprehensive command-line interface tool for managing and running various AI models through GaiaNet nodes. It provides intelligent model selection, system-aware recommendations, and seamless setup for your own AI infrastructure.

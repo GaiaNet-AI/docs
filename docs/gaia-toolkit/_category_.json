@@ -1,9 +1,0 @@
-{
-  "label": "🔗 Gaia-toolkit",
-  "position": 8,
-  "link": {
-    "type": "generated-index",
-    "description": "A comprehensive command-line interface (CLI) tool for managing and running various AI models through GaiaNet nodes",
-    "slug": "/gaia-toolkit"
-  }
-}
