@@ -75,7 +75,7 @@ NETWORK_ID=base-sepolia
 
 To obtain the values for `CDP_API_KEY_NAME` and `CDP_API_KEY_PRIVATE_KEY` head over to [CDP portal](https://portal.cdp.coinbase.com/projects/api-keys) to create a new API key. Copy the API key name and private key values from the modal that appears.
 
-The `NETWORK_ID` can stay as `base-sepolia` and you can explore the possible [network options](https://docs.cdp.coinbase.com/api/docs/networks#network-identifiers) as well.
+The `NETWORK_ID` can stay as `base-sepolia` and you can explore the possible [network options](https://docs.cdp.coinbase.com/api-reference/networks#network-identifiers) as well.
 
 ## Project structure
 
