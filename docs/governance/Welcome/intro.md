@@ -8,8 +8,8 @@ In these docs, you can find information about GaiaNet, the GAIA token, the Gaia 
 # Links
 
 - View the GAIA token contract at [Enter Token Contract address]
-- Delegate voting power at [Tally Delegate Page]
-- View the Gaia Governance contract code at [github repo]
+- Delegate voting power at <https://www.tally.xyz/gov/gaianet/delegates>
+- View the Gadia Github at <https://github.com/GaiaNet-AI>
 - Visit the main GaiaNet documentation at <https://docs.gaianet.ai/intro> 
 - Open the app at <https://www.gaianet.ai/> 
 - Follow the blog at <https://www.gaianet.ai/blog/> 
@@ -53,13 +53,11 @@ The Gaia DAO should ensure the long-term sustainability of its resources by stra
 
 **Key Results**
 
-* (1) **Budget Ratification**
-  * (Target: Pass a DAO proposal by end of Month 1 that allocates an agreed-upon budget to the Gaia Foundation’s seasonal priorities and unlocks relevant activities)
-* (2) **Establish Treasury Council**
-  * (Target: Approve and onboard at least 5 high-impact council members per season)
-* (3) **Funding DAO Operations**
-  * (Target: allocate no more than 2% DAO treasury for operations and procurement per 12-month season)
-* (4) **Procurement & Budget Policy**
+* (1) **Establish Treasury Council**
+  * (Target: Approve and onboard at least **three** high-impact council members per season)
+* (2) **Funding DAO Operations**
+  * (Target: allocate no more than **2%** DAO treasury for operations and procurement per 12-month season)
+* (3) **Procurement & Budget Policy**
   * (Target: Formalize and approve a procurement policy that ensures vendors follow a clear, DAO-approved diligence process)
  
 In ensuring the sustainability of the DAO’s resources, some initiatives that could be carried out include creating a Treasury Council, defining procurement guidelines, and creating an onboarding roadmap for core contributors.
