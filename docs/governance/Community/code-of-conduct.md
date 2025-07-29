@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Welcome to the Gaia Community!  
-Our goal is to cultivate a safe and inclusive space that benefits all participants of the Gaia DAO while remaining in alignment with the values of the [Gaia DAO Core Mission](). This Code of Conduct outlines our shared values and expectations.
+Our goal is to cultivate a safe and inclusive space that benefits all participants of the Gaia DAO while remaining in alignment with the values of the [Gaia DAO Core Mission] (add link after docs published). This Code of Conduct outlines our shared values and expectations.
 
 This is your guide for participating in the Gaia community. This Code of Conduct applies to all spaces related to the Gaia DAO, which include:
 * The Gaia Docs at https://docs.gaianet.ai/intro/ 
