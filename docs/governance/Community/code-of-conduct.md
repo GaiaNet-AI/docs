@@ -8,7 +8,7 @@ Our goal is to cultivate a safe and inclusive space that benefits all participan
 This is your guide for participating in the Gaia community. This Code of Conduct applies to all spaces related to the Gaia DAO, which include:
 * The Gaia Docs at https://docs.gaianet.ai/intro/ 
 * The Gaia Governance Portal at <https://www.tally.xyz/gov/gaianet>
-* The Gaia Forum <gov.gaianet.foundation>
+* The Gaia Forum <https://gov.gaianet.foundation/>
 
 # Expected Behaviors
 
