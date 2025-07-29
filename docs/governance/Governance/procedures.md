@@ -5,8 +5,8 @@ sidebar_position: 6
 # Governance Procedures
 * The standard procedures for governance proposals voted on by Delegates - using the voting power conveyed by the GAIA token - are set out here.
   * The Governor contract is responsible for executing Gaia Improvement Proposals ("GIPs") that upgrade Gaia and/or components of the Gaia governance system. It allows for delegated voting power to be used to vote on GIPs, which are queued for permissionless execution on Ethereum if passed.
-  * The Governor contract is an OpenZeppelin smart contract deployed on Ethereum: [contract]
-  * The Timelock contract is an OpenZeppelin smart contract deployed on Ethereum: [contract]
+  * The Governor contract is smart contract deployed on Ethereum: [contract]
+  * The Timelock contract is smart contract deployed on Ethereum: [contract]
 * The Governor contract is responsible for executing proposals related to:
   * Gaia upgrades;
   * Upgrades to the Governor contract;
@@ -17,12 +17,12 @@ sidebar_position: 6
 Gaia Improvement Proposals (“**GIPs**") are the primary mechanism for enacting changes to Gaia and the Gaia DAO’s governance procedures. GIPs serve as a means of fostering community discourse and collective decision-making within the Gaia DAO. 
 
 ## Step 1: Ideation
-Ideas for Gaia improvements, new features, integrations, and governance changes are initially discussed on the Gaia Governance Forum (link). The author(s) are encouraged to engage in active dialogue with the community to refine their ideas and gauge early feedback. Well-developed ideas with strong community support should proceed to the proposal drafting stage.
+Ideas for Gaia improvements, new features, integrations, and governance changes are initially discussed on the [Gaia Governance Forum](https://gov.gaianet.foundation/). The author(s) are encouraged to engage in active dialogue with the community to refine their ideas and gauge early feedback. Well-developed ideas with strong community support should proceed to the proposal drafting stage.
 
 ## Step 2: Proposal Drafting
 Gaia Improvement Proposals (GIPs) include all proposals submitted through the Governor contract. The Governor contract is a smart contract deployed on Ethereum, and GIPs are used to propose upgrades to Gaia. 
 
-For the GIP template, see [this page].
+For the GIP template, see [this page](https://gov.gaianet.foundation/t/gip-template/23).
 
 ## Step 3: Proposal Discussion
 Once proposals have been posted to the forum, they should initially stay open for community discussion for a recommended period (the “**Discussion Period**”) of **seven (7)** days. While proposal authors can submit a GIP directly without prior forum discussion, it is recommended that tokenholders consider voting against such proposals to enforce a more democratic Discussion Period. 
@@ -37,9 +37,9 @@ Offchain signal voting aims to provide a lightweight method for community member
 Proposal authors should outline the specifics of the vote, including options, duration, and how the results will influence the proposal’s progression. Clear communication regarding the non-binding nature of these votes is crucial. A strong positive response is an encouraging indicator for proceeding to the "Onchain GIP Submission'' stage. Conversely, if the signal vote reveals substantial opposition or concerns, authors should consider revisiting and revising their proposal in consultation with the community before moving forward.
 
 ## Step 5: Onchain GIP Submission
-Proposals should be submitted for onchain voting once the Discussion Period is complete. The Gaia DAO currently has a threshold of [placeholder] GAIA as a requirement for proposal submission. Any Delegate who meets this proposal threshold may submit their proposal for onchain voting. If a Delegate does not meet the minimum token threshold for submitting proposals, they may work with someone who does to submit the proposal on their behalf or ask the DAO for GAIA delegations. Delegate profiles can be viewed at [link].
+Proposals should be submitted for onchain voting once the Discussion Period is complete. The Gaia DAO currently has a threshold of [placeholder] GAIA as a requirement for proposal submission. Any Delegate who meets this proposal threshold may submit their proposal for onchain voting. If a Delegate does not meet the minimum token threshold for submitting proposals, they may work with someone who does to submit the proposal on their behalf or ask the DAO for GAIA delegations. Delegate profiles can be viewed [here](https://www.tally.xyz/gov/gaianet/delegates).
 
-Proposals are submitted onchain on the Gaia Governance Portal (via Tally) or on other applications connected to Gaia governance contracts. Upon submission, a proposal enters a **[placeholder]** day Vote Delay period, prior to the commencement of the **[placeholder]** day Voting Period.
+Proposals are submitted onchain on the [Gaia Governance Portal](https://www.tally.xyz/gov/gaianet) (via Tally) or on other applications connected to Gaia governance contracts. Upon submission, a proposal enters a **three** day Vote Delay period, prior to the commencement of the **seven** day Voting Period.
 
 Gaia Governance Proposals pass a vote if delegates reach quorum, defined as [placeholder] GAIA in support of the proposal, AND have a simple majority of “For” votes (>50%). Each proposal must also be consistent with the values of Gaia and must not violate applicable law. 
 
@@ -60,15 +60,15 @@ GIPs can be voted on via the Gaia Governance Portal on Tally, on other independe
 
 Governor contract proposals must meet a quorum requirement and receive a simple majority of the total number of "for" and "against" votes  to pass.
 
-If a vote causes a quorum to be reached, the proposal's voting period is extended so that it does not end before the following [placeholder] days have passed.
+If a vote causes a quorum to be reached, the proposal's voting period is extended so that it does not end before the following seven days have passed.
 
 The voting parameters for Tokenholders are as follows, which may be subject to further changes in accordance with a GIP related to the governance process (the “**Voting Parameters**”):
 
-* **Vote Delay Period:** Upon submission, a proposal enters a [placeholder] day vote delay period, prior to the Voting Period. The proposer may cancel a proposal during the Vote Delay Period, at their discretion.
-* **Voting Period:** The Voting Period is the [placeholder] day time period during which Delegates can cast “Yes,” “No,” or “Abstain” votes on a submitted proposal.
-* **Timelock Period:** Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of [placeholder] days. This period serves as a delay before proposal execution, giving the community time to adjust to any changes introduced by a successful proposal.
-* **Proposal Threshold:** [placeholder] GAIA. The Proposal Threshold is the minimum voting power (whether through holding GAIA tokens themselves or having tokens delegated to them by third parties) needed to submit a GIP for an onchain vote.
-* **Quorum:** [placeholder] GAIA
+* **Vote Delay Period:** Upon submission, a proposal enters a **three (3)** day vote delay period, prior to the Voting Period. The proposer may cancel a proposal during the Vote Delay Period, at their discretion.
+* **Voting Period:** The Voting Period is the **seven (7)** day time period during which Delegates can cast “Yes,” “No,” or “Abstain” votes on a submitted proposal.
+* **Timelock Period:** Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of **three (3)** days. This period serves as a delay before proposal execution, giving the community time to adjust to any changes introduced by a successful proposal.
+* **Proposal Threshold:** [placeholder, set after TGE] GAIA. The Proposal Threshold is the minimum voting power (whether through holding GAIA tokens themselves or having tokens delegated to them by third parties) needed to submit a GIP for an onchain vote.
+* **Quorum:** [placeholder, set after TGE] GAIA
 
 > _Note:_ The above values, time periods, and thresholds may be modified by tokenholders through the governance process itself.
 
@@ -80,7 +80,7 @@ Click here to learn more about voting on proposals.
 One (1) GAIA token equals one (1) vote over any proposals submitted to the GaiaNet DAO (the “**Voting Power**”). This will allow tokenholders to participate in the governance process proportionally to their holdings.
 
 ## Step 7: Timelock Period
-Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of **[placeholder]** days.
+Upon completion of the Voting Period, the proposal proceeds to a Timelock period with a minimum delay of **three** days.
 
 ## Step 8: Implementation Period
 Following the expiration of the Timelock Period:
