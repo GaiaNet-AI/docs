@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # How to Delegate
 
-* Visit [Tally link]
+* Visit the [Tally link](https://www.tally.xyz/gov/gaianet/delegates)
 * Connect your wallet
 * Follow the prompts to select a Delegate or self-delegate
 
