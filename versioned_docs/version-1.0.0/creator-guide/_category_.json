@@ -1,0 +1,8 @@
+{
+  "label": "Creator Guide",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "How to finetune your own LLMs and create vector collections based on your own proprietary and private knowledge"
+  }
+}

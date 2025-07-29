@@ -1,0 +1,9 @@
+{
+  "label": "🔌 Agent Integrations & Plugins",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "How to use a Gaia node as the backend service for an agent framework or app, replacing the OpenAI API.",
+    "slug": "/agent-integrations"
+  }
+}

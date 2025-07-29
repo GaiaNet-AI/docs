@@ -1,0 +1,9 @@
+{
+  "label": "🧠 Knowledge Bases",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to create vector collections based on your own proprietary and private knowledge.",
+    "slug": "/knowledge-bases"
+  }
+}
