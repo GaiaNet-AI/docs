@@ -1,13 +1,13 @@
 ---
-sidebar_position: 10
+sidebar_position: -1
+title: Redirecting to Whitepaper...
 ---
 
-# 📝 Whitepaper
+import Head from '@docusaurus/Head';
 
-## Gaia Token: Coordinating Decentralized Intelligence
+<Head>
+  <meta http-equiv="refresh" content="0; url=https://whitepaper.gaianet.ai/?ref=docs" />
+</Head>
 
-<iframe
-  src="https://drive.google.com/file/d/14GW1yC55YGmEm3tXATvrWcciLodelJaX/preview" 
-  width="100%"
-  height="960px"
-></iframe>
+You are being redirected to the [GaiaNet Whitepaper](https://whitepaper.gaianet.ai/?ref=docs).  
+Click the link if you are not redirected.
