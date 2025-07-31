@@ -39,7 +39,7 @@ After forking and cloning the repository:
 
 ## Deployment
 
-This documentation is automatically deployed to [docs.gaianet.ai](https://docs.gaianet.ai) when changes are merged into the main branch.
+This documentation is automatically deployment to [docs.gaianet.ai](https://docs.gaianet.ai) when changes are merged into the main branch.
 
 ## 🤝 Contributing to Gaia docs
 
@@ -51,7 +51,7 @@ Gaia docs is an open-source project, and contributions from the community are hi
 - **Submitting Pull Requests:** We welcome code contributions! If you've implemented a bug fix or a new feature, submit a pull request following our [Contribution Guidelines](https://github.com/Gaianet-AI/docs/blob/main/CONTRIBUTING.md). Please ensure your code adheres to the project's style and includes relevant tests.
 - **Documentation:** Help us improve [the documentation](https://docs.gaianet.ai/intro) by clarifying existing sections, adding new guides, or translating the documentation into other languages.
 
-- **Community Support:** Assist other builders by answering questions on GitHub issues or our [Telegram builders' Community](https://t.me/+a0bJInD5lsYxNDJl).
+- **Community Support:** Assist other builders by answering questions on GitHub issues or our [Telegram builders' community](https://t.me/+a0bJInD5lsYxNDJl).
 
 Please take a look at our [Code of Conduct](https://github.com/Gaianet-AI/docs/blob/main/CODE_OF_CONDUCT.md) to ensure a positive and inclusive environment for everyone.
 
