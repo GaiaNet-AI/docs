@@ -43,7 +43,7 @@ Proposals are submitted onchain on the [Gaia Governance Portal](https://www.tall
 
 Gaia Governance Proposals pass a vote if delegates reach quorum, defined as [placeholder] GAIA in support of the proposal, AND have a simple majority of “For” votes (>50%). Each proposal must also be consistent with the values of Gaia and must not violate applicable law. 
 
-For the GIP template, see [this page].
+For the GIP template, see [this page](https://gov.gaianet.foundation/t/gip-template/23).
 
 ## Step 5a: GIP Resubmission
 If a GIP fails to pass the onchain voting process, it can be resubmitted for another round of voting after incorporating feedback from the community and making necessary changes. When resubmitting a GIP, the following guidelines should be followed:
