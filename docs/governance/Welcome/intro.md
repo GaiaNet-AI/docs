@@ -78,6 +78,6 @@ A few initiatives that the DAO could spearhead with respect to ensuring the comm
 
 # Gaia Governance Contract Addresses
 
-- GAIA Token: [contract address]
+- GAIA Token: [Etherscan](https://etherscan.io/token/0x2EE7097BfdD98fCE2AC08A1896038a7cd9aaEd81)
 - Governor: [contract address]
 - [placeholder] 
