@@ -7,7 +7,7 @@ In these docs, you can find information about GaiaNet, the GAIA token, the Gaia 
 
 # Links
 
-- View the GAIA token contract at [Enter Token Contract address]
+- View the GAIA token contract at <https://etherscan.io/token/0x2EE7097BfdD98fCE2AC08A1896038a7cd9aaEd81>
 - Delegate voting power at <https://www.tally.xyz/gov/gaianet/delegates>
 - View the Gadia Github at <https://github.com/GaiaNet-AI>
 - Visit the main GaiaNet documentation at <https://docs.gaianet.ai/intro> 
