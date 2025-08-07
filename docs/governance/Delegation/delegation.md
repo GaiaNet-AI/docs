@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # GAIA Delegation
 
-> **_NOTE:_** ⚠️ Delegate your claimed tokens from [this page](https://www.tally.xyz/gov/gaianet/delegates).
+> **_NOTE:_** ⚠️ Delegate your claimed tokens from [this page](https://claim.gaianet.foundation/).
 
 Delegating your tokens allows you to give the voting rights of your held GAIA tokens to another user or entity’s address. Delegating does not remove the tokens from your control, it only allocates the tokens’ voting power to someone else. Each GAIA token equates to 1 vote.
 
