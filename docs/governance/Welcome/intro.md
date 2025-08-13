@@ -17,7 +17,7 @@ In these docs, you can find information about GaiaNet, the GAIA token, the Gaia 
 # Gaia DAO Core Mission and Core Mandates
 Gaia is a decentralized, open-source AI agent developer tool built to incentivize sovereign living knowledge systems. The DAO's mission is to decentralize the coordination between AI computation, inference, and governance, ensuring transparency, community-driven development, and equitable economic incentives while fostering a sustainable and scalable open-source ecosystem. 
 
-The Gaia DAO is the community-driven steward of the Gaia Network. The DAO’s Core Mission is to **increase developer adoption** and **foster the expansion of the AI token economy.** To help carry out that Core Mission, the DAO’s Core Mandates are to **govern the ecosystem**, **establish token strategy (e.g., DEX selection)**, **procure service providers and other contributors**, and **manage the Gaia Treasury**, driving various community-driven initiatives with said treasury. 
+The Gaia DAO is the community-driven steward of the Gaia Network. The DAO’s Core Mission is to **increase developer adoption** and **foster the expansion of the AI token economy.** To help carry out that Core Mission, the DAO’s Core Mandates are to **govern the ecosystem**, **establish token strategy**, **procure service providers and other contributors**, and **manage the Gaia Treasury**. 
 
 The community should adhere to the following principles:
 
@@ -34,49 +34,54 @@ Proposals should aim to achieve goals supporting the Core Mission of Gaia. In tu
 
 # Primary Goals and KPIs
 
-### Objective 1: Secure Gaia Network
-GaiaNet, its builders, and the community are to be protected from adversarial actors seeking to control the network for their own interests.
+### Foundation Goals
 
-**Key Results**
+*   Publish and maintain a public DAO operations dashboard with monthly updates and treasury visibility
+*   Host 2 community governance calls per quarter to review KPIs, proposals, and progress
+*   Publish structure for accelerator or venture studio; recruit 5 strategic partners/advisors
+*   Define and publish domain acquisition criteria
+*   Create best practices for upgrades to smart contracts to ensure security (e.g. reduce vulnerabilities, require audits)
+*   Define protocol exploit types and mitigation strategies
+*   Formalize and approve a procurement policy that ensures vendors follow a DAO-approved diligence process
+*   Publish “State of the DAO” reports
+*   Share network statistics and decision-impact data
+*   Host onboarding sessions or open office hours for new participants
+*   Implement 3 token-based incentive programs (grants, bounties, contributor rewards)
+    *   Leverage agents to manage ecosystem funding (bounty, judge, reward flows)
+*   Allocate treasury (~10%) to yield strategies
+*   Establish 3 working groups: Token & Treasury, Ecosystem Growth, Governance & Legal
+    *   Transition 50% of core operations to working group execution over time towards a phased decentralization timeline
+*   Allocate budget and publish third-party audit reports
 
-* (1) **Zero Major Security Incidents**
-  * (Target: 0 reported protocol-level exploits or breaches each quarter)
-* (2) **DAO-Approved Security Fund**
-  * (Target: Establish a recurring budget of .5% of the DAO treasury)
-* (3) **Reduced Vulnerabilities Through Audits**
-  * (Target: Complete 2 protocol audits per year, with a 50% reduction in critical findings across consecutive audits)
+## KPIs
 
-Some security initiatives that the DAO can perform include ratifying a security council, launching a Research and Development collective funded by the DAO Treasury, granting funds for security-focused tools, and hosting regular “Security Checkpoint” calls.
+## Governance Participation
 
-### Objective 2: Ensure Resource Sustainability
-The Gaia DAO should ensure the long-term sustainability of its resources by strategically allocating capital, thereby supporting and advancing the sustainable development of LLM agent applications on the Gaia protocol.
+**Objective:** Foster high-quality, consistent engagement in DAO governance.
+*   Delegate participation rate: ≥90% per season
+*   Active delegates (with ≥90% participation): target 20–25
+*   % of circulating token supply delegated: ≥10%
+*   Major proposals achieving quorum: 100% per quarter
 
-**Key Results**
+## Ecosystem Program Execution
 
-* (1) **Establish Treasury Council**
-  * (Target: Approve and onboard at least **three** high-impact council members per season)
-* (2) **Funding DAO Operations**
-  * (Target: allocate no more than **2%** DAO treasury for operations and procurement per 12-month season)
-* (3) **Procurement & Budget Policy**
-  * (Target: Formalize and approve a procurement policy that ensures vendors follow a clear, DAO-approved diligence process)
- 
-In ensuring the sustainability of the DAO’s resources, some initiatives that could be carried out include creating a Treasury Council, defining procurement guidelines, and creating an onboarding roadmap for core contributors.
+**Objective:** Ensure funded initiatives deliver measurable outcomes.
+*   % of grantees hitting milestone outcomes
+*   Launch innovation pipeline with 10+ grantees or early-stage builders
+*   Recruit 5 strategic advisors/partners for the venture model
 
-### Objective 3: Strengthen the GAIA Community
-The Gaia DAO is to lead an engaged, interconnected, and knowledgeable community of participants (including delegates, users, developers, and partners) who actively use and advocate for Gaia.
+## Community Growth & Contributor Activation
 
-**Key Results**
+**Objective:** Grow and retain an active, engaged contributor base.
+*   Reach 1,000+ active participants (forums, working groups, contributor channels)
 
-* (1) **Delegate Engagement Score**
-  * (Target: Host monthly community calls with 30+ attendees, maintain an average community satisfaction rating above 8/10)
-* (2) **DAO Voter Participation**
-  * (Target: Achieve at least 25% quorum on all major proposals, with 4% quorum minimum per quarter)
-* (3) **Delegate Activation*
-  * (Target: Retain 20-25 Delegates active in governance per season)
+## Strategic Ecosystem Expansion
 
-A few initiatives that the DAO could spearhead with respect to ensuring the community remains engaged include publishing “State of the DAO” updates and sharing real-time network stats which help delegates make data-driven decisions.
+**Objective:** Establish and maintain value-aligned ecosystem assets.
+*   Secure positions in revenue-generating domains
+*   Support Ecosystem Monitoring Infrastructure
 
-# Gaia Governance Contract Addresses
+# Governance Contract Addresses
 
 - GAIA Token: [Etherscan](https://etherscan.io/token/0x2EE7097BfdD98fCE2AC08A1896038a7cd9aaEd81)
 - Governor: [contract address]
