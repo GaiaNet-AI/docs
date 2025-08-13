@@ -55,7 +55,7 @@ Proposals should aim to achieve goals supporting the Core Mission of Gaia. In tu
 
 ## KPIs
 
-## Governance Participation
+### Governance Participation
 
 **Objective:** Foster high-quality, consistent engagement in DAO governance.
 *   Delegate participation rate: ≥90% per season
@@ -63,19 +63,19 @@ Proposals should aim to achieve goals supporting the Core Mission of Gaia. In tu
 *   % of circulating token supply delegated: ≥10%
 *   Major proposals achieving quorum: 100% per quarter
 
-## Ecosystem Program Execution
+### Ecosystem Program Execution
 
 **Objective:** Ensure funded initiatives deliver measurable outcomes.
 *   % of grantees hitting milestone outcomes
 *   Launch innovation pipeline with 10+ grantees or early-stage builders
 *   Recruit 5 strategic advisors/partners for the venture model
 
-## Community Growth & Contributor Activation
+### Community Growth & Contributor Activation
 
 **Objective:** Grow and retain an active, engaged contributor base.
 *   Reach 1,000+ active participants (forums, working groups, contributor channels)
 
-## Strategic Ecosystem Expansion
+### Strategic Ecosystem Expansion
 
 **Objective:** Establish and maintain value-aligned ecosystem assets.
 *   Secure positions in revenue-generating domains
