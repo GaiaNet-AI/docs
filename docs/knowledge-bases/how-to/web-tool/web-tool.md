@@ -13,7 +13,7 @@ After that, save it as a txt file.
 
 For example, below is your source.
 
-![The input knowledge in a text file](web_tool_input.png)
+![The input knowledge in a text file](/img/docs/web_tool_input.png)
 
 After formatting, it will look like the following.
 

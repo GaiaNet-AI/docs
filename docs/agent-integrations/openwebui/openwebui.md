@@ -42,13 +42,13 @@ You can also configure your own node when the webUI is started.
 * Then choose Connections. In the OpenAI API field, type your node base URL and enter several random characters.
 * Click on Save to make the change take effective.
 
-![](openwebui-02.png)
+![](/img/docs/openwebui-02.png)
 
 ## Use Open WebUI as a Chatbot UI
 
 Simply choose the chat model under **Select a model** and then you can send messages to the Gaia node.
 
-![](openwebui-01.png)
+![](/img/docs/openwebui-01.png)
 
 
 ## Use Open WebUI as a client-side RAG tool
@@ -61,7 +61,7 @@ Open WebUI also offers a way to implement RAG application. Since the Gaia nodes 
 * Click on **Document Settings** to configure the embedding setting.
 * In the **General Settings**, choose OpenAI as the Embedding Model Engine. Enter the node API base URL and several random characters. Then, enter the embedding model name in the Embedding Model field. Click Save to apply the changes.
 
-![](openwebui-04.png)
+![](/img/docs/openwebui-04.png)
 
 **Step 2:** Use Gaia node as the embedding API
 
@@ -71,6 +71,6 @@ Click on **+** to upload your documentations.
 
 Then go back to the chat page. Before you send a message, type **#** to choose the document you want to as the context.
 
-![](openwebui-05.png)
+![](/img/docs/openwebui-05.png)
 
 That's it.

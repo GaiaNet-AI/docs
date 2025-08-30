@@ -2,7 +2,7 @@
 sidebar_position: 102
 ---
 
-# AI coding assistant: Continue
+# [IDE] Continue
 
 [Continue](https://github.com/continuedev/continue) is the leading open-source AI code assistant.
 
@@ -82,4 +82,4 @@ Save the `config.json` file and you are done!
 The following screenshot shows how you can chat with an error message
 inside the IDE.
 
-![](continue-01.png)
+![](/img/docs/continue-01.png)

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Node Operators focus on setting up, running, and maintaining Gaia nodes without requiring coding expertise.
 
-Running a GaiaNet node allows you to participate in the decentralized AI network and potentially earn rewards. The process is straightforward and can be completed in just a few minutes.
+Running a Gaia node allows you to participate in the decentralized AI network and potentially earn rewards. The process is straightforward and can be completed in just a few minutes.
 
 Before you begin, ensure your system meets these [minimum requirements](./getting-started/system-requirements)
 
@@ -15,7 +15,7 @@ Here you'll find everything you need to get started with running and managing yo
 ## Getting Started
 Learn how to get started with your first GaiaNet node.
 
-[Learn More →](./getting-started/mynode/what-is-a-node.md)
+[Learn More →](./getting-started/what-is-a-node.md)
 
 ## Node Setup & Authentication
 

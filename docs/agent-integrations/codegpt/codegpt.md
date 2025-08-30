@@ -2,7 +2,7 @@
 sidebar_position: 102
 ---
 
-# CodeGPT
+# [IDE] CodeGPT
 
 CodeGPT is a pair-programming partner for developers. It offers AI chat assistance, auto-completion, code explanation, error-checking, and much more. You can find the CodeGPT extension in VScode and Jetbrains. You can easily configure it to use Gaia nodes as LLM backends.
 
@@ -28,7 +28,7 @@ Download [the CodeGPT for VScode](https://marketplace.visualstudio.com/items?ite
 
 Once you install it successfully, you can find the plugin on the right sidebar. You don't need to sign up for an account here.
 
-![](codegpt-01.png)
+![](/img/docs/codegpt-01.png)
 
 ## Configure CodeGPT
 
@@ -36,7 +36,7 @@ Click the CODEGPT on the right sidebar and enter the settings page for CodeGPT.
 
 1. Go through the **Select Your AI** and choose the **Custom** PROVIDER. Copy and paste `codestral` into the MODEL field.
 
-![](codegpt-02.png)
+![](/img/docs/codegpt-02.png)
 
 3. Click the Connect button to configure the model base url and API key. Again, note the extra `v1\` at the end of the URL. 
 
@@ -45,7 +45,7 @@ Click the CODEGPT on the right sidebar and enter the settings page for CodeGPT.
 | API endpoint URL | https://coder.gaia.domains/v1/v1/ |
 | API Key | gaia |
 
-![](codegpt-03.png)
+![](/img/docs/codegpt-03.png)
 
 Save the above settings.
 
@@ -55,7 +55,7 @@ Save the above settings.
 
 You can summon the coding assistant using slash commands defined in the plugin. You can ask the coding assistant to fix bugs, explain codes, write documentation, refactor the docs, and create unit test cases for the specific code.
 
-![](codegpt-04.png)
+![](/img/docs/codegpt-04.png)
 
 ## Video Guide
 

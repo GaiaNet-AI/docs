@@ -1,8 +1,15 @@
 ---
-sidebar_position: 4
+sidebar_position: 9
 ---
 
-# Cursor AI IDE
+# [IDE] Cursor
+
+:::warning
+
+You will need at least the Pro or Ultra [plans](https://cursor.com/pricing) on cursor to use your own Gaia node in cursor. 
+
+:::
+
 
 [Cursor](https://www.cursor.com/) is an AI-powered code editor / IDE. Using LLMs to generate and review code, Cursor is an alternative to the very popular GitHub Copilot. 
 You can use Cursor with your own Gaia node as the LLM backend. There are two big reasons for that
@@ -40,7 +47,7 @@ Third, go to the OpenAI API Key section,
 * Click on **Override OpenAI Base URL**. Type `https://coder.gaia.domains/v1` here.
 * For the OpenAI API key, you can use any random chars such as `GAIA`. Click on **Verify** to test if the connection is correct.
 
-![](cursor-01.png)
+![](/img/docs/cursor-01.png)
 
 ## Use Cursor
 
@@ -49,7 +56,7 @@ You can use
 * **command + K** to edit the highlighted code
 * **command + L** to open the chat room and ask questions about the code.
   
-![](cursor-02.png)
+![](/img/docs/cursor-02.png)
 
 ## Video Guide
 

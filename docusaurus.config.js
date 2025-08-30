@@ -59,21 +59,13 @@ const config = {
           { from: '/user-guide/apps/openwebui', to: '/agent-integrations/openwebui' },
           { from: '/user-guide/apps/anything_llm', to: '/agent-integrations/anything_llm' },
           { from: '/user-guide/apps/cursor', to: '/agent-integrations/cursor' },
-          { from: '/user-guide/apps/stockbot', to: '/agent-integrations/stockbot' },
           { from: '/user-guide/apps/flowiseai', to: '/agent-integrations/flowise/flowiseai' },
           { from: '/user-guide/apps/flowiseai-tool-call', to: '/agent-integrations/flowise/flowiseai-tool-call' },
           { from: '/user-guide/apps/lobechat', to: '/agent-integrations/lobechat' },
-          { from: '/user-guide/apps/llamaparse', to: '/agent-integrations/llama/llamaparse' },
           { from: '/user-guide/apps/zed', to: '/agent-integrations/zed' },
           { from: '/user-guide/apps/obsidian', to: '/agent-integrations/obsidian' },
           { from: '/user-guide/apps/codegpt', to: '/agent-integrations/codegpt' },
           { from: '/user-guide/apps/continue', to: '/agent-integrations/continue' },
-          { from: '/user-guide/apps/llamacoder', to: '/agent-integrations/llama/llamacoder' },
-          { from: '/user-guide/apps/agent-zero', to: '/agent-integrations/agent-zero' },
-          { from: '/user-guide/apps/translation-agent', to: '/agent-integrations/translation-agent' },
-          { from: '/user-guide/apps/gpt-planner', to: '/agent-integrations/gpt-planner' },
-          { from: '/user-guide/apps/llamaedge-book', to: '/agent-integrations/llama/llamaedgebook' },
-          { from: '/user-guide/apps/llamatutor', to: '/agent-integrations/llama/llamatutor' },
           { from: '/user-guide/api-reference', to: '/getting-started/api-reference' },
           { from: '/category/node-operator-guide', to: '/getting-started' },
           { from: '/node-guide/quick-start', to: '/getting-started/quick-start' },
@@ -105,7 +97,23 @@ const config = {
           { from: '/creator-guide/knowledge/firecrawl', to: '/knowledge-bases/how-to/firecrawl' },
           { from: '/creator-guide/knowledge/web-tool', to: '/knowledge-bases/how-to/web-tool' },
           { from: '/getting-started/quick-start/customize', to: '/getting-started/customize' },
-          { from: '/getting-started/quick-start/advanced-deployment-options/protect', to: '/getting-started/advanced-deployment-options/protect' }
+          { from: '/getting-started/quick-start/advanced-deployment-options/protect', to: '/getting-started/advanced-deployment-options/protect' },
+          { from: '/user-guide/apps/stockbot', to: '/templates-and-examples/templates/stockbot' },
+          { from: '/user-guide/apps/llamaparse', to: '/tutorial/llamaparse' },
+          { from: '/user-guide/apps/llamacoder', to: '/templates-and-examples/templates/llamacoder' },
+          { from: '/user-guide/apps/agent-zero', to: '/templates-and-examples/templates/agent-zero' },
+          { from: '/user-guide/apps/translation-agent', to: '/templates-and-examples/templates/translation-agent' },
+          { from: '/user-guide/apps/gpt-planner', to: '/templates-and-examples/templates/gpt-planner' },
+          { from: '/user-guide/apps/llamaedge-book', to: '/templates-and-examples/templates/llamaedgebook' },
+          { from: '/user-guide/apps/llamatutor', to: '/templates-and-examples/templates/llamatutor' },
+          { from: '/agent-integrations/stockbot', to: '/templates-and-examples/templates/stockbot' },
+          { from: '/agent-integrations/llama/llamaparse', to: '/tutorial/llamaparse' },
+          { from: '/agent-integrations/llama/llamacoder', to: '/templates-and-examples/templates/llamacoder' },
+          { from: '/agent-integrations/agent-zero', to: '/templates-and-examples/templates/agent-zero' },
+          { from: '/agent-integrations/translation-agent', to: '/templates-and-examples/templates/translation-agent' },
+          { from: '/agent-integrations/gpt-planner', to: '/templates-and-examples/templates/gpt-planner' },
+          { from: '/agent-integrations/llama/llamaedgebook', to: '/templates-and-examples/templates/llamaedgebook' },
+          { from: '/agent-integrations/llama/llamatutor', to: '/templates-and-examples/templates/llamatutor' },
         ],
       },
     ],
@@ -143,9 +151,14 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.0.0', 
+              label: '2.1.0', 
               path: '',
               badge: true,
+            },
+            '2.0.0': {
+              label: '2.0.0',
+              path: '2.0.0',
+              banner: 'none',
             },
             '1.0.0': {
               label: '1.0.0',
@@ -229,20 +242,6 @@ const config = {
         hreflang: 'vi',
         href: 'https://vi.docs.gaianet.ai'
       },
-    },
-    {
-      tagName: 'script',
-      attributes: {
-        src: 'https://scripts.simpleanalyticscdn.com/latest.js',
-        async: 'true',
-        'data-collect-dnt': 'true',
-      },
-    },
-    {
-      tagName: 'noscript',
-      attributes: {}, // Required even if empty
-      innerHTML:
-        '<img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/>',
     },
     {
       tagName: 'script',

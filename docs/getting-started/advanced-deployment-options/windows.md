@@ -23,10 +23,10 @@ wsl --install Ubuntu-24.04
 
 Following is the progress that you should notice when WSL and Ubuntu-24.04 is being installed.
 
-![](../advanced-deployment-options/wsl-ubuntu/wsl-install-ubuntu.png)
-![](../advanced-deployment-options/wsl-ubuntu/wsl-installer.png)
-![](../advanced-deployment-options/wsl-ubuntu/launching-ubuntu.png)
-![](../advanced-deployment-options/wsl-ubuntu/installation-complete.png)
+![](/img/docs/wsl-install-ubuntu.png)
+![](/img/docs/wsl-installer.png)
+![](/img/docs/launching-ubuntu.png)
+![](/img/docs/installation-complete.png)
 
 ## Step 2
 
@@ -37,15 +37,15 @@ Make sure to:
 
 Once WSL is installed and your choice of Ubuntu is installed, you should see the following:
 
-![Ubuntu-24.04 Installation Complete](../advanced-deployment-options/wsl-ubuntu/installation-complete.png)
+![Ubuntu-24.04 Installation Complete](/img/docs/installation-complete.png)
 
 ## Step 3
 
 Once you see the user account logged in as shown in the above screenshot, you can follow the Gaia CLI installation steps from [here](https://docs.gaianet.ai/getting-started/quick-start/#installing-the-node).
 
-![Gaia CLI Installation](./cli/gaia-cli-installation.png)
-![Gaia CLI Installation Complete](./cli/cli-installation.png)
-![Gaianet Init](./gaia/gaianet-init.png)
-![Gaianet Start](./gaia/gaianet-start.png)
+![Gaia CLI Installation](/img/docs/gaia-cli-installation.png)
+![Gaia CLI Installation Complete](/img/docs/cli-installation.png)
+![Gaianet Init](/img/docs/gaianet-init.png)
+![Gaianet Start](/img/docs/gaianet-start.png)
 
 > That's it! Gaia now runs on your Windows machine!
