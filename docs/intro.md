@@ -31,6 +31,7 @@ If you are interested in running Gaia nodes, you can
 * [Get started with a Gaia node](/getting-started/quick-start).
 * [Customize the Gaia node with a finetuned model and custom knowledge base](/getting-started/customize).
 * [Join the Gaia Protocol](/getting-started/register)
+* [Explore the Gaia CLI toolkit](/getting-started/gaia-toolkit)
 
 ### Domain operators
 
