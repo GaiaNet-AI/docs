@@ -14,7 +14,7 @@ You can install the WasmEdge Runtime on any generic Linux and MacOS platform.
 
 To install the most recent version of Gaia node, run the following command line.
 
-```
+```bash
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 

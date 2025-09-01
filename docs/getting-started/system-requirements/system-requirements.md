@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# System requirements
+# System Requirements
 
 You can install the Gaia on a wide variety of devices and operating systems with or without GPUs. The node installing and operating instructions work on devices ranging from Raspberry Pi, MacBooks, Linux servers, Windows Desktop, to cloud-based Nvidia H100 clusters. For institutional operators, we recommend EITHER of the following for a Gaia node. 
 
@@ -38,6 +38,9 @@ It also runs on all Apple Silicon M-series GPUs.
 * Apple M3 Pro chips
 * Apple M3 Max chips
 * Apple M3 Ultra chips
+* Apple M4 chips
+* Apple M4 Pro chips
+* Apple M4 Max chips
 
 ### OSs
 

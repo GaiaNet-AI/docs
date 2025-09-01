@@ -23,3 +23,10 @@
   transform: translateY(-1px);
   color: #3a3d41;
 }
+
+.theme-doc-markdown h3#hidden-headings {
+  height: 0;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}

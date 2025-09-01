@@ -284,3 +284,9 @@ curl -X POST https://node_id.gaia.domains/v1/info
 | 404                | Not found             | The endpoint URL is invalid | Please check the endpoint URL    |
 | 500                | Internal Server Error | Model is not found.         | Please check out the model name. |
 | 400                | Bad request           |                             |                                  |
+
+:::info
+
+Head over to the [Troubleshooting](./troubleshooting/troubleshooting.md) page for more information into common issues and solutions.
+
+:::

@@ -12,7 +12,7 @@ Let's say that the base directory for your second node is `$HOME/node-2`.
 You can install Gaia node software using the following command.
 
 ```
-curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/main/install.sh' | bash -s -- --base $HOME/node-2
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --base $HOME/node-2
 ```
 
 After that, you can specify the `gaianet` CLI to operate on `node-2` by appending the `--base` option as well.

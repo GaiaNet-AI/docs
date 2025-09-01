@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 ---
 
 # LobeChat
@@ -18,7 +18,7 @@ Go to the [Language Model Setting page](https://chat-preview.lobehub.com/setting
 4. Click on the Get Model List text and it will automatically fetch LLMs available on the Gaia node. Choose the chat model `llama` here.
 5. Optional: click on the Check button to check the connection status.
 
-![](lobechat-gaianet-01.png)
+![](/img/docs/lobechat-gaianet-01.png)
 
 
 **Step 2: Start chatting via the LobeChat UI**
@@ -27,4 +27,4 @@ Next, let's go back to the chat page. Before starting chatting, choose the model
 
 Now you can chat with the Gaia node via LobeChat.
 
-![](lobechat-gaianet-02.png)
+![](/img/docs/lobechat-gaianet-02.png)

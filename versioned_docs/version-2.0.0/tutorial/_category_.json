@@ -1,0 +1,9 @@
+{
+  "label": "📚 Guides & Tutorials",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "Examples building with Gaia services",
+    "slug": "/guides-and-tutorials"
+  }
+}

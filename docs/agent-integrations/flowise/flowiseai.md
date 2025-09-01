@@ -39,11 +39,11 @@ Let's take the **Flowise Docs QnA** as an example. You can build a QnA chatbot b
 
 ### Get the **Flowise Docs QnA** template
 
-![](flowise-01.png)
+![](/img/docs/flowise-01.png)
 
 Click on Marketplaces on the left tab to browse all the templates. The template **Flowise Docs QnA** we will use is the first one.
 
-![](flowise-02.png)
+![](/img/docs/flowise-02.png)
 
 Then, click on Use this template button on the left top corner to open the visual editor.
 
@@ -51,7 +51,7 @@ Then, click on Use this template button on the left top corner to open the visua
 
 You will need to delete the ChatOpenAI component and click the + button to search ChatLocalAI, and then drag the ChatLocalAI to the screen.
 
-![](flowise-03.png)
+![](/img/docs/flowise-03.png)
 
 Then, you will need to input 
 
@@ -77,7 +77,7 @@ Then, let's go through the GitHub component to connect the chat application to o
 
 You can send a question like "How to install a Gaia node" after saving the current chatflow. 
 
-![](flowise-04.png)
+![](/img/docs/flowise-04.png)
 
 You will get the answer based on the Gaia docs, which are more accurate.
 

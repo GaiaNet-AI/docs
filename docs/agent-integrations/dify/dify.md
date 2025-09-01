@@ -17,17 +17,17 @@ First, log into Dify's web portal and select `Settings | Model Provider`. From t
 Add an LLM model with the model name and API endpoint listed on your Gaia node's web dashboard. Or, you can just add [a popular Gaia node](../../nodes/nodes.md).
 Leave the API Key field empty.
 
-![Configure a Gaia Llama3 8b model in Dify](dify_chat.png)
+![Configure a Gaia Llama3 8b model in Dify](/img/docs/dify_chat.png)
 
 Most Dify applications also require an embedding model to search text in the vector space.
 Add an embedding model with the model name and API endpoint listed on your Gaia node's web dashboard. Or, you can just add [a popular Gaia node](../../nodes).
 Leave the API Key field empty.
 
-![Configure a Gaia embedding model in Dify](dify_embedding.png)
+![Configure a Gaia embedding model in Dify](/img/docs/dify_embedding.png)
 
 That's it. You can now see that the new models are available at the top panel of Dify for every chatbot or agent. Just select your Gaia models for chat or embedding, and the Dify app will automatically use it!
 
-![Select a Gaia node as backend model in Dify](dify_select.png)
+![Select a Gaia node as backend model in Dify](/img/docs/dify_select.png)
 
-![Chat with the Gaia Llama3 8b model in Dify](dify_chatbot_ui.png)
+![Chat with the Gaia Llama3 8b model in Dify](/img/docs/dify_chatbot_ui.png)
 

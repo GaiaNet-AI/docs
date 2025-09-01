@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# Zed
+# [IDE] Zed
 
 
 [Zed](https://zed.dev/) is a next-generation code editor designed for high-performance collaboration with humans and AI, and it is written in Rust.  You can use Zed with your own Gaia node as the LLM backend. There are two big reasons for that
@@ -33,7 +33,7 @@ In this tutorial, we will use public [Qwen 2.5 Coder](https://github.com/QwenLM/
 
 First, download and install [Zed](https://zed.dev/). Click on your profile on the top right and choose **Setting**. Then a new tab called `settings.json` will be opened. You can configure your Zed by editing this file.
 
-![](zed-01.png)
+![](/img/docs/zed-01.png)
 
 Below is the `settings.json` we used. You can copy and paste sections `language_models` and `assistant` to your own. They configure Zed to use an OpenAI-compatible API provider and then specify the API endpoint URL and model name for that provider.
 
@@ -77,11 +77,11 @@ Next we will configure the API key to access this Gaia node.
 
 Go back to the folder you opened. Click on the Star icon at the bottom to turn on the Assistant panel.
   
-![](zed-02.png)
+![](/img/docs/zed-02.png)
 
 Click on **Open configuration** to set up the API Key.
   
-![](zed-03.png)
+![](/img/docs/zed-03.png)
 
 Since we are using a free public Gaia node, you can use any API key in the OpenAI section at the bottom of the screen. For example, you can enter `GAIA`.
 
@@ -93,10 +93,10 @@ You can
 
 * Edit the highlighted code by selecting the code and clicking on the **Inline Assistant** button.
 
-![](zed-04.png)
+![](/img/docs/zed-04.png)
 
 * Open the Assistant panel by clicking on the **Assistant** icon at the bottom to turn on the Assistant panel.
 
-![](zed-05.png)
+![](/img/docs/zed-05.png)
 
 

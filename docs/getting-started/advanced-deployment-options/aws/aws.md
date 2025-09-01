@@ -22,20 +22,20 @@ click on the "Launch instance" button.
 
 In the "Application and OS Images" section, search the AMI catalog and select the image named `GaiaNet_ubuntu22.04_amd64_cuda12`.
 
-![](aws_ami.png)
+![](/img/docs/aws_ami.png)
 
 In the "Instance type" section, select any of the `g4dn` types. Those are EC2 VMs with Nvidia T4 GPUs.
 
-![](aws_instance_type.png)
+![](/img/docs/aws_instance_type.png)
 
 In the "Network settings", make sure that you allow SSH connections.
 
-![](aws_network.png)
+![](/img/docs/aws_network.png)
 
 Click on the "Launch instance" button and wait for the instance to start up. Once the instance is ready, SSH
 into its public IP address. Once you are in the VM, run the following two commands.
 
-```
+```bash
 gaianet init
 gaianet start
 ```
@@ -62,7 +62,7 @@ In the "Network settings", make sure that you allow SSH connections.
 Click on the "Launch instance" button and wait for instance to start up. Once the instance is ready, SSH
 into its public IP address. Once you are in the VM, run the following two commands.
 
-```
+```bash
 gaianet init
 gaianet start
 ```

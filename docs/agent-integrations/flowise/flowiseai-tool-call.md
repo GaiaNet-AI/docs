@@ -27,11 +27,11 @@ After running successfully, you can open `http://localhost:3000` to check out th
 
 Step 1: Create a new **Chatflow** from the UI.
 
-![](flowise-tool-01.png)
+![](/img/docs/flowise-tool-01.png)
 
 Step 2: On the **Chatflow** canvas, add a node called **ChatLocalAI**.
 
-![](flowise-tool-02.png)
+![](/img/docs/flowise-tool-02.png)
 
 Step 3: Configure the **ChatLocalAI** widget to use the Gaia node with tool call support you have created.
 
@@ -47,7 +47,7 @@ The **Tool description** field is the "prompt" that tells the LLM when to use th
 if the LLM detects that the user is asking about the city or country of an IP address, it will
 return a tool call response asking FlowiseAI to perform this function call first.
 
-![](flowise-tool-03.png)
+![](/img/docs/flowise-tool-03.png)
 
 Now you can add JavaScript code for this function. It looks up the location of the input `ip` parameter.
 
@@ -65,7 +65,7 @@ try {
 }
 ```
 
-![](flowise-tool-04.png)
+![](/img/docs/flowise-tool-04.png)
 
 Step 5: Add a node called **Buffer Memory** to the canvas.
 
@@ -76,7 +76,7 @@ Step 7: Connect the nodes.
 Connect the **Custom Tool** and **Buffer Memory** nodes to the appropriate connectors on the 
 **Tool Agent** node. Connect the **ChatLocalAI** node to the **Custom Tool**.
 
-![](flowise-tool-05.png)
+![](/img/docs/flowise-tool-05.png)
 
 Step 8: Save the **Chatflow**.
 
@@ -100,5 +100,5 @@ the tool call is then sent back to the LLM together with the original query,
 which is why we need the **Buffer Memory** node BTW, 
 and the LLM formulates a human readable response to the original question.
 
-![](flowise-tool-06.png)
+![](/img/docs/flowise-tool-06.png)
 

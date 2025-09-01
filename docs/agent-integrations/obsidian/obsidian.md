@@ -1,5 +1,5 @@
 ---
-sidebar_position: 101
+sidebar_position: 8
 ---
 
 # Obsidian
@@ -36,7 +36,7 @@ Make sure you have already installed the Obsidian app on your device.
 * Open Obsidian settings, navigate to "Community plugins", and search for `obsidian-local-gpt`.
 * Install the plugin by clicking “Install”.
 
-![](obsidian-enable.png)
+![](/img/docs/obsidian-enable.png)
 
 Then click “Enable”.
 
@@ -48,11 +48,11 @@ Then click “Enable”.
 3. Set the server URL. Use https://llama8b.gaia.domains/ if you are using a public Gaia node. Or, use http://localhost:8080/ if you are running a local Gaia node. 
 4. Configure API key to Gaia.
 
-![](obsidian-configure.png)
+![](/img/docs/obsidian-configure.png)
 
 Make sure to click the refresh button and choose the **llama** model if you’re using the public Gaia node url and **Phi-3-mini-4k-instruct** if you’re using the local Gaia node.
 
-![](obsidian-model.png)
+![](/img/docs/obsidian-model.png)
 
 ### Configure Obsidian Hotkey 
 
@@ -61,7 +61,7 @@ Make sure to click the refresh button and choose the **llama** model if you’re
 3. Filter "Local" and you should see "Local GPT: Show context menu".
 4. Click on `+` icon and press hotkey (e.g. `⌘ + M`).
 
-![](obsidian-hotkey.png)
+![](/img/docs/obsidian-hotkey.png)
 
 As long as you have set the hotkey, while writing or editing a note, select the text you want to interact with, and press the hotkey you have set to use this LLM powered plugin!
 
@@ -72,13 +72,13 @@ As long as you have set the hotkey, while writing or editing a note, select the 
 
 * Select a text segment, right-click, and choose "Continue writing". The model will generate the continuation (displayed in the screenshot in grey).
 
-![](obsidian-text-continuation.png)
+![](/img/docs/obsidian-text-continuation.png)
 
 ### **Summarization**
 
 * Select a longer text segment, right-click, and choose "Summarize text". The model provides a summary as below of the CNAI report content I selected.
 
-![](obsidian-summarization.png)
+![](/img/docs/obsidian-summarization.png)
 
 Here is a concise summary of the key points:
 
@@ -92,13 +92,13 @@ Here is a concise summary of the key points:
 
 * Select text, right-click, and choose "Fix spelling and grammar". The model will correct errors.
 
-![](obsidian-grammar.png)
+![](/img/docs/obsidian-grammar.png)
 
 ### **Extract Action Items**
 
 * For notes with multiple tasks, select the text and click "Find action items". The model will list the tasks.
 
-![](obsidian-extract.png)
+![](/img/docs/obsidian-extract.png)
 The Generated content are displayed below your own text:
 
 `Here are the action items extracted from the document in Markdown checkbox format:`
