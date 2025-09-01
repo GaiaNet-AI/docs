@@ -244,5 +244,42 @@ sidebar_position: 6
 
 </details>
 
+### Backend Error: WASI-NN Backend Error: {#hidden-headings}
+<details>
+  <summary>Backend Error: WASI-NN Backend Error: (Failed to start chat server after 3 tries)</summary>
+  
+  When starting the GaiaNet node, particularly after `gaianet init` or during `gaianet start`, you may encounter errors similar to the following, often indicating issues with the chat     server and a "command not found" message:
 
+  ![WASI-BACKEND-ERROR](/img/docs/WASI-BACKEND-ERROR.png) 
+
+  This error typically occurs when the AI model snapshot downloaded during the `gaianet init` process is incomplete or corrupted due to a connection interruption or other download issues. When you subsequently try to initialize the model (e.g., after closing and reopening WSL), the system attempts to use this broken cached file, leading to the "Backend Error: WASI-NN Backend Error: Caller module passed an invalid argument" as the chat server cannot properly load or interact with the flawed model.
+  
+  **Solution:**
+
+  The most effective way to resolve this is to perform a clean re-installation of the GaiaNet node, which will force a fresh download of all necessary files, including the model snapshot.
+
+  1. **Stop the GaiaNet Node:**
+     First, ensure all running GaiaNet processes are stopped.
+  ```bash
+  gaianet stop
+  ```
+
+  2.  **Delete the Corrupted GaiaNet Installation:**
+        Remove the existing, potentially corrupted, GaiaNet installation directory.
+  ```bash
+  rm -rf ~/gaianet 
+  ```
+
+
+  *Note: Please backup important thing like nodeid.json, frpc.toml, deviceid.txt, keystore file etc. as This command will delete the entire `gaianet` directory and all its contents. Make sure you are in your home directory (`~` or `/home/youruser`) or specify the full path to `gaianet` if it's installed elsewhere.*
+
+  3.  **Reinstall GaiaNet:**
+        Follow the official GaiaNet installation guide to re-download and install the node from scratch. This will ensure you get a complete and uncorrupted model snapshot. 
+        [Reinstalling node](https://docs.gaianet.ai/getting-started/quick-start/)
+
+  After these steps, you should be able to run `gaianet init` and `gaianet start` successfully with a freshly downloaded model.
+
+  To ensure a smooth download, please verify you have a stable and fast internet connection with no interruptions. For best results, it's recommended to keep the download screen active and in the foreground throughout the process.
+
+</details>
 
