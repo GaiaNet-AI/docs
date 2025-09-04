@@ -20,15 +20,46 @@ Gaia is a decentralized AI infrastructure that empowers everyone to build, scale
 
 After forking and cloning the repository:
 
-1. Install dependencies:
-   ```
-   npm install
-   ```
-2. Start the development server:
-   ```
-   npm start
-   ```
-3. Open your browser and visit `http://localhost:3000`
+## 📋 Prerequisites
+
+**System Requirements:**
+- Node.js 16.0 or higher
+- npm 7.0 or higher  
+- Git
+
+**Check your versions:**
+```
+node --version
+npm --version
+```
+## 🚀 Installation
+
+### Step 1: Clone and Setup
+```
+git clone https://github.com/YOUR-USERNAME/docs.git
+cd docs
+npm install
+```
+
+### Step 2: Start Development Server
+```
+npm start
+```
+
+### Step 3: View Documentation
+Open your browser and visit `http://localhost:3000`
+
+### 🔧 Troubleshooting
+
+Port 3000 already in use?
+```
+npm start -- --port 3001
+```
+Installation fails?
+```
+rm -rf node_modules package-lock.json
+npm install
+```
 
 ## Structure
 
