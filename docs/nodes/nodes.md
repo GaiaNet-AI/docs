@@ -33,6 +33,7 @@ Coming soon!
 
 Coming soon!
 
+<!-----
 ## Coding assistant agents
 
 ### Coder
@@ -62,13 +63,15 @@ Replace OpenAI configuration in [your app](../agent-integrations/intro) with the
 | Model Name (for Text embedding) | nomic-embed |
 | API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
-## Alternative LLM domains
+----->
+
+## LLM domains
 
 <!-----
 ### Llama 3b
 
-This domain runs plain Llama 3.2 3b agent nodes without any additional knowledge.
-[Chat with it](https://llama3b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
+This domain runs plain Qwen3 0.6b agent nodes without any additional knowledge.
+[Chat with it](https://0x0c82e25e1f996fa3d227d23e83cef721ee42ff69.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](./agent-integrations/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
@@ -81,27 +84,40 @@ This domain runs plain Llama 3.2 3b agent nodes without any additional knowledge
 
 ### Qwen 7b
 
-The Qwen 7b LLM is great for non-English tasks such as translation.
-[Chat with it](https://qwen7b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
+The Qwen3 0.6b LLM is great for non-coding tasks such as translation.
+[Chat with it](https://0x0c82e25e1f996fa3d227d23e83cef721ee42ff69.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://qwen7b.gaia.domains/v1 |
-| Model Name (for LLM) | qwen7b |
+| API endpoint URL | https://0x0c82e25e1f996fa3d227d23e83cef721ee42ff69.gaia.domains/v1 |
+| Model Name (for LLM) | qwen3 0.6b |
 | Model Name (for Text embedding) | nomic-embed |
 | API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
 
 
-### Qwen 72b
+### GPT OSS 20b
 
-The Qwen 72b LLM is a top open source LLM. It is very capable but could also be slow.
-It is capable of tool / function calling.
-[Learn more](../tutorial/tool-call/tool-call.md) how to use tool call models in your agent app.
-[Chat with it](https://qwen72b.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
+The GPT OSS 20b LLM is the first open sourced LLM by OpenAI. It is very capable with a thinking proces.
+
+[Chat with it](https://0xfa1fc68813d687215be75fba4fffb60f184590bc.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
 
 |Config option | Value |
 |-----|--------|
-| API endpoint URL | https://qwen72b.gaia.domains/v1 |
+| API endpoint URL | https://0xfa1fc68813d687215be75fba4fffb60f184590bc.gaia.domains/v1 |
+| Model Name (for LLM) | qwen72b |
+| Model Name (for Text embedding) | nomic-embed |
+| API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
+
+### Mistral
+
+The Mistral 3.1 24b LLM is a top open source LLM. It is very capable but could also be slow.
+It is capable of tool / function calling.
+[Learn more](../tutorial/tool-call/tool-call.md) how to use tool call models in your agent app.
+[Chat with it](https://0x3b70c030a2baaa866f6ba6c03fde87706812d920.gaia.domains/chatbot-ui/index.html) or use it from another app. Replace OpenAI configuration in [your app](../agent-integrations/intro) with the following.
+
+|Config option | Value |
+|-----|--------|
+| API endpoint URL | https://0x3b70c030a2baaa866f6ba6c03fde87706812d920.gaia.domains/v1 |
 | Model Name (for LLM) | qwen72b |
 | Model Name (for Text embedding) | nomic-embed |
 | API key | [Get your API Key here](../getting-started/authentication/authentication.md) |
