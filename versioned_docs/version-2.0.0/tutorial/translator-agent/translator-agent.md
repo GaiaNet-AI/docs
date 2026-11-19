@@ -176,7 +176,7 @@ We run [a lengthy Chinese article on Forbidden City's collaboration with the Var
 Configure and download the model. 
 
 ```    
-gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/phi-3-medium-instruct-128k/config_full.json
+gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/phi-3-medium-instruct-128k/config.json
 ```
 
 Next, use the following command to start the Gaia node with a 128k context window.
