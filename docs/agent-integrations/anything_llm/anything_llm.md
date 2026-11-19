@@ -31,4 +31,4 @@ That's it. When the embedding is done, go back to your workspace and ask a quest
 
 ![](/img/docs/anything-llm-03.png)
 
-> You can check out the `start-llamaedge.log` to check what happens.
+> You can check out `embedding-server.log` or `gaia-nexus.log` in `~/gaianet/log/` to see what happens.
